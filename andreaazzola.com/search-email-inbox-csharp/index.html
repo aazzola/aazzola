@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from andreaazzola.com/search-email-inbox-csharp/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" type="image/png" href="../images/favicon.png" />
+
+  <!-- JavaScript -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8XKTL2Q');</script>
+  <!-- End Google Tag Manager -->
+  <script src="../../code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="http://load.sumome.com/" data-sumo-site-id="0bcf4270faa767709f6d2e505d84950ff777ed47fb7c0e004b02978a4d6f57b4" async="async"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /><link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="../App_Themes/Ichigo/languages.min.css" rel="stylesheet" />
+  <!-- Heads -->
+  
+  <link rel="alternate" hreflang="en-US" href="index.html" />
+  <meta name="description" content="A C# snippet based on the AE.NET.Mail library, for searching an email inside a mailbox Inbox, through the IMAP protocol" />
+  <link rel="canonical" href="index.html" />
+  
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Search Email Inbox with C#" />
+  <meta property="og:description" content="A C# snippet based on the AE.NET.Mail library, for searching an email inside a mailbox Inbox, through the IMAP protocol" />
+  
+  <meta property="og:url" content="http://andreaazzola.com/search-email-inbox-csharp/" />
+  <meta property="article:published_time" content="2014-03-27T17:23:00Z" />
+  <meta property="og:site_name" content="Andrea Azzola" />
+
+  
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://andreaazzola.com/search-email-inbox-csharp/"
+    },
+    "headline": "Search Email Inbox with C#",
+
+    "datePublished": "2014-03-27T17:23:00.000Z",
+    "dateModified": "2014-04-03T19:39:34.220Z",
+    "author": {
+      "@type": "Person",
+      "name": "Andrea Azzola"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Andrea Azzola",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://andreaazzola.com/Images/AndreaAzzola_Website200x200.png",
+        "width": 200,
+        "height": 200
+      }
+    },
+    "description": "A C# snippet based on the AE.NET.Mail library, for searching an email inside a mailbox Inbox, through the IMAP protocol",
+    "url": "http://andreaazzola.com/search-email-inbox-csharp/"
+  }
+  </script>
+<link href="../App_Themes/Ichigo/languages.min.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Ichigo/StyleSheet.css" type="text/css" rel="stylesheet" /><title>
+	Search Email Inbox with C# - Andrea Azzola
+</title></head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8XKTL2Q"
+      height="0" width="0" style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <header>
+      <span id="title">
+        <a href="../index.html" title="Back to the Home Page">
+          Andrea Azzola
+        </a>
+      </span>
+      <p id="ctl00_subtitle" class="subtitle">Tips and Techniques for Lifestyle Design</p>
+    </header>
+    <div id="wrapper" class="row">
+      <form name="aspnetForm" method="post" action="#" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyNDY0NzQ1MQ9kFgJmD2QWCGYPZBYCAgoPZBYCAgEPFgIeB1Zpc2libGVoZAIBDxYCHgRUZXh0BQ1BbmRyZWEgQXp6b2xhZAICDxYCHglpbm5lcmh0bWwFKFRpcHMgYW5kIFRlY2huaXF1ZXMgZm9yIExpZmVzdHlsZSBEZXNpZ25kAgMPZBYKAgMPZBYCAgIPDxYCHwBnZGQCBQ9kFghmDxYCHwEFGlNlYXJjaCBFbWFpbCBJbmJveCB3aXRoIEMjZAIBDxYCHwEFyRE8cD4NCglBIGZldyB5ZWFycyBhZ28gSSBoZWxwZWQgbWFuYWdpbmcgYSA8YSBocmVmPSJodHRwOi8vbWFnbWFnbG9iYWxncm9vdmUuY29tIiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IlZpc2l0IE1hR21BIEdsb2JhbCBSYWRpbyI+cmFkaW88L2E+IGFuZCBJIG5lZWRlZCBhIHRvb2wmbWRhc2g7YW4gPGVtPkFTUC5ORVQ8L2VtPiB3ZWIgcGFnZSZtZGFzaDtmb3IgdGhlIHBlcmlvZGljYWwgZG93bmxvYWQgb2YgcHJvbW8gbWl4ZXMuIFRoZXkgd2VyZSBsaW5rZWQgaW4gc29tZSBlbWFpbHMgcmVjb2duaXphYmxlIGJ5IGEgZmV3IGtleXdvcmRzLjwvcD4NCjxwPg0KCVRoZSBmb2xsb3dpbmcsIGlzIHRoZSBzdHJpcHBlZCBkb3duIDxzdHJvbmc+QyMgc25pcHBldDwvc3Ryb25nPiBmcm9tIHRoZSB0b29sLCBpdCBkZW1vbm9zdHJhdGUgaG93IHRvIHBlcmZvcm0gYm90aCB0aGUgPGVtPnNlYXJjaCBpbnNpZGUgdGhlIGVtYWlsJiMzOTtzIHN1YmplY3QgYW5kIGJvZHk8L2VtPiwgYW5kIHRoZSBkb3dubG9hZCwgd2l0aCB0aGUgdXNlIG9mJm5ic3A7dGhlIDxzdHJvbmc+PGEgaHJlZj0iaHR0cDovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9JbnRlcm5ldF9NZXNzYWdlX0FjY2Vzc19Qcm90b2NvbCIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJJTUFQIG9uIHdpa2lwZWRpYSI+SU1BUDwvYT48L3N0cm9uZz4gcHJvdG9jb2w6PC9wPg0KPHByZT4NCjxjb2RlIGNsYXNzPSJjcyI+dXNpbmcgKEltYXBDbGllbnQgaWMgPSBuZXcgSW1hcENsaWVudCgmcXVvdDtpbWFwLmdtYWlsLmNvbSZxdW90OywgJnF1b3Q7Z21haWxAZ21haWwuY29tJnF1b3Q7LCAmcXVvdDtteXBhc3N3b3JkJnF1b3Q7LCANCiAgICBJbWFwQ2xpZW50LkF1dGhNZXRob2RzLkxvZ2luLCA5OTMsIHRydWUpKQ0Kew0KICAgIGljLlNlbGVjdE1haWxib3goJnF1b3Q7SU5CT1gmcXVvdDspOw0KICAgIE1haWxNZXNzYWdlW10gbW0gPSBpYy5HZXRNZXNzYWdlcygwLCAxMDAsIGZhbHNlKTsgLy8gcmV0cmlldmVzIHRoZSBsYXRlc3QgMTAwIG1lc3NhZ2VzDQoNCiAgICBmb3JlYWNoIChNYWlsTWVzc2FnZSBtIGluIG1tKQ0KICAgICAgICBpZiAoKChtLkZyb20uQWRkcmVzcyA9PSAmcXVvdDtmb29AYmFyLmNvbSZxdW90OykgfHwgKG0uQm9keS5Ub0xvd2VyKCkuQ29udGFpbnMoJnF1b3Q7ZXBpc29kZSZxdW90OykpKQ0KICAgICAgICB7DQogICAgICAgICAgICBSZWdleCByZWd4ID0gbmV3IFJlZ2V4KCZxdW90OyhodHRwfGh0dHBzKTovLyhbXFx3Kz9cXC5cXHcrXSkrKFthLXpBLVowLTlcXH5cXCFcXEANClxcI1xcJFxcJVxcXlxcJmFtcDtcXCpcXChcXClfXFwtXFw9XFwrXFxcXFxcL1xcP1xcLlxcOlxcO1xcJiMzOTtcXCxdKik/JnF1b3Q7LCANCiAgICAgICAgICAgICAgICBSZWdleE9wdGlvbnMuSWdub3JlQ2FzZSk7DQogICAgICAgICAgICBNYXRjaENvbGxlY3Rpb24gbWF0Y2hlcyA9IHJlZ3guTWF0Y2hlcyhtLkJvZHkpOw0KDQogICAgICAgICAgICBSZXNwb25zZS5DbGVhckNvbnRlbnQoKTsNCiAgICAgICAgICAgIFJlc3BvbnNlLkNvbnRlbnRUeXBlID0gJnF1b3Q7YXVkaW8vbXBlZzMmcXVvdDs7DQogICAgICAgICAgICBSZXNwb25zZS5BZGRIZWFkZXIoJnF1b3Q7Q29udGVudC1EaXNwb3NpdGlvbiZxdW90OywgJnF1b3Q7YXR0YWNobWVudDsgZmlsZW5hbWU9RXBpc29kZS5tcDMmcXVvdDspOw0KDQogICAgICAgICAgICB1c2luZyAoV2ViQ2xpZW50IHdjID0gbmV3IFdlYkNsaWVudCgpKQ0KICAgICAgICAgICAgICAgIFJlc3BvbnNlLkJpbmFyeVdyaXRlKHdjLkRvd25sb2FkRGF0YShtYXRjaGVzWzBdLlZhbHVlKSk7DQoNCiAgICAgICAgICAgIFJlc3BvbnNlLkVuZCgpOw0KICAgICAgICB9DQp9DQo8L2NvZGU+DQo8L3ByZT4NCjxwPg0KCVRoZSBzY3JpcHQgd2FzIGJhc2VkIG9uIHRoZSA8c3Ryb25nPkFFLk5FVC5NYWlsIGxpYnJhcnk8L3N0cm9uZz4sIHdoaWNoJm5ic3A7PGEgaHJlZj0iaHR0cDovL2FuZHkuZWRpbmJvcm91Z2gub3JnLyIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJBbmR5IEVkaW5ib3JvdWdoJ3Mgd2Vic2l0ZSI+QW5keSBFZGluYm9yb3VnaDwvYT4mbmJzcDttYWRlJm5ic3A7ZnJlZSB0byB1c2UgYW5kIGl0IGlzIGF2YWlsYWJsZSBvbiBoaXMmbmJzcDs8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vYW5keWVkaW5ib3JvdWdoL2FlbmV0bWFpbCIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJDIyBQT1AvSU1BUCBNYWlsIENsaWVudCI+R2l0SHViPC9hPiZuYnNwO2FjY291bnQuPC9wPmQCBg9kFgQCAw8WAh4LXyFJdGVtQ291bnRmZAIHDw8WAh8AaGRkAgcPFgIfAGhkAgkPZBYCAgEPZBYKZg8WAh8CBUE8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvdHdpdHRlci5zdmcnIGFsdD0nTXkgVHdpdHRlciBwcm9maWxlJyAvPmQCAQ8WAh8CBUM8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvbGlua2VkaW4uc3ZnJyBhbHQ9J015IExpbmtlZEluIHByb2ZpbGUnIC8+ZAICDxYCHwIFQzxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9mYWNlYm9vay5zdmcnIGFsdD0nTXkgRmFjZWJvb2sgcHJvZmlsZScgLz5kAgMPFgIfAgVFPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL3BpbnRlcmVzdC5zdmcnIGFsdD0nTXkgUGludGVyZXN0IHByb2ZpbGUnIC8+ZAIEDxYCHwIFRTxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9pbnN0YWdyYW0uc3ZnJyBhbHQ9J015IEluc3RhZ3JhbSBwcm9maWxlJyAvPmQCCw9kFgQCAQ8PFgIfAGhkZAIDD2QWDGYPZBYCZg8WAh8CBQVBYm91dGQCAQ9kFgJmDxYCHwIFCEFydGljbGVzZAICD2QWAmYPFgIfAgUFQm9va3NkAgMPZBYCZg8WAh8CBQdDb250YWN0ZAIED2QWAmYPFgIfAgUIUlNTIGZlZWRkAgUPZBYCZg8WAh8CBQVMb2dpbmQCDw9kFgICBQ8WAh8DAg8WHmYPZBYCZg8VAwVib29rcw9mb250LXNpemU6MTEyJTsFQm9va3NkAgEPZBYCZg8VAxBkZWNpc2lvbi1mYXRpZ3VlD2ZvbnQtc2l6ZToxMTIlOxBEZWNpc2lvbiBGYXRpZ3VlZAICD2QWAmYPFQMEZGlldA9mb250LXNpemU6MTEyJTsERGlldGQCAw9kFgJmDxUDDmV4dHJlbWUtc2F2aW5nD2ZvbnQtc2l6ZToxMTklOw5FeHRyZW1lIFNhdmluZ2QCBA9kFgJmDxUDB2ZpbmFuY2UPZm9udC1zaXplOjExMiU7B0ZpbmFuY2VkAgUPZBYCZg8VAxZmaW5hbmNpYWwtaW5kZXBlbmRlbmNlD2ZvbnQtc2l6ZToxMjUlOxZGaW5hbmNpYWwgSW5kZXBlbmRlbmNlZAIGD2QWAmYPFQMHZml0bmVzcw9mb250LXNpemU6MTE5JTsHRml0bmVzc2QCBw9kFgJmDxUDBWdlYXJzD2ZvbnQtc2l6ZToxMTIlOwVHZWFyc2QCCA9kFgJmDxUDDWdlby1hcmJpdHJhZ2UPZm9udC1zaXplOjExMiU7DUdlbyBBcmJpdHJhZ2VkAgkPZBYCZg8VAwxnb2FsLXNldHRpbmcPZm9udC1zaXplOjExMiU7DEdvYWwgU2V0dGluZ2QCCg9kFgJmDxUDCW51dHJpdGlvbg9mb250LXNpemU6MTEyJTsJTnV0cml0aW9uZAILD2QWAmYPFQMRcGVyc29uYWwtYnJhbmRpbmcPZm9udC1zaXplOjExMiU7EVBlcnNvbmFsIEJyYW5kaW5nZAIMD2QWAmYPFQMUcGVyc29uYWwtZGV2ZWxvcG1lbnQPZm9udC1zaXplOjE1MCU7FFBlcnNvbmFsIERldmVsb3BtZW50ZAIND2QWAmYPFQMMcHJvZHVjdGl2aXR5D2ZvbnQtc2l6ZToxMjUlOwxQcm9kdWN0aXZpdHlkAg4PZBYCZg8VAw90aW1lLW1hbmFnZW1lbnQPZm9udC1zaXplOjEwNiU7D1RpbWUgTWFuYWdlbWVudGRk+dpMfZD5XDXqk4agQ3SQJc9LCIrWMazQFAuGepkYTWA=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResourcebd7d.js?d=60NHLgyriwaIxDY49sOyJoosR85E_8EBoHPuH8apHmhoztdyjrJJME7wLHYxt8bRE-HOjc8KEQA4Pz_NLHZK8iRlcBxoEIxqlKSNzP9Hs9E1&amp;t=638628208040000000" type="text/javascript"></script>
+
+
+<script src="../ScriptResource09fd.js?d=2CR6ki1th7q4t6Y-4h70c_FHdhDF-na1jzn6LpnU1MSRHPySmTlk2OYyuOyEcEdLAR2f75mxOhtnv8dyCn78AbyvF1FmRXoxXAyFvJs1SnNAc9VfT8AkLpL-El_mOWKV6esRdEU1mbg1rq9eGwyRfGZAuPwUUP1qolkfBsTX-xk1&amp;t=6df849d2" type="text/javascript"></script>
+<script src="../ScriptResource3c0a.js?d=XULVbsHDVLbz9U3XY3dNKjYVBPt4c7R_ZktYDXJ_Zx60ieLv6An0Xzl7Het_9Fy_In_smVeI0Pc5dONA2asvRZmieVw760RSqHbmH_l_5Q4sIABLtCdHnEzDVopo4mx-B6Nhb0lQqfEWhVQEekgZzma5IrR8LZvhzThsTn2RU2LpvBIciybh5-6AFlNDeyN00&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../ScriptResource7bd5.js?d=lNE7WyNZxdgCabFQylFyEpxCnJY-ewkkPbvG_2F8V6j0wOEy85gWtvBe-NUxW11DkjzDBEEZLqx_BeVKW7WhiWwGZN6Hcq3c9JoecT8S-ZBzXrunzISICFVPY0pdk_z1o2_TZ7mat0ahtKkBATtk5K3gXCBFYrdSp5VITKX_GzHbDuyUGj1daO73xD_aD5JuOHEeG7LchY_7JlSH7YupYg2&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E7E8FB5" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAeC7d+oHqG7+XAiHKis/mFbuPOyILX5UpRRDlZ/QmDnD4OGP6xOFxkspoAx7VEKhYZI9A/oOhbGhHWNFB0XTJD4lqCkJUt9nkERcjLfVJH88JVOVkz7HoPpIe9czLngs/oc5G8HfsWhbGlSMPs6ElIxcxssbehPwYF2kupw4RBQRPvAykoLS7MWxqmk0XdbEVM=" />
+</div>
+        <div id="body" class="col-sm-9">
+          <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sm', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+          
+<div id="ctl00_nt_pnlNotifications" role="alert">
+
+</div>
+          
+  <article class="panel">
+    <div class="panel-header">
+      <h1>Search Email Inbox with C#</h1>
+      <span class="panel-subtitle">
+        Posted on 
+        <time datetime="2014-03-27T17:23:00.000Z">
+          2014-03-27 17:23
+        </time>
+        [<a href='index.html' target="_self" title='Permalink to Search Email Inbox with C#'>Permalink</a>]
+      </span>
+    </div>
+    <div class="panel-body">
+      <p>
+	A few years ago I helped managing a <a href="http://magmaglobalgroove.com/" target="_blank" title="Visit MaGmA Global Radio">radio</a> and I needed a tool&mdash;an <em>ASP.NET</em> web page&mdash;for the periodical download of promo mixes. They were linked in some emails recognizable by a few keywords.</p>
+<p>
+	The following, is the stripped down <strong>C# snippet</strong> from the tool, it demonostrate how to perform both the <em>search inside the email&#39;s subject and body</em>, and the download, with the use of&nbsp;the <strong><a href="http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol" target="_blank" title="IMAP on wikipedia">IMAP</a></strong> protocol:</p>
+<pre>
+<code class="cs">using (ImapClient ic = new ImapClient(&quot;imap.gmail.com&quot;, &quot;gmail@gmail.com&quot;, &quot;mypassword&quot;, 
+    ImapClient.AuthMethods.Login, 993, true))
+{
+    ic.SelectMailbox(&quot;INBOX&quot;);
+    MailMessage[] mm = ic.GetMessages(0, 100, false); // retrieves the latest 100 messages
+
+    foreach (MailMessage m in mm)
+        if (((m.From.Address == &quot;foo@bar.com&quot;) || (m.Body.ToLower().Contains(&quot;episode&quot;)))
+        {
+            Regex regx = new Regex(&quot;(http|https)://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@
+\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\&#39;\\,]*)?&quot;, 
+                RegexOptions.IgnoreCase);
+            MatchCollection matches = regx.Matches(m.Body);
+
+            Response.ClearContent();
+            Response.ContentType = &quot;audio/mpeg3&quot;;
+            Response.AddHeader(&quot;Content-Disposition&quot;, &quot;attachment; filename=Episode.mp3&quot;);
+
+            using (WebClient wc = new WebClient())
+                Response.BinaryWrite(wc.DownloadData(matches[0].Value));
+
+            Response.End();
+        }
+}
+</code>
+</pre>
+<p>
+	The script was based on the <strong>AE.NET.Mail library</strong>, which&nbsp;<a href="http://andy.edinborough.org/" target="_blank" title="Andy Edinborough's website">Andy Edinborough</a>&nbsp;made&nbsp;free to use and it is available on his&nbsp;<a href="https://github.com/andyedinborough/aenetmail" target="_blank" title="C# POP/IMAP Mail Client">GitHub</a>&nbsp;account.</p>
+    </div>
+    <div class="categories">
+      Categories:
+      
+    </div>
+  </article>
+  <div class="panel-footer">
+    Share on:
+    <a href='https://twitter.com/intent/tweet?text=Search%20Email%20Inbox%20with%20C#&url=http%3a%2f%2fandreaazzola.com%2fsearch-email-inbox-csharp%2f' target="_blank" title="Share it on Twitter">Twitter</a>,&nbsp;
+    <a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fsearch-email-inbox-csharp%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+    <a rel="author" href="../index.html"></a>
+  </div>
+
+  
+  
+  
+<div class="panel">
+    <h3>Comments</h3>
+    <div class="action">
+        <a id="ctl00_cphBody_cmm_lbtNewComment1" class="action" href="javascript:__doPostBack(&#39;ctl00$cphBody$cmm$lbtNewComment1&#39;,&#39;&#39;)">Post a new comment</a>
+    </div>
+    <div class="panel-body" style="background-color:inherit; border-width:0px; padding:0px;">
+        
+        
+    </div>
+    <div class="action">
+        
+    </div>
+</div>
+
+  
+
+        </div>
+        <div id="menu1" class="col-sm-3 blog-sidebar">
+          
+<div class="sidebar-module sidebar-module-inset block avatar">
+    <img src="../images/AndreaAzzola_Website200x200.png" height="180" width="180" alt="Author's portrait" />
+</div>
+          
+<nav class="sidebar-module sidebar-module-inset block about">
+  <div id="icons">
+	<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" text="Twitter" title="Stay up to date with my tweets"><img src='../images/social/twitter.svg' alt='My Twitter profile' /></a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" text="LinkedIn" title="Find me on LinkedIn"><img src='../images/social/linkedin.svg' alt='My LinkedIn profile' /></a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" text="Facebook" title="Get in touch with Facebook"><img src='../images/social/facebook.svg' alt='My Facebook profile' /></a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" text="Pinterest" title="I&#39;m on Pinterest!"><img src='../images/social/pinterest.svg' alt='My Pinterest profile' /></a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" text="Instagram" title="My Instagram profile"><img src='../images/social/instagram.svg' alt='My Instagram profile' /></a>
+</div>
+  
+</nav>
+          
+<div class="sidebar-module">
+    
+    <ul id="ctl00_stp1_links" class="list-group"><li><a style="font-weight:bold" href="../about/index.html" text="About" title="Short summary">About</a></li><li><a style="font-weight:bold" href="../articles/index.html" text="Articles" title="Collection of all articles in this website">Articles</a></li><li><a style="font-weight:bold" href="../books/index.html" text="Books" title="My book recommendations">Books</a></li><li><a style="font-weight:bold" href="../contact/index.html" text="Contact" title="Short summary">Contact</a></li><li><a href="../feed/index.html" text="RSS feed" title="Subscribe to this blog">RSS feed</a></li><li><a href="../login/index.html" text="Login" title="Login">Login</a></li></ul>
+    <ul class="list-group">
+        <li><a id="ctl00_stp1_lbLanguageEN" class="lang-sm lang-lbl" lang="en" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageEN&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+        <li><a id="ctl00_stp1_lbLanguageIT" class="lang-sm lang-lbl" lang="it" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageIT&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+    </ul>
+    <br />
+</div>
+          
+
+<nav class="sidebar-module">
+    <h4>Newsletter</h4>
+    <input name="ctl00$newsletter$tbFirstName" type="text" id="ctl00_newsletter_tbFirstName" placeholder="First name" style="width:60%;" /><br />
+    <input name="ctl00$newsletter$tbEmail" type="text" id="ctl00_newsletter_tbEmail" placeholder="Email" style="width:90%;" /><br />
+
+    <input type="submit" name="ctl00$newsletter$btSubmit" value="Subscribe" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$newsletter$btSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_newsletter_btSubmit" />
+    <span id="ctl00_newsletter_rfvEmail" style="color:Red;visibility:hidden;">*</span>
+    <span id="ctl00_newsletter_revEmail" style="color:Red;visibility:hidden;">Invalid</span>
+</nav>
+
+          
+          
+          
+
+<div class="sidebar-module">
+  <h4>
+    Categories
+    <a href="../category.html" title="All categories">
+      (All)
+    </a>
+  </h4>
+  
+      <a href="../category/books/index.html" style='font-size:112%;' class="category">
+        Books
+      </a>
+    
+      <a href="../category/decision-fatigue/index.html" style='font-size:112%;' class="category">
+        Decision Fatigue
+      </a>
+    
+      <a href="../category/diet/index.html" style='font-size:112%;' class="category">
+        Diet
+      </a>
+    
+      <a href="../category/extreme-saving/index.html" style='font-size:119%;' class="category">
+        Extreme Saving
+      </a>
+    
+      <a href="../category/finance/index.html" style='font-size:112%;' class="category">
+        Finance
+      </a>
+    
+      <a href="../category/financial-independence/index.html" style='font-size:125%;' class="category">
+        Financial Independence
+      </a>
+    
+      <a href="../category/fitness/index.html" style='font-size:119%;' class="category">
+        Fitness
+      </a>
+    
+      <a href="../category/gears/index.html" style='font-size:112%;' class="category">
+        Gears
+      </a>
+    
+      <a href="../category/geo-arbitrage/index.html" style='font-size:112%;' class="category">
+        Geo Arbitrage
+      </a>
+    
+      <a href="../category/goal-setting/index.html" style='font-size:112%;' class="category">
+        Goal Setting
+      </a>
+    
+      <a href="../category/nutrition/index.html" style='font-size:112%;' class="category">
+        Nutrition
+      </a>
+    
+      <a href="../category/personal-branding/index.html" style='font-size:112%;' class="category">
+        Personal Branding
+      </a>
+    
+      <a href="../category/personal-development/index.html" style='font-size:150%;' class="category">
+        Personal Development
+      </a>
+    
+      <a href="../category/productivity/index.html" style='font-size:125%;' class="category">
+        Productivity
+      </a>
+    
+      <a href="../category/time-management/index.html" style='font-size:106%;' class="category">
+        Time Management
+      </a>
+    
+</div>
+
+          
+          
+        </div>
+      
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_newsletter_rfvEmail"), document.getElementById("ctl00_newsletter_revEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_newsletter_rfvEmail = document.all ? document.all["ctl00_newsletter_rfvEmail"] : document.getElementById("ctl00_newsletter_rfvEmail");
+ctl00_newsletter_rfvEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_rfvEmail.validationGroup = "Newsletter";
+ctl00_newsletter_rfvEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_newsletter_rfvEmail.initialvalue = "";
+var ctl00_newsletter_revEmail = document.all ? document.all["ctl00_newsletter_revEmail"] : document.getElementById("ctl00_newsletter_revEmail");
+ctl00_newsletter_revEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_revEmail.errormessage = "Invalid";
+ctl00_newsletter_revEmail.validationGroup = "Newsletter";
+ctl00_newsletter_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_newsletter_revEmail.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ctl00_newsletter_rfvEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_rfvEmail'));
+}
+
+document.getElementById('ctl00_newsletter_revEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_revEmail'));
+}
+//]]>
+</script>
+</form>
+    </div>
+    <footer>
+      <p>&copy; Copyright 2008-2025 - Andrea Azzola</p>
+    </footer>
+  </div>
+  
+  <script src="../Scripts/async.js"></script>
+  <script src="../Scripts/cookiechoices.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C3P9XZGVE9');
+
+    
+    document.addEventListener('DOMContentLoaded', function (event) {
+      cookieChoices.showCookieConsentBar('This website use cookies to improve the user experience. By continuing I\'ll assume that you\'re happy with it',
+        'Got it', null /*learn more*/, null/*url*/);
+    });
+  </script>
+</body>
+
+<!-- Mirrored from andreaazzola.com/search-email-inbox-csharp/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:30 GMT -->
+</html>

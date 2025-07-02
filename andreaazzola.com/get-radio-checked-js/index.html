@@ -1,0 +1,486 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from andreaazzola.com/get-radio-checked-js/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" type="image/png" href="../images/favicon.png" />
+
+  <!-- JavaScript -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8XKTL2Q');</script>
+  <!-- End Google Tag Manager -->
+  <script src="../../code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="http://load.sumome.com/" data-sumo-site-id="0bcf4270faa767709f6d2e505d84950ff777ed47fb7c0e004b02978a4d6f57b4" async="async"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /><link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="../App_Themes/Ichigo/languages.min.css" rel="stylesheet" />
+  <!-- Heads -->
+  
+  <link rel="alternate" hreflang="en-US" href="index.html" />
+  <meta name="description" content="The getElementsByName method allows you to obtain a collection of controls from the (X)HTML DOM, by specifying the common name value" />
+  <link rel="canonical" href="index.html" />
+  
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Get and Set Radio controls checked value with JavaScript" />
+  <meta property="og:description" content="The getElementsByName method allows you to obtain a collection of controls from the (X)HTML DOM, by specifying the common name value" />
+  
+  <meta property="og:url" content="http://andreaazzola.com/get-radio-checked-js/" />
+  <meta property="article:published_time" content="2009-03-20T21:25:00Z" />
+  <meta property="og:site_name" content="Andrea Azzola" />
+
+  
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://andreaazzola.com/get-radio-checked-js/"
+    },
+    "headline": "Get and Set Radio controls checked value with JavaScript",
+
+    "datePublished": "2009-03-20T21:25:00.000Z",
+    "dateModified": "2014-06-10T18:45:29.077Z",
+    "author": {
+      "@type": "Person",
+      "name": "Andrea Azzola"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Andrea Azzola",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://andreaazzola.com/Images/AndreaAzzola_Website200x200.png",
+        "width": 200,
+        "height": 200
+      }
+    },
+    "description": "The getElementsByName method allows you to obtain a collection of controls from the (X)HTML DOM, by specifying the common name value",
+    "url": "http://andreaazzola.com/get-radio-checked-js/"
+  }
+  </script>
+<link href="../App_Themes/Ichigo/languages.min.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Ichigo/StyleSheet.css" type="text/css" rel="stylesheet" /><title>
+	Get and Set Radio controls checked value with JavaScript - Andrea Azzola
+</title></head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8XKTL2Q"
+      height="0" width="0" style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <header>
+      <span id="title">
+        <a href="../index.html" title="Back to the Home Page">
+          Andrea Azzola
+        </a>
+      </span>
+      <p id="ctl00_subtitle" class="subtitle">Tips and Techniques for Lifestyle Design</p>
+    </header>
+    <div id="wrapper" class="row">
+      <form name="aspnetForm" method="post" action="#" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyNDY0NzQ1MQ9kFgJmD2QWCGYPZBYCAgoPZBYCAgEPFgIeB1Zpc2libGVoZAIBDxYCHgRUZXh0BQ1BbmRyZWEgQXp6b2xhZAICDxYCHglpbm5lcmh0bWwFKFRpcHMgYW5kIFRlY2huaXF1ZXMgZm9yIExpZmVzdHlsZSBEZXNpZ25kAgMPZBYKAgMPZBYCAgIPDxYCHwBnZGQCBQ9kFghmDxYCHwEFOEdldCBhbmQgU2V0IFJhZGlvIGNvbnRyb2xzIGNoZWNrZWQgdmFsdWUgd2l0aCBKYXZhU2NyaXB0ZAIBDxYCHwEF2Cg8cD4NCglTdXBwb3NlIHlvdSBoYXZlIHRoZSBmb2xsb3dpbmcgPGI+cmFkaW88L2I+IGNvbnRyb2xzOjxiciAvPg0KCTxiciAvPg0KCTwhLS0gY29kZSBmb3JtYXR0ZWQgYnkgaHR0cDovL21hbm9saS5uZXQvY3NoYXJwZm9ybWF0LyAtLT4NCgk8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KLmNzaGFycGNvZGUsIC5jc2hhcnBjb2RlIHByZSB7IGZvbnQtc2l6ZTogc21hbGw7IGNvbG9yOiBibGFjazsgZm9udC1mYW1pbHk6IENvbnNvbGFzLCAiQ291cmllciBOZXciLCBDb3VyaWVyLCBNb25vc3BhY2U7IGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7IC8qd2hpdGUtc3BhY2U6IHByZTsqLyB9DQouY3NoYXJwY29kZSBwcmUgeyBtYXJnaW46IDBlbTsgfQ0KLmNzaGFycGNvZGUgLnJlbSB7IGNvbG9yOiAjMDA4MDAwOyB9DQouY3NoYXJwY29kZSAua3dyZCB7IGNvbG9yOiAjMDAwMGZmOyB9DQouY3NoYXJwY29kZSAuc3RyIHsgY29sb3I6ICMwMDYwODA7IH0NCi5jc2hhcnBjb2RlIC5vcCB7IGNvbG9yOiAjMDAwMGMwOyB9DQouY3NoYXJwY29kZSAucHJlcHJvYyB7IGNvbG9yOiAjY2M2NjMzOyB9DQouY3NoYXJwY29kZSAuYXNwIHsgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmYwMDsgfQ0KLmNzaGFycGNvZGUgLmh0bWwgeyBjb2xvcjogIzgwMDAwMDsgfQ0KLmNzaGFycGNvZGUgLmF0dHIgeyBjb2xvcjogI2ZmMDAwMDsgfQ0KLmNzaGFycGNvZGUgLmFsdCB7IGJhY2tncm91bmQtY29sb3I6ICNmNGY0ZjQ7IHdpZHRoOiAxMDAlOyBtYXJnaW46IDBlbTsgfQ0KLmNzaGFycGNvZGUgLmxudW0geyBjb2xvcjogIzYwNjA2MDsgfQ0KI291dCB7Zm9udDogbm9ybWFsIDEwcHQgQ291cmllciwiQ291cmllciBOZXciLG1vbm9zcGFjZTsgYmFja2dyb3VuZDogI2Y1ZjVmNTt9DQoua2V5d29yZCB7Y29sb3I6IzAwMDBmZjt9DQoub2JqZWN0IHtjb2xvcjojZmYwMGZmO30NCi5saXRlcmFsIHtjb2xvcjojY2M5OTY2O30NCi5jb21tZW50IHtjb2xvcjojOTk5OTk5O30JPC9zdHlsZT4NCjwvcD4NCjxkaXYgY2xhc3M9ImNzaGFycGNvZGUiPg0KCTxwcmU+DQo8c3BhbiBjbGFzcz0ibG51bSI+ICAgMTogIDwvc3Bhbj48c3BhbiBjbGFzcz0ia3dyZCI+Jmx0Ozwvc3Bhbj48c3BhbiBjbGFzcz0iaHRtbCI+aW5wdXQ8L3NwYW4+IDxzcGFuIGNsYXNzPSJhdHRyIj5uYW1lPC9zcGFuPjxzcGFuIGNsYXNzPSJrd3JkIj49JnF1b3Q7Qm9vayZxdW90Ozwvc3Bhbj4gPHNwYW4gY2xhc3M9ImF0dHIiPnR5cGU8L3NwYW4+PHNwYW4gY2xhc3M9Imt3cmQiPj0mcXVvdDtyYWRpbyZxdW90Ozwvc3Bhbj4gPHNwYW4gY2xhc3M9ImF0dHIiPnZhbHVlPC9zcGFuPjxzcGFuIGNsYXNzPSJrd3JkIj49JnF1b3Q7YXNwJnF1b3Q7PC9zcGFuPiA8c3BhbiBjbGFzcz0iYXR0ciI+Y2hlY2tlZDwvc3Bhbj48c3BhbiBjbGFzcz0ia3dyZCI+PSZxdW90O3RydWUmcXVvdDs8L3NwYW4+PHNwYW4gY2xhc3M9Imt3cmQiPiZndDs8L3NwYW4+QVNQIC5ORVQ8c3BhbiBjbGFzcz0ia3dyZCI+Jmx0Oy88L3NwYW4+PHNwYW4gY2xhc3M9Imh0bWwiPmlucHV0PC9zcGFuPjxzcGFuIGNsYXNzPSJrd3JkIj4mZ3Q7Jmx0Ozwvc3Bhbj48c3BhbiBjbGFzcz0iaHRtbCI+YnI8L3NwYW4+IDxzcGFuIGNsYXNzPSJrd3JkIj4vJmd0Ozwvc3Bhbj48L3ByZT4NCgk8cHJlPg0KPHNwYW4gY2xhc3M9ImxudW0iPiAgIDI6ICA8L3NwYW4+PHNwYW4gY2xhc3M9Imt3cmQiPiZsdDs8L3NwYW4+PHNwYW4gY2xhc3M9Imh0bWwiPmlucHV0PC9zcGFuPiA8c3BhbiBjbGFzcz0iYXR0ciI+bmFtZTwvc3Bhbj48c3BhbiBjbGFzcz0ia3dyZCI+PSZxdW90O0Jvb2smcXVvdDs8L3NwYW4+IDxzcGFuIGNsYXNzPSJhdHRyIj50eXBlPC9zcGFuPjxzcGFuIGNsYXNzPSJrd3JkIj49JnF1b3Q7cmFkaW8mcXVvdDs8L3NwYW4+IDxzcGFuIGNsYXNzPSJhdHRyIj52YWx1ZTwvc3Bhbj48c3BhbiBjbGFzcz0ia3dyZCI+PSZxdW90O3djZiZxdW90Ozwvc3Bhbj4gPHNwYW4gY2xhc3M9Imt3cmQiPiZndDs8L3NwYW4+V2luZG93cyBQcmVzZW50YXRpb24gRm91bmRhdGlvbjxzcGFuIGNsYXNzPSJrd3JkIj4mbHQ7Lzwvc3Bhbj48c3BhbiBjbGFzcz0iaHRtbCI+aW5wdXQ8L3NwYW4+PHNwYW4gY2xhc3M9Imt3cmQiPiZndDsmbHQ7PC9zcGFuPjxzcGFuIGNsYXNzPSJodG1sIj5icjwvc3Bhbj4gPHNwYW4gY2xhc3M9Imt3cmQiPi8mZ3Q7PC9zcGFuPjwvcHJlPg0KCTxwcmU+DQo8c3BhbiBjbGFzcz0ibG51bSI+ICAgMzogIDwvc3Bhbj48c3BhbiBjbGFzcz0ia3dyZCI+Jmx0Ozwvc3Bhbj48c3BhbiBjbGFzcz0iaHRtbCI+aW5wdXQ8L3NwYW4+IDxzcGFuIGNsYXNzPSJhdHRyIj5uYW1lPC9zcGFuPjxzcGFuIGNsYXNzPSJrd3JkIj49JnF1b3Q7Qm9vayZxdW90Ozwvc3Bhbj4gPHNwYW4gY2xhc3M9ImF0dHIiPnR5cGU8L3NwYW4+PHNwYW4gY2xhc3M9Imt3cmQiPj0mcXVvdDtyYWRpbyZxdW90Ozwvc3Bhbj4gPHNwYW4gY2xhc3M9ImF0dHIiPnZhbHVlPC9zcGFuPjxzcGFuIGNsYXNzPSJrd3JkIj49JnF1b3Q7c2xnJnF1b3Q7PC9zcGFuPiA8c3BhbiBjbGFzcz0ia3dyZCI+Jmd0Ozwvc3Bhbj5TaWx2ZXJsaWdodCAyLjA8c3BhbiBjbGFzcz0ia3dyZCI+Jmx0Oy88L3NwYW4+PHNwYW4gY2xhc3M9Imh0bWwiPmlucHV0PC9zcGFuPjxzcGFuIGNsYXNzPSJrd3JkIj4mZ3Q7Jmx0Ozwvc3Bhbj48c3BhbiBjbGFzcz0iaHRtbCI+YnI8L3NwYW4+IDxzcGFuIGNsYXNzPSJrd3JkIj4vJmd0Ozwvc3Bhbj48L3ByZT4NCjwvZGl2Pg0KPHA+DQoJPGJyIC8+DQoJPGI+SG93IGRvIHlvdSBnZXQgdGhlIHNlbGVjdGVkIHZhbHVlIHZpYSBKYXZhU2NyaXB0PzwvYj48YnIgLz4NCglBcyB5b3UgY2FuIHNlZSBpbiB0aGUgZXhhbXBsZSwgcmFkaW8gY29udHJvbHMgYXJlIGRlY2xhcmVkIGluIGEgcGFydGljdWxhciB3YXksIHRoZXJlIGFyZSBubyA8Yj5pZDwvYj5zLCBpbnN0ZWFkIHRoZXJlIGFyZSA8Yj5uYW1lPC9iPnMgdGhhdCBpZGVudGlmaWVzIHJlbGF0ZWQgPGI+cmFkaW88L2I+cy48YnIgLz4NCglZb3Ugc2hvdWxkIGJlIGF3YXJlIHRoYXQgPGk+Qm9vazwvaT4gaXMgbm90IHRyZWF0ZWQgYXMgYW4gdW5pcXVlIGNvbnRyb2wgYnkgdGhlIGJyb3dzZXImIzM5O3MgZW5naW5lLCBiZWNhdXNlIGVhY2ggcmFkaW8gY29udHJvbCBjb3JyZXNwb25kIHRvIG9uZSBkaWZmZXJlbnQgZWxlbWVudCBpbiB0aGUgcGFnZS48YnIgLz4NCgk8YnIgLz4NCgk8Yj5UaGUgPHU+Z2V0RWxlbWVudHNCeU5hbWU8L3U+IG1ldGhvZDwvYj48YnIgLz4NCgk8YSBocmVmPSJodHRwOi8vd3d3LnczLm9yZy9UUi9ET00tTGV2ZWwtMi1IVE1ML2h0bWwuaHRtbCNJRC03MTU1NTI1OSIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJXM0MgUmVjY29tZW5kYXRpb24iPlRoaXMgbWV0aG9kPC9hPiBhbGxvd3MgeW91IHRvIG9idGFpbiBhIGNvbGxlY3Rpb24gb2YgY29udHJvbHMgZnJvbSB0aGUgKFgpSFRNTCA8YSBocmVmPSJodHRwOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL0RvY3VtZW50X09iamVjdF9Nb2RlbCIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJEb2N1bWVudCBPYmplY3QgTW9kZWwiPkRPTTwvYT4sIGJ5IHNwZWNpZnlpbmcgdGhlIGNvbW1vbiA8Yj5uYW1lPC9iPiB2YWx1ZS48YnIgLz4NCglOb3cgd2UgY2FuIHdyaXRlIHRoZSBmb2xsb3dpbmcgY29kZSB0byBnZXQgb3Igc2V0IHRoZSA8Yj5jaGVja2VkPC9iPiB2YWx1ZTo8L3A+DQo8cD4NCgkmbmJzcDs8L3A+DQo8cD4NCgkmbmJzcDs8L3A+DQo8ZGl2IGNsYXNzPSJjc2hhcnBjb2RlIj4NCgk8cHJlPg0KPHNwYW4gY2xhc3M9ImxudW0iPiAgIDE6ICA8L3NwYW4+ICAgIGZ1bmN0aW9uIGdldFJhZGlvKG5hbWUpIHs8L3ByZT4NCgk8cHJlPg0KPHNwYW4gY2xhc3M9ImxudW0iPiAgIDI6ICA8L3NwYW4+ICAgICAgICB2YXIgcmFkaW9zID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeU5hbWUobmFtZSk7PC9wcmU+DQoJPHByZT4NCjxzcGFuIGNsYXNzPSJsbnVtIj4gICAzOiAgPC9zcGFuPiZuYnNwOzwvcHJlPg0KCTxwcmU+DQo8c3BhbiBjbGFzcz0ibG51bSI+ICAgNDogIDwvc3Bhbj4gICAgICAgIGZvciAodmFyIGkgPSAwOyBpICZsdDsgcmFkaW9zLmxlbmd0aDsgaSsrKSB7PC9wcmU+DQoJPHByZT4NCjxzcGFuIGNsYXNzPSJsbnVtIj4gICA1OiAgPC9zcGFuPiAgICAgICAgICAgIGlmIChyYWRpb3NbaV0uY2hlY2tlZCkgezwvcHJlPg0KCTxwcmU+DQo8c3BhbiBjbGFzcz0ibG51bSI+ICAgNjogIDwvc3Bhbj4gICAgICAgICAgICAgICAgcmV0dXJuIHJhZGlvc1tpXS52YWx1ZTs8L3ByZT4NCgk8cHJlPg0KPHNwYW4gY2xhc3M9ImxudW0iPiAgIDc6ICA8L3NwYW4+ICAgICAgICAgICAgfTwvcHJlPg0KCTxwcmU+DQo8c3BhbiBjbGFzcz0ibG51bSI+ICAgODogIDwvc3Bhbj4gICAgICAgIH08L3ByZT4NCgk8cHJlPg0KPHNwYW4gY2xhc3M9ImxudW0iPiAgIDk6ICA8L3NwYW4+Jm5ic3A7PC9wcmU+DQoJPHByZT4NCjxzcGFuIGNsYXNzPSJsbnVtIj4gIDEwOiAgPC9zcGFuPiAgICAgICAgcmV0dXJuIG51bGw7PC9wcmU+DQoJPHByZT4NCjxzcGFuIGNsYXNzPSJsbnVtIj4gIDExOiAgPC9zcGFuPiAgICB9PC9wcmU+DQoJPHByZT4NCjxzcGFuIGNsYXNzPSJsbnVtIj4gIDEyOiAgPC9zcGFuPiZuYnNwOzwvcHJlPg0KCTxwcmU+DQo8c3BhbiBjbGFzcz0ibG51bSI+ICAxMzogIDwvc3Bhbj4gICAgZnVuY3Rpb24gc2V0UmFkaW8obmFtZSwgdmFsKSB7PC9wcmU+DQoJPHByZT4NCjxzcGFuIGNsYXNzPSJsbnVtIj4gIDE0OiAgPC9zcGFuPiAgICAgICAgdmFyIHJhZGlvcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlOYW1lKG5hbWUpOzwvcHJlPg0KCTxwcmU+DQo8c3BhbiBjbGFzcz0ibG51bSI+ICAxNTogIDwvc3Bhbj4mbmJzcDs8L3ByZT4NCgk8cHJlPg0KPHNwYW4gY2xhc3M9ImxudW0iPiAgMTY6ICA8L3NwYW4+ICAgICAgICBmb3IgKHZhciBpID0gMDsgaSAmbHQ7IHJhZGlvcy5sZW5ndGg7IGkrKykgezwvcHJlPg0KCTxwcmU+DQo8c3BhbiBjbGFzcz0ibG51bSI+ICAxNzogIDwvc3Bhbj4gICAgICAgICAgICByYWRpb3NbaV0uY2hlY2tlZCA9IChyYWRpb3NbaV0udmFsdWUgPT0gdmFsKTs8L3ByZT4NCgk8cHJlPg0KPHNwYW4gY2xhc3M9ImxudW0iPiAgMTg6ICA8L3NwYW4+ICAgICAgICB9PC9wcmU+DQoJPHByZT4NCjxzcGFuIGNsYXNzPSJsbnVtIj4gIDE5OiAgPC9zcGFuPiAgICB9PC9wcmU+DQo8L2Rpdj4NCjxwPg0KCSZuYnNwOzwvcD4NCjxwPg0KCSZuYnNwOzwvcD5kAgYPZBYEAgMPFgIeC18hSXRlbUNvdW50AgEWAmYPZBYGAgEPDxYCHghJbWFnZVVybAU/aHR0cDovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2Q0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlZGQCAg8VAQVOaWNlIWQCAw8PFgIfAQUGRmxhdmlvZGQCBw8PFgIfAGhkZAIHDxYCHwBoZAIJD2QWAgIBD2QWCmYPFgIfAgVBPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL3R3aXR0ZXIuc3ZnJyBhbHQ9J015IFR3aXR0ZXIgcHJvZmlsZScgLz5kAgEPFgIfAgVDPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL2xpbmtlZGluLnN2ZycgYWx0PSdNeSBMaW5rZWRJbiBwcm9maWxlJyAvPmQCAg8WAh8CBUM8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvZmFjZWJvb2suc3ZnJyBhbHQ9J015IEZhY2Vib29rIHByb2ZpbGUnIC8+ZAIDDxYCHwIFRTxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9waW50ZXJlc3Quc3ZnJyBhbHQ9J015IFBpbnRlcmVzdCBwcm9maWxlJyAvPmQCBA8WAh8CBUU8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvaW5zdGFncmFtLnN2ZycgYWx0PSdNeSBJbnN0YWdyYW0gcHJvZmlsZScgLz5kAgsPZBYEAgEPDxYCHwBoZGQCAw9kFgxmD2QWAmYPFgIfAgUFQWJvdXRkAgEPZBYCZg8WAh8CBQhBcnRpY2xlc2QCAg9kFgJmDxYCHwIFBUJvb2tzZAIDD2QWAmYPFgIfAgUHQ29udGFjdGQCBA9kFgJmDxYCHwIFCFJTUyBmZWVkZAIFD2QWAmYPFgIfAgUFTG9naW5kAg8PZBYCAgUPFgIfAwIPFh5mD2QWAmYPFQMFYm9va3MPZm9udC1zaXplOjExMiU7BUJvb2tzZAIBD2QWAmYPFQMQZGVjaXNpb24tZmF0aWd1ZQ9mb250LXNpemU6MTEyJTsQRGVjaXNpb24gRmF0aWd1ZWQCAg9kFgJmDxUDBGRpZXQPZm9udC1zaXplOjExMiU7BERpZXRkAgMPZBYCZg8VAw5leHRyZW1lLXNhdmluZw9mb250LXNpemU6MTE5JTsORXh0cmVtZSBTYXZpbmdkAgQPZBYCZg8VAwdmaW5hbmNlD2ZvbnQtc2l6ZToxMTIlOwdGaW5hbmNlZAIFD2QWAmYPFQMWZmluYW5jaWFsLWluZGVwZW5kZW5jZQ9mb250LXNpemU6MTI1JTsWRmluYW5jaWFsIEluZGVwZW5kZW5jZWQCBg9kFgJmDxUDB2ZpdG5lc3MPZm9udC1zaXplOjExOSU7B0ZpdG5lc3NkAgcPZBYCZg8VAwVnZWFycw9mb250LXNpemU6MTEyJTsFR2VhcnNkAggPZBYCZg8VAw1nZW8tYXJiaXRyYWdlD2ZvbnQtc2l6ZToxMTIlOw1HZW8gQXJiaXRyYWdlZAIJD2QWAmYPFQMMZ29hbC1zZXR0aW5nD2ZvbnQtc2l6ZToxMTIlOwxHb2FsIFNldHRpbmdkAgoPZBYCZg8VAwludXRyaXRpb24PZm9udC1zaXplOjExMiU7CU51dHJpdGlvbmQCCw9kFgJmDxUDEXBlcnNvbmFsLWJyYW5kaW5nD2ZvbnQtc2l6ZToxMTIlOxFQZXJzb25hbCBCcmFuZGluZ2QCDA9kFgJmDxUDFHBlcnNvbmFsLWRldmVsb3BtZW50D2ZvbnQtc2l6ZToxNTAlOxRQZXJzb25hbCBEZXZlbG9wbWVudGQCDQ9kFgJmDxUDDHByb2R1Y3Rpdml0eQ9mb250LXNpemU6MTI1JTsMUHJvZHVjdGl2aXR5ZAIOD2QWAmYPFQMPdGltZS1tYW5hZ2VtZW50D2ZvbnQtc2l6ZToxMDYlOw9UaW1lIE1hbmFnZW1lbnRkZHEWggyLTboroPE5tVQumjta6VIhFoT19BiROzugMpeV" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResourcebd7d.js?d=60NHLgyriwaIxDY49sOyJoosR85E_8EBoHPuH8apHmhoztdyjrJJME7wLHYxt8bRE-HOjc8KEQA4Pz_NLHZK8iRlcBxoEIxqlKSNzP9Hs9E1&amp;t=638628208040000000" type="text/javascript"></script>
+
+
+<script src="../ScriptResource09fd.js?d=2CR6ki1th7q4t6Y-4h70c_FHdhDF-na1jzn6LpnU1MSRHPySmTlk2OYyuOyEcEdLAR2f75mxOhtnv8dyCn78AbyvF1FmRXoxXAyFvJs1SnNAc9VfT8AkLpL-El_mOWKV6esRdEU1mbg1rq9eGwyRfGZAuPwUUP1qolkfBsTX-xk1&amp;t=6df849d2" type="text/javascript"></script>
+<script src="../ScriptResource3c0a.js?d=XULVbsHDVLbz9U3XY3dNKjYVBPt4c7R_ZktYDXJ_Zx60ieLv6An0Xzl7Het_9Fy_In_smVeI0Pc5dONA2asvRZmieVw760RSqHbmH_l_5Q4sIABLtCdHnEzDVopo4mx-B6Nhb0lQqfEWhVQEekgZzma5IrR8LZvhzThsTn2RU2LpvBIciybh5-6AFlNDeyN00&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../ScriptResource7bd5.js?d=lNE7WyNZxdgCabFQylFyEpxCnJY-ewkkPbvG_2F8V6j0wOEy85gWtvBe-NUxW11DkjzDBEEZLqx_BeVKW7WhiWwGZN6Hcq3c9JoecT8S-ZBzXrunzISICFVPY0pdk_z1o2_TZ7mat0ahtKkBATtk5K3gXCBFYrdSp5VITKX_GzHbDuyUGj1daO73xD_aD5JuOHEeG7LchY_7JlSH7YupYg2&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E7E8FB5" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAevT02vqMjbnyw6mbVeHzJUuPOyILX5UpRRDlZ/QmDnD4OGP6xOFxkspoAx7VEKhYZI9A/oOhbGhHWNFB0XTJD4lqCkJUt9nkERcjLfVJH88JVOVkz7HoPpIe9czLngs/oc5G8HfsWhbGlSMPs6ElIxTCJaiTUpfSYwSdg9ftmIHU89FO1MHOhAeXf+Dns2Adc=" />
+</div>
+        <div id="body" class="col-sm-9">
+          <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sm', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+          
+<div id="ctl00_nt_pnlNotifications" role="alert">
+
+</div>
+          
+  <article class="panel">
+    <div class="panel-header">
+      <h1>Get and Set Radio controls checked value with JavaScript</h1>
+      <span class="panel-subtitle">
+        Posted on 
+        <time datetime="2009-03-20T21:25:00.000Z">
+          2009-03-20 21:25
+        </time>
+        [<a href='index.html' target="_self" title='Permalink to Get and Set Radio controls checked value with JavaScript'>Permalink</a>]
+      </span>
+    </div>
+    <div class="panel-body">
+      <p>
+	Suppose you have the following <b>radio</b> controls:<br />
+	<br />
+	<!-- code formatted by http://manoli.net/csharpformat/ -->
+	<style type="text/css">
+.csharpcode, .csharpcode pre { font-size: small; color: black; font-family: Consolas, "Courier New", Courier, Monospace; background-color: #ffffff; /*white-space: pre;*/ }
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt { background-color: #f4f4f4; width: 100%; margin: 0em; }
+.csharpcode .lnum { color: #606060; }
+#out {font: normal 10pt Courier,"Courier New",monospace; background: #f5f5f5;}
+.keyword {color:#0000ff;}
+.object {color:#ff00ff;}
+.literal {color:#cc9966;}
+.comment {color:#999999;}	</style>
+</p>
+<div class="csharpcode">
+	<pre>
+<span class="lnum">   1:  </span><span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">name</span><span class="kwrd">=&quot;Book&quot;</span> <span class="attr">type</span><span class="kwrd">=&quot;radio&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;asp&quot;</span> <span class="attr">checked</span><span class="kwrd">=&quot;true&quot;</span><span class="kwrd">&gt;</span>ASP .NET<span class="kwrd">&lt;/</span><span class="html">input</span><span class="kwrd">&gt;&lt;</span><span class="html">br</span> <span class="kwrd">/&gt;</span></pre>
+	<pre>
+<span class="lnum">   2:  </span><span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">name</span><span class="kwrd">=&quot;Book&quot;</span> <span class="attr">type</span><span class="kwrd">=&quot;radio&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;wcf&quot;</span> <span class="kwrd">&gt;</span>Windows Presentation Foundation<span class="kwrd">&lt;/</span><span class="html">input</span><span class="kwrd">&gt;&lt;</span><span class="html">br</span> <span class="kwrd">/&gt;</span></pre>
+	<pre>
+<span class="lnum">   3:  </span><span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">name</span><span class="kwrd">=&quot;Book&quot;</span> <span class="attr">type</span><span class="kwrd">=&quot;radio&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;slg&quot;</span> <span class="kwrd">&gt;</span>Silverlight 2.0<span class="kwrd">&lt;/</span><span class="html">input</span><span class="kwrd">&gt;&lt;</span><span class="html">br</span> <span class="kwrd">/&gt;</span></pre>
+</div>
+<p>
+	<br />
+	<b>How do you get the selected value via JavaScript?</b><br />
+	As you can see in the example, radio controls are declared in a particular way, there are no <b>id</b>s, instead there are <b>name</b>s that identifies related <b>radio</b>s.<br />
+	You should be aware that <i>Book</i> is not treated as an unique control by the browser&#39;s engine, because each radio control correspond to one different element in the page.<br />
+	<br />
+	<b>The <u>getElementsByName</u> method</b><br />
+	<a href="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-71555259" target="_blank" title="W3C Reccomendation">This method</a> allows you to obtain a collection of controls from the (X)HTML <a href="http://en.wikipedia.org/wiki/Document_Object_Model" target="_blank" title="Document Object Model">DOM</a>, by specifying the common <b>name</b> value.<br />
+	Now we can write the following code to get or set the <b>checked</b> value:</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<div class="csharpcode">
+	<pre>
+<span class="lnum">   1:  </span>    function getRadio(name) {</pre>
+	<pre>
+<span class="lnum">   2:  </span>        var radios = document.getElementsByName(name);</pre>
+	<pre>
+<span class="lnum">   3:  </span>&nbsp;</pre>
+	<pre>
+<span class="lnum">   4:  </span>        for (var i = 0; i &lt; radios.length; i++) {</pre>
+	<pre>
+<span class="lnum">   5:  </span>            if (radios[i].checked) {</pre>
+	<pre>
+<span class="lnum">   6:  </span>                return radios[i].value;</pre>
+	<pre>
+<span class="lnum">   7:  </span>            }</pre>
+	<pre>
+<span class="lnum">   8:  </span>        }</pre>
+	<pre>
+<span class="lnum">   9:  </span>&nbsp;</pre>
+	<pre>
+<span class="lnum">  10:  </span>        return null;</pre>
+	<pre>
+<span class="lnum">  11:  </span>    }</pre>
+	<pre>
+<span class="lnum">  12:  </span>&nbsp;</pre>
+	<pre>
+<span class="lnum">  13:  </span>    function setRadio(name, val) {</pre>
+	<pre>
+<span class="lnum">  14:  </span>        var radios = document.getElementsByName(name);</pre>
+	<pre>
+<span class="lnum">  15:  </span>&nbsp;</pre>
+	<pre>
+<span class="lnum">  16:  </span>        for (var i = 0; i &lt; radios.length; i++) {</pre>
+	<pre>
+<span class="lnum">  17:  </span>            radios[i].checked = (radios[i].value == val);</pre>
+	<pre>
+<span class="lnum">  18:  </span>        }</pre>
+	<pre>
+<span class="lnum">  19:  </span>    }</pre>
+</div>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+    </div>
+    <div class="categories">
+      Categories:
+      
+    </div>
+  </article>
+  <div class="panel-footer">
+    Share on:
+    <a href='https://twitter.com/intent/tweet?text=Get%20and%20Set%20Radio%20controls%20checked%20value%20with%20JavaScript&amp;url=http%3a%2f%2fandreaazzola.com%2fget-radio-checked-js%2f' target="_blank" title="Share it on Twitter">Twitter</a>,&nbsp;
+    <a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fget-radio-checked-js%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+    <a rel="author" href="../index.html"></a>
+  </div>
+
+  
+  
+  
+<div class="panel">
+    <h3>Comments</h3>
+    <div class="action">
+        <a id="ctl00_cphBody_cmm_lbtNewComment1" class="action" href="javascript:__doPostBack(&#39;ctl00$cphBody$cmm$lbtNewComment1&#39;,&#39;&#39;)">Post a new comment</a>
+    </div>
+    <div class="panel-body" style="background-color:inherit; border-width:0px; padding:0px;">
+        
+                <div class="tl-1 comment">
+                    <img id="ctl00_cphBody_cmm_rptComments_ctl00_gvt" class="gravatar" src="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e" align="top" style="border-width:0px;" />
+                    <div>
+                        <p>Nice!</p>
+                        <em>&#126;<span id="ctl00_cphBody_cmm_rptComments_ctl00_lblName">Flavio</span></em>
+                    </div>
+                    <br style="clear:both" />
+                </div>
+            
+        
+    </div>
+    <div class="action">
+        
+    </div>
+</div>
+
+  
+
+        </div>
+        <div id="menu1" class="col-sm-3 blog-sidebar">
+          
+<div class="sidebar-module sidebar-module-inset block avatar">
+    <img src="../images/AndreaAzzola_Website200x200.png" height="180" width="180" alt="Author's portrait" />
+</div>
+          
+<nav class="sidebar-module sidebar-module-inset block about">
+  <div id="icons">
+	<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" text="Twitter" title="Stay up to date with my tweets"><img src='../images/social/twitter.svg' alt='My Twitter profile' /></a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" text="LinkedIn" title="Find me on LinkedIn"><img src='../images/social/linkedin.svg' alt='My LinkedIn profile' /></a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" text="Facebook" title="Get in touch with Facebook"><img src='../images/social/facebook.svg' alt='My Facebook profile' /></a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" text="Pinterest" title="I&#39;m on Pinterest!"><img src='../images/social/pinterest.svg' alt='My Pinterest profile' /></a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" text="Instagram" title="My Instagram profile"><img src='../images/social/instagram.svg' alt='My Instagram profile' /></a>
+</div>
+  
+</nav>
+          
+<div class="sidebar-module">
+    
+    <ul id="ctl00_stp1_links" class="list-group"><li><a style="font-weight:bold" href="../about/index.html" text="About" title="Short summary">About</a></li><li><a style="font-weight:bold" href="../articles/index.html" text="Articles" title="Collection of all articles in this website">Articles</a></li><li><a style="font-weight:bold" href="../books/index.html" text="Books" title="My book recommendations">Books</a></li><li><a style="font-weight:bold" href="../contact/index.html" text="Contact" title="Short summary">Contact</a></li><li><a href="../feed/index.html" text="RSS feed" title="Subscribe to this blog">RSS feed</a></li><li><a href="../login/index.html" text="Login" title="Login">Login</a></li></ul>
+    <ul class="list-group">
+        <li><a id="ctl00_stp1_lbLanguageEN" class="lang-sm lang-lbl" lang="en" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageEN&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+        <li><a id="ctl00_stp1_lbLanguageIT" class="lang-sm lang-lbl" lang="it" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageIT&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+    </ul>
+    <br />
+</div>
+          
+
+<nav class="sidebar-module">
+    <h4>Newsletter</h4>
+    <input name="ctl00$newsletter$tbFirstName" type="text" id="ctl00_newsletter_tbFirstName" placeholder="First name" style="width:60%;" /><br />
+    <input name="ctl00$newsletter$tbEmail" type="text" id="ctl00_newsletter_tbEmail" placeholder="Email" style="width:90%;" /><br />
+
+    <input type="submit" name="ctl00$newsletter$btSubmit" value="Subscribe" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$newsletter$btSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_newsletter_btSubmit" />
+    <span id="ctl00_newsletter_rfvEmail" style="color:Red;visibility:hidden;">*</span>
+    <span id="ctl00_newsletter_revEmail" style="color:Red;visibility:hidden;">Invalid</span>
+</nav>
+
+          
+          
+          
+
+<div class="sidebar-module">
+  <h4>
+    Categories
+    <a href="../category.html" title="All categories">
+      (All)
+    </a>
+  </h4>
+  
+      <a href="../category/books/index.html" style='font-size:112%;' class="category">
+        Books
+      </a>
+    
+      <a href="../category/decision-fatigue/index.html" style='font-size:112%;' class="category">
+        Decision Fatigue
+      </a>
+    
+      <a href="../category/diet/index.html" style='font-size:112%;' class="category">
+        Diet
+      </a>
+    
+      <a href="../category/extreme-saving/index.html" style='font-size:119%;' class="category">
+        Extreme Saving
+      </a>
+    
+      <a href="../category/finance/index.html" style='font-size:112%;' class="category">
+        Finance
+      </a>
+    
+      <a href="../category/financial-independence/index.html" style='font-size:125%;' class="category">
+        Financial Independence
+      </a>
+    
+      <a href="../category/fitness/index.html" style='font-size:119%;' class="category">
+        Fitness
+      </a>
+    
+      <a href="../category/gears/index.html" style='font-size:112%;' class="category">
+        Gears
+      </a>
+    
+      <a href="../category/geo-arbitrage/index.html" style='font-size:112%;' class="category">
+        Geo Arbitrage
+      </a>
+    
+      <a href="../category/goal-setting/index.html" style='font-size:112%;' class="category">
+        Goal Setting
+      </a>
+    
+      <a href="../category/nutrition/index.html" style='font-size:112%;' class="category">
+        Nutrition
+      </a>
+    
+      <a href="../category/personal-branding/index.html" style='font-size:112%;' class="category">
+        Personal Branding
+      </a>
+    
+      <a href="../category/personal-development/index.html" style='font-size:150%;' class="category">
+        Personal Development
+      </a>
+    
+      <a href="../category/productivity/index.html" style='font-size:125%;' class="category">
+        Productivity
+      </a>
+    
+      <a href="../category/time-management/index.html" style='font-size:106%;' class="category">
+        Time Management
+      </a>
+    
+</div>
+
+          
+          
+        </div>
+      
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_newsletter_rfvEmail"), document.getElementById("ctl00_newsletter_revEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_newsletter_rfvEmail = document.all ? document.all["ctl00_newsletter_rfvEmail"] : document.getElementById("ctl00_newsletter_rfvEmail");
+ctl00_newsletter_rfvEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_rfvEmail.validationGroup = "Newsletter";
+ctl00_newsletter_rfvEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_newsletter_rfvEmail.initialvalue = "";
+var ctl00_newsletter_revEmail = document.all ? document.all["ctl00_newsletter_revEmail"] : document.getElementById("ctl00_newsletter_revEmail");
+ctl00_newsletter_revEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_revEmail.errormessage = "Invalid";
+ctl00_newsletter_revEmail.validationGroup = "Newsletter";
+ctl00_newsletter_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_newsletter_revEmail.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ctl00_newsletter_rfvEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_rfvEmail'));
+}
+
+document.getElementById('ctl00_newsletter_revEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_revEmail'));
+}
+//]]>
+</script>
+</form>
+    </div>
+    <footer>
+      <p>&copy; Copyright 2008-2025 - Andrea Azzola</p>
+    </footer>
+  </div>
+  
+  <script src="../Scripts/async.js"></script>
+  <script src="../Scripts/cookiechoices.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C3P9XZGVE9');
+
+    
+    document.addEventListener('DOMContentLoaded', function (event) {
+      cookieChoices.showCookieConsentBar('This website use cookies to improve the user experience. By continuing I\'ll assume that you\'re happy with it',
+        'Got it', null /*learn more*/, null/*url*/);
+    });
+  </script>
+</body>
+
+<!-- Mirrored from andreaazzola.com/get-radio-checked-js/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:46 GMT -->
+</html>

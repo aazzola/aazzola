@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from andreaazzola.com/aspnet-vnext-mac-os-omnisharp-kulture/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:01:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" type="image/png" href="../images/favicon.png" />
+
+  <!-- JavaScript -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8XKTL2Q');</script>
+  <!-- End Google Tag Manager -->
+  <script src="../../code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="http://load.sumome.com/" data-sumo-site-id="0bcf4270faa767709f6d2e505d84950ff777ed47fb7c0e004b02978a4d6f57b4" async="async"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /><link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="../App_Themes/Ichigo/languages.min.css" rel="stylesheet" />
+  <!-- Heads -->
+  
+  <link rel="alternate" hreflang="it" href="../it/aspnet-vnext-mac-os-omnisharp-kulture/index.html" /><link rel="alternate" hreflang="en-US" href="index.html" />
+  <meta name="description" content="How to run ASP.NET on Mac OS X. The solution leverages on Sublime Text, Kulture and OmniSharp" />
+  <link rel="canonical" href="index.html" />
+  
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to run ASP.NET vNext on Mac OS with Kulture and OmniSharp" />
+  <meta property="og:description" content="How to run ASP.NET on Mac OS X. The solution leverages on Sublime Text, Kulture and OmniSharp" />
+  
+  <meta property="og:url" content="http://andreaazzola.com/aspnet-vnext-mac-os-omnisharp-kulture/" />
+  <meta property="article:published_time" content="2014-12-20T07:15:00Z" />
+  <meta property="og:site_name" content="Andrea Azzola" />
+
+  
+    <link href="../Scripts/highlight.js/styles/default.css" rel="stylesheet" />
+  
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://andreaazzola.com/aspnet-vnext-mac-os-omnisharp-kulture/"
+    },
+    "headline": "How to run ASP.NET vNext on Mac OS with Kulture and OmniSharp",
+
+    "datePublished": "2014-12-20T07:15:00.000Z",
+    "dateModified": "2016-03-15T21:23:07.207Z",
+    "author": {
+      "@type": "Person",
+      "name": "Andrea Azzola"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Andrea Azzola",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://andreaazzola.com/Images/AndreaAzzola_Website200x200.png",
+        "width": 200,
+        "height": 200
+      }
+    },
+    "description": "How to run ASP.NET on Mac OS X. The solution leverages on Sublime Text, Kulture and OmniSharp",
+    "url": "http://andreaazzola.com/aspnet-vnext-mac-os-omnisharp-kulture/"
+  }
+  </script>
+<link href="../App_Themes/Ichigo/languages.min.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Ichigo/StyleSheet.css" type="text/css" rel="stylesheet" /><title>
+	How to run ASP.NET vNext on Mac OS with Kulture and OmniSharp - Andrea Azzola
+</title></head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8XKTL2Q"
+      height="0" width="0" style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <header>
+      <span id="title">
+        <a href="../index.html" title="Back to the Home Page">
+          Andrea Azzola
+        </a>
+      </span>
+      <p id="ctl00_subtitle" class="subtitle">Tips and Techniques for Lifestyle Design</p>
+    </header>
+    <div id="wrapper" class="row">
+      <form name="aspnetForm" method="post" action="#" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyNDY0NzQ1MQ9kFgJmD2QWBgIBDxYCHgRUZXh0BQ1BbmRyZWEgQXp6b2xhZAICDxYCHglpbm5lcmh0bWwFKFRpcHMgYW5kIFRlY2huaXF1ZXMgZm9yIExpZmVzdHlsZSBEZXNpZ25kAgMPZBYKAgMPZBYCAgIPDxYCHgdWaXNpYmxlZ2RkAgUPZBYGZg8WAh8ABT1Ib3cgdG8gcnVuIEFTUC5ORVQgdk5leHQgb24gTWFjIE9TIHdpdGggS3VsdHVyZSBhbmQgT21uaVNoYXJwZAIBDxYCHwAF6Cc8cD5UaGUgYXJ0aWNsZSB3aWxsIGRlc2NyaWJlIDxzdHJvbmc+aG93IHRvIHJ1biBBU1AuTkVUIHZOZXh0PC9zdHJvbmc+IG9uIDxzdHJvbmc+TWFjIE9TIFg8L3N0cm9uZz4uIFRoZSBwcm9jZXNzLCByZXF1aXJlcyBtdWx0aXBsZSBjb25maWd1cmF0aW9ucyBhbmQgdGhlcmVmb3JlIHNvbWUgcGF0aWVuY2UuIEx1Y2tpbHksIE9TIFggYWxyZWFkeSBpbmNsdWRlcyBvbmUgb2YgdGhlIHByZS1yZXF1aXJlbWVudHMsIDxzdHJvbmc+UnVieTwvc3Ryb25nPiwgMi4wIG9uIE1hdmVyaWNrcyBhbmQgWW9zZW1pdGUsIDEuOC43IG9uIE1vdW50YWluIExpb24sIExpb24sIGFuZCBTbm93IExlb3BhcmQuPC9wPg0KDQo8aDI+U3VibGltZSBUZXh0PC9oMj4NCjxwPk9uZSB2ZXJ5IHBvcHVsYXIgSURFIG9yIDxlbT5hZHZhbmNlZCB0ZXh0IGVkaXRvcjwvZW0+IGZvciBNYWMgT1MgWCBpcyA8c3Ryb25nPjxhIGhyZWY9Imh0dHA6Ly93d3cuc3VibGltZXRleHQuY29tLyIgdGl0bGU9IlN1YmxpbWUgVGV4dCBvZmZpY2lhbCB3ZWJzaXRlIiB0YXJnZXQ9Il9ibGFuayI+U3VibGltZSBUZXh0PC9hPjwvc3Ryb25nPi4gSSB1c2UgaXQgb24gYm90aCBPUyBYIGFuZCBXaW5kb3dzLCBmb3IgZGV2ZWxvcGluZyA8YSBocmVmPSJodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9jYXRlZ29yeS9zYWxlc2ZvcmNlY29tIiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IlNhbGVzZm9yY2UuY29tIHBvc3RzIj5TYWxlc2ZvcmNlLmNvbTwvYT4gYXBwbGljYXRpb25zLCB0byB0YWtlIG5vdGVzIG9yIGF1dGhvcmluZyB0aGlzIHZlcnkgYXJ0aWNsZSBpbiBwdXJlIEhUTUwsIGFuZCBJJ20gdmVyeSBoYXBweSB3aXRoIGl0PCEtLSAmbWRhc2g7PHEgY2l0ZT0iaHR0cDovL3RvbGtpZW5nYXRld2F5Lm5ldC93aWtpL0ZyZWVfcGVvcGxlcyI+T25lIFJpbmcgdG8gcnVsZSB0aGVtIGFsbCwgT25lIFJpbmcgdG8gZmluZCB0aGVtLA0KT25lIFJpbmcgdG8gYnJpbmcgdGhlbSBhbGwsIGFuZCBpbiB0aGUgZGFya25lc3MgYmluZCB0aGVtPC9xPiAtLT4uIE90aGVyIHN1cHBvcnRlZCBJREVzJm1kYXNoO2F0IHRoZSBtb21lbnQgb2Ygd3JpdGluZyZtZGFzaDthcmU6DQogIDx1bD4NCiAgCTxsaT5BdG9tIC0gPGEgaHJlZj0iaHR0cHM6Ly9hdG9tLmlvLyIgdGl0bGU9IkF0b20gZWRpdG9yIiB0YXJnZXQ9Il9ibGFuayI+aHR0cHM6Ly9hdG9tLmlvLzwvYT48L2xpPg0KICAgCTxsaT5FbWFjcyAtIDxhIGhyZWY9Imh0dHA6Ly93d3cuZ251Lm9yZy9zb2Z0d2FyZS9lbWFjcy8iIHRpdGxlPSJFbWFjcyBlZGl0b3IiIHRhcmdldD0iX2JsYW5rIj5odHRwOi8vd3d3LmdudS5vcmcvc29mdHdhcmUvZW1hY3MvPC9hPjwvbGk+DQogIAk8bGk+QnJhY2tldHMgLSA8YSBocmVmPSJodHRwOi8vYnJhY2tldHMuaW8vIiB0aXRsZT0iQnJhY2tldHMgZWRpdG9yIiB0YXJnZXQ9Il9ibGFuayI+aHR0cDovL2JyYWNrZXRzLmlvLzwvYT48L2xpPg0KICAJPGxpPlZpbSAtIDxhIGhyZWY9Imh0dHA6Ly93d3cudmltLm9yZy8iIHRpdGxlPSJWaW0gZWRpdG9yIiB0YXJnZXQ9Imh0dHA6Ly93d3cudmltLm9yZy8iPmh0dHA6Ly93d3cudmltLm9yZy88L2E+PC9saT4NCiAgPC91bD4NCjwvcD4NCg0KDQo8aDI+SG9tZWJyZXc8L2gyPg0KPHA+PGEgaHJlZj0iaHR0cDovL2JyZXcuc2gvIiB0YXJnZXQ9Il9ibGFuayIgPkhvbWVicmV3PC9hPiBpcyBhbiBvcGVuIHNvdXJjZSBwYWNrYWdlIG1hbmFnZXIgZm9yIE1hYyBPUyBYLCBpdCBsZXZlcmFnZXMgbW9zdGx5IG9uIDxlbT5naXQ8L2VtPiBhbmQgPGVtPnJ1Ynk8L2VtPi4gSWYgeW91J3JlIG5vdCBzdXJlIHRvIGhhdmUgaXQgaW5zdGFsbGVkLCBqdXN0IG9wZW4gdGhlIDxlbT5UZXJtaW5hbDwvZW0+IGFuZCBpc3N1ZSB0aGUgY29tbWFuZCA8Y29kZT5icmV3IGRvY3RvcjwvY29kZT4uIElmIHRoZSByZXNwb25zZSBpcyA8Y29kZT5jb21tYW5kIG5vdCBmb3VuZDwvY29kZT4gd2VsbCwgaXQncyBub3QgaW5zdGFsbGVkLCBzbyBydW4gdGhlIGZvbGxvd2luZyBjb21tYW5kOjxjb2RlPnJ1YnkgLWUgIiQoY3VybCAtZnNTTCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vSG9tZWJyZXcvaW5zdGFsbC9tYXN0ZXIvaW5zdGFsbCkiPC9jb2RlPjwvcD4NCg0KPGgyPktWTSwgTW9ubyBhbmQgS1JFPC9oMj4NCg0KPHA+VGhlIDxzdHJvbmc+SyBWZXJzaW9uIE1hbmFnZXI8L3N0cm9uZz4mbWRhc2g7S1ZNJm1kYXNoO2lzIGEgdG9vbCBmb3IgaW5zdGFsbGluZyBkaWZmZXJlbnQgdmVyc2lvbnMgb2YgdGhlIDxzdHJvbmc+QVNQLk5FVCB2TmV4dCBydW50aW1lPC9zdHJvbmc+IGFuZCBzd2l0Y2ggYmV0d2VlbiB0aGVtLiBUbyBpbnN0YWxsIHRoZSBLVk0gYW5kIE1vbm8sIHJ1biB0aGUgY29tbWFuZCA8Y29kZT5icmV3IHRhcCBhc3BuZXQvazwvY29kZT4sIHRoaXMgd2lsbCBvbmx5IDxlbT50YXA8L2VtPiZtZGFzaDtyZWZlcmVuY2UmbWRhc2g7QVNQLk5FVCB2TmV4dCByZXBvcywgdGhlcmVmb3JlIGxhdW5jaCA8Y29kZT5icmV3IGluc3RhbGwga3ZtPC9jb2RlPiB0byBpbnN0YWxsIHRoZSBLVk0gcGFja2FnZS4gVGhpcywgd2lsbCBhbHNvIGluc3RhbGwgdGhlIGxhdGVzdCBLIFJ1bnRpbWUgRW52aXJvbm1lbnQmbWRhc2g7S1JFLjwvcD4NCg0KPGgyPk9tbmlTaGFycCBhbmQgS3VsdHVyZTwvaDI+DQoNCjxwPkEgcHJlcmVxdWlzaXRlIGZvciB0aGlzIHN0ZXAgaXMgdGhlIDxhIGhyZWY9Imh0dHBzOi8vc3VibGltZS53Ym9uZC5uZXQvaW5zdGFsbGF0aW9uIiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IlBhY2thZ2UgQ29udHJvbCBpbnN0YWxsIj5zZXR1cCBvZiBQYWNrYWdlIENvbnRyb2w8L2E+LCBwbGVhc2UgcmVmZXIgdG8gdGhlIGxpbmsgZm9yIG1vcmUgZGV0YWlscy4gVGhlbiwgcHJvY2VlZCB0byBpbnN0YWxsIHRoZSB0d28gZm9sbG93aW5nIHBhY2thZ2VzOjwvcD4NCg0KPHA+PHN0cm9uZz5LdWx0dXJlPC9zdHJvbmc+LCBpcyBhIFN1YmxpbWUgVGV4dCBwYWNrYWdlIGZvciBBU1AuTkVUIHZOZXh0IHRoYXQgYnJpbmdzIHRoZSBidWlsZCBzeXN0ZW0gaW50byB0aGUgU3VibGltZS4gVG8gaW5zdGFsbCBpdCwgcHJlc3MgPGNvZGU+Q1RSTCtTSElGVCtQPC9jb2RlPiwgdGhlbiB0eXBlIDxjb2RlPkluc3RhbGwgUGFja2FnZTwvY29kZT4sIHRoZW4gPGNvZGU+S3VsdHVyZTwvY29kZT4sIHNlbGVjdCBpdCBhbmQgcHJlc3MgPGNvZGU+UmV0dXJuPC9jb2RlPjo8L3A+DQo8cD48aW1nIHNyYz0iL2ltYWdlcy9wb3N0cy9hc3BuZXRfc3VibGltZV9wa2dtbmdfa3VsdHVyZS5wbmciIHRpdGxlPSJLdWx0dXJlIHBhY2thZ2UgaW5zdGFsbCIgY2xhc3M9ImltYWdlLWNlbnRlciIgLz48L3A+DQoNCjxwPjxzdHJvbmc+T21uaVNoYXJwPC9zdHJvbmc+IGlzIGEgcGxhdGZvcm0gZm9yIGVuYWJsaW5nIDxlbT5DIyBjcm9zcy1wbGF0Zm9ybSAuTkVUIGRldmVsb3BtZW50PC9lbT4gZm9yIHRoZSBJREUgb2YgeW91ciBjaG9pY2UuIEluIG90aGVyIHdvcmRzLCA8ZW0+T21uaVNoYXJwPC9lbT4gcGx1Z3MgYWxsIHRoZSBwbHVtYmluZyBuZWVkZWQgYnkgdGhlIDxxPk1hYyBPUyBYIGJhc2VkPC9xPiBJREUgdG8gYmVoYXZlIGxpa2UgYSBwcm9wZXIgLk5FVCBJREUuIEl0IHN1cHBvcnRzIGJvdGggPGVtPk1hYyBPUyBYPC9lbT4sIDxlbT5MaW51eDwvZW0+IGFuZCA8ZW0+V2luZG93czwvZW0+LCBhbmQgYnJpbmdzIHZlcnkgdXNlZnVsIGZlYXR1cmVzIGxpa2UgPGVtPkF1dG8gQ29tcGxldGlvbjwvZW0+LCA8ZW0+U3ludGF4L1NlbWFudGljIGVycm9yIGhpZ2hsaWdodGluZzwvZW0+LCA8ZW0+QnVpbGQvUmVCdWlsZC9DbGVhbiBzb2x1dGlvbjwvZW0+LCBldGMuLjwvcD4NCg0KPHA+VG8gaW5zdGFsbCwgZm9sbG93IHRoZSBzYW1lIHByb2NlZHVyZSBidXQgdHlwZSA8Y29kZT5PbW5pU2hhcnA8L2NvZGU+IGZvciB0aGUgcGFja2FnZSBuYW1lIHRoaXMgdGltZTo8L3A+DQo8cD48aW1nIHNyYz0iL2ltYWdlcy9wb3N0cy9hc3BuZXRfc3VibGltZV9wa2dtbmdfb21uaXNoYXJwLnBuZyIgdGl0bGU9Ik9tbmlTaGFycCBwYWNrYWdlIGluc3RhbGwiIGNsYXNzPSJpbWFnZS1jZW50ZXIiIC8+PC9wPg0KIA0KPGgyPkhlbGxvIFdvcmxkPC9oMj4NCjxwPkxldCdzIGNoZWNrIG91dCB0aGUgbmV3IHNldHVwOg0KICA8b2w+DQogICAgPGxpPkNsb25lIHRoZSA8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vYXNwbmV0L0hvbWUiIHRhcmdldD0iX2JsYW5rIiB0aXRsZT0iQVNQLk5FVCB2TmV4dCBIb21lIHJlcG9zaXRvcnkiPkhvbWU8L2E+IHJlcG9zaXRvcnk6IDxjb2RlPmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vYXNwbmV0L0hvbWU8L2NvZGU+PC9saT4NCiAgICA8bGk+QnJvd3NlIHRoZSA8Y29kZT4vc2FtcGxlcy9IZWxsb1dlYi88L2NvZGU+IGZvbGRlcjwvbGk+DQogICAgPGxpPlJ1biA8Y29kZT5rcG0gcmVzdG9yZTwvY29kZT4gdG8gcmVzdG9yZSBkZXBlbmRlbmNpZXMsIHRoaXMgbWF5IHRha2UgYSB3aGlsZTwvbGk+DQogICAgPGxpPlJ1biA8Y29kZT5rIGtlc3RyZWw8L2NvZGU+LCBha2EgdGhlIE1vbm8gPGVtPndlYiBzZXJ2ZXI8L2VtPjwvbGk+DQogICAgPGxpPk5hdmlnYXRlIHlvdSBhcHAgYXQgPGNvZGU+aHR0cDovL2xvY2FsaG9zdDo1MDA0PC9jb2RlPjwvbGk+DQogIDwvb2w+DQogIEFuZCB0aGF0IHNob3VsZCBiZSBpdCENCjwvcD4NCjxwPjxpbWcgc3JjPSIvaW1hZ2VzL3Bvc3RzL2FzcG5ldF9zdWJsaW1lX2hlbGxvd2ViLnBuZyIgdGl0bGU9IkFTUC5ORVQgdk5leHQgSGVsbG9XZWIiIGNsYXNzPSJpbWFnZS1jZW50ZXIiIC8+PC9wPg0KDQo8aDI+UmVmZXJlbmNlczwvaDI+DQo8dWw+DQogIDxsaT48YSBocmVmPSJodHRwOi8vd3d3Lm9tbmlzaGFycC5uZXQvIiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9Ik9tbmlTaGFycCBvZmZpY2lhbCB3ZWJzaXRlIj5PbW5pU2hhcnA8L2E+IG9mZmljaWFsIHBhZ2U8L2xpPg0KICA8bGk+PGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL2FzcG5ldC9ob21lI2dldHRpbmctc3RhcnRlZCIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJBU1AuTkVUIHZOZXh0IHF1aWNrc3RhcnQiPkdldHRpbmcgU3RhcnRlZDwvYT4gb24gQVNQLk5FVCBHaXRIdWIgcGFnZTwvbGk+DQo8L3VsPmQCBg9kFgQCAw8WAh4LXyFJdGVtQ291bnRmZAIHDw8WAh8CaGRkAgkPZBYCAgEPZBYKZg8WAh8BBUE8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvdHdpdHRlci5zdmcnIGFsdD0nTXkgVHdpdHRlciBwcm9maWxlJyAvPmQCAQ8WAh8BBUM8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvbGlua2VkaW4uc3ZnJyBhbHQ9J015IExpbmtlZEluIHByb2ZpbGUnIC8+ZAICDxYCHwEFQzxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9mYWNlYm9vay5zdmcnIGFsdD0nTXkgRmFjZWJvb2sgcHJvZmlsZScgLz5kAgMPFgIfAQVFPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL3BpbnRlcmVzdC5zdmcnIGFsdD0nTXkgUGludGVyZXN0IHByb2ZpbGUnIC8+ZAIEDxYCHwEFRTxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9pbnN0YWdyYW0uc3ZnJyBhbHQ9J015IEluc3RhZ3JhbSBwcm9maWxlJyAvPmQCCw9kFgQCAQ8PFgIfAmhkZAIDD2QWDGYPZBYCZg8WAh8BBQVBYm91dGQCAQ9kFgJmDxYCHwEFCEFydGljbGVzZAICD2QWAmYPFgIfAQUFQm9va3NkAgMPZBYCZg8WAh8BBQdDb250YWN0ZAIED2QWAmYPFgIfAQUIUlNTIGZlZWRkAgUPZBYCZg8WAh8BBQVMb2dpbmQCDw9kFgICBQ8WAh8DAg8WHmYPZBYCZg8VAwVib29rcw9mb250LXNpemU6MTEyJTsFQm9va3NkAgEPZBYCZg8VAxBkZWNpc2lvbi1mYXRpZ3VlD2ZvbnQtc2l6ZToxMTIlOxBEZWNpc2lvbiBGYXRpZ3VlZAICD2QWAmYPFQMEZGlldA9mb250LXNpemU6MTEyJTsERGlldGQCAw9kFgJmDxUDDmV4dHJlbWUtc2F2aW5nD2ZvbnQtc2l6ZToxMTklOw5FeHRyZW1lIFNhdmluZ2QCBA9kFgJmDxUDB2ZpbmFuY2UPZm9udC1zaXplOjExMiU7B0ZpbmFuY2VkAgUPZBYCZg8VAxZmaW5hbmNpYWwtaW5kZXBlbmRlbmNlD2ZvbnQtc2l6ZToxMjUlOxZGaW5hbmNpYWwgSW5kZXBlbmRlbmNlZAIGD2QWAmYPFQMHZml0bmVzcw9mb250LXNpemU6MTE5JTsHRml0bmVzc2QCBw9kFgJmDxUDBWdlYXJzD2ZvbnQtc2l6ZToxMTIlOwVHZWFyc2QCCA9kFgJmDxUDDWdlby1hcmJpdHJhZ2UPZm9udC1zaXplOjExMiU7DUdlbyBBcmJpdHJhZ2VkAgkPZBYCZg8VAwxnb2FsLXNldHRpbmcPZm9udC1zaXplOjExMiU7DEdvYWwgU2V0dGluZ2QCCg9kFgJmDxUDCW51dHJpdGlvbg9mb250LXNpemU6MTEyJTsJTnV0cml0aW9uZAILD2QWAmYPFQMRcGVyc29uYWwtYnJhbmRpbmcPZm9udC1zaXplOjExMiU7EVBlcnNvbmFsIEJyYW5kaW5nZAIMD2QWAmYPFQMUcGVyc29uYWwtZGV2ZWxvcG1lbnQPZm9udC1zaXplOjE1MCU7FFBlcnNvbmFsIERldmVsb3BtZW50ZAIND2QWAmYPFQMMcHJvZHVjdGl2aXR5D2ZvbnQtc2l6ZToxMjUlOwxQcm9kdWN0aXZpdHlkAg4PZBYCZg8VAw90aW1lLW1hbmFnZW1lbnQPZm9udC1zaXplOjEwNiU7D1RpbWUgTWFuYWdlbWVudGRkdt0bC+37FRj0vGr5SqahU6FclDlUn5aXBgoNQFkzkzY=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResourcebd7d.js?d=60NHLgyriwaIxDY49sOyJoosR85E_8EBoHPuH8apHmhoztdyjrJJME7wLHYxt8bRE-HOjc8KEQA4Pz_NLHZK8iRlcBxoEIxqlKSNzP9Hs9E1&amp;t=638628208040000000" type="text/javascript"></script>
+
+
+<script src="../ScriptResource09fd.js?d=2CR6ki1th7q4t6Y-4h70c_FHdhDF-na1jzn6LpnU1MSRHPySmTlk2OYyuOyEcEdLAR2f75mxOhtnv8dyCn78AbyvF1FmRXoxXAyFvJs1SnNAc9VfT8AkLpL-El_mOWKV6esRdEU1mbg1rq9eGwyRfGZAuPwUUP1qolkfBsTX-xk1&amp;t=6df849d2" type="text/javascript"></script>
+<script src="../ScriptResource3c0a.js?d=XULVbsHDVLbz9U3XY3dNKjYVBPt4c7R_ZktYDXJ_Zx60ieLv6An0Xzl7Het_9Fy_In_smVeI0Pc5dONA2asvRZmieVw760RSqHbmH_l_5Q4sIABLtCdHnEzDVopo4mx-B6Nhb0lQqfEWhVQEekgZzma5IrR8LZvhzThsTn2RU2LpvBIciybh5-6AFlNDeyN00&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../ScriptResource7bd5.js?d=lNE7WyNZxdgCabFQylFyEpxCnJY-ewkkPbvG_2F8V6j0wOEy85gWtvBe-NUxW11DkjzDBEEZLqx_BeVKW7WhiWwGZN6Hcq3c9JoecT8S-ZBzXrunzISICFVPY0pdk_z1o2_TZ7mat0ahtKkBATtk5K3gXCBFYrdSp5VITKX_GzHbDuyUGj1daO73xD_aD5JuOHEeG7LchY_7JlSH7YupYg2&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E7E8FB5" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAcGKkIQ7prwqZjNixMencWeuPOyILX5UpRRDlZ/QmDnD4OGP6xOFxkspoAx7VEKhYZI9A/oOhbGhHWNFB0XTJD4lqCkJUt9nkERcjLfVJH88JVOVkz7HoPpIe9czLngs/oc5G8HfsWhbGlSMPs6ElIxp7adCp1I6uvxtX0/kc7GHAV7S2934rlOzEi5V0fpenQ=" />
+</div>
+        <div id="body" class="col-sm-9">
+          <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sm', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+          
+<div id="ctl00_nt_pnlNotifications" role="alert">
+
+</div>
+          
+  <article class="panel">
+    <div class="panel-header">
+      <h1>How to run ASP.NET vNext on Mac OS with Kulture and OmniSharp</h1>
+      <span class="panel-subtitle">
+        Posted on 
+        <time datetime="2014-12-20T07:15:00.000Z">
+          2014-12-20 07:15
+        </time>
+        [<a href='index.html' target="_self" title='Permalink to How to run ASP.NET vNext on Mac OS with Kulture and OmniSharp'>Permalink</a>]
+      </span>
+    </div>
+    <div class="panel-body">
+      <p>The article will describe <strong>how to run ASP.NET vNext</strong> on <strong>Mac OS X</strong>. The process, requires multiple configurations and therefore some patience. Luckily, OS X already includes one of the pre-requirements, <strong>Ruby</strong>, 2.0 on Mavericks and Yosemite, 1.8.7 on Mountain Lion, Lion, and Snow Leopard.</p>
+
+<h2>Sublime Text</h2>
+<p>One very popular IDE or <em>advanced text editor</em> for Mac OS X is <strong><a href="http://www.sublimetext.com/" title="Sublime Text official website" target="_blank">Sublime Text</a></strong>. I use it on both OS X and Windows, for developing <a href="../category/salesforcecom.html" target="_blank" title="Salesforce.com posts">Salesforce.com</a> applications, to take notes or authoring this very article in pure HTML, and I'm very happy with it<!-- &mdash;<q cite="http://tolkiengateway.net/wiki/Free_peoples">One Ring to rule them all, One Ring to find them,
+One Ring to bring them all, and in the darkness bind them</q> -->. Other supported IDEs&mdash;at the moment of writing&mdash;are:
+  <ul>
+  	<li>Atom - <a href="https://atom.io/" title="Atom editor" target="_blank">https://atom.io/</a></li>
+   	<li>Emacs - <a href="http://www.gnu.org/software/emacs/" title="Emacs editor" target="_blank">http://www.gnu.org/software/emacs/</a></li>
+  	<li>Brackets - <a href="http://brackets.io/" title="Brackets editor" target="_blank">http://brackets.io/</a></li>
+  	<li>Vim - <a href="http://www.vim.org/" title="Vim editor" target="http://www.vim.org/">http://www.vim.org/</a></li>
+  </ul>
+</p>
+
+
+<h2>Homebrew</h2>
+<p><a href="http://brew.sh/" target="_blank" >Homebrew</a> is an open source package manager for Mac OS X, it leverages mostly on <em>git</em> and <em>ruby</em>. If you're not sure to have it installed, just open the <em>Terminal</em> and issue the command <code>brew doctor</code>. If the response is <code>command not found</code> well, it's not installed, so run the following command:<code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></p>
+
+<h2>KVM, Mono and KRE</h2>
+
+<p>The <strong>K Version Manager</strong>&mdash;KVM&mdash;is a tool for installing different versions of the <strong>ASP.NET vNext runtime</strong> and switch between them. To install the KVM and Mono, run the command <code>brew tap aspnet/k</code>, this will only <em>tap</em>&mdash;reference&mdash;ASP.NET vNext repos, therefore launch <code>brew install kvm</code> to install the KVM package. This, will also install the latest K Runtime Environment&mdash;KRE.</p>
+
+<h2>OmniSharp and Kulture</h2>
+
+<p>A prerequisite for this step is the <a href="https://sublime.wbond.net/installation" target="_blank" title="Package Control install">setup of Package Control</a>, please refer to the link for more details. Then, proceed to install the two following packages:</p>
+
+<p><strong>Kulture</strong>, is a Sublime Text package for ASP.NET vNext that brings the build system into the Sublime. To install it, press <code>CTRL+SHIFT+P</code>, then type <code>Install Package</code>, then <code>Kulture</code>, select it and press <code>Return</code>:</p>
+<p><img src="../images/posts/aspnet_sublime_pkgmng_kulture.png" title="Kulture package install" class="image-center" /></p>
+
+<p><strong>OmniSharp</strong> is a platform for enabling <em>C# cross-platform .NET development</em> for the IDE of your choice. In other words, <em>OmniSharp</em> plugs all the plumbing needed by the <q>Mac OS X based</q> IDE to behave like a proper .NET IDE. It supports both <em>Mac OS X</em>, <em>Linux</em> and <em>Windows</em>, and brings very useful features like <em>Auto Completion</em>, <em>Syntax/Semantic error highlighting</em>, <em>Build/ReBuild/Clean solution</em>, etc..</p>
+
+<p>To install, follow the same procedure but type <code>OmniSharp</code> for the package name this time:</p>
+<p><img src="../images/posts/aspnet_sublime_pkgmng_omnisharp.png" title="OmniSharp package install" class="image-center" /></p>
+ 
+<h2>Hello World</h2>
+<p>Let's check out the new setup:
+  <ol>
+    <li>Clone the <a href="https://github.com/aspnet/Home" target="_blank" title="ASP.NET vNext Home repository">Home</a> repository: <code>git clone https://github.com/aspnet/Home</code></li>
+    <li>Browse the <code>/samples/HelloWeb/</code> folder</li>
+    <li>Run <code>kpm restore</code> to restore dependencies, this may take a while</li>
+    <li>Run <code>k kestrel</code>, aka the Mono <em>web server</em></li>
+    <li>Navigate you app at <code>http://localhost:5004</code></li>
+  </ol>
+  And that should be it!
+</p>
+<p><img src="../images/posts/aspnet_sublime_helloweb.html" title="ASP.NET vNext HelloWeb" class="image-center" /></p>
+
+<h2>References</h2>
+<ul>
+  <li><a href="http://www.omnisharp.net/" target="_blank" title="OmniSharp official website">OmniSharp</a> official page</li>
+  <li><a href="https://github.com/aspnet/home#getting-started" target="_blank" title="ASP.NET vNext quickstart">Getting Started</a> on ASP.NET GitHub page</li>
+</ul>
+    </div>
+    <div class="categories">
+      Categories:
+      
+    </div>
+  </article>
+  <div class="panel-footer">
+    Share on:
+    <a href='https://twitter.com/intent/tweet?text=How%20to%20run%20ASP.NET%20vNext%20on%20Mac%20OS%20with%20Kulture%20and%20OmniSharp&amp;url=http%3a%2f%2fandreaazzola.com%2faspnet-vnext-mac-os-omnisharp-kulture%2f' target="_blank" title="Share it on Twitter">Twitter</a>,&nbsp;
+    <a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2faspnet-vnext-mac-os-omnisharp-kulture%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+    <a rel="author" href="../index.html"></a>
+  </div>
+
+  
+  
+  
+<div class="panel">
+    <h3>Comments</h3>
+    <div class="action">
+        <a id="ctl00_cphBody_cmm_lbtNewComment1" class="action" href="javascript:__doPostBack(&#39;ctl00$cphBody$cmm$lbtNewComment1&#39;,&#39;&#39;)">Post a new comment</a>
+    </div>
+    <div class="panel-body" style="background-color:inherit; border-width:0px; padding:0px;">
+        
+        
+    </div>
+    <div class="action">
+        
+    </div>
+</div>
+
+  
+    <script src="../Scripts/highlight.js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+
+        </div>
+        <div id="menu1" class="col-sm-3 blog-sidebar">
+          
+<div class="sidebar-module sidebar-module-inset block avatar">
+    <img src="../images/AndreaAzzola_Website200x200.png" height="180" width="180" alt="Author's portrait" />
+</div>
+          
+<nav class="sidebar-module sidebar-module-inset block about">
+  <div id="icons">
+	<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" text="Twitter" title="Stay up to date with my tweets"><img src='../images/social/twitter.svg' alt='My Twitter profile' /></a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" text="LinkedIn" title="Find me on LinkedIn"><img src='../images/social/linkedin.svg' alt='My LinkedIn profile' /></a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" text="Facebook" title="Get in touch with Facebook"><img src='../images/social/facebook.svg' alt='My Facebook profile' /></a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" text="Pinterest" title="I&#39;m on Pinterest!"><img src='../images/social/pinterest.svg' alt='My Pinterest profile' /></a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" text="Instagram" title="My Instagram profile"><img src='../images/social/instagram.svg' alt='My Instagram profile' /></a>
+</div>
+  
+</nav>
+          
+<div class="sidebar-module">
+    
+    <ul id="ctl00_stp1_links" class="list-group"><li><a style="font-weight:bold" href="../about/index.html" text="About" title="Short summary">About</a></li><li><a style="font-weight:bold" href="../articles/index.html" text="Articles" title="Collection of all articles in this website">Articles</a></li><li><a style="font-weight:bold" href="../books/index.html" text="Books" title="My book recommendations">Books</a></li><li><a style="font-weight:bold" href="../contact/index.html" text="Contact" title="Short summary">Contact</a></li><li><a href="../feed/index.html" text="RSS feed" title="Subscribe to this blog">RSS feed</a></li><li><a href="../login/index.html" text="Login" title="Login">Login</a></li></ul>
+    <ul class="list-group">
+        <li><a id="ctl00_stp1_lbLanguageEN" class="lang-sm lang-lbl" lang="en" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageEN&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+        <li><a id="ctl00_stp1_lbLanguageIT" class="lang-sm lang-lbl" lang="it" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageIT&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+    </ul>
+    <br />
+</div>
+          
+
+<nav class="sidebar-module">
+    <h4>Newsletter</h4>
+    <input name="ctl00$newsletter$tbFirstName" type="text" id="ctl00_newsletter_tbFirstName" placeholder="First name" style="width:60%;" /><br />
+    <input name="ctl00$newsletter$tbEmail" type="text" id="ctl00_newsletter_tbEmail" placeholder="Email" style="width:90%;" /><br />
+
+    <input type="submit" name="ctl00$newsletter$btSubmit" value="Subscribe" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$newsletter$btSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_newsletter_btSubmit" />
+    <span id="ctl00_newsletter_rfvEmail" style="color:Red;visibility:hidden;">*</span>
+    <span id="ctl00_newsletter_revEmail" style="color:Red;visibility:hidden;">Invalid</span>
+</nav>
+
+          
+          
+          
+
+<div class="sidebar-module">
+  <h4>
+    Categories
+    <a href="../category.html" title="All categories">
+      (All)
+    </a>
+  </h4>
+  
+      <a href="../category/books/index.html" style='font-size:112%;' class="category">
+        Books
+      </a>
+    
+      <a href="../category/decision-fatigue/index.html" style='font-size:112%;' class="category">
+        Decision Fatigue
+      </a>
+    
+      <a href="../category/diet/index.html" style='font-size:112%;' class="category">
+        Diet
+      </a>
+    
+      <a href="../category/extreme-saving/index.html" style='font-size:119%;' class="category">
+        Extreme Saving
+      </a>
+    
+      <a href="../category/finance/index.html" style='font-size:112%;' class="category">
+        Finance
+      </a>
+    
+      <a href="../category/financial-independence/index.html" style='font-size:125%;' class="category">
+        Financial Independence
+      </a>
+    
+      <a href="../category/fitness/index.html" style='font-size:119%;' class="category">
+        Fitness
+      </a>
+    
+      <a href="../category/gears/index.html" style='font-size:112%;' class="category">
+        Gears
+      </a>
+    
+      <a href="../category/geo-arbitrage/index.html" style='font-size:112%;' class="category">
+        Geo Arbitrage
+      </a>
+    
+      <a href="../category/goal-setting/index.html" style='font-size:112%;' class="category">
+        Goal Setting
+      </a>
+    
+      <a href="../category/nutrition/index.html" style='font-size:112%;' class="category">
+        Nutrition
+      </a>
+    
+      <a href="../category/personal-branding/index.html" style='font-size:112%;' class="category">
+        Personal Branding
+      </a>
+    
+      <a href="../category/personal-development/index.html" style='font-size:150%;' class="category">
+        Personal Development
+      </a>
+    
+      <a href="../category/productivity/index.html" style='font-size:125%;' class="category">
+        Productivity
+      </a>
+    
+      <a href="../category/time-management/index.html" style='font-size:106%;' class="category">
+        Time Management
+      </a>
+    
+</div>
+
+          
+          
+        </div>
+      
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_newsletter_rfvEmail"), document.getElementById("ctl00_newsletter_revEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_newsletter_rfvEmail = document.all ? document.all["ctl00_newsletter_rfvEmail"] : document.getElementById("ctl00_newsletter_rfvEmail");
+ctl00_newsletter_rfvEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_rfvEmail.validationGroup = "Newsletter";
+ctl00_newsletter_rfvEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_newsletter_rfvEmail.initialvalue = "";
+var ctl00_newsletter_revEmail = document.all ? document.all["ctl00_newsletter_revEmail"] : document.getElementById("ctl00_newsletter_revEmail");
+ctl00_newsletter_revEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_revEmail.errormessage = "Invalid";
+ctl00_newsletter_revEmail.validationGroup = "Newsletter";
+ctl00_newsletter_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_newsletter_revEmail.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ctl00_newsletter_rfvEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_rfvEmail'));
+}
+
+document.getElementById('ctl00_newsletter_revEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_revEmail'));
+}
+//]]>
+</script>
+</form>
+    </div>
+    <footer>
+      <p>&copy; Copyright 2008-2025 - Andrea Azzola</p>
+    </footer>
+  </div>
+  
+  <script src="../Scripts/async.js"></script>
+  <script src="../Scripts/cookiechoices.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C3P9XZGVE9');
+
+    
+    document.addEventListener('DOMContentLoaded', function (event) {
+      cookieChoices.showCookieConsentBar('This website use cookies to improve the user experience. By continuing I\'ll assume that you\'re happy with it',
+        'Got it', null /*learn more*/, null/*url*/);
+    });
+  </script>
+</body>
+
+<!-- Mirrored from andreaazzola.com/aspnet-vnext-mac-os-omnisharp-kulture/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:01:47 GMT -->
+</html>

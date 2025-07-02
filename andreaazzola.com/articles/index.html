@@ -1,0 +1,870 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from andreaazzola.com/articles/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:00:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" type="image/png" href="../images/favicon.png" />
+
+  <!-- JavaScript -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8XKTL2Q');</script>
+  <!-- End Google Tag Manager -->
+  <script src="../../code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="http://load.sumome.com/" data-sumo-site-id="0bcf4270faa767709f6d2e505d84950ff777ed47fb7c0e004b02978a4d6f57b4" async="async"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /><link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="../App_Themes/Ichigo/languages.min.css" rel="stylesheet" />
+  <!-- Heads -->
+  
+    
+  <meta name="description" content="All the articles in this website, since the beginning of time" />
+<link href="../App_Themes/Ichigo/languages.min.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Ichigo/StyleSheet.css" type="text/css" rel="stylesheet" /><title>
+	Articles - Andrea Azzola
+</title></head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8XKTL2Q"
+      height="0" width="0" style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <header>
+      <span id="title">
+        <a href="../index.html" title="Back to the Home Page">
+          Andrea Azzola
+        </a>
+      </span>
+      <p id="ctl00_subtitle" class="subtitle">Tips and Techniques for Lifestyle Design</p>
+    </header>
+    <div id="wrapper" class="row">
+      <form name="aspnetForm" method="post" action="#" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY3NjMyNDYyNw9kFgJmD2QWBgIBDxYCHgRUZXh0BQ1BbmRyZWEgQXp6b2xhZAICDxYCHglpbm5lcmh0bWwFKFRpcHMgYW5kIFRlY2huaXF1ZXMgZm9yIExpZmVzdHlsZSBEZXNpZ25kAgMPZBYKAgMPZBYCAgIPDxYCHgdWaXNpYmxlZ2RkAgUPZBYCAgEPZBYCZg9kFgJmD2QWBAIBDxYCHgtfIUl0ZW1Db3VudAI3Fm5mD2QWBGYPFQQ3aHR0cDovL2FuZHJlYWF6em9sYS5jb20vc2F2aW5nLXRyYWRpdGlvbmFsLXdldC1zaGF2aW5nLydTYXZlIE1vbmV5IHdpdGggVHJhZGl0aW9uYWwgV2V0IFNoYXZpbmcnU2F2ZSBNb25leSB3aXRoIFRyYWRpdGlvbmFsIFdldCBTaGF2aW5nCjIwMTgtMDQtMDdkAgEPZBYCZg8VAZYBVGhlIGV4YW1wbGUgc2hvd3MgaG93IHRyYWRpdGlvbmFsIHdldCBzaGF2aW5nIGFsbG93cyB5b3UgdG8gc3BlbmQgOCB0aW1lcyBsZXNzIGluIGJsYWRlcyBjb21wYXJlZCB0byBhIGNvbnZlbnRpb25hbCBjYXJ0cmlkZ2UgbXVsdGktYmxhZGUgcmF6b3Igc2V0IHVwZAIBD2QWBGYPFQQ2aHR0cDovL2FuZHJlYWF6em9sYS5jb20vcmV2aWV3LTEweC1ydWxlLWdyYW50LWNhcmRvbmUvKkJvb2sgUmV2aWV3OiBUaGUgMTBYIFJ1bGUgYnkgR3JhbnQgQ2FyZG9uZSpCb29rIFJldmlldzogVGhlIDEwWCBSdWxlIGJ5IEdyYW50IENhcmRvbmUKMjAxNi0xMi0wNGQCAQ9kFgJmDxUBswFUaGUgMTBYIFJ1bGUgaXMgYSBib29rIGFib3V0IHByb2R1Y3Rpdml0eSB3aXRoaW4gdGhlIGJ1c2luZXNzIHdvcmxkLCBpdCB1bmRlcmxpbmVzIHRoZSBpbXBvcnRhbmNlIG9mIG5vdCBsaW1pdGluZyBnb2FscyBhbmQgdGFraW5nIDEwIHRpbWVzIGhpZ2hlciBsZXZlbHMgb2YgYWN0aW9uIHRvIGFjaGlldmUgdGhlbWQCAg9kFgRmDxUEPGh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2Rvd25zaXppbmctaG9tZS1hbmQtZWFybi10aW1lLW1vbmV5LzBEb3duc2l6aW5nIHlvdXIgSG9tZSB0byBFYXJuIEJhY2sgVGltZSBhbmQgTW9uZXkwRG93bnNpemluZyB5b3VyIEhvbWUgdG8gRWFybiBCYWNrIFRpbWUgYW5kIE1vbmV5CjIwMTYtMTEtMDJkAgEPZBYCZg8VAawBV2hlbiB3ZSB0YWxrIGFib3V0IGRvd25zaXppbmcgeW91ciBob21lLCB3ZSBtZWFuIHRoZSB0cmFuc2l0aW9uIHRvd2FyZHMgYSBzbWFsbGVyLXNpemVkIGhvdXNlLCBzdGVhbGluZyBzb21lIG90aGVyIHRpbWUgZnJvbSBtYWludGVuYW5jZSBhbmQgcmVub3ZhdGlvbiB0byBiZXR0ZXIgZW5qb3kgbGlmZWQCAw9kFgRmDxUEQWh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3JvYm8tYWR2aXNvci1kaWdpdGFsLXBvcnRmb2xpby1pbnZlc3RpbmcvQlJvYm8tYWR2aXNvcnMsIFdoZW4gSW52ZXN0aW5nIEFkdmljZSBCZWNvbWVzIERpZ2l0YWwgYW5kIEVmZmljaWVudEJSb2JvLWFkdmlzb3JzLCBXaGVuIEludmVzdGluZyBBZHZpY2UgQmVjb21lcyBEaWdpdGFsIGFuZCBFZmZpY2llbnQKMjAxNi0xMC0zMWQCAQ9kFgJmDxUBkQFSb2JvdC1hZHZpc29ycyBhcmUgc29mdHdhcmUgYWJsZSB0byBwcm92aWRlIGludmVzdG1lbnQgYWR2aXNlcyBieSBvcGVyYXRpbmcgdGhyb3VnaCByZS1iYWxhbmNpbmcgIGFsZ29yaXRobXMgZm9yIHBvcnRmb2xpbyBhbmQgY2FwaXRhbCBtYW5hZ2VtZW50ZAIED2QWBGYPFQQeaHR0cDovL2FuZHJlYWF6em9sYS5jb20vYm9va3MvFEJvb2sgUmVjb21tZW5kYXRpb25zFEJvb2sgUmVjb21tZW5kYXRpb25zCjIwMTYtMTAtMjJkAgEPZBYCZg8VAWhBIGxpc3Qgb2Ygd2hhdCBJIGJlbGlldmUgdG8gYmUgdGhlIGJlc3QgYm9va3MgZXZlciB3cml0dGVuLCBib29rcyB0aGF0IGhhZCBhIHByb2ZvdW5kIGltcGFjdCBvbiBteSBsaWZlLmQCBQ9kFgRmDxUENWh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL21lYWwtcHJlcC1wb3VjaGVzLXF1aWNrLWVhc3kvIFF1aWNrIGFuZCBFYXN5IE1lYWwgUHJlcCBQb3VjaGVzIFF1aWNrIGFuZCBFYXN5IE1lYWwgUHJlcCBQb3VjaGVzCjIwMTYtMTAtMDJkAgEPZBYCZg8VAUZNZWFsIHByZXBwaW5nIGluIGFkdmFuY2UgYW5kIHF1YW50aXR5IGlzIGJlbmVmaWNpYWwgZm9yIDMgbWFpbiByZWFzb25zZAIGD2QWBGYPFQQ7aHR0cDovL2FuZHJlYWF6em9sYS5jb20vaW50ZXJtaXR0ZW50LWZhc3RpbmctZGlldC1iZW5lZml0cy8mSW50ZXJtaXR0ZW50IEZhc3RpbmcgRGlldCBhbmQgQmVuZWZpdHMmSW50ZXJtaXR0ZW50IEZhc3RpbmcgRGlldCBhbmQgQmVuZWZpdHMKMjAxNi0wOS0wNmQCAQ9kFgJmDxUBqgFUaGUgcHVycG9zZSBvZiB0aGUgSW50ZXJtaXR0ZW50IEZhc3RpbmcgZGlldCBpcyB0byBjb25jZW50cmF0ZSBtZWFscyBpbiBhIHNtYWxsIHdpbmRvdzogOCBob3VycyBvciBsZXNzICh1cCB0byBvbiBtZWFsIGEgZGF5LCBidXQgbm90IGJleW9uZCkgZXZlcnkgZGF5LCBpbiBhbHRlcm5hdGUgZGF5c2QCBw9kFgRmDxUELmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3doYXQtaXMtZ2VvLWFyYml0cmFnZS8cQSBMZXZlciBDYWxsZWQgR2VvLUFyYml0cmFnZRxBIExldmVyIENhbGxlZCBHZW8tQXJiaXRyYWdlCjIwMTYtMDYtMjBkAgEPZBYCZg8VAX9UaGUgZ2VvLWFyYml0cmFnZSBpcyB0aGUgcHJhY3RpY2Ugb2YgZWNvbm9taWMtZmluYW5jaWFsIHNwZWN1bGF0aW9uIGJhc2VkIG9uIGRpc3Bhcml0eSBiZXR3ZWVuIGdlb2dyYXBoaWMgbG9jYXRpb25zIGFuZCBtYXJrZXRzZAIID2QWBGYPFQQxaHR0cDovL2FuZHJlYWF6em9sYS5jb20vZ29hbC1ibGluZG5lc3MtZ29hbG9kaWN5LxJUaGUgR29hbG9kaWN5IFRyYXASVGhlIEdvYWxvZGljeSBUcmFwCjIwMTYtMDUtMTRkAgEPZBYCZg8VAXZUaGUgZ29hbG9kaWN5IGlzIHRoZSBvYnNlc3Npb24gaW4gcHVyc3VpbmcgYSBnb2FsLCBhIGNvbXB1bHNpb24gc3VjaCB0aGF0IHRoZSBpbmRpdmlkdWFsIG9mdGVuIGlnbm9yZXMgaXRzIG93biBjb250ZXh0ZAIJD2QWBGYPFQQ4aHR0cDovL2FuZHJlYWF6em9sYS5jb20vd2FraW5nLXVwLWVhcmx5LWdldC10aGluZ3MtZG9uZS8nV2FraW5nIFVwIEVhcmx5IEFuZCBHZXR0aW5nIFRoaW5ncyBEb25lJ1dha2luZyBVcCBFYXJseSBBbmQgR2V0dGluZyBUaGluZ3MgRG9uZQoyMDE2LTAzLTI2ZAIBD2QWAmYPFQFfVGhlIHNpbXBsZSBhY3Qgb2Ygd2FraW5nIHVwIGVhcmx5IGluIHRoZSBtb3JuaW5nIGNhbiBiZSBvbmUgb2YgdGhlIGJlc3QgcHJvZHVjdGl2aXR5IHRlY2huaXF1ZXNkAgoPZBYEZg8VBDdodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9wYXRoLXRvLWZpbmFuY2lhbC1pbmRlcGVuZGVuY2UvIlRoZSBQYXRoIHRvIEZpbmFuY2lhbCBJbmRlcGVuZGVuY2UiVGhlIFBhdGggdG8gRmluYW5jaWFsIEluZGVwZW5kZW5jZQoyMDE2LTAzLTIwZAIBD2QWAmYPFQF+VGhlIHRlcm0gZmluYW5jaWFsIGluZGVwZW5kZW5jZSBpbmRpY2F0ZXMgYSBzdGF0ZSBmb3Igd2hpY2ggYW4gaW5kaXZpZHVhbCBjYW4gc3VzdGFpbiBpdHNlbGYgd2l0aG91dCB0aGUgbmVlZCBvZiBhbiBlbXBsb3ltZW50ZAILD2QWBGYPFQQ0aHR0cDovL2FuZHJlYWF6em9sYS5jb20vZ2V0dXBhbmRjb2RlLXBvZGNhc3QtcmV2aWV3Lx5HZXQgVXAgQW5kIENvZGUgUG9kY2FzdCBSZXZpZXceR2V0IFVwIEFuZCBDb2RlIFBvZGNhc3QgUmV2aWV3CjIwMTUtMDEtMTdkAgEPZBYCZg8VAYEBVGhlIHNob3cgZm9jdXNlcyBvbiBmaXRuZXNzIGFuZCBudXRyaXRpb24uIFRoZSBtYWluIGhvc3QgSm9obiBTb21uZXogaXMgYW4gZW50ZXJwcmVuZXVyLCBkZXZlbG9wZXIsIHBlcnNvbmFsIGRldmVsb3BtZW50IGNvYWNo4oCmZAIMD2QWBGYPFQQqaHR0cDovL2FuZHJlYWF6em9sYS5jb20vbHVjay1zdXJmYWNlLWFyZWEvH1RoZSBMdWNrIFN1cmZhY2UgQXJlYSBQcmluY2lwbGUfVGhlIEx1Y2sgU3VyZmFjZSBBcmVhIFByaW5jaXBsZQoyMDE0LTEyLTI2ZAIBD2QWAmYPFQGDAVRoZSBMdWNrIFN1cmZhY2UgQXJlYSBwcmluY2lwbGUgc3RhdGVzIHRoYXQgaW5jcmVtZW50cyBvZiBsdWNrIGluIGEgY2VydGFpbiBmaWVsZCBvZiBpbnRlcmVzdCwgY2FuIGJlIGFjaGlldmVkIGJ5IGRvaW5nIGFuZCB0ZWxsaW5nZAIND2QWBGYPFQQ+aHR0cDovL2FuZHJlYWF6em9sYS5jb20vYXNwbmV0LXZuZXh0LW1hYy1vcy1vbW5pc2hhcnAta3VsdHVyZS89SG93IHRvIHJ1biBBU1AuTkVUIHZOZXh0IG9uIE1hYyBPUyB3aXRoIEt1bHR1cmUgYW5kIE9tbmlTaGFycD1Ib3cgdG8gcnVuIEFTUC5ORVQgdk5leHQgb24gTWFjIE9TIHdpdGggS3VsdHVyZSBhbmQgT21uaVNoYXJwCjIwMTQtMTItMjBkAgEPZBYCZg8VAV1Ib3cgdG8gcnVuIEFTUC5ORVQgb24gTWFjIE9TIFguIFRoZSBzb2x1dGlvbiBsZXZlcmFnZXMgb24gU3VibGltZSBUZXh0LCBLdWx0dXJlIGFuZCBPbW5pU2hhcnBkAg4PZBYEZg8VBDpodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9lcmdvZG94LWVyZ29ub21pYy1rZXlib2FyZC1yZXZpZXcvJ0VyZ29Eb3ggc3BsaXQgRXJnb25vbWljIEtleWJvYXJkIFJldmlldydFcmdvRG94IHNwbGl0IEVyZ29ub21pYyBLZXlib2FyZCBSZXZpZXcKMjAxNC0xMi0wOWQCAQ9kFgJmDxUBaFRoZSBFcmdvRG94IGlzIGEgZnVsbHkgcHJvZ3JhbW1hYmxlLCBESVksIHNwbGl0IGVyZ29ub21pYyBrZXlib2FyZCBjb21wYXRpYmxlIHdpdGggV2luZG93cywgTWFjIE9TLCAqbml4ZAIPD2QWBGYPFQQ3aHR0cDovL2FuZHJlYWF6em9sYS5jb20vcGVyc29uYWwtYnJhbmRpbmctaW50cm9kdWN0aW9uLydQZXJzb25hbCBCcmFuZGluZywgYSBCcmllZiBJbnRyb2R1Y3Rpb24nUGVyc29uYWwgQnJhbmRpbmcsIGEgQnJpZWYgSW50cm9kdWN0aW9uCjIwMTQtMDYtMDdkAgEPZBYCZg8VAYIBUGVyc29uYWwgYnJhbmRpbmcgaXMgYSBicmFuY2ggb2YgbWFya2V0aW5nIGFuZCBhIHNldCBvZiB0ZWNobmlxdWVzIGZvciBudXJ0dXJpbmcgdGhlIHB1YmxpYyBwZXJjZXB0aW9uIG9mIHNlbGYsIGxpa2UgY29tbW9uIGJyYW5kc2QCEA9kFgRmDxUEQmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3Jldmlldy1maWxjby1tYWplc3RvdWNoMi10ZW5rZXlsZXNzLW5pbmphLz5GaWxjbyBNYWplc3RvdWNoLTIgVGVua2V5bGVzcyBOaW5qYSBNZWNoYW5pY2FsIEtleWJvYXJkIFJldmlldz5GaWxjbyBNYWplc3RvdWNoLTIgVGVua2V5bGVzcyBOaW5qYSBNZWNoYW5pY2FsIEtleWJvYXJkIFJldmlldwoyMDE0LTA1LTI5ZAIBD2QWAmYPFQGPAVRoZSBGaWxjbyBNYWplc3RvdWNoLTIgVGVua2V5bGVzcyBOaW5qYSBpcyBhIGphcGFuZXNlIG1lY2hhbmljYWwga2V5Ym9hcmQgdGhhdCBzcG9ydCBzZW1pLWJsYW5rIGtleXMsIG4ta2V5IHJvbGxvdmVyIGFuZCBpdCdzIGJ1aWx0IGxpa2UgYSB0YW5rZAIRD2QWBGYPFQQsaHR0cDovL2FuZHJlYWF6em9sYS5jb20vbG9nZ2luZy1ubG9nLXNxbGl0ZS8cTG9nZ2luZyB3aXRoIE5Mb2cgYW5kIFNRTGl0ZRxMb2dnaW5nIHdpdGggTkxvZyBhbmQgU1FMaXRlCjIwMTQtMDUtMDZkAgEPZBYCZg8VAbABVGhpcyBhcnRpY2xlIGV4cGxhaW5zIGhvdyB0byBhY2hpZXZlIGEgcG9ydGFibGUgYW5kIGVsZWdhbnQgbG9nZ2luZyBzb2x1dGlvbiB3aXRoIE5Mb2cgYW5kIFNRTGl0ZSwgdGhlIHNvbHV0aW9uIHRhcmdldHMgdGhlIC5ORVQgcGxhdGZvcm0gYW5kIG9ubHkgcmVxdWlyZXMgYSBmZXcgY29uZmlndXJhdGlvbnNkAhIPZBYEZg8VBDlodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9tYXZlbnNtYXRlLXVuYWJsZS1naXRodWItd2luZG93cy8sTWF2ZW5zTWF0ZSB1bmFibGUgdG8gcmVhY2ggR2l0SHViIG9uIFdpbmRvd3MsTWF2ZW5zTWF0ZSB1bmFibGUgdG8gcmVhY2ggR2l0SHViIG9uIFdpbmRvd3MKMjAxNC0wNC0wNmQCAQ9kFgJmDxUBiQFNYXZlbnNNYXRlIHNldHVwIG1heSBmYWlsIG9uIE1pY3Jvc29mdCBXaW5kb3dzIG1hY2hpbmVzIGR1ZSB0byBhICdpbnN0YWxsZXIgYmVpbmcgdW5hYmxlIHRvIHJlYWNoIEdpdEh1YicgZXJyb3IuIEhlcmUgYSBwb3NzaWJsZSBzb2x1dGlvbmQCEw9kFgRmDxUEMmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3NlYXJjaC1lbWFpbC1pbmJveC1jc2hhcnAvGlNlYXJjaCBFbWFpbCBJbmJveCB3aXRoIEMjGlNlYXJjaCBFbWFpbCBJbmJveCB3aXRoIEMjCjIwMTQtMDMtMjdkAgEPZBYCZg8VAXdBIEMjIHNuaXBwZXQgYmFzZWQgb24gdGhlIEFFLk5FVC5NYWlsIGxpYnJhcnksIGZvciBzZWFyY2hpbmcgYW4gZW1haWwgaW5zaWRlIGEgbWFpbGJveCBJbmJveCwgdGhyb3VnaCB0aGUgSU1BUCBwcm90b2NvbGQCFA9kFgRmDxUEJmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3BvbW9kb3JvLWFwcHMvM0EgZmV3IGhhbmR5IFBvbW9kb3JvIFRpbWVyIEFwcHMgZm9yIE1hYyBhbmQgV2luZG93czNBIGZldyBoYW5keSBQb21vZG9ybyBUaW1lciBBcHBzIGZvciBNYWMgYW5kIFdpbmRvd3MKMjAxNC0wMy0yN2QCAQ9kFgJmDxUBc1RoZSBiZXN0IGFwcHMgZm9yIGFwcGx5aW5nIHRoZSBQb21vZG9ybyB0ZWNobmlxdWUgb24gV2luZG93cyBvciBNYWM6IFBvbW9kYWlybywgRm9jdXMgQm9vc3RlciwgVG9taWdodHksIFRvbWF0by5pc3RkAhUPZBYEZg8VBCtodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9odW1hbi1tdWx0aXRhc2tpbmcvF0h1bWFucyBhbmQgTXVsdGl0YXNraW5nF0h1bWFucyBhbmQgTXVsdGl0YXNraW5nCjIwMTQtMDEtMzBkAgEPZBYCZg8VAYcBSXMgaXQgcG9zc2libGUgdG8gYWNoaWV2ZSB0cnVlIG11bHRpdGFza2luZz8gVGhlIGNhcGFiaWxpdHkgb2YgcGVyZm9ybWluZyBtdWx0aXBsZSB0YXNrcyBjb25jdXJyZW50bHkgYW5kIHN0aWxsIG9idGFpbiBvcHRpbWFsIHJlc3VsdHM/ZAIWD2QWBGYPFQQ4aHR0cDovL2FuZHJlYWF6em9sYS5jb20vamF2YXNjcmlwdC1kYXRlLWhhbmRsaW5nLWZvcm1hdC8nTWFuYWdlIGFuZCBmb3JtYXQgRGF0ZXMgd2l0aCBKYXZhU2NyaXB0J01hbmFnZSBhbmQgZm9ybWF0IERhdGVzIHdpdGggSmF2YVNjcmlwdAoyMDEzLTExLTE0ZAIBD2QWAmYPFQGfAVRoZXJlIGFyZSBhIGNvdXBsZSBvZiBvcHRpb25zIGZvciBkZWFsaW5nIHdpdGggSmF2YXNjcmlwdCBkYXRlcywgdGhlIEpTIERhdGUgb2JqZWN0IGlzIHVzdWFsbHkgdGhlIHdheSB0byBnbywgYW5kIGlmIHlvdSdyZSBsb29raW5nIGZvciBhbiBhbHRlcm5hdGl2ZSBzb2x1dGlvbmQCFw9kFgRmDxUEN2h0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2ljaGlnby1hc3AtbmV0LWJsb2dnaW5nLWVuZ2luZS8iSWNoaWdvLCBhbiBBU1AuTkVUIEJsb2dnaW5nIEVuZ2luZSJJY2hpZ28sIGFuIEFTUC5ORVQgQmxvZ2dpbmcgRW5naW5lCjIwMTMtMTEtMTJkAgEPZBYCZg8VAWdBIGJyaWVmIGludHJvIHRvIHRoZSBJY2hpZ28gQVNQLk5FVCBibG9nZ2luZyBlbmdpbmUsIGEgbWluaW1hbGlzdGljIEF6dXJlIGVuYWJsZWQgV2ViIGZvcm1zIGFwcGxpY2F0aW9uZAIYD2QWBGYPFQQ/aHR0cDovL2FuZHJlYWF6em9sYS5jb20vc2FsZXNmb3JjZS1iYWNrdXAtb3JnYW5pemF0aW9uLXN2bi1naXQvP0F1dG9tYXRlIFNWTi9HaXQgQmFja3VwcyBvZiBFbnRpcmUgU2FsZXNmb3JjZS5jb20gT3JnYW5pemF0aW9ucz9BdXRvbWF0ZSBTVk4vR2l0IEJhY2t1cHMgb2YgRW50aXJlIFNhbGVzZm9yY2UuY29tIE9yZ2FuaXphdGlvbnMKMjAxMy0xMC0xN2QCAQ9kFgJmDxUBnQFUaGUgc29sdXRpb24gc2hvd3MgYSB3YXkgdG8gdmVyc2lvbiBlbnRpcmUgU2FsZXNmb3JjZS5jb20gb3JnYW5pemF0aW9ucy4gSXQgaW52b2x2ZXMgdHdvIHBvcG9sYXIgU0NNcyAoU1ZOIGFuZCBHaXQpLCBhbiBhbHdheXMtb24gc2VydmVyIGFuZCBhIGZldyBmcmVlIHRvb2xzZAIZD2QWBGYPFQQ0aHR0cDovL2FuZHJlYWF6em9sYS5jb20vdGFibGUtc2l6ZS1zcGFjZS1zcWwtc2VydmVyLyJHZXQgU2l6ZSBvZiBUYWJsZXMgd2l0aCBTUUwgU2VydmVyIkdldCBTaXplIG9mIFRhYmxlcyB3aXRoIFNRTCBTZXJ2ZXIKMjAxMy0xMC0xNmQCAQ9kFgJmDxUBkwFBIHNuaXBwZXQgZm9yIHJldHJpZXZpbmcgdGhlIHNpemUgb2YgYWxsIHRhYmxlcyBpbiBhIFNRTCBTZXJ2ZXIgZGF0YWJhc2UgdGhhdCBtaWdodCBwcm92ZSB1c2VmdWwgZm9yIHVuZGVyc3RhbmRpbmcgd2hlcmUgbW9zdCBvZiB5b3VyIGRhdGEgaXMgZ29pbmdkAhoPZBYEZg8VBDJodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9zYWxlc2ZvcmNlLWRlYnVnLWxvZy1hcGV4Ly5EZWFsaW5nIHdpdGggU2FsZXNmb3JjZSBNYXhpbXVtIERlYnVnIExvZyBTaXplLkRlYWxpbmcgd2l0aCBTYWxlc2ZvcmNlIE1heGltdW0gRGVidWcgTG9nIFNpemUKMjAxMy0wNy0xOGQCAQ9kFgJmDxUBfldoZW4geW91IGhhdmUgQXBleCBjb2RlIHRoYXQgaXRlcmF0ZXMgYSBsb3QsIHlvdSBtaWdodCBvYnRhaW4gdHJ1bmNhdGVkIGxvZyBmaWxlcyBhbmQgYW4gZXJyb3I6IE1BWElNVU0gREVCVUcgTE9HIFNJWkUgUkVBQ0hFRGQCGw9kFgRmDxUEKWh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2hhdmlzaS1tYWdpYy1lbWkvIk5ldyBSZW1peCBPdXQhIE1hZ2ljIEVtaSBieSBIYXZpc2kiTmV3IFJlbWl4IE91dCEgTWFnaWMgRW1pIGJ5IEhhdmlzaQoyMDEyLTAyLTIxZAIBD2QWAmYPFQFnSSdtIGhhcHB5IHRvIGFubm91bmNlIHRoYXQgTWFnaWMgRW1pIGJ5IEhhdmlzaSBpcyBub3cgYXZhaWxhYmxlIG9uIEJlYXRwb3J0LCBpbmNsdWRpbmcgbXkgcmVtaXggKEljYXJvKWQCHA9kFgRmDxUEKmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2Z1dHVyZS1jb3VudC1hcGV4LxtGdXR1cmUgY291bnQgd2l0aCBBcGV4IENvZGUbRnV0dXJlIGNvdW50IHdpdGggQXBleCBDb2RlCjIwMTEtMDctMTRkAgEPZBYCZg8VAXpBIHNpbXBsZSBzbmlwcGV0IGZvciBjb3VudGluZyBAZnV0dXJlIGNhbGxzIGluIGEgMjQgaG91cnMgdGltZXNwYW4sIG1heSBiZSB1c2VmdWwgZm9yIG1vbml0b3JpbmcgcGVha3MgYW5kIGFjdCBhY2NvcmRpbmdseWQCHQ9kFgRmDxUEO2h0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3JlcXVpcmVkZmllbGR2YWxpZGF0b3ItcmFkY29tYm9ib3gvPFNpbXVsYXRpbmcgYSBSZXF1aXJlZEZpZWxkVmFsaWRhdG9yIHdoZW4gdXNpbmcgYSBSYWRDb21ib0JveDxTaW11bGF0aW5nIGEgUmVxdWlyZWRGaWVsZFZhbGlkYXRvciB3aGVuIHVzaW5nIGEgUmFkQ29tYm9Cb3gKMjAxMC0xMC0yMmQCAQ9kFgJmDxUBcFRlbGVyaWsncyBSYWRDb21ib0JveCBkb2VzIG5vdCBiZWhhdmUgbGlrZSBhIHRyYWRpdGlvbmFsIERyb3BEb3duTGlzdC4gWW91IG1heSBjb25zaWRlciB0byB1c2UgYSBDdXN0b21WYWxpZGF0b3JkAh4PZBYEZg8VBDNodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS90cmFuc2Zvcm0tc2VudGVuY2Utc2x1Zy1qcy8pVHVybiBTZW50ZW5jZXMgaW50byBTbHVncyB3aXRoIEphdmFTY3JpcHQpVHVybiBTZW50ZW5jZXMgaW50byBTbHVncyB3aXRoIEphdmFTY3JpcHQKMjAxMC0xMC0yMGQCAQ9kFgJmDxUBTlRoZSBzY3JpcHQgYWxsb3dzIHlvdSB0byB0dXJuIGEgdGV4dCBzdHJpbmcgaW50byBhIHByb3BlciBVUkwgc2x1ZyB3aXRoIGpRdWVyeWQCHw9kFgRmDxUENmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3JlbWl4LW5hbm5pLWhhbm5pYmFsLWludmFzaW9uLylOZXcgUmVtaXggT3V0ISBIYW5uaWJhbCBJbnZhc2lvbiBieSBOYU5uaSlOZXcgUmVtaXggT3V0ISBIYW5uaWJhbCBJbnZhc2lvbiBieSBOYU5uaQoyMDEwLTEwLTE2ZAIBD2QWAmYPFQFuSSdtIGhhcHB5IHRvIGFubm91bmNlIHRoYXQgSGFubmliYWwgSW52YXNpb24gYnkgTmFObmkgaXMgbm93IGF2YWlsYWJsZSBvbiBCZWF0cG9ydCwgaW5jbHVkaW5nIG15IHJlbWl4IChJY2FybylkAiAPZBYEZg8VBCtodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9zZXQtc2VwdGVtYmVyLTIwMTAvLk5ldyBESiBTZXQhIFNlcHRlbWJlciAyMDEwIGZvciBNYUdtQSBSYWRpbyBTaG8uTmV3IERKIFNldCEgU2VwdGVtYmVyIDIwMTAgZm9yIE1hR21BIFJhZGlvIFNobwoyMDEwLTA5LTA0ZAIBD2QWAmYPFQFJSGVyZSdzIG15IERKIHNldCBhaXJlZCBpbiBTZXB0ZW1iZXIgMjAxMCBmb3IgdGhlIE1hR21BIFJhZGlvIFNob3csIGVuam95LmQCIQ9kFgRmDxUEJmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3NldC1qdW5lLTIwMTAvLU5ldyBESiBTZXQhIEp1bmUgMjAxMCBmb3IgdGhlIE1hR21BIFJhZGlvIFNoby1OZXcgREogU2V0ISBKdW5lIDIwMTAgZm9yIHRoZSBNYUdtQSBSYWRpbyBTaG8KMjAxMC0wNi0xNGQCAQ9kFgJmDxUBREhlcmUncyBteSBESiBzZXQgYWlyZWQgaW4gSnVuZSAyMDEwIGZvciB0aGUgTWFHbUEgUmFkaW8gU2hvdywgZW5qb3kuZAIiD2QWBGYPFQQxaHR0cDovL2FuZHJlYWF6em9sYS5jb20vd2ViLXNlcnZpY2UtcmVmZXJlbmNlLXZzLyVJbXBvcnQgV2ViIHNlcnZpY2UgUmVmZXJlbmNlcyBpbiAuTkVUJUltcG9ydCBXZWIgc2VydmljZSBSZWZlcmVuY2VzIGluIC5ORVQKMjAxMC0wNi0wOWQCAQ9kFgJmDxUBfFlvdSBuZWVkIHRvIGNvbnN1bWUgV2ViIHNlcnZpY2VzIGZyb20gIGNsaWVudCBhcHBsaWNhdGlvbnMuIFRoZXJlJ3MgYSB0b29sIGZvciBkZXNpZ24ganVzdCB0byBkbyB0aGF0ICwgaXQncyBjYWxsZWQgd3NkbC5leGVkAiMPZBYEZg8VBCpodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9sb2ctaHR0cC1yZXF1ZXN0cy8hSG93IHRvIGxvZyBIVFRQIHJlcXVlc3RzIHdpdGggUEhQIUhvdyB0byBsb2cgSFRUUCByZXF1ZXN0cyB3aXRoIFBIUAoyMDEwLTA1LTI3ZAIBD2QWAmYPFQGCAVNvbWV0aW1lcyB5b3UgbmVlZCB0byB1bmRlcnN0YW5kIHByZWNpc2VseSBob3cgdGhlIEhUVFAgcmVxdWVzdCBpcyBzdWJtaXR0ZWQgdG8gdGhlIHNlcnZlci4gVGhhdCwgY2FuIGJlIGFsc28gYmUgYWNoaWV2ZWQgd2l0aCBQSFBkAiQPZBYEZg8VBCdodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9zZXQtYXByaWwtMjAxMC8dQXByaWwgMjAxMCAtIE1hR21BIFJhZGlvIFNob3cdQXByaWwgMjAxMCAtIE1hR21BIFJhZGlvIFNob3cKMjAxMC0wNS0yN2QCAQ8WAh8CaBYCZg8VAQBkAiUPZBYEZg8VBCpodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9zZXQtZmVicnVhcnktMjAxMC8yTmV3IERKIFNldCEgRmVicnVhcnkgMjAxMCBmb3IgdGhlIE1hR21BIFJhZGlvIFNob3cyTmV3IERKIFNldCEgRmVicnVhcnkgMjAxMCBmb3IgdGhlIE1hR21BIFJhZGlvIFNob3cKMjAxMC0wMi0wN2QCAQ9kFgJmDxUBSEhlcmUncyBteSBESiBzZXQgYWlyZWQgaW4gRmVicnVhcnkgMjAxMCBmb3IgdGhlIE1hR21BIFJhZGlvIFNob3csIGVuam95IWQCJg9kFgRmDxUELGh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3Nlby1hc3AtbmV0LXJvdXRpbmcvL0ltcHJvdmUgQVNQLk5FVCBTRU8gYnkgdXNpbmcgU3lzdGVtLldlYi5Sb3V0aW5nL0ltcHJvdmUgQVNQLk5FVCBTRU8gYnkgdXNpbmcgU3lzdGVtLldlYi5Sb3V0aW5nCjIwMTAtMDEtMThkAgEPZBYCZg8VAYsBQVNQLk5FVCBvZmZlcnMgYSBncmVhdCByZXNvdXJjZSBjYWxsZWQgJ1N5c3RlbS5XZWIuUm91dGluZycgdGhhdCBzdXBwb3J0IHJvdXRlcy4NClJvdXRlcyB0cmFuc2xhdGVzIGJvdGggdGhlIHBhdHRlcm4gYW5kIGNvbnRleHQgcGFyYW1ldGVyc2QCJw9kFgRmDxUEKmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2FzdXMtZWVlcGMtMTIwMWhhLxhBc3VzIEVlZVBDIDEyMDFIQSByZXZpZXcYQXN1cyBFZWVQQyAxMjAxSEEgcmV2aWV3CjIwMTAtMDEtMDlkAgEPZBYCZg8VAXVUaGUgRWVlUEMgMTIwMUhBIGlzIHBhcnQgb2YgYSBuZXcgZ2VuZXJhdGlvbiBvZiBiaWcgbmV0Ym9va3MsIGluIGZhY3QsIHRoaXMgcGFydGljdWxhciBvbmUgc3BvcnRzIGEgMTIuMSBpbmNoIG1vbml0b3JkAigPZBYEZg8VBDdodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9yZW1peC1mcmFuY29pcy1sZS1yb3ktbW9zcXVpdG8vKk5ldyBSZW1peCBPdXQhIE1vc3F1aXRvIGJ5IEZyYW5jb2lzIExlIFJveSpOZXcgUmVtaXggT3V0ISBNb3NxdWl0byBieSBGcmFuY29pcyBMZSBSb3kKMjAwOS0xMi0yMmQCAQ9kFgJmDxUBZFR3ZXJvayBSZWNvcmRzIGlzIHByb3VkIHRvIHByZXNlbnQgYSBuZXcgbGFiZWwgYXJ0aXN0LCBGcmFuY29pcyBMZSBSb3kgYW5kIGhpcyBkZWJ1dCBzaW5nbGUgTW9zcXVpdG9kAikPZBYEZg8VBCpodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9zZXQtbm92ZW1iZXItMjAwOS8yTmV3IERKIFNldCEgTm92ZW1iZXIgMjAwOSBmb3IgdGhlIE1hR21BIFJhZGlvIFNob3cyTmV3IERKIFNldCEgTm92ZW1iZXIgMjAwOSBmb3IgdGhlIE1hR21BIFJhZGlvIFNob3cKMjAwOS0xMi0yMmQCAQ9kFgJmDxUBSEhlcmUncyBteSBESiBzZXQgYWlyZWQgaW4gTm92ZW1iZXIgMjAwOSBmb3IgdGhlIE1hR21BIFJhZGlvIFNob3csIGVuam95IWQCKg9kFgRmDxUEKmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2NhbGwtYXN5bmMtbWV0aG9kLxpDYWxsIGFzeW5jIG1ldGhvZHMgd2l0aCBDIxpDYWxsIGFzeW5jIG1ldGhvZHMgd2l0aCBDIwoyMDA5LTEwLTE1ZAIBD2QWAmYPFQGBAVRoaXMgYXJ0aWNsZSBoZWxwIHlvdSBpbiBkZWxlZ2F0aW5nIHdvcmsgdG8gYW4gYXN5bmNocm9ub3VzIHRocmVhZCBpbiBDIywgdGh1cyBhbGxvd2luZyBmb3IgY29kZSBleGVjdXRpb24gYW5kIEFwcCByZXNwb25zaXRpdml0eWQCKw9kFgRmDxUEJWh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3Bvc3QtZGF0YS1qcy8ZUE9TVCBkYXRhIHdpdGggSmF2YVNjcmlwdBlQT1NUIGRhdGEgd2l0aCBKYXZhU2NyaXB0CjIwMDktMDctMDdkAgEPZBYCZg8VAYcBSW4gdGhpcyBzY2VuYXJpbywgZm9ybSBkYXRhIGFyZSByZXN0cmljdGVkIHRvIEFTQ0lJIGNvZGVzLiBJZiB0aGUgbWV0aG9kIGlzICJwb3N0IiAtLSwgdGhlIHVzZXIgYWdlbnQgY29uZHVjdHMgYW4gSFRUUCBwb3N0IHRyYW5zYWN0aW9uZAIsD2QWBGYPFQQwaHR0cDovL2FuZHJlYWF6em9sYS5jb20vc2VubmhlaXNlci1oZC0yNS1yZXZpZXcvJVNlbm5oZWlzZXIgSEQgMjUtSUkgaGVhZHBob25lcyByZXZpZXclU2VubmhlaXNlciBIRCAyNS1JSSBoZWFkcGhvbmVzIHJldmlldwoyMDA5LTA2LTEyZAIBD2QWAmYPFQGKAUkgZmlyc3QgaGVhcmQgYWJvdXQgdGhlIFNlbm5oZWlzZXIgSEQtSUkgZnJvbSBhIHByb2Zlc3Npb25hbCBwcm9kdWNlciBhIHdoaWxlIGFnbywgc3RpbGwgb25lIG9mIHRoZSBiZXN0IERKL3Byb2R1Y2VyIGhlYWRwaG9uZSB5b3UgY2FuIGdldGQCLQ9kFgRmDxUENGh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2pzLW5vdGlmaWNhdGlvbi1wYW5lbC1nbWFpbC8tSmF2YVNjcmlwdCBBdXRvLWNvbGxhcHNpbmcgTm90aWZpY2F0aW9uIFBhbmVsLUphdmFTY3JpcHQgQXV0by1jb2xsYXBzaW5nIE5vdGlmaWNhdGlvbiBQYW5lbAoyMDA5LTA1LTI5ZAIBD2QWAmYPFQFwSW4gYWxtb3N0IGFsbCB3ZWIgYXBwbGljYXRpb25zIGNvbWVzIHRoZSBtb21lbnQgd2hlbiBpdCBiZWNvbWVzIG5lY2Vzc2FyeSB0byBzaG93IHNvbWUgbm90aWZpY2F0aW9ucyB0byB0aGUgdXNlcmQCLg9kFgRmDxUELWh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2dldC1yYWRpby1jaGVja2VkLWpzLzhHZXQgYW5kIFNldCBSYWRpbyBjb250cm9scyBjaGVja2VkIHZhbHVlIHdpdGggSmF2YVNjcmlwdDhHZXQgYW5kIFNldCBSYWRpbyBjb250cm9scyBjaGVja2VkIHZhbHVlIHdpdGggSmF2YVNjcmlwdAoyMDA5LTAzLTIwZAIBD2QWAmYPFQGEAVRoZSBnZXRFbGVtZW50c0J5TmFtZSBtZXRob2QgYWxsb3dzIHlvdSB0byBvYnRhaW4gYSBjb2xsZWN0aW9uIG9mIGNvbnRyb2xzIGZyb20gdGhlIChYKUhUTUwgRE9NLCBieSBzcGVjaWZ5aW5nIHRoZSBjb21tb24gbmFtZSB2YWx1ZWQCLw9kFgRmDxUEMmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2NsZWFuLXNwLWNhY2hlLXNxbC1zZXJ2ZXIvMENsZWFuIFVwIFN0b3JlZCBQcm9jZWR1cmVzIENhY2hlIHdpdGggU1FMIFNlcnZlcjBDbGVhbiBVcCBTdG9yZWQgUHJvY2VkdXJlcyBDYWNoZSB3aXRoIFNRTCBTZXJ2ZXIKMjAwOS0wMy0wNmQCAQ9kFgJmDxUBdldoZW4gZGVwbG95aW5nIGEgc3RvcmVkIHByb2NlZHVyZSwgYSBjbGVhbiB1cCB0aGUgZGIncyBjYWNoZSBtaWdodCBnbyBhIGxvbmcgd2F5IGluIG9yZGVyIHRvIGFwcGx5IGNoYW5nZXMgaW1tZWRpYXRlbHlkAjAPZBYEZg8VBDZodHRwOi8vYW5kcmVhYXp6b2xhLmNvbS9tdWx0aXBsZS1jb2x1bW5zLWR5bmFtaWMtZGF0YS8wSGFuZGxlIE11bHRpcGxlIENvbHVtbnMgYXMgT25lIHdpdGggRHluYW1pYyBEYXRhMEhhbmRsZSBNdWx0aXBsZSBDb2x1bW5zIGFzIE9uZSB3aXRoIER5bmFtaWMgRGF0YQoyMDA4LTExLTAyZAIBD2QWAmYPFQF5SSBkZWNpZGVkIHRvIGRlZXBseSBjdXN0b21pemUgdGhlIEZpZWxkVGVtcGxhdGVVc2VyQ29udHJvbCBvZiBEeW5hbWljIERhdGEsIHRvIGRpc3BsYXkgYW5kIHNhdmUgbXVsdGlwbGUgQ29sdW1ucyBJIG5lZWRlZGQCMQ9kFgRmDxUEM2h0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3VwbG9hZC1sYXJnZS1maWxlcy1hc3AtbmV0LyxBbGxvdyB0aGUgVXBsb2FkIG9mIExhcmdlIEZpbGVzIHdpdGggQVNQLk5FVCxBbGxvdyB0aGUgVXBsb2FkIG9mIExhcmdlIEZpbGVzIHdpdGggQVNQLk5FVAoyMDA4LTA2LTI0ZAIBD2QWAmYPFQGGAVRoaXMgV2ViLmNvbmZpZyBzZXR0aW5nIGFsbG93cyBmb3IgYSBiaWdnZXIgc2l6ZSBvbiB1cGxvYWRlZCBmaWxlcyBieSB0dW5pbmcgYm90aCB0aGUgZXhlY3V0aW9uIHRpbWUgYW5kIG1heCByZXF1ZXN0IGxlbmd0aCBwYXJhbWV0ZXJzZAIyD2QWBGYPFQRLaHR0cDovL2FuZHJlYWF6em9sYS5jb20vY2hlY2stbWV0YW1vZGVsLWV4aXN0ZW5jZS1keW5hbWljLWRhdGEtYXBwbGljYXRpb24vRkNoZWNrIHRoZSBNZXRhTW9kZWwgRXhpc3RlbmNlIHdoaWxlIFJ1bm5pbmcgYSBEeW5hbWljIERhdGEgQXBwbGljYXRpb25GQ2hlY2sgdGhlIE1ldGFNb2RlbCBFeGlzdGVuY2Ugd2hpbGUgUnVubmluZyBhIER5bmFtaWMgRGF0YSBBcHBsaWNhdGlvbgoyMDA4LTA2LTE4ZAIBD2QWAmYPFQGWAUluIHRoZSB3ZWIgYXBwbGljYXRpb24gdGhhdCBJJ20gZGV2ZWxvcGluZyB1c2luZyBEeW5hbWljIERhdGEsIEkgc2V0IHRoZSBEYXRhQ29udGV4dCBhdCBydW50aW1lIGJlY2F1c2UgdGhlIGFwcGxpY2F0aW9uIG1pZ2h0IGJpbmQgZGlmZmVyZW50IGNvbnRleHRzLmQCMw9kFgRmDxUEQWh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3NldC1jb25uZWN0aW9uc3RyaW5nLXJ1bnRpbWUtZHluYW1pY2RhdGEvNFNldCB0aGUgQ29ubmVjdGlvblN0cmluZyBhdCBSdW50aW1lIHdpdGggRHluYW1pY0RhdGE0U2V0IHRoZSBDb25uZWN0aW9uU3RyaW5nIGF0IFJ1bnRpbWUgd2l0aCBEeW5hbWljRGF0YQoyMDA4LTA2LTE2ZAIBD2QWAmYPFQFsVGhlIGZvbGxvd2luZyBzbmlwcGV0IGN1c3RvbWl6ZXMgdGhlIC5ORVQgQ29ubmVjdGlvblN0cmluZyBwcm9wZXJ0eSBhdCBydW50aW1lIGluIGEgRHluYW1pYyBEYXRhIGFwcGxpY2F0aW9uZAI0D2QWBGYPFQREaHR0cDovL2FuZHJlYWF6em9sYS5jb20vY29uc3VtaW5nLW5ldC13ZWItc2VydmljZXMtdXNpbmctcGhwLW51c29hcC8vQ29uc3VtaW5nIC5ORVQgV2Vic2VydmljZXMgVXNpbmcgUEhQIGFuZCBOdVNvYXAvQ29uc3VtaW5nIC5ORVQgV2Vic2VydmljZXMgVXNpbmcgUEhQIGFuZCBOdVNvYXAKMjAwNy0xMC0yM2QCAQ9kFgJmDxUBZkEgLk5FVCB3ZWJzZXJ2aWNlIG9mZmVycyBwYXJ0aWN1bGFyIGVuY3J5cHRpbmcgY2FwYWJpbGl0aWVzLiBJIG5lZWQgdG8gY29uc3VtZSB0aGUgd2Vic2VydmljZSB3aXRoIFBIUGQCNQ9kFgRmDxUEPGh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL3VzaW5nLWFqYXgtbW9kYWxwb3B1cC10YXJnZXRjb250cm9sLzBVc2luZyBhbiBhamF4Ok1vZGFsUG9wdXAgV2l0aG91dCBhIFRhcmdldENvbnRyb2wwVXNpbmcgYW4gYWpheDpNb2RhbFBvcHVwIFdpdGhvdXQgYSBUYXJnZXRDb250cm9sCjIwMDctMDktMjVkAgEPZBYCZg8VAXRTb21ldGltZXMgeW91IG1heSB3YW50IHRvIHNob3cgYW5kIGhpZGUgdGhlIHBhbmVsIHByb2dyYW1tYXRpY2FsbHkuIEFsbCB5b3UgbmVlZCwgaXMgYSBmYWtlIGFjdGl2YXRvciBsaWtlIGZvbGxvd2luZ2QCNg9kFgRmDxUENmh0dHA6Ly9hbmRyZWFhenpvbGEuY29tL2lzc3Vlcy1hamF4LWN1c3RvbS1odHRwbW9kdWxlLyhJc3N1ZXMgV2l0aCBBSkFYIGFuZCBhIEN1c3RvbSBIdHRwTW9kdWxlKElzc3VlcyBXaXRoIEFKQVggYW5kIGEgQ3VzdG9tIEh0dHBNb2R1bGUKMjAwNS0wNi0xOGQCAQ9kFgJmDxUBb1doaWxlIGltcGxlbWVudGluZyBhbiBIdHRwTW9kdWxlIHRoYXQgaGFuZGxlIFVSTHMgaW4gYSBTRU8gZnJpZW5kbHkgd2F5LCB0aGUgQUpBWCBzY3JpcHQgbW9kdWxlIGdldHMgaW4gdGhlIHdheWQCAw9kFgYCAQ8PFgIfAmhkZAIDDw8WAh8CaGRkAgUPDxYCHwJoZGQCCQ9kFgICAQ9kFgpmDxYCHwEFQTxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC90d2l0dGVyLnN2ZycgYWx0PSdNeSBUd2l0dGVyIHByb2ZpbGUnIC8+ZAIBDxYCHwEFQzxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9saW5rZWRpbi5zdmcnIGFsdD0nTXkgTGlua2VkSW4gcHJvZmlsZScgLz5kAgIPFgIfAQVDPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL2ZhY2Vib29rLnN2ZycgYWx0PSdNeSBGYWNlYm9vayBwcm9maWxlJyAvPmQCAw8WAh8BBUU8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvcGludGVyZXN0LnN2ZycgYWx0PSdNeSBQaW50ZXJlc3QgcHJvZmlsZScgLz5kAgQPFgIfAQVFPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL2luc3RhZ3JhbS5zdmcnIGFsdD0nTXkgSW5zdGFncmFtIHByb2ZpbGUnIC8+ZAILD2QWBAIBDw8WAh8CaGRkAgMPZBYMZg9kFgJmDxYCHwEFBUFib3V0ZAIBD2QWAmYPFgIfAQUIQXJ0aWNsZXNkAgIPZBYCZg8WAh8BBQVCb29rc2QCAw9kFgJmDxYCHwEFB0NvbnRhY3RkAgQPZBYCZg8WAh8BBQhSU1MgZmVlZGQCBQ9kFgJmDxYCHwEFBUxvZ2luZAIPD2QWAgIFDxYCHwMCDxYeZg9kFgJmDxUDBWJvb2tzD2ZvbnQtc2l6ZToxMTIlOwVCb29rc2QCAQ9kFgJmDxUDEGRlY2lzaW9uLWZhdGlndWUPZm9udC1zaXplOjExMiU7EERlY2lzaW9uIEZhdGlndWVkAgIPZBYCZg8VAwRkaWV0D2ZvbnQtc2l6ZToxMTIlOwREaWV0ZAIDD2QWAmYPFQMOZXh0cmVtZS1zYXZpbmcPZm9udC1zaXplOjExOSU7DkV4dHJlbWUgU2F2aW5nZAIED2QWAmYPFQMHZmluYW5jZQ9mb250LXNpemU6MTEyJTsHRmluYW5jZWQCBQ9kFgJmDxUDFmZpbmFuY2lhbC1pbmRlcGVuZGVuY2UPZm9udC1zaXplOjEyNSU7FkZpbmFuY2lhbCBJbmRlcGVuZGVuY2VkAgYPZBYCZg8VAwdmaXRuZXNzD2ZvbnQtc2l6ZToxMTklOwdGaXRuZXNzZAIHD2QWAmYPFQMFZ2VhcnMPZm9udC1zaXplOjExMiU7BUdlYXJzZAIID2QWAmYPFQMNZ2VvLWFyYml0cmFnZQ9mb250LXNpemU6MTEyJTsNR2VvIEFyYml0cmFnZWQCCQ9kFgJmDxUDDGdvYWwtc2V0dGluZw9mb250LXNpemU6MTEyJTsMR29hbCBTZXR0aW5nZAIKD2QWAmYPFQMJbnV0cml0aW9uD2ZvbnQtc2l6ZToxMTIlOwlOdXRyaXRpb25kAgsPZBYCZg8VAxFwZXJzb25hbC1icmFuZGluZw9mb250LXNpemU6MTEyJTsRUGVyc29uYWwgQnJhbmRpbmdkAgwPZBYCZg8VAxRwZXJzb25hbC1kZXZlbG9wbWVudA9mb250LXNpemU6MTUwJTsUUGVyc29uYWwgRGV2ZWxvcG1lbnRkAg0PZBYCZg8VAwxwcm9kdWN0aXZpdHkPZm9udC1zaXplOjEyNSU7DFByb2R1Y3Rpdml0eWQCDg9kFgJmDxUDD3RpbWUtbWFuYWdlbWVudA9mb250LXNpemU6MTA2JTsPVGltZSBNYW5hZ2VtZW50ZBgBBRFjdGwwMCRjcGhCb2R5JHNtbQ8UKwABZmR685lZxQ06pfN4zLAxKa7U/LpV9h2RL1t89iST6N1HHw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResourcebd7d.js?d=60NHLgyriwaIxDY49sOyJoosR85E_8EBoHPuH8apHmhoztdyjrJJME7wLHYxt8bRE-HOjc8KEQA4Pz_NLHZK8iRlcBxoEIxqlKSNzP9Hs9E1&amp;t=638628208040000000" type="text/javascript"></script>
+
+
+<script src="../ScriptResource09fd.js?d=2CR6ki1th7q4t6Y-4h70c_FHdhDF-na1jzn6LpnU1MSRHPySmTlk2OYyuOyEcEdLAR2f75mxOhtnv8dyCn78AbyvF1FmRXoxXAyFvJs1SnNAc9VfT8AkLpL-El_mOWKV6esRdEU1mbg1rq9eGwyRfGZAuPwUUP1qolkfBsTX-xk1&amp;t=6df849d2" type="text/javascript"></script>
+<script src="../ScriptResource3c0a.js?d=XULVbsHDVLbz9U3XY3dNKjYVBPt4c7R_ZktYDXJ_Zx60ieLv6An0Xzl7Het_9Fy_In_smVeI0Pc5dONA2asvRZmieVw760RSqHbmH_l_5Q4sIABLtCdHnEzDVopo4mx-B6Nhb0lQqfEWhVQEekgZzma5IrR8LZvhzThsTn2RU2LpvBIciybh5-6AFlNDeyN00&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../ScriptResource7bd5.js?d=lNE7WyNZxdgCabFQylFyEpxCnJY-ewkkPbvG_2F8V6j0wOEy85gWtvBe-NUxW11DkjzDBEEZLqx_BeVKW7WhiWwGZN6Hcq3c9JoecT8S-ZBzXrunzISICFVPY0pdk_z1o2_TZ7mat0ahtKkBATtk5K3gXCBFYrdSp5VITKX_GzHbDuyUGj1daO73xD_aD5JuOHEeG7LchY_7JlSH7YupYg2&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AB996F82" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAayEm4vdUYptsS7X7t8HIvWg4Y/rE4XGSymgDHtUQqFhkj0D+g6FsaEdY0UHRdMkPiWoKQlS32eQRFyMt9UkfzwlU5WTPseg+kh71zMueCz+hzkbwd+xaFsaVIw+zoSUjGYGXbd9jLrDqnHVdh9gADPMdwEFWo5c4FYBUKbM8SkwA==" />
+</div>
+        <div id="body" class="col-sm-9">
+          <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sm', 'aspnetForm', ['tctl00$cphBody$smm$upnBlogSummary',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+          
+<div id="ctl00_nt_pnlNotifications" role="alert">
+
+</div>
+          
+  
+<div class="panel">
+  <h1>All Articles</h1>
+  <div id="ctl00_cphBody_smm_upnBlogSummary">
+	
+      <nav>
+        
+            <div class="tl-1">
+              <h3>
+                <a href='../saving-traditional-wet-shaving/index.html' target="_self" title='Permalink to Save Money with Traditional Wet Shaving'>Save Money with Traditional Wet Shaving</a>
+                <span class="date">2018-04-07</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl00_des" class="summary-description">
+                The example shows how traditional wet shaving allows you to spend 8 times less in blades compared to a conventional cartridge multi-blade razor set up&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../review-10x-rule-grant-cardone/index.html' target="_self" title='Permalink to Book Review: The 10X Rule by Grant Cardone'>Book Review: The 10X Rule by Grant Cardone</a>
+                <span class="date">2016-12-04</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl01_des" class="summary-description">
+                The 10X Rule is a book about productivity within the business world, it underlines the importance of not limiting goals and taking 10 times higher levels of action to achieve them&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../downsizing-home-and-earn-time-money/index.html' target="_self" title='Permalink to Downsizing your Home to Earn Back Time and Money'>Downsizing your Home to Earn Back Time and Money</a>
+                <span class="date">2016-11-02</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl02_des" class="summary-description">
+                When we talk about downsizing your home, we mean the transition towards a smaller-sized house, stealing some other time from maintenance and renovation to better enjoy life&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../robo-advisor-digital-portfolio-investing/index.html' target="_self" title='Permalink to Robo-advisors, When Investing Advice Becomes Digital and Efficient'>Robo-advisors, When Investing Advice Becomes Digital and Efficient</a>
+                <span class="date">2016-10-31</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl03_des" class="summary-description">
+                Robot-advisors are software able to provide investment advises by operating through re-balancing  algorithms for portfolio and capital management&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../books/index.html' target="_self" title='Permalink to Book Recommendations'>Book Recommendations</a>
+                <span class="date">2016-10-22</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl04_des" class="summary-description">
+                A list of what I believe to be the best books ever written, books that had a profound impact on my life.&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../meal-prep-pouches-quick-easy/index.html' target="_self" title='Permalink to Quick and Easy Meal Prep Pouches'>Quick and Easy Meal Prep Pouches</a>
+                <span class="date">2016-10-02</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl05_des" class="summary-description">
+                Meal prepping in advance and quantity is beneficial for 3 main reasons&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../intermittent-fasting-diet-benefits/index.html' target="_self" title='Permalink to Intermittent Fasting Diet and Benefits'>Intermittent Fasting Diet and Benefits</a>
+                <span class="date">2016-09-06</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl06_des" class="summary-description">
+                The purpose of the Intermittent Fasting diet is to concentrate meals in a small window: 8 hours or less (up to on meal a day, but not beyond) every day, in alternate days&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../what-is-geo-arbitrage/index.html' target="_self" title='Permalink to A Lever Called Geo-Arbitrage'>A Lever Called Geo-Arbitrage</a>
+                <span class="date">2016-06-20</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl07_des" class="summary-description">
+                The geo-arbitrage is the practice of economic-financial speculation based on disparity between geographic locations and markets&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../goal-blindness-goalodicy/index.html' target="_self" title='Permalink to The Goalodicy Trap'>The Goalodicy Trap</a>
+                <span class="date">2016-05-14</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl08_des" class="summary-description">
+                The goalodicy is the obsession in pursuing a goal, a compulsion such that the individual often ignores its own context&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../waking-up-early-get-things-done/index.html' target="_self" title='Permalink to Waking Up Early And Getting Things Done'>Waking Up Early And Getting Things Done</a>
+                <span class="date">2016-03-26</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl09_des" class="summary-description">
+                The simple act of waking up early in the morning can be one of the best productivity techniques&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../path-to-financial-independence/index.html' target="_self" title='Permalink to The Path to Financial Independence'>The Path to Financial Independence</a>
+                <span class="date">2016-03-20</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl10_des" class="summary-description">
+                The term financial independence indicates a state for which an individual can sustain itself without the need of an employment&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../getupandcode-podcast-review/index.html' target="_self" title='Permalink to Get Up And Code Podcast Review'>Get Up And Code Podcast Review</a>
+                <span class="date">2015-01-17</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl11_des" class="summary-description">
+                The show focuses on fitness and nutrition. The main host John Somnez is an enterpreneur, developer, personal development coach…&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../luck-surface-area/index.html' target="_self" title='Permalink to The Luck Surface Area Principle'>The Luck Surface Area Principle</a>
+                <span class="date">2014-12-26</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl12_des" class="summary-description">
+                The Luck Surface Area principle states that increments of luck in a certain field of interest, can be achieved by doing and telling&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../aspnet-vnext-mac-os-omnisharp-kulture/index.html' target="_self" title='Permalink to How to run ASP.NET vNext on Mac OS with Kulture and OmniSharp'>How to run ASP.NET vNext on Mac OS with Kulture and OmniSharp</a>
+                <span class="date">2014-12-20</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl13_des" class="summary-description">
+                How to run ASP.NET on Mac OS X. The solution leverages on Sublime Text, Kulture and OmniSharp&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../ergodox-ergonomic-keyboard-review/index.html' target="_self" title='Permalink to ErgoDox split Ergonomic Keyboard Review'>ErgoDox split Ergonomic Keyboard Review</a>
+                <span class="date">2014-12-09</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl14_des" class="summary-description">
+                The ErgoDox is a fully programmable, DIY, split ergonomic keyboard compatible with Windows, Mac OS, *nix&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../personal-branding-introduction/index.html' target="_self" title='Permalink to Personal Branding, a Brief Introduction'>Personal Branding, a Brief Introduction</a>
+                <span class="date">2014-06-07</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl15_des" class="summary-description">
+                Personal branding is a branch of marketing and a set of techniques for nurturing the public perception of self, like common brands&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../review-filco-majestouch2-tenkeyless-ninja/index.html' target="_self" title='Permalink to Filco Majestouch-2 Tenkeyless Ninja Mechanical Keyboard Review'>Filco Majestouch-2 Tenkeyless Ninja Mechanical Keyboard Review</a>
+                <span class="date">2014-05-29</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl16_des" class="summary-description">
+                The Filco Majestouch-2 Tenkeyless Ninja is a japanese mechanical keyboard that sport semi-blank keys, n-key rollover and it's built like a tank&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../logging-nlog-sqlite/index.html' target="_self" title='Permalink to Logging with NLog and SQLite'>Logging with NLog and SQLite</a>
+                <span class="date">2014-05-06</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl17_des" class="summary-description">
+                This article explains how to achieve a portable and elegant logging solution with NLog and SQLite, the solution targets the .NET platform and only requires a few configurations&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../mavensmate-unable-github-windows/index.html' target="_self" title='Permalink to MavensMate unable to reach GitHub on Windows'>MavensMate unable to reach GitHub on Windows</a>
+                <span class="date">2014-04-06</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl18_des" class="summary-description">
+                MavensMate setup may fail on Microsoft Windows machines due to a 'installer being unable to reach GitHub' error. Here a possible solution&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../search-email-inbox-csharp/index.html' target="_self" title='Permalink to Search Email Inbox with C#'>Search Email Inbox with C#</a>
+                <span class="date">2014-03-27</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl19_des" class="summary-description">
+                A C# snippet based on the AE.NET.Mail library, for searching an email inside a mailbox Inbox, through the IMAP protocol&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../pomodoro-apps/index.html' target="_self" title='Permalink to A few handy Pomodoro Timer Apps for Mac and Windows'>A few handy Pomodoro Timer Apps for Mac and Windows</a>
+                <span class="date">2014-03-27</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl20_des" class="summary-description">
+                The best apps for applying the Pomodoro technique on Windows or Mac: Pomodairo, Focus Booster, Tomighty, Tomato.ist&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../human-multitasking/index.html' target="_self" title='Permalink to Humans and Multitasking'>Humans and Multitasking</a>
+                <span class="date">2014-01-30</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl21_des" class="summary-description">
+                Is it possible to achieve true multitasking? The capability of performing multiple tasks concurrently and still obtain optimal results?&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../javascript-date-handling-format/index.html' target="_self" title='Permalink to Manage and format Dates with JavaScript'>Manage and format Dates with JavaScript</a>
+                <span class="date">2013-11-14</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl22_des" class="summary-description">
+                There are a couple of options for dealing with Javascript dates, the JS Date object is usually the way to go, and if you're looking for an alternative solution&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../ichigo-asp-net-blogging-engine/index.html' target="_self" title='Permalink to Ichigo, an ASP.NET Blogging Engine'>Ichigo, an ASP.NET Blogging Engine</a>
+                <span class="date">2013-11-12</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl23_des" class="summary-description">
+                A brief intro to the Ichigo ASP.NET blogging engine, a minimalistic Azure enabled Web forms application&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../salesforce-backup-organization-svn-git/index.html' target="_self" title='Permalink to Automate SVN/Git Backups of Entire Salesforce.com Organizations'>Automate SVN/Git Backups of Entire Salesforce.com Organizations</a>
+                <span class="date">2013-10-17</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl24_des" class="summary-description">
+                The solution shows a way to version entire Salesforce.com organizations. It involves two popolar SCMs (SVN and Git), an always-on server and a few free tools&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../table-size-space-sql-server/index.html' target="_self" title='Permalink to Get Size of Tables with SQL Server'>Get Size of Tables with SQL Server</a>
+                <span class="date">2013-10-16</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl25_des" class="summary-description">
+                A snippet for retrieving the size of all tables in a SQL Server database that might prove useful for understanding where most of your data is going&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../salesforce-debug-log-apex/index.html' target="_self" title='Permalink to Dealing with Salesforce Maximum Debug Log Size'>Dealing with Salesforce Maximum Debug Log Size</a>
+                <span class="date">2013-07-18</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl26_des" class="summary-description">
+                When you have Apex code that iterates a lot, you might obtain truncated log files and an error: MAXIMUM DEBUG LOG SIZE REACHED&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../havisi-magic-emi/index.html' target="_self" title='Permalink to New Remix Out! Magic Emi by Havisi'>New Remix Out! Magic Emi by Havisi</a>
+                <span class="date">2012-02-21</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl27_des" class="summary-description">
+                I'm happy to announce that Magic Emi by Havisi is now available on Beatport, including my remix (Icaro)&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../future-count-apex/index.html' target="_self" title='Permalink to Future count with Apex Code'>Future count with Apex Code</a>
+                <span class="date">2011-07-14</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl28_des" class="summary-description">
+                A simple snippet for counting @future calls in a 24 hours timespan, may be useful for monitoring peaks and act accordingly&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../requiredfieldvalidator-radcombobox/index.html' target="_self" title='Permalink to Simulating a RequiredFieldValidator when using a RadComboBox'>Simulating a RequiredFieldValidator when using a RadComboBox</a>
+                <span class="date">2010-10-22</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl29_des" class="summary-description">
+                Telerik's RadComboBox does not behave like a traditional DropDownList. You may consider to use a CustomValidator&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../transform-sentence-slug-js/index.html' target="_self" title='Permalink to Turn Sentences into Slugs with JavaScript'>Turn Sentences into Slugs with JavaScript</a>
+                <span class="date">2010-10-20</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl30_des" class="summary-description">
+                The script allows you to turn a text string into a proper URL slug with jQuery&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../remix-nanni-hannibal-invasion/index.html' target="_self" title='Permalink to New Remix Out! Hannibal Invasion by NaNni'>New Remix Out! Hannibal Invasion by NaNni</a>
+                <span class="date">2010-10-16</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl31_des" class="summary-description">
+                I'm happy to announce that Hannibal Invasion by NaNni is now available on Beatport, including my remix (Icaro)&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../set-september-2010/index.html' target="_self" title='Permalink to New DJ Set! September 2010 for MaGmA Radio Sho'>New DJ Set! September 2010 for MaGmA Radio Sho</a>
+                <span class="date">2010-09-04</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl32_des" class="summary-description">
+                Here's my DJ set aired in September 2010 for the MaGmA Radio Show, enjoy.&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../set-june-2010/index.html' target="_self" title='Permalink to New DJ Set! June 2010 for the MaGmA Radio Sho'>New DJ Set! June 2010 for the MaGmA Radio Sho</a>
+                <span class="date">2010-06-14</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl33_des" class="summary-description">
+                Here's my DJ set aired in June 2010 for the MaGmA Radio Show, enjoy.&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../web-service-reference-vs/index.html' target="_self" title='Permalink to Import Web service References in .NET'>Import Web service References in .NET</a>
+                <span class="date">2010-06-09</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl34_des" class="summary-description">
+                You need to consume Web services from  client applications. There's a tool for design just to do that , it's called wsdl.exe&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../log-http-requests/index.html' target="_self" title='Permalink to How to log HTTP requests with PHP'>How to log HTTP requests with PHP</a>
+                <span class="date">2010-05-27</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl35_des" class="summary-description">
+                Sometimes you need to understand precisely how the HTTP request is submitted to the server. That, can be also be achieved with PHP&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../set-april-2010/index.html' target="_self" title='Permalink to April 2010 - MaGmA Radio Show'>April 2010 - MaGmA Radio Show</a>
+                <span class="date">2010-05-27</span>
+              </h3>
+              
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../set-february-2010/index.html' target="_self" title='Permalink to New DJ Set! February 2010 for the MaGmA Radio Show'>New DJ Set! February 2010 for the MaGmA Radio Show</a>
+                <span class="date">2010-02-07</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl37_des" class="summary-description">
+                Here's my DJ set aired in February 2010 for the MaGmA Radio Show, enjoy!&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../seo-asp-net-routing/index.html' target="_self" title='Permalink to Improve ASP.NET SEO by using System.Web.Routing'>Improve ASP.NET SEO by using System.Web.Routing</a>
+                <span class="date">2010-01-18</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl38_des" class="summary-description">
+                ASP.NET offers a great resource called 'System.Web.Routing' that support routes.
+Routes translates both the pattern and context parameters&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../asus-eeepc-1201ha/index.html' target="_self" title='Permalink to Asus EeePC 1201HA review'>Asus EeePC 1201HA review</a>
+                <span class="date">2010-01-09</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl39_des" class="summary-description">
+                The EeePC 1201HA is part of a new generation of big netbooks, in fact, this particular one sports a 12.1 inch monitor&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../remix-francois-le-roy-mosquito/index.html' target="_self" title='Permalink to New Remix Out! Mosquito by Francois Le Roy'>New Remix Out! Mosquito by Francois Le Roy</a>
+                <span class="date">2009-12-22</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl40_des" class="summary-description">
+                Twerok Records is proud to present a new label artist, Francois Le Roy and his debut single Mosquito&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../set-november-2009/index.html' target="_self" title='Permalink to New DJ Set! November 2009 for the MaGmA Radio Show'>New DJ Set! November 2009 for the MaGmA Radio Show</a>
+                <span class="date">2009-12-22</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl41_des" class="summary-description">
+                Here's my DJ set aired in November 2009 for the MaGmA Radio Show, enjoy!&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../call-async-method/index.html' target="_self" title='Permalink to Call async methods with C#'>Call async methods with C#</a>
+                <span class="date">2009-10-15</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl42_des" class="summary-description">
+                This article help you in delegating work to an asynchronous thread in C#, thus allowing for code execution and App responsitivity&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../post-data-js/index.html' target="_self" title='Permalink to POST data with JavaScript'>POST data with JavaScript</a>
+                <span class="date">2009-07-07</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl43_des" class="summary-description">
+                In this scenario, form data are restricted to ASCII codes. If the method is "post" --, the user agent conducts an HTTP post transaction&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../sennheiser-hd-25-review/index.html' target="_self" title='Permalink to Sennheiser HD 25-II headphones review'>Sennheiser HD 25-II headphones review</a>
+                <span class="date">2009-06-12</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl44_des" class="summary-description">
+                I first heard about the Sennheiser HD-II from a professional producer a while ago, still one of the best DJ/producer headphone you can get&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../js-notification-panel-gmail/index.html' target="_self" title='Permalink to JavaScript Auto-collapsing Notification Panel'>JavaScript Auto-collapsing Notification Panel</a>
+                <span class="date">2009-05-29</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl45_des" class="summary-description">
+                In almost all web applications comes the moment when it becomes necessary to show some notifications to the user&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../get-radio-checked-js/index.html' target="_self" title='Permalink to Get and Set Radio controls checked value with JavaScript'>Get and Set Radio controls checked value with JavaScript</a>
+                <span class="date">2009-03-20</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl46_des" class="summary-description">
+                The getElementsByName method allows you to obtain a collection of controls from the (X)HTML DOM, by specifying the common name value&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../clean-sp-cache-sql-server/index.html' target="_self" title='Permalink to Clean Up Stored Procedures Cache with SQL Server'>Clean Up Stored Procedures Cache with SQL Server</a>
+                <span class="date">2009-03-06</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl47_des" class="summary-description">
+                When deploying a stored procedure, a clean up the db's cache might go a long way in order to apply changes immediately&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../multiple-columns-dynamic-data/index.html' target="_self" title='Permalink to Handle Multiple Columns as One with Dynamic Data'>Handle Multiple Columns as One with Dynamic Data</a>
+                <span class="date">2008-11-02</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl48_des" class="summary-description">
+                I decided to deeply customize the FieldTemplateUserControl of Dynamic Data, to display and save multiple Columns I needed&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../upload-large-files-asp-net/index.html' target="_self" title='Permalink to Allow the Upload of Large Files with ASP.NET'>Allow the Upload of Large Files with ASP.NET</a>
+                <span class="date">2008-06-24</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl49_des" class="summary-description">
+                This Web.config setting allows for a bigger size on uploaded files by tuning both the execution time and max request length parameters&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../check-metamodel-existence-dynamic-data-application/index.html' target="_self" title='Permalink to Check the MetaModel Existence while Running a Dynamic Data Application'>Check the MetaModel Existence while Running a Dynamic Data Application</a>
+                <span class="date">2008-06-18</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl50_des" class="summary-description">
+                In the web application that I'm developing using Dynamic Data, I set the DataContext at runtime because the application might bind different contexts.&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../set-connectionstring-runtime-dynamicdata/index.html' target="_self" title='Permalink to Set the ConnectionString at Runtime with DynamicData'>Set the ConnectionString at Runtime with DynamicData</a>
+                <span class="date">2008-06-16</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl51_des" class="summary-description">
+                The following snippet customizes the .NET ConnectionString property at runtime in a Dynamic Data application&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../consuming-net-web-services-using-php-nusoap/index.html' target="_self" title='Permalink to Consuming .NET Webservices Using PHP and NuSoap'>Consuming .NET Webservices Using PHP and NuSoap</a>
+                <span class="date">2007-10-23</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl52_des" class="summary-description">
+                A .NET webservice offers particular encrypting capabilities. I need to consume the webservice with PHP&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../using-ajax-modalpopup-targetcontrol/index.html' target="_self" title='Permalink to Using an ajax:ModalPopup Without a TargetControl'>Using an ajax:ModalPopup Without a TargetControl</a>
+                <span class="date">2007-09-25</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl53_des" class="summary-description">
+                Sometimes you may want to show and hide the panel programmatically. All you need, is a fake activator like following&#8230;
+              </p>
+            </div>
+          
+            <div class="tl-1">
+              <h3>
+                <a href='../issues-ajax-custom-httpmodule/index.html' target="_self" title='Permalink to Issues With AJAX and a Custom HttpModule'>Issues With AJAX and a Custom HttpModule</a>
+                <span class="date">2005-06-18</span>
+              </h3>
+              <p id="ctl00_cphBody_smm_rpt_ctl54_des" class="summary-description">
+                While implementing an HttpModule that handle URLs in a SEO friendly way, the AJAX script module gets in the way&#8230;
+              </p>
+            </div>
+          
+      </nav>
+      <div id="ctl00_cphBody_smm_pnl1" class="action">
+		
+        
+        
+        
+      
+	</div>
+    
+</div>
+</div>
+
+
+        </div>
+        <div id="menu1" class="col-sm-3 blog-sidebar">
+          
+<div class="sidebar-module sidebar-module-inset block avatar">
+    <img src="../images/AndreaAzzola_Website200x200.png" height="180" width="180" alt="Author's portrait" />
+</div>
+          
+<nav class="sidebar-module sidebar-module-inset block about">
+  <div id="icons">
+	<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" text="Twitter" title="Stay up to date with my tweets"><img src='../images/social/twitter.svg' alt='My Twitter profile' /></a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" text="LinkedIn" title="Find me on LinkedIn"><img src='../images/social/linkedin.svg' alt='My LinkedIn profile' /></a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" text="Facebook" title="Get in touch with Facebook"><img src='../images/social/facebook.svg' alt='My Facebook profile' /></a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" text="Pinterest" title="I&#39;m on Pinterest!"><img src='../images/social/pinterest.svg' alt='My Pinterest profile' /></a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" text="Instagram" title="My Instagram profile"><img src='../images/social/instagram.svg' alt='My Instagram profile' /></a>
+</div>
+  
+</nav>
+          
+<div class="sidebar-module">
+    
+    <ul id="ctl00_stp1_links" class="list-group"><li><a style="font-weight:bold" href="../about/index.html" text="About" title="Short summary">About</a></li><li><a style="font-weight:bold" href="index.html" text="Articles" title="Collection of all articles in this website">Articles</a></li><li><a style="font-weight:bold" href="../books/index.html" text="Books" title="My book recommendations">Books</a></li><li><a style="font-weight:bold" href="../contact/index.html" text="Contact" title="Short summary">Contact</a></li><li><a href="../feed/index.html" text="RSS feed" title="Subscribe to this blog">RSS feed</a></li><li><a href="../login/index.html" text="Login" title="Login">Login</a></li></ul>
+    <ul class="list-group">
+        <li><a id="ctl00_stp1_lbLanguageEN" class="lang-sm lang-lbl" lang="en" href="javascript:__doPostBack(&#39;ctl00$stp1$lbLanguageEN&#39;,&#39;&#39;)"></a></li>
+        <li><a id="ctl00_stp1_lbLanguageIT" class="lang-sm lang-lbl" lang="it" href="javascript:__doPostBack(&#39;ctl00$stp1$lbLanguageIT&#39;,&#39;&#39;)"></a></li>
+    </ul>
+    <br />
+</div>
+          
+
+<nav class="sidebar-module">
+    <h4>Newsletter</h4>
+    <input name="ctl00$newsletter$tbFirstName" type="text" id="ctl00_newsletter_tbFirstName" placeholder="First name" style="width:60%;" /><br />
+    <input name="ctl00$newsletter$tbEmail" type="text" id="ctl00_newsletter_tbEmail" placeholder="Email" style="width:90%;" /><br />
+
+    <input type="submit" name="ctl00$newsletter$btSubmit" value="Subscribe" id="ctl00_newsletter_btSubmit" />
+    <span id="ctl00_newsletter_rfvEmail" style="color:Red;visibility:hidden;">*</span>
+    <span id="ctl00_newsletter_revEmail" style="color:Red;visibility:hidden;">Invalid</span>
+</nav>
+
+          
+          
+          
+
+<div class="sidebar-module">
+  <h4>
+    Categories
+    <a href="../category.html" title="All categories">
+      (All)
+    </a>
+  </h4>
+  
+      <a href="../category/books/index.html" style='font-size:112%;' class="category">
+        Books
+      </a>
+    
+      <a href="../category/decision-fatigue/index.html" style='font-size:112%;' class="category">
+        Decision Fatigue
+      </a>
+    
+      <a href="../category/diet/index.html" style='font-size:112%;' class="category">
+        Diet
+      </a>
+    
+      <a href="../category/extreme-saving/index.html" style='font-size:119%;' class="category">
+        Extreme Saving
+      </a>
+    
+      <a href="../category/finance/index.html" style='font-size:112%;' class="category">
+        Finance
+      </a>
+    
+      <a href="../category/financial-independence/index.html" style='font-size:125%;' class="category">
+        Financial Independence
+      </a>
+    
+      <a href="../category/fitness/index.html" style='font-size:119%;' class="category">
+        Fitness
+      </a>
+    
+      <a href="../category/gears/index.html" style='font-size:112%;' class="category">
+        Gears
+      </a>
+    
+      <a href="../category/geo-arbitrage/index.html" style='font-size:112%;' class="category">
+        Geo Arbitrage
+      </a>
+    
+      <a href="../category/goal-setting/index.html" style='font-size:112%;' class="category">
+        Goal Setting
+      </a>
+    
+      <a href="../category/nutrition/index.html" style='font-size:112%;' class="category">
+        Nutrition
+      </a>
+    
+      <a href="../category/personal-branding/index.html" style='font-size:112%;' class="category">
+        Personal Branding
+      </a>
+    
+      <a href="../category/personal-development/index.html" style='font-size:150%;' class="category">
+        Personal Development
+      </a>
+    
+      <a href="../category/productivity/index.html" style='font-size:125%;' class="category">
+        Productivity
+      </a>
+    
+      <a href="../category/time-management/index.html" style='font-size:106%;' class="category">
+        Time Management
+      </a>
+    
+</div>
+
+          
+          
+        </div>
+      
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_newsletter_rfvEmail"), document.getElementById("ctl00_newsletter_revEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_newsletter_rfvEmail = document.all ? document.all["ctl00_newsletter_rfvEmail"] : document.getElementById("ctl00_newsletter_rfvEmail");
+ctl00_newsletter_rfvEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_rfvEmail.validationGroup = "Newsletter";
+ctl00_newsletter_rfvEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_newsletter_rfvEmail.initialvalue = "";
+var ctl00_newsletter_revEmail = document.all ? document.all["ctl00_newsletter_revEmail"] : document.getElementById("ctl00_newsletter_revEmail");
+ctl00_newsletter_revEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_revEmail.errormessage = "Invalid";
+ctl00_newsletter_revEmail.validationGroup = "Newsletter";
+ctl00_newsletter_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_newsletter_revEmail.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ctl00_newsletter_rfvEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_rfvEmail'));
+}
+
+document.getElementById('ctl00_newsletter_revEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_revEmail'));
+}
+//]]>
+</script>
+</form>
+    </div>
+    <footer>
+      <p>&copy; Copyright 2008-2025 - Andrea Azzola</p>
+    </footer>
+  </div>
+  
+  <script src="../Scripts/async.js"></script>
+  <script src="../Scripts/cookiechoices.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C3P9XZGVE9');
+
+    
+    document.addEventListener('DOMContentLoaded', function (event) {
+      cookieChoices.showCookieConsentBar('This website use cookies to improve the user experience. By continuing I\'ll assume that you\'re happy with it',
+        'Got it', null /*learn more*/, null/*url*/);
+    });
+  </script>
+</body>
+
+<!-- Mirrored from andreaazzola.com/articles/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:00:14 GMT -->
+</html>

@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from andreaazzola.com/table-size-space-sql-server/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" type="image/png" href="../images/favicon.png" />
+
+  <!-- JavaScript -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8XKTL2Q');</script>
+  <!-- End Google Tag Manager -->
+  <script src="../../code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="http://load.sumome.com/" data-sumo-site-id="0bcf4270faa767709f6d2e505d84950ff777ed47fb7c0e004b02978a4d6f57b4" async="async"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /><link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="../App_Themes/Ichigo/languages.min.css" rel="stylesheet" />
+  <!-- Heads -->
+  
+  <link rel="alternate" hreflang="en-US" href="index.html" />
+  <meta name="description" content="A snippet for retrieving the size of all tables in a SQL Server database that might prove useful for understanding where most of your data is going" />
+  <link rel="canonical" href="index.html" />
+  
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Get Size of Tables with SQL Server" />
+  <meta property="og:description" content="A snippet for retrieving the size of all tables in a SQL Server database that might prove useful for understanding where most of your data is going" />
+  
+  <meta property="og:url" content="http://andreaazzola.com/table-size-space-sql-server/" />
+  <meta property="article:published_time" content="2013-10-16T11:07:00Z" />
+  <meta property="og:site_name" content="Andrea Azzola" />
+
+  
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://andreaazzola.com/table-size-space-sql-server/"
+    },
+    "headline": "Get Size of Tables with SQL Server",
+
+    "datePublished": "2013-10-16T11:07:00.000Z",
+    "dateModified": "2016-04-27T18:23:56.413Z",
+    "author": {
+      "@type": "Person",
+      "name": "Andrea Azzola"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Andrea Azzola",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://andreaazzola.com/Images/AndreaAzzola_Website200x200.png",
+        "width": 200,
+        "height": 200
+      }
+    },
+    "description": "A snippet for retrieving the size of all tables in a SQL Server database that might prove useful for understanding where most of your data is going",
+    "url": "http://andreaazzola.com/table-size-space-sql-server/"
+  }
+  </script>
+<link href="../App_Themes/Ichigo/languages.min.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Ichigo/StyleSheet.css" type="text/css" rel="stylesheet" /><title>
+	Get Size of Tables with SQL Server - Andrea Azzola
+</title></head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8XKTL2Q"
+      height="0" width="0" style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <header>
+      <span id="title">
+        <a href="../index.html" title="Back to the Home Page">
+          Andrea Azzola
+        </a>
+      </span>
+      <p id="ctl00_subtitle" class="subtitle">Tips and Techniques for Lifestyle Design</p>
+    </header>
+    <div id="wrapper" class="row">
+      <form name="aspnetForm" method="post" action="#" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyNDY0NzQ1MQ9kFgJmD2QWCGYPZBYCAgoPZBYCAgEPFgIeB1Zpc2libGVoZAIBDxYCHgRUZXh0BQ1BbmRyZWEgQXp6b2xhZAICDxYCHglpbm5lcmh0bWwFKFRpcHMgYW5kIFRlY2huaXF1ZXMgZm9yIExpZmVzdHlsZSBEZXNpZ25kAgMPZBYKAgMPZBYCAgIPDxYCHwBnZGQCBQ9kFghmDxYCHwEFIkdldCBTaXplIG9mIFRhYmxlcyB3aXRoIFNRTCBTZXJ2ZXJkAgEPFgIfAQX8CDxwPglBIHNuaXBwZXQgZm9yIGdldHRpbmcgdGhlIHNpemUgZm9yIGFsbCB0YWJsZXMgaW4gYSA8ZW0+U1FMIFNlcnZlcjwvZW0+IGRhdGFiYXNlIHRoYXQgbWlnaHQgcHJvdmUgdXNlZnVsIGZvcjo8L3A+DQo8dWw+DQoJICA8bGk+CQlHZXQgYSBiZXR0ZXIgdW5kZXJzdGFuZGluZyB3aGVyZSBtb3N0IG9mIHlvdXIgZGF0YSBpcyBnb2luZzwvbGk+DQoJICA8bGk+CQlGaW5kIGRhdGFiYXNlIGJvdHRsZW5lY2tzPC9saT4NCiAgPGxpPglGcmVlIHVwIGRpc2sgc3BhY2U8L2xpPg0KCSAgPGxpPgkJUmVkdWNpbmcgbWFpbnRlbmFuY2UgY29zdDwvbGk+DQo8L3VsPg0KPHByZT4NCjxjb2RlIGNsYXNzPSJzcWwiPldJVEggdGFibGVfc3BhY2VfdXNhZ2UgKHNjaGVtYV9uYW1lLCB0YWJsZV9uYW1lLCB1c2VkLCByZXNlcnZlZCwgaW5kX3Jvd3MsIHRibF9yb3dzKQ0KQVMgKFNFTEVDVCBzLk5hbWUsIG8uTmFtZSwgcC51c2VkX3BhZ2VfY291bnQgKiA4LCBwLnJlc2VydmVkX3BhZ2VfY291bnQgKiA4LCBwLnJvd19jb3VudCwgDQogIENBU0UgV0hFTiBpLmluZGV4X2lkIGluICggMCwgMSApIFRIRU4gcC5yb3dfY291bnQgRUxTRSAwIEVORA0KICBGUk9NIHN5cy5kbV9kYl9wYXJ0aXRpb25fc3RhdHMgcA0KICBJTk5FUiBKT0lOIHN5cy5vYmplY3RzIGFzIG8gT04gby5vYmplY3RfaWQgPSBwLm9iamVjdF9pZA0KICBJTk5FUiBKT0lOIHN5cy5zY2hlbWFzIGFzIHMgT04gcy5zY2hlbWFfaWQgPSBvLnNjaGVtYV9pZA0KICBMRUZUIE9VVEVSIEpPSU4gc3lzLmluZGV4ZXMgYXMgaSBvbiBpLm9iamVjdF9pZCA9IHAub2JqZWN0X2lkIA0KICAgIGFuZCBpLmluZGV4X2lkID0gcC5pbmRleF9pZA0KICBXSEVSRSBvLnR5cGVfZGVzYyA9ICYjMzk7VVNFUl9UQUJMRSYjMzk7IGFuZCBvLmlzX21zX3NoaXBwZWQgPSAwDQopDQoNClNFTEVDVCB0LnNjaGVtYV9uYW1lLCB0LnRhYmxlX25hbWUsIHN1bSh0LnVzZWQpIGFzIHVzZWRfaW5fa2IsIA0KICBzdW0odC5yZXNlcnZlZCkgYXMgcmVzZXJ2ZWRfaW5fa2IsIHN1bSh0LnRibF9yb3dzKSBhcyByb3dzDQpGUk9NIHRhYmxlX3NwYWNlX3VzYWdlIGFzIHQNCkdST1VQIEJZIHQuc2NoZW1hX25hbWUgLCB0LnRhYmxlX25hbWUgDQpPUkRFUiBCWSB1c2VkX2luX2tiIGRlc2M8L2NvZGU+PC9wcmU+ZAIGD2QWBAIDDxYCHgtfIUl0ZW1Db3VudGZkAgcPDxYCHwBoZGQCBw8WAh8AaGQCCQ9kFgICAQ9kFgpmDxYCHwIFQTxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC90d2l0dGVyLnN2ZycgYWx0PSdNeSBUd2l0dGVyIHByb2ZpbGUnIC8+ZAIBDxYCHwIFQzxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9saW5rZWRpbi5zdmcnIGFsdD0nTXkgTGlua2VkSW4gcHJvZmlsZScgLz5kAgIPFgIfAgVDPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL2ZhY2Vib29rLnN2ZycgYWx0PSdNeSBGYWNlYm9vayBwcm9maWxlJyAvPmQCAw8WAh8CBUU8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvcGludGVyZXN0LnN2ZycgYWx0PSdNeSBQaW50ZXJlc3QgcHJvZmlsZScgLz5kAgQPFgIfAgVFPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL2luc3RhZ3JhbS5zdmcnIGFsdD0nTXkgSW5zdGFncmFtIHByb2ZpbGUnIC8+ZAILD2QWBAIBDw8WAh8AaGRkAgMPZBYMZg9kFgJmDxYCHwIFBUFib3V0ZAIBD2QWAmYPFgIfAgUIQXJ0aWNsZXNkAgIPZBYCZg8WAh8CBQVCb29rc2QCAw9kFgJmDxYCHwIFB0NvbnRhY3RkAgQPZBYCZg8WAh8CBQhSU1MgZmVlZGQCBQ9kFgJmDxYCHwIFBUxvZ2luZAIPD2QWAgIFDxYCHwMCDxYeZg9kFgJmDxUDBWJvb2tzD2ZvbnQtc2l6ZToxMTIlOwVCb29rc2QCAQ9kFgJmDxUDEGRlY2lzaW9uLWZhdGlndWUPZm9udC1zaXplOjExMiU7EERlY2lzaW9uIEZhdGlndWVkAgIPZBYCZg8VAwRkaWV0D2ZvbnQtc2l6ZToxMTIlOwREaWV0ZAIDD2QWAmYPFQMOZXh0cmVtZS1zYXZpbmcPZm9udC1zaXplOjExOSU7DkV4dHJlbWUgU2F2aW5nZAIED2QWAmYPFQMHZmluYW5jZQ9mb250LXNpemU6MTEyJTsHRmluYW5jZWQCBQ9kFgJmDxUDFmZpbmFuY2lhbC1pbmRlcGVuZGVuY2UPZm9udC1zaXplOjEyNSU7FkZpbmFuY2lhbCBJbmRlcGVuZGVuY2VkAgYPZBYCZg8VAwdmaXRuZXNzD2ZvbnQtc2l6ZToxMTklOwdGaXRuZXNzZAIHD2QWAmYPFQMFZ2VhcnMPZm9udC1zaXplOjExMiU7BUdlYXJzZAIID2QWAmYPFQMNZ2VvLWFyYml0cmFnZQ9mb250LXNpemU6MTEyJTsNR2VvIEFyYml0cmFnZWQCCQ9kFgJmDxUDDGdvYWwtc2V0dGluZw9mb250LXNpemU6MTEyJTsMR29hbCBTZXR0aW5nZAIKD2QWAmYPFQMJbnV0cml0aW9uD2ZvbnQtc2l6ZToxMTIlOwlOdXRyaXRpb25kAgsPZBYCZg8VAxFwZXJzb25hbC1icmFuZGluZw9mb250LXNpemU6MTEyJTsRUGVyc29uYWwgQnJhbmRpbmdkAgwPZBYCZg8VAxRwZXJzb25hbC1kZXZlbG9wbWVudA9mb250LXNpemU6MTUwJTsUUGVyc29uYWwgRGV2ZWxvcG1lbnRkAg0PZBYCZg8VAwxwcm9kdWN0aXZpdHkPZm9udC1zaXplOjEyNSU7DFByb2R1Y3Rpdml0eWQCDg9kFgJmDxUDD3RpbWUtbWFuYWdlbWVudA9mb250LXNpemU6MTA2JTsPVGltZSBNYW5hZ2VtZW50ZGTiX+SIsXkHi9/xF5MxA7sBS/lujoRHo0t+1/GqqX//ag==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResourcebd7d.js?d=60NHLgyriwaIxDY49sOyJoosR85E_8EBoHPuH8apHmhoztdyjrJJME7wLHYxt8bRE-HOjc8KEQA4Pz_NLHZK8iRlcBxoEIxqlKSNzP9Hs9E1&amp;t=638628208040000000" type="text/javascript"></script>
+
+
+<script src="../ScriptResource09fd.js?d=2CR6ki1th7q4t6Y-4h70c_FHdhDF-na1jzn6LpnU1MSRHPySmTlk2OYyuOyEcEdLAR2f75mxOhtnv8dyCn78AbyvF1FmRXoxXAyFvJs1SnNAc9VfT8AkLpL-El_mOWKV6esRdEU1mbg1rq9eGwyRfGZAuPwUUP1qolkfBsTX-xk1&amp;t=6df849d2" type="text/javascript"></script>
+<script src="../ScriptResource3c0a.js?d=XULVbsHDVLbz9U3XY3dNKjYVBPt4c7R_ZktYDXJ_Zx60ieLv6An0Xzl7Het_9Fy_In_smVeI0Pc5dONA2asvRZmieVw760RSqHbmH_l_5Q4sIABLtCdHnEzDVopo4mx-B6Nhb0lQqfEWhVQEekgZzma5IrR8LZvhzThsTn2RU2LpvBIciybh5-6AFlNDeyN00&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../ScriptResource7bd5.js?d=lNE7WyNZxdgCabFQylFyEpxCnJY-ewkkPbvG_2F8V6j0wOEy85gWtvBe-NUxW11DkjzDBEEZLqx_BeVKW7WhiWwGZN6Hcq3c9JoecT8S-ZBzXrunzISICFVPY0pdk_z1o2_TZ7mat0ahtKkBATtk5K3gXCBFYrdSp5VITKX_GzHbDuyUGj1daO73xD_aD5JuOHEeG7LchY_7JlSH7YupYg2&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E7E8FB5" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAdEy4LW6Y3/8+CUXwPRksGFuPOyILX5UpRRDlZ/QmDnD4OGP6xOFxkspoAx7VEKhYZI9A/oOhbGhHWNFB0XTJD4lqCkJUt9nkERcjLfVJH88JVOVkz7HoPpIe9czLngs/oc5G8HfsWhbGlSMPs6ElIxBrwKrPmY63LSjHYrM8lDxvNOuePa4INlODF3oqgyjsI=" />
+</div>
+        <div id="body" class="col-sm-9">
+          <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sm', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+          
+<div id="ctl00_nt_pnlNotifications" role="alert">
+
+</div>
+          
+  <article class="panel">
+    <div class="panel-header">
+      <h1>Get Size of Tables with SQL Server</h1>
+      <span class="panel-subtitle">
+        Posted on 
+        <time datetime="2013-10-16T11:07:00.000Z">
+          2013-10-16 11:07
+        </time>
+        [<a href='index.html' target="_self" title='Permalink to Get Size of Tables with SQL Server'>Permalink</a>]
+      </span>
+    </div>
+    <div class="panel-body">
+      <p>	A snippet for getting the size for all tables in a <em>SQL Server</em> database that might prove useful for:</p>
+<ul>
+	  <li>		Get a better understanding where most of your data is going</li>
+	  <li>		Find database bottlenecks</li>
+  <li>	Free up disk space</li>
+	  <li>		Reducing maintenance cost</li>
+</ul>
+<pre>
+<code class="sql">WITH table_space_usage (schema_name, table_name, used, reserved, ind_rows, tbl_rows)
+AS (SELECT s.Name, o.Name, p.used_page_count * 8, p.reserved_page_count * 8, p.row_count, 
+  CASE WHEN i.index_id in ( 0, 1 ) THEN p.row_count ELSE 0 END
+  FROM sys.dm_db_partition_stats p
+  INNER JOIN sys.objects as o ON o.object_id = p.object_id
+  INNER JOIN sys.schemas as s ON s.schema_id = o.schema_id
+  LEFT OUTER JOIN sys.indexes as i on i.object_id = p.object_id 
+    and i.index_id = p.index_id
+  WHERE o.type_desc = &#39;USER_TABLE&#39; and o.is_ms_shipped = 0
+)
+
+SELECT t.schema_name, t.table_name, sum(t.used) as used_in_kb, 
+  sum(t.reserved) as reserved_in_kb, sum(t.tbl_rows) as rows
+FROM table_space_usage as t
+GROUP BY t.schema_name , t.table_name 
+ORDER BY used_in_kb desc</code></pre>
+    </div>
+    <div class="categories">
+      Categories:
+      
+    </div>
+  </article>
+  <div class="panel-footer">
+    Share on:
+    <a href='https://twitter.com/intent/tweet?text=Get%20Size%20of%20Tables%20with%20SQL%20Server&amp;url=http%3a%2f%2fandreaazzola.com%2ftable-size-space-sql-server%2f' target="_blank" title="Share it on Twitter">Twitter</a>,&nbsp;
+    <a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2ftable-size-space-sql-server%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+    <a rel="author" href="../index.html"></a>
+  </div>
+
+  
+  
+  
+<div class="panel">
+    <h3>Comments</h3>
+    <div class="action">
+        <a id="ctl00_cphBody_cmm_lbtNewComment1" class="action" href="javascript:__doPostBack(&#39;ctl00$cphBody$cmm$lbtNewComment1&#39;,&#39;&#39;)">Post a new comment</a>
+    </div>
+    <div class="panel-body" style="background-color:inherit; border-width:0px; padding:0px;">
+        
+        
+    </div>
+    <div class="action">
+        
+    </div>
+</div>
+
+  
+
+        </div>
+        <div id="menu1" class="col-sm-3 blog-sidebar">
+          
+<div class="sidebar-module sidebar-module-inset block avatar">
+    <img src="../images/AndreaAzzola_Website200x200.png" height="180" width="180" alt="Author's portrait" />
+</div>
+          
+<nav class="sidebar-module sidebar-module-inset block about">
+  <div id="icons">
+	<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" text="Twitter" title="Stay up to date with my tweets"><img src='../images/social/twitter.svg' alt='My Twitter profile' /></a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" text="LinkedIn" title="Find me on LinkedIn"><img src='../images/social/linkedin.svg' alt='My LinkedIn profile' /></a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" text="Facebook" title="Get in touch with Facebook"><img src='../images/social/facebook.svg' alt='My Facebook profile' /></a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" text="Pinterest" title="I&#39;m on Pinterest!"><img src='../images/social/pinterest.svg' alt='My Pinterest profile' /></a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" text="Instagram" title="My Instagram profile"><img src='../images/social/instagram.svg' alt='My Instagram profile' /></a>
+</div>
+  
+</nav>
+          
+<div class="sidebar-module">
+    
+    <ul id="ctl00_stp1_links" class="list-group"><li><a style="font-weight:bold" href="../about/index.html" text="About" title="Short summary">About</a></li><li><a style="font-weight:bold" href="../articles/index.html" text="Articles" title="Collection of all articles in this website">Articles</a></li><li><a style="font-weight:bold" href="../books/index.html" text="Books" title="My book recommendations">Books</a></li><li><a style="font-weight:bold" href="../contact/index.html" text="Contact" title="Short summary">Contact</a></li><li><a href="../feed/index.html" text="RSS feed" title="Subscribe to this blog">RSS feed</a></li><li><a href="../login/index.html" text="Login" title="Login">Login</a></li></ul>
+    <ul class="list-group">
+        <li><a id="ctl00_stp1_lbLanguageEN" class="lang-sm lang-lbl" lang="en" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageEN&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+        <li><a id="ctl00_stp1_lbLanguageIT" class="lang-sm lang-lbl" lang="it" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageIT&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+    </ul>
+    <br />
+</div>
+          
+
+<nav class="sidebar-module">
+    <h4>Newsletter</h4>
+    <input name="ctl00$newsletter$tbFirstName" type="text" id="ctl00_newsletter_tbFirstName" placeholder="First name" style="width:60%;" /><br />
+    <input name="ctl00$newsletter$tbEmail" type="text" id="ctl00_newsletter_tbEmail" placeholder="Email" style="width:90%;" /><br />
+
+    <input type="submit" name="ctl00$newsletter$btSubmit" value="Subscribe" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$newsletter$btSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_newsletter_btSubmit" />
+    <span id="ctl00_newsletter_rfvEmail" style="color:Red;visibility:hidden;">*</span>
+    <span id="ctl00_newsletter_revEmail" style="color:Red;visibility:hidden;">Invalid</span>
+</nav>
+
+          
+          
+          
+
+<div class="sidebar-module">
+  <h4>
+    Categories
+    <a href="../category.html" title="All categories">
+      (All)
+    </a>
+  </h4>
+  
+      <a href="../category/books/index.html" style='font-size:112%;' class="category">
+        Books
+      </a>
+    
+      <a href="../category/decision-fatigue/index.html" style='font-size:112%;' class="category">
+        Decision Fatigue
+      </a>
+    
+      <a href="../category/diet/index.html" style='font-size:112%;' class="category">
+        Diet
+      </a>
+    
+      <a href="../category/extreme-saving/index.html" style='font-size:119%;' class="category">
+        Extreme Saving
+      </a>
+    
+      <a href="../category/finance/index.html" style='font-size:112%;' class="category">
+        Finance
+      </a>
+    
+      <a href="../category/financial-independence/index.html" style='font-size:125%;' class="category">
+        Financial Independence
+      </a>
+    
+      <a href="../category/fitness/index.html" style='font-size:119%;' class="category">
+        Fitness
+      </a>
+    
+      <a href="../category/gears/index.html" style='font-size:112%;' class="category">
+        Gears
+      </a>
+    
+      <a href="../category/geo-arbitrage/index.html" style='font-size:112%;' class="category">
+        Geo Arbitrage
+      </a>
+    
+      <a href="../category/goal-setting/index.html" style='font-size:112%;' class="category">
+        Goal Setting
+      </a>
+    
+      <a href="../category/nutrition/index.html" style='font-size:112%;' class="category">
+        Nutrition
+      </a>
+    
+      <a href="../category/personal-branding/index.html" style='font-size:112%;' class="category">
+        Personal Branding
+      </a>
+    
+      <a href="../category/personal-development/index.html" style='font-size:150%;' class="category">
+        Personal Development
+      </a>
+    
+      <a href="../category/productivity/index.html" style='font-size:125%;' class="category">
+        Productivity
+      </a>
+    
+      <a href="../category/time-management/index.html" style='font-size:106%;' class="category">
+        Time Management
+      </a>
+    
+</div>
+
+          
+          
+        </div>
+      
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_newsletter_rfvEmail"), document.getElementById("ctl00_newsletter_revEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_newsletter_rfvEmail = document.all ? document.all["ctl00_newsletter_rfvEmail"] : document.getElementById("ctl00_newsletter_rfvEmail");
+ctl00_newsletter_rfvEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_rfvEmail.validationGroup = "Newsletter";
+ctl00_newsletter_rfvEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_newsletter_rfvEmail.initialvalue = "";
+var ctl00_newsletter_revEmail = document.all ? document.all["ctl00_newsletter_revEmail"] : document.getElementById("ctl00_newsletter_revEmail");
+ctl00_newsletter_revEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_revEmail.errormessage = "Invalid";
+ctl00_newsletter_revEmail.validationGroup = "Newsletter";
+ctl00_newsletter_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_newsletter_revEmail.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ctl00_newsletter_rfvEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_rfvEmail'));
+}
+
+document.getElementById('ctl00_newsletter_revEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_revEmail'));
+}
+//]]>
+</script>
+</form>
+    </div>
+    <footer>
+      <p>&copy; Copyright 2008-2025 - Andrea Azzola</p>
+    </footer>
+  </div>
+  
+  <script src="../Scripts/async.js"></script>
+  <script src="../Scripts/cookiechoices.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C3P9XZGVE9');
+
+    
+    document.addEventListener('DOMContentLoaded', function (event) {
+      cookieChoices.showCookieConsentBar('This website use cookies to improve the user experience. By continuing I\'ll assume that you\'re happy with it',
+        'Got it', null /*learn more*/, null/*url*/);
+    });
+  </script>
+</body>
+
+<!-- Mirrored from andreaazzola.com/table-size-space-sql-server/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:37 GMT -->
+</html>

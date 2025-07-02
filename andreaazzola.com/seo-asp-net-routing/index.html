@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from andreaazzola.com/seo-asp-net-routing/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" type="image/png" href="../images/favicon.png" />
+
+  <!-- JavaScript -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8XKTL2Q');</script>
+  <!-- End Google Tag Manager -->
+  <script src="../../code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="http://load.sumome.com/" data-sumo-site-id="0bcf4270faa767709f6d2e505d84950ff777ed47fb7c0e004b02978a4d6f57b4" async="async"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /><link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="../App_Themes/Ichigo/languages.min.css" rel="stylesheet" />
+  <!-- Heads -->
+  
+  <link rel="alternate" hreflang="en-US" href="index.html" />
+  <meta name="description" content="ASP.NET offers a great resource called 'System.Web.Routing' that support routes.
+Routes translates both the pattern and context parameters" />
+  <link rel="canonical" href="index.html" />
+  
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Improve ASP.NET SEO by using System.Web.Routing" />
+  <meta property="og:description" content="ASP.NET offers a great resource called &#39;System.Web.Routing&#39; that support routes.
+Routes translates both the pattern and context parameters" />
+  
+  <meta property="og:url" content="http://andreaazzola.com/seo-asp-net-routing/" />
+  <meta property="article:published_time" content="2010-01-18T20:57:00Z" />
+  <meta property="og:site_name" content="Andrea Azzola" />
+
+  
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://andreaazzola.com/seo-asp-net-routing/"
+    },
+    "headline": "Improve ASP.NET SEO by using System.Web.Routing",
+
+    "datePublished": "2010-01-18T20:57:00.000Z",
+    "dateModified": "2016-04-27T18:37:24.337Z",
+    "author": {
+      "@type": "Person",
+      "name": "Andrea Azzola"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Andrea Azzola",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://andreaazzola.com/Images/AndreaAzzola_Website200x200.png",
+        "width": 200,
+        "height": 200
+      }
+    },
+    "description": "ASP.NET offers a great resource called 'System.Web.Routing' that support routes.
+Routes translates both the pattern and context parameters",
+    "url": "http://andreaazzola.com/seo-asp-net-routing/"
+  }
+  </script>
+<link href="../App_Themes/Ichigo/languages.min.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Ichigo/StyleSheet.css" type="text/css" rel="stylesheet" /><title>
+	Improve ASP.NET SEO by using System.Web.Routing - Andrea Azzola
+</title></head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8XKTL2Q"
+      height="0" width="0" style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <header>
+      <span id="title">
+        <a href="../index.html" title="Back to the Home Page">
+          Andrea Azzola
+        </a>
+      </span>
+      <p id="ctl00_subtitle" class="subtitle">Tips and Techniques for Lifestyle Design</p>
+    </header>
+    <div id="wrapper" class="row">
+      <form name="aspnetForm" method="post" action="#" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyNDY0NzQ1MQ9kFgJmD2QWCGYPZBYCAgoPZBYCAgEPFgIeB1Zpc2libGVoZAIBDxYCHgRUZXh0BQ1BbmRyZWEgQXp6b2xhZAICDxYCHglpbm5lcmh0bWwFKFRpcHMgYW5kIFRlY2huaXF1ZXMgZm9yIExpZmVzdHlsZSBEZXNpZ25kAgMPZBYKAgMPZBYCAgIPDxYCHwBnZGQCBQ9kFghmDxYCHwEFL0ltcHJvdmUgQVNQLk5FVCBTRU8gYnkgdXNpbmcgU3lzdGVtLldlYi5Sb3V0aW5nZAIBDxYCHwEFqCY8cD48c3BhbiBzdHlsZT0iY29sb3I6IHJnYigyNTUsIDAsIDApOyI+VGhpcyBwYWdlIGlzIHNwZWNpZmljIHRvIE1pY3Jvc29mdCBWaXN1YWwgU3R1ZGlvIDIwMDgvLk5FVCBGcmFtZXdvcmsgMy41IG9yIGhpZ2hlcjwvc3Bhbj48L3A+DQoJDQoJPGgyPlNFTyBhbmQgQVNQLk5FVDwvaDI+DQoJJnF1b3Q7PGk+QXMgYW4gPGEgaHJlZj0iaHR0cDovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9JbnRlcm5ldF9tYXJrZXRpbmciIHRpdGxlPSJJbnRlcm5ldCBtYXJrZXRpbmciPkludGVybmV0IG1hcmtldGluZzwvYT4gc3RyYXRlZ3ksIFNFTyBjb25zaWRlcnMgaG93IHNlYXJjaCBlbmdpbmVzIHdvcmsgYW5kIHdoYXQgcGVvcGxlIHNlYXJjaCBmb3IuIE9wdGltaXppbmcgYSB3ZWJzaXRlIHByaW1hcmlseSBpbnZvbHZlcyBlZGl0aW5nIGl0cyBjb250ZW50IGFuZCA8YSBocmVmPSJodHRwOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL0hUTUwiIHRpdGxlPSJIVE1MIj5IVE1MPC9hPiA8YSBocmVmPSJodHRwOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL1dlYl9jcmF3bGVyIiB0aXRsZT0iV2ViIGNyYXdsZXIiPmluZGV4aW5nIGFjdGl2aXRpZXM8L2E+IG9mIHNlYXJjaCBlbmdpbmVzLjwvaT4mcXVvdDsgW3NvdXJjZTogPGEgaHJlZj0iaHR0cDovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9TZWFyY2hfZW5naW5lX29wdGltaXphdGlvbiIgaWQ9ImQ1cnAiIHRpdGxlPSJ3aWtpcGVkaWEub3JnIj53aWtpcGVkaWEub3JnPC9hPl0NCgkNCgk8aDI+U2VhcmNoIEVuZ2luZSBGcmllbmRseSBVUkxzIHZzICJEaXJ0eSIgVVJMczwvaDI+DQoJPHA+Q3VycmVudCBVUkwgd2lsbCBiZSB0YWtlbiBhcyBleGFtcGxlPC9wPg0KPHVsPg0KCQkgIDxsaT5TRUYgVVJMPC9saT46IGh0dHA6Ly9BbmRyZWFBenpvbGEuY29tL3Nlby1hc3AtbmV0LXJvdXRpbmc8YnIgLz4NCgkgIDxsaT5SQVcgVVJMPC9saT46IGh0dHA6Ly9BbmRyZWFBenpvbGEuY29tL1Bvc3QuYXNweD9pZD1jZDE3MWY3Yy01NjBkLTRhNjItOGQ2NS0xNmI4NzQxOWE1OGMNCjwvdWw+DQoJPHA+CTxzdHJvbmc+U0VGcyBhcmUgYmV0dGVyIHRvIHdyaXRlLCByZW1lbWJlciwgdW5kZXJzdGFuZCBhbmQgbWFudGFpbjwvc3Ryb25nPi4gCUluIHRoZSBleGFtcGxlIGFib3ZlIHlvdSBjYW4gdW5kZXJzdGFuZCBpbW1lZGlhdGx5IHdoYXQgdGhlIHJlc291cmNlIGlzIGFib3V0IGJ1dCB0aGUgUkFXIHZlcnNpb24gaXMgZGlmZmljdWx0IHRvIHJlYWQgYW5kIGFsbW9zdCBpbXBvc3NpYmxlIHRvIHJlbWJlci48L3A+DQoJDQo8aDI+SW1wbGVtZW50YXRpb248L2gyPg0KCTxwPkFTUC5ORVQgb2ZmZXJzIGEgZ3JlYXQgcmVzb3VyY2UgY2FsbGVkICYjMzk7U3lzdGVtLldlYi5Sb3V0aW5nJiMzOTssIGl0IHN1cHBvcnQgcm91dGVzLiAJUm91dGVzIHRyYW5zbGF0ZXMgYm90aCB0aGUgcGF0dGVybiB5b3UgZGVmaW5lIGFuZCB0aGUgY29udGV4dCBwYXJhbWV0ZXJzLCBpbnRvIGFuIGludGVsbGlnaWJsZSByZXF1ZXN0LiAJSW4gdGhlIGZvbGxvd2luZyBleGFtcGxlIHlvdSB3aWxsIGZpbmQ6PC9wPg0KPG9sPg0KCSAgPGxpPgkJSG93IHRvIGVuYWJsZSByb3V0aW5nIG9uIHlvdXIgd2ViIGFwcGxpY2F0aW9uPC9saT4NCgkgIDxsaT4JCUEgY2xhc3MgdGhhdCBoYW5kbGUgcm91dGVzIGJ5IGltcGxlbWVudGluZyBJUm91dGVIYW5kbGVyPC9saT4NCgkgIDxsaT4JCUhvdyB0byBpbml0aWFsaXplIHJvdXRlcyB3aGVuIHlvdXIgYXBwbGljYXRpb24gc3RhcnRzPC9saT4NCgkgIDxsaT4JCUhvdyB0byBwYXNzIHZhbHVlcyBpbiBhIGNsZWFuIGFuZCByb2J1c3QgbWFubmVyPC9saT4NCjwvb2w+DQoNCgk8aDM+IzEgRmlsZSBXZWIuY29uZmlnPC9oMz4NCgk8cHJlPjxjb2RlIGNsYXNzPSJ4bWwiPiZsdDtzeXN0ZW0ud2ViJmd0Ow0KCQkuLi4NCgkJJmx0O2FkZCBuYW1lPSZxdW90O1JvdXRpbmdNb2R1bGUmcXVvdDsgdHlwZT0mcXVvdDtTeXN0ZW0uV2ViLlJvdXRpbmcuVXJsUm91dGluZ01vZHVsZSZxdW90OyAvJmd0Ow0KJmx0Oy9zeXN0ZW0ud2ViJmd0OzwvY29kZT48L3ByZT4NCg0KCTxoMz4jMiBGaWxlIEdsb2JhbC5hc2F4PC9oMz4NCgk8cHJlPjxjb2RlIGNsYXNzPSJjcyI+cHVibGljIGNsYXNzIEVuaGFuY2VkUm91dGVIYW5kbGVyIDogSVJvdXRlSGFuZGxlcg0Kew0KCXN0cmluZyBfcGFnZVVSTDsNCgkNCglwdWJsaWMgRW5oYW5jZWRSb3V0ZUhhbmRsZXIoc3RyaW5nIHBhZ2VVUkwpDQoJew0KCQlfcGFnZVVSTCA9IHBhZ2VVUkw7DQoJfQ0KICAgICAgICANCglwdWJsaWMgSUh0dHBIYW5kbGVyIEdldEh0dHBIYW5kbGVyKFJlcXVlc3RDb250ZXh0IHJlcXVlc3RDb250ZXh0KQ0KCXsNCgkJSVJvdXRlUGFnZSBwYWdlID0gDQoJCQlCdWlsZE1hbmFnZXIuQ3JlYXRlSW5zdGFuY2VGcm9tVmlydHVhbFBhdGgoX3BhZ2VVUkwsIA0KCQkJCXR5cGVvZihJUm91dGVQYWdlKSkgYXMgSVJvdXRlUGFnZTsNCgkJcGFnZS5QYXJhbWV0ZXJzID0gcmVxdWVzdENvbnRleHQuUm91dGVEYXRhLlZhbHVlczsNCgkJcmV0dXJuIHBhZ2U7DQoJfQ0KfTwvY29kZT48L3ByZT4NCg0KCTxoMz4jMyBGaWxlIEdsb2JhbC5hc2F4PC9oMz4NCgk8cHJlPjxjb2RlIGNsYXNzPSJjcyI+cHJvdGVjdGVkIHZvaWQgQXBwbGljYXRpb25fU3RhcnQob2JqZWN0IHNlbmRlciwgRXZlbnRBcmdzIGUpDQp7DQoJUmVnaXN0ZXJSb3V0ZXMoUm91dGVUYWJsZS5Sb3V0ZXMpOw0KfQ0KDQpwdWJsaWMgc3RhdGljIHZvaWQgUmVnaXN0ZXJSb3V0ZXMoUm91dGVDb2xsZWN0aW9uIHJvdXRlcykNCnsNCglyb3V0ZXMuQWRkKG5ldyBSb3V0ZShzdHJpbmcuRW1wdHksIA0KCQluZXcgRW5oYW5jZWRSb3V0ZUhhbmRsZXIoJnF1b3Q7fi9EZWZhdWx0LmFzcHgmcXVvdDspKSk7IC8vIG5vdGhpbmcgYWZ0ZXIgZG9tYWluIG5hbWUNCglyb3V0ZXMuQWRkKG5ldyBSb3V0ZSgmcXVvdDtwb3N0L3tzbHVnfSZxdW90OywgDQoJCW5ldyBFbmhhbmNlZFJvdXRlSGFuZGxlcigmcXVvdDt+L1Bvc3QuYXNweCZxdW90OykpKTsgLy8gcG9zdCBmb2xsb3dlZCBieSBoaXMgc2x1Zw0KCXJvdXRlcy5BZGQobmV3IFJvdXRlKCZxdW90O3R3aXR0ZXItbXV0dWFsaXR5JnF1b3Q7LCANCgkJbmV3IEVuaGFuY2VkUm91dGVIYW5kbGVyKCZxdW90O34vQXBwcy9NdXR1YWxpdHkuYXNweCZxdW90OykpKTsgLy8gYSBmaXhlZCBwYXRoDQoJcm91dGVzLkFkZChuZXcgUm91dGUoJnF1b3Q7eypjYXRjaGFsbH0mcXVvdDssIA0KCQluZXcgRW5oYW5jZWRSb3V0ZUhhbmRsZXIoJnF1b3Q7fi9FcnJvci5hc3B4JnF1b3Q7KSkpOyAvLyBjYXRjaGFsbA0KfTwvY29kZT48L3ByZT4NCgk8cD5UaGUgY2F0Y2hhbGwgcGFydCB3b3JrcyB3aGVuZXZlciB0aGUgZW5naW5lIGRvZXMgbm90IGZpbmQgYSBzdWl0YWJsZSByZXNvdXJjZSBvciByb3V0ZSBmb3IgdGhlIHJlcXVlc3QsIHRoaXMgYmVoYXZpb3VyIGlzIGV4dHJlbWVseSBoZWxwZnVsIGV4cGVjaWFsbHkgd2hlbiBkZWFsaW5nIHdpdGggNDA0IGVycm9yIG9yIG1vdmVkIHJlc291cmNlcy48L3A+DQoJDQo8aDM+IzQgRmlsZSBBcHBfQ29kZVxJUm91dGVQYWdlLmNzPC9oMz4NCgk8cHJlPjxjb2RlIGNsYXNzPSJjcyI+dXNpbmcgU3lzdGVtLldlYjsNCnVzaW5nIFN5c3RlbS5XZWIuUm91dGluZzsNCg0KcHVibGljIGludGVyZmFjZSBJUm91dGVQYWdlIDogSUh0dHBIYW5kbGVyDQp7DQogICAgUm91dGVWYWx1ZURpY3Rpb25hcnkgUGFyYW1ldGVycyB7IGdldDsgc2V0OyB9DQp9PC9jb2RlPjwvcHJlPg0KDQoJPHA+QnkgdXNpbmcgdGhpcyBjb2RlIHlvdSBhcmUgb2JsaWdlZCB0byBpbmhlcml0IGluIGVhY2ggcGFnZSB5b3Ugd2FudCB0byByb3V0ZSB0bywgYW5kIHlvdSBzaG91bGQgaW1wbGVtZW50IHRoZSBQYXJhbWV0ZXJzIGZpZWxkIGFzIHdlbGwsIGhvd2V2ZXIgaXQgZG9lc24mIzM5O3QgcmVxdWlyZSB5b3UgdG8gZXhwb3NlIHVuYXBwcm9wcmlhdGUgcXVlcnlzdHJpbmdzIG9yIGRhbmdlcm91cyBzZXNzaW9ucyB0aGF0IHdvdWxkIGRhbWFnZSB0aGUgYWVzdGhldGljcyBvZiB5b3VyIGNvZGUgOkQuIAkJQmUgYXdhcmUsIHRoaXMgd29uJiMzOTt0IGNvdmVyIGFsbCB0aGUgcG9zc2libGUgdGVzdCBjYXNlcywgYnV0IGl0IHdvdWxkIGhlbHAgd2l0aCB0aGUgbW9zdCBvZiB0aGVtLjwvcD4NCg0KPGgyPkluIENvbmNsdXNpb248L2gyPg0KCTxwPglJbiByZWNlbnQgeWVhcnMgd2UgaGF2ZSB3aXRuZXNzZWQgYSB0dXJuYXJvdW5kIGluIHRoZSBkZXZlbG9wbWVudCBvZiB3ZWItYXBwbGljYXRpb25zLCBlc3BlY2lhbGx5IHNpbmNlIHRoZSB0ZWNobm9sb2d5IG1hZGUgaXQgcG9zc2libGUgdG8gZW5sYXJnZSB0aGUgY2F0Y2htZW50IGFyZWEsIGp1c3QgdGhpbmsgYWJvdXQgbW9iaWxlLCBNSUQvTmV0Ym9vayBzYWxlcyBncm93dGgsIGRpc2FkdmFudGFnZSBwZW9wbGUuLi4gdGhpcyBoYXMgaGVscGVkIHRvIHByb21vdGUgYSB3ZWIgc2ltcGxlIGFuZCBmdW5jdGlvbmFsIGF0IHRoZSBleHBlbnNlIG9mIGEgcG93ZXJmdWwgd2ViLCBidXQgbGVzcyB1c2FibGUuPC9wPg0KPHA+U0VGcyBhcmUgYW4gaW1wb3J0YW50IHdheSB0byBjYXRjaCB0aGUgZ3Vlc3QmIzM5O3MgYXR0ZW50aW9uLCBwbGVhc2UgY29uc2lkZXIgZm9yIGV4YW1wbGUgdGhlIEdvb2dsZSYjMzk7IHJlc3VsdHMgcGFnZSwgc2VhcmNoIGFueXRoaW5nIHlvdSB3YW50LCBhbmQgdGhpbmsgYWJvdXQgdGhlIGxpbmsgeW91JiMzOTtsbCBjaG9vc2UsIHRoZSBjbGVhbiBvbmUsIG9yIHRoZSBkaXJ0eSBvbmU/IE5vdCBhbGwgY2xlYW4gVVJMcyBhcmUgdGhlIG1vc3QgYXR0cmFjdGl2ZXMgeWV0LCBidXQgdGhlcmUgYXJlIGEgZ29vZCBjaGFuZ2VzIHlvdSB3aWxsIGNob29zZSB0aGUgc2ltcGxlIG9uZSwgdGhpcyB3b3VsZCBtZWFuIGFuIGltcG9ydGFudCBwb2ludCBmb3IgeW91ciBTRU8gc2NvcmUuPC9wPmQCBg9kFgQCAw8WAh4LXyFJdGVtQ291bnQCARYCZg9kFgYCAQ8PFgIeCEltYWdlVXJsBT9odHRwOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYWRlZGIyMmEzZjU4NGZjM2NlYTQ3MDFiOTRiMmM1Y2FkZAICDxUBL1JlYWxseSB1c2VmdWwgYXJ0aWNsZSEgTWluaW1hbCBibG9nIGdyYXBoaWMhIDspZAIDDw8WAh8BBQlTYWx2YXRvcmVkZAIHDw8WAh8AaGRkAgcPFgIfAGhkAgkPZBYCAgEPZBYKZg8WAh8CBUE8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvdHdpdHRlci5zdmcnIGFsdD0nTXkgVHdpdHRlciBwcm9maWxlJyAvPmQCAQ8WAh8CBUM8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvbGlua2VkaW4uc3ZnJyBhbHQ9J015IExpbmtlZEluIHByb2ZpbGUnIC8+ZAICDxYCHwIFQzxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9mYWNlYm9vay5zdmcnIGFsdD0nTXkgRmFjZWJvb2sgcHJvZmlsZScgLz5kAgMPFgIfAgVFPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL3BpbnRlcmVzdC5zdmcnIGFsdD0nTXkgUGludGVyZXN0IHByb2ZpbGUnIC8+ZAIEDxYCHwIFRTxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9pbnN0YWdyYW0uc3ZnJyBhbHQ9J015IEluc3RhZ3JhbSBwcm9maWxlJyAvPmQCCw9kFgQCAQ8PFgIfAGhkZAIDD2QWDGYPZBYCZg8WAh8CBQVBYm91dGQCAQ9kFgJmDxYCHwIFCEFydGljbGVzZAICD2QWAmYPFgIfAgUFQm9va3NkAgMPZBYCZg8WAh8CBQdDb250YWN0ZAIED2QWAmYPFgIfAgUIUlNTIGZlZWRkAgUPZBYCZg8WAh8CBQVMb2dpbmQCDw9kFgICBQ8WAh8DAg8WHmYPZBYCZg8VAwVib29rcw9mb250LXNpemU6MTEyJTsFQm9va3NkAgEPZBYCZg8VAxBkZWNpc2lvbi1mYXRpZ3VlD2ZvbnQtc2l6ZToxMTIlOxBEZWNpc2lvbiBGYXRpZ3VlZAICD2QWAmYPFQMEZGlldA9mb250LXNpemU6MTEyJTsERGlldGQCAw9kFgJmDxUDDmV4dHJlbWUtc2F2aW5nD2ZvbnQtc2l6ZToxMTklOw5FeHRyZW1lIFNhdmluZ2QCBA9kFgJmDxUDB2ZpbmFuY2UPZm9udC1zaXplOjExMiU7B0ZpbmFuY2VkAgUPZBYCZg8VAxZmaW5hbmNpYWwtaW5kZXBlbmRlbmNlD2ZvbnQtc2l6ZToxMjUlOxZGaW5hbmNpYWwgSW5kZXBlbmRlbmNlZAIGD2QWAmYPFQMHZml0bmVzcw9mb250LXNpemU6MTE5JTsHRml0bmVzc2QCBw9kFgJmDxUDBWdlYXJzD2ZvbnQtc2l6ZToxMTIlOwVHZWFyc2QCCA9kFgJmDxUDDWdlby1hcmJpdHJhZ2UPZm9udC1zaXplOjExMiU7DUdlbyBBcmJpdHJhZ2VkAgkPZBYCZg8VAwxnb2FsLXNldHRpbmcPZm9udC1zaXplOjExMiU7DEdvYWwgU2V0dGluZ2QCCg9kFgJmDxUDCW51dHJpdGlvbg9mb250LXNpemU6MTEyJTsJTnV0cml0aW9uZAILD2QWAmYPFQMRcGVyc29uYWwtYnJhbmRpbmcPZm9udC1zaXplOjExMiU7EVBlcnNvbmFsIEJyYW5kaW5nZAIMD2QWAmYPFQMUcGVyc29uYWwtZGV2ZWxvcG1lbnQPZm9udC1zaXplOjE1MCU7FFBlcnNvbmFsIERldmVsb3BtZW50ZAIND2QWAmYPFQMMcHJvZHVjdGl2aXR5D2ZvbnQtc2l6ZToxMjUlOwxQcm9kdWN0aXZpdHlkAg4PZBYCZg8VAw90aW1lLW1hbmFnZW1lbnQPZm9udC1zaXplOjEwNiU7D1RpbWUgTWFuYWdlbWVudGRkJPhjDcN4ArdPK7eeV51OVWJGqqG/j10+qdpsYBQv/nU=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResourcebd7d.js?d=60NHLgyriwaIxDY49sOyJoosR85E_8EBoHPuH8apHmhoztdyjrJJME7wLHYxt8bRE-HOjc8KEQA4Pz_NLHZK8iRlcBxoEIxqlKSNzP9Hs9E1&amp;t=638628208040000000" type="text/javascript"></script>
+
+
+<script src="../ScriptResource09fd.js?d=2CR6ki1th7q4t6Y-4h70c_FHdhDF-na1jzn6LpnU1MSRHPySmTlk2OYyuOyEcEdLAR2f75mxOhtnv8dyCn78AbyvF1FmRXoxXAyFvJs1SnNAc9VfT8AkLpL-El_mOWKV6esRdEU1mbg1rq9eGwyRfGZAuPwUUP1qolkfBsTX-xk1&amp;t=6df849d2" type="text/javascript"></script>
+<script src="../ScriptResource3c0a.js?d=XULVbsHDVLbz9U3XY3dNKjYVBPt4c7R_ZktYDXJ_Zx60ieLv6An0Xzl7Het_9Fy_In_smVeI0Pc5dONA2asvRZmieVw760RSqHbmH_l_5Q4sIABLtCdHnEzDVopo4mx-B6Nhb0lQqfEWhVQEekgZzma5IrR8LZvhzThsTn2RU2LpvBIciybh5-6AFlNDeyN00&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../ScriptResource7bd5.js?d=lNE7WyNZxdgCabFQylFyEpxCnJY-ewkkPbvG_2F8V6j0wOEy85gWtvBe-NUxW11DkjzDBEEZLqx_BeVKW7WhiWwGZN6Hcq3c9JoecT8S-ZBzXrunzISICFVPY0pdk_z1o2_TZ7mat0ahtKkBATtk5K3gXCBFYrdSp5VITKX_GzHbDuyUGj1daO73xD_aD5JuOHEeG7LchY_7JlSH7YupYg2&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E7E8FB5" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAdMRJHNoKbVjtgMz0XW5JutuPOyILX5UpRRDlZ/QmDnD4OGP6xOFxkspoAx7VEKhYZI9A/oOhbGhHWNFB0XTJD4lqCkJUt9nkERcjLfVJH88JVOVkz7HoPpIe9czLngs/oc5G8HfsWhbGlSMPs6ElIxYh2L3lI0514DhGuwIdNHNThi3mjTxoOghFMeraIOhaU=" />
+</div>
+        <div id="body" class="col-sm-9">
+          <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sm', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+          
+<div id="ctl00_nt_pnlNotifications" role="alert">
+
+</div>
+          
+  <article class="panel">
+    <div class="panel-header">
+      <h1>Improve ASP.NET SEO by using System.Web.Routing</h1>
+      <span class="panel-subtitle">
+        Posted on 
+        <time datetime="2010-01-18T20:57:00.000Z">
+          2010-01-18 20:57
+        </time>
+        [<a href='index.html' target="_self" title='Permalink to Improve ASP.NET SEO by using System.Web.Routing'>Permalink</a>]
+      </span>
+    </div>
+    <div class="panel-body">
+      <p><span style="color: rgb(255, 0, 0);">This page is specific to Microsoft Visual Studio 2008/.NET Framework 3.5 or higher</span></p>
+	
+	<h2>SEO and ASP.NET</h2>
+	&quot;<i>As an <a href="http://en.wikipedia.org/wiki/Internet_marketing" title="Internet marketing">Internet marketing</a> strategy, SEO considers how search engines work and what people search for. Optimizing a website primarily involves editing its content and <a href="http://en.wikipedia.org/wiki/HTML" title="HTML">HTML</a> <a href="http://en.wikipedia.org/wiki/Web_crawler" title="Web crawler">indexing activities</a> of search engines.</i>&quot; [source: <a href="http://en.wikipedia.org/wiki/Search_engine_optimization" id="d5rp" title="wikipedia.org">wikipedia.org</a>]
+	
+	<h2>Search Engine Friendly URLs vs "Dirty" URLs</h2>
+	<p>Current URL will be taken as example</p>
+<ul>
+		  <li>SEF URL</li>: http://AndreaAzzola.com/seo-asp-net-routing<br />
+	  <li>RAW URL</li>: http://AndreaAzzola.com/Post.aspx?id=cd171f7c-560d-4a62-8d65-16b87419a58c
+</ul>
+	<p>	<strong>SEFs are better to write, remember, understand and mantain</strong>. 	In the example above you can understand immediatly what the resource is about but the RAW version is difficult to read and almost impossible to rember.</p>
+	
+<h2>Implementation</h2>
+	<p>ASP.NET offers a great resource called &#39;System.Web.Routing&#39;, it support routes. 	Routes translates both the pattern you define and the context parameters, into an intelligible request. 	In the following example you will find:</p>
+<ol>
+	  <li>		How to enable routing on your web application</li>
+	  <li>		A class that handle routes by implementing IRouteHandler</li>
+	  <li>		How to initialize routes when your application starts</li>
+	  <li>		How to pass values in a clean and robust manner</li>
+</ol>
+
+	<h3>#1 File Web.config</h3>
+	<pre><code class="xml">&lt;system.web&gt;
+		...
+		&lt;add name=&quot;RoutingModule&quot; type=&quot;System.Web.Routing.UrlRoutingModule&quot; /&gt;
+&lt;/system.web&gt;</code></pre>
+
+	<h3>#2 File Global.asax</h3>
+	<pre><code class="cs">public class EnhancedRouteHandler : IRouteHandler
+{
+	string _pageURL;
+	
+	public EnhancedRouteHandler(string pageURL)
+	{
+		_pageURL = pageURL;
+	}
+        
+	public IHttpHandler GetHttpHandler(RequestContext requestContext)
+	{
+		IRoutePage page = 
+			BuildManager.CreateInstanceFromVirtualPath(_pageURL, 
+				typeof(IRoutePage)) as IRoutePage;
+		page.Parameters = requestContext.RouteData.Values;
+		return page;
+	}
+}</code></pre>
+
+	<h3>#3 File Global.asax</h3>
+	<pre><code class="cs">protected void Application_Start(object sender, EventArgs e)
+{
+	RegisterRoutes(RouteTable.Routes);
+}
+
+public static void RegisterRoutes(RouteCollection routes)
+{
+	routes.Add(new Route(string.Empty, 
+		new EnhancedRouteHandler(&quot;~/Default.aspx&quot;))); // nothing after domain name
+	routes.Add(new Route(&quot;post/{slug}&quot;, 
+		new EnhancedRouteHandler(&quot;~/Post.aspx&quot;))); // post followed by his slug
+	routes.Add(new Route(&quot;twitter-mutuality&quot;, 
+		new EnhancedRouteHandler(&quot;~/Apps/Mutuality.aspx&quot;))); // a fixed path
+	routes.Add(new Route(&quot;{*catchall}&quot;, 
+		new EnhancedRouteHandler(&quot;~/Error.aspx&quot;))); // catchall
+}</code></pre>
+	<p>The catchall part works whenever the engine does not find a suitable resource or route for the request, this behaviour is extremely helpful expecially when dealing with 404 error or moved resources.</p>
+	
+<h3>#4 File App_Code\IRoutePage.cs</h3>
+	<pre><code class="cs">using System.Web;
+using System.Web.Routing;
+
+public interface IRoutePage : IHttpHandler
+{
+    RouteValueDictionary Parameters { get; set; }
+}</code></pre>
+
+	<p>By using this code you are obliged to inherit in each page you want to route to, and you should implement the Parameters field as well, however it doesn&#39;t require you to expose unappropriate querystrings or dangerous sessions that would damage the aesthetics of your code :D. 		Be aware, this won&#39;t cover all the possible test cases, but it would help with the most of them.</p>
+
+<h2>In Conclusion</h2>
+	<p>	In recent years we have witnessed a turnaround in the development of web-applications, especially since the technology made it possible to enlarge the catchment area, just think about mobile, MID/Netbook sales growth, disadvantage people... this has helped to promote a web simple and functional at the expense of a powerful web, but less usable.</p>
+<p>SEFs are an important way to catch the guest&#39;s attention, please consider for example the Google&#39; results page, search anything you want, and think about the link you&#39;ll choose, the clean one, or the dirty one? Not all clean URLs are the most attractives yet, but there are a good changes you will choose the simple one, this would mean an important point for your SEO score.</p>
+    </div>
+    <div class="categories">
+      Categories:
+      <a href="../category/seo.html" class="tag">SEO</a>
+    </div>
+  </article>
+  <div class="panel-footer">
+    Share on:
+    <a href='https://twitter.com/intent/tweet?text=Improve%20ASP.NET%20SEO%20by%20using%20System.Web.Routing&amp;url=http%3a%2f%2fandreaazzola.com%2fseo-asp-net-routing%2f' target="_blank" title="Share it on Twitter">Twitter</a>,&nbsp;
+    <a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fseo-asp-net-routing%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+    <a rel="author" href="../index.html"></a>
+  </div>
+
+  
+  
+  
+<div class="panel">
+    <h3>Comments</h3>
+    <div class="action">
+        <a id="ctl00_cphBody_cmm_lbtNewComment1" class="action" href="javascript:__doPostBack(&#39;ctl00$cphBody$cmm$lbtNewComment1&#39;,&#39;&#39;)">Post a new comment</a>
+    </div>
+    <div class="panel-body" style="background-color:inherit; border-width:0px; padding:0px;">
+        
+                <div class="tl-1 comment">
+                    <img id="ctl00_cphBody_cmm_rptComments_ctl00_gvt" class="gravatar" src="http://www.gravatar.com/avatar/adedb22a3f584fc3cea4701b94b2c5ca" align="top" style="border-width:0px;" />
+                    <div>
+                        <p>Really useful article! Minimal blog graphic! ;)</p>
+                        <em>&#126;<span id="ctl00_cphBody_cmm_rptComments_ctl00_lblName">Salvatore</span></em>
+                    </div>
+                    <br style="clear:both" />
+                </div>
+            
+        
+    </div>
+    <div class="action">
+        
+    </div>
+</div>
+
+  
+
+        </div>
+        <div id="menu1" class="col-sm-3 blog-sidebar">
+          
+<div class="sidebar-module sidebar-module-inset block avatar">
+    <img src="../images/AndreaAzzola_Website200x200.png" height="180" width="180" alt="Author's portrait" />
+</div>
+          
+<nav class="sidebar-module sidebar-module-inset block about">
+  <div id="icons">
+	<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" text="Twitter" title="Stay up to date with my tweets"><img src='../images/social/twitter.svg' alt='My Twitter profile' /></a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" text="LinkedIn" title="Find me on LinkedIn"><img src='../images/social/linkedin.svg' alt='My LinkedIn profile' /></a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" text="Facebook" title="Get in touch with Facebook"><img src='../images/social/facebook.svg' alt='My Facebook profile' /></a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" text="Pinterest" title="I&#39;m on Pinterest!"><img src='../images/social/pinterest.svg' alt='My Pinterest profile' /></a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" text="Instagram" title="My Instagram profile"><img src='../images/social/instagram.svg' alt='My Instagram profile' /></a>
+</div>
+  
+</nav>
+          
+<div class="sidebar-module">
+    
+    <ul id="ctl00_stp1_links" class="list-group"><li><a style="font-weight:bold" href="../about/index.html" text="About" title="Short summary">About</a></li><li><a style="font-weight:bold" href="../articles/index.html" text="Articles" title="Collection of all articles in this website">Articles</a></li><li><a style="font-weight:bold" href="../books/index.html" text="Books" title="My book recommendations">Books</a></li><li><a style="font-weight:bold" href="../contact/index.html" text="Contact" title="Short summary">Contact</a></li><li><a href="../feed/index.html" text="RSS feed" title="Subscribe to this blog">RSS feed</a></li><li><a href="../login/index.html" text="Login" title="Login">Login</a></li></ul>
+    <ul class="list-group">
+        <li><a id="ctl00_stp1_lbLanguageEN" class="lang-sm lang-lbl" lang="en" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageEN&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+        <li><a id="ctl00_stp1_lbLanguageIT" class="lang-sm lang-lbl" lang="it" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageIT&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+    </ul>
+    <br />
+</div>
+          
+
+<nav class="sidebar-module">
+    <h4>Newsletter</h4>
+    <input name="ctl00$newsletter$tbFirstName" type="text" id="ctl00_newsletter_tbFirstName" placeholder="First name" style="width:60%;" /><br />
+    <input name="ctl00$newsletter$tbEmail" type="text" id="ctl00_newsletter_tbEmail" placeholder="Email" style="width:90%;" /><br />
+
+    <input type="submit" name="ctl00$newsletter$btSubmit" value="Subscribe" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$newsletter$btSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_newsletter_btSubmit" />
+    <span id="ctl00_newsletter_rfvEmail" style="color:Red;visibility:hidden;">*</span>
+    <span id="ctl00_newsletter_revEmail" style="color:Red;visibility:hidden;">Invalid</span>
+</nav>
+
+          
+          
+          
+
+<div class="sidebar-module">
+  <h4>
+    Categories
+    <a href="../category.html" title="All categories">
+      (All)
+    </a>
+  </h4>
+  
+      <a href="../category/books/index.html" style='font-size:112%;' class="category">
+        Books
+      </a>
+    
+      <a href="../category/decision-fatigue/index.html" style='font-size:112%;' class="category">
+        Decision Fatigue
+      </a>
+    
+      <a href="../category/diet/index.html" style='font-size:112%;' class="category">
+        Diet
+      </a>
+    
+      <a href="../category/extreme-saving/index.html" style='font-size:119%;' class="category">
+        Extreme Saving
+      </a>
+    
+      <a href="../category/finance/index.html" style='font-size:112%;' class="category">
+        Finance
+      </a>
+    
+      <a href="../category/financial-independence/index.html" style='font-size:125%;' class="category">
+        Financial Independence
+      </a>
+    
+      <a href="../category/fitness/index.html" style='font-size:119%;' class="category">
+        Fitness
+      </a>
+    
+      <a href="../category/gears/index.html" style='font-size:112%;' class="category">
+        Gears
+      </a>
+    
+      <a href="../category/geo-arbitrage/index.html" style='font-size:112%;' class="category">
+        Geo Arbitrage
+      </a>
+    
+      <a href="../category/goal-setting/index.html" style='font-size:112%;' class="category">
+        Goal Setting
+      </a>
+    
+      <a href="../category/nutrition/index.html" style='font-size:112%;' class="category">
+        Nutrition
+      </a>
+    
+      <a href="../category/personal-branding/index.html" style='font-size:112%;' class="category">
+        Personal Branding
+      </a>
+    
+      <a href="../category/personal-development/index.html" style='font-size:150%;' class="category">
+        Personal Development
+      </a>
+    
+      <a href="../category/productivity/index.html" style='font-size:125%;' class="category">
+        Productivity
+      </a>
+    
+      <a href="../category/time-management/index.html" style='font-size:106%;' class="category">
+        Time Management
+      </a>
+    
+</div>
+
+          
+          
+        </div>
+      
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_newsletter_rfvEmail"), document.getElementById("ctl00_newsletter_revEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_newsletter_rfvEmail = document.all ? document.all["ctl00_newsletter_rfvEmail"] : document.getElementById("ctl00_newsletter_rfvEmail");
+ctl00_newsletter_rfvEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_rfvEmail.validationGroup = "Newsletter";
+ctl00_newsletter_rfvEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_newsletter_rfvEmail.initialvalue = "";
+var ctl00_newsletter_revEmail = document.all ? document.all["ctl00_newsletter_revEmail"] : document.getElementById("ctl00_newsletter_revEmail");
+ctl00_newsletter_revEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_revEmail.errormessage = "Invalid";
+ctl00_newsletter_revEmail.validationGroup = "Newsletter";
+ctl00_newsletter_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_newsletter_revEmail.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ctl00_newsletter_rfvEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_rfvEmail'));
+}
+
+document.getElementById('ctl00_newsletter_revEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_revEmail'));
+}
+//]]>
+</script>
+</form>
+    </div>
+    <footer>
+      <p>&copy; Copyright 2008-2025 - Andrea Azzola</p>
+    </footer>
+  </div>
+  
+  <script src="../Scripts/async.js"></script>
+  <script src="../Scripts/cookiechoices.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C3P9XZGVE9');
+
+    
+    document.addEventListener('DOMContentLoaded', function (event) {
+      cookieChoices.showCookieConsentBar('This website use cookies to improve the user experience. By continuing I\'ll assume that you\'re happy with it',
+        'Got it', null /*learn more*/, null/*url*/);
+    });
+  </script>
+</body>
+
+<!-- Mirrored from andreaazzola.com/seo-asp-net-routing/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:41 GMT -->
+</html>

@@ -1,0 +1,510 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from andreaazzola.com/it/logging-nlog-sqlite/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" type="image/png" href="../../images/favicon.png" />
+
+  <!-- JavaScript -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8XKTL2Q');</script>
+  <!-- End Google Tag Manager -->
+  <script src="../../../code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="http://load.sumome.com/" data-sumo-site-id="0bcf4270faa767709f6d2e505d84950ff777ed47fb7c0e004b02978a4d6f57b4" async="async"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /><link rel="stylesheet" href="../../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <script src="../../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="../../App_Themes/Ichigo/languages.min.css" rel="stylesheet" />
+  <!-- Heads -->
+  
+  <link rel="alternate" hreflang="en-US" href="../../logging-nlog-sqlite/index.html" /><link rel="alternate" hreflang="it" href="index.html" />
+  <meta name="description" content="Come ottenere una soluzione di logging elegante e portabile grazie all'uso di NLog e SQLite, su piattaforma .NET e grazie all'uso di poche configurazioni" />
+  <link rel="canonical" href="index.html" />
+  
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Logging con NLog e SQLite" />
+  <meta property="og:description" content="Come ottenere una soluzione di logging elegante e portabile grazie all&#39;uso di NLog e SQLite, su piattaforma .NET e grazie all&#39;uso di poche configurazioni" />
+  
+  <meta property="og:url" content="http://andreaazzola.com/it/logging-nlog-sqlite/" />
+  <meta property="article:published_time" content="2014-05-06T14:29:00Z" />
+  <meta property="og:site_name" content="Andrea Azzola" />
+
+  
+    <link href="../../Scripts/highlight.js/styles/default.css" rel="stylesheet" />
+  
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://andreaazzola.com/it/logging-nlog-sqlite/"
+    },
+    "headline": "Logging con NLog e SQLite",
+
+    "datePublished": "2014-05-06T14:29:00.000Z",
+    "dateModified": "2016-12-10T09:36:10.100Z",
+    "author": {
+      "@type": "Person",
+      "name": "Andrea Azzola"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Andrea Azzola",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://andreaazzola.com/Images/AndreaAzzola_Website200x200.png",
+        "width": 200,
+        "height": 200
+      }
+    },
+    "description": "Come ottenere una soluzione di logging elegante e portabile grazie all'uso di NLog e SQLite, su piattaforma .NET e grazie all'uso di poche configurazioni",
+    "url": "http://andreaazzola.com/it/logging-nlog-sqlite/"
+  }
+  </script>
+<link href="../../App_Themes/Ichigo/languages.min.css" type="text/css" rel="stylesheet" /><link href="../../App_Themes/Ichigo/StyleSheet.css" type="text/css" rel="stylesheet" /><title>
+	Logging con NLog e SQLite - Andrea Azzola
+</title></head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8XKTL2Q"
+      height="0" width="0" style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <header>
+      <span id="title">
+        <a href="../../index.html" title="Back to the Home Page">
+          Andrea Azzola
+        </a>
+      </span>
+      <p id="ctl00_subtitle" class="subtitle">Tips and Techniques for Lifestyle Design</p>
+    </header>
+    <div id="wrapper" class="row">
+      <form name="aspnetForm" method="post" action="#" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyNDY0NzQ1MQ9kFgJmD2QWBgIBDxYCHgRUZXh0BQ1BbmRyZWEgQXp6b2xhZAICDxYCHglpbm5lcmh0bWwFKFRpcHMgYW5kIFRlY2huaXF1ZXMgZm9yIExpZmVzdHlsZSBEZXNpZ25kAgMPZBYKAgMPZBYCAgIPDxYCHgdWaXNpYmxlZ2RkAgUPZBYGZg8WAh8ABRlMb2dnaW5nIGNvbiBOTG9nIGUgU1FMaXRlZAIBDxYCHwAF2Cc8cD48aW1nIGFsdD0iSW1tYWdpbmUgaW50cm9kdXR0aXZhIiBzcmM9Ii9JbWFnZXMvcG9zdHMvbmxvZ3NxbGl0ZV9sb3ZlLnBuZyIgc3R5bGU9ImhlaWdodDoxOTBweDsgd2lkdGg6NDUwcHgiIGNsYXNzPSJpbWFnZS1jZW50ZXIiIC8+PC9wPg0KDQo8cD5RdWVzdG8gYXJ0aWNvbG8gc3BpZWdhIGNvbWUgb3R0ZW5lcmUgdW5hIHNvbHV6aW9uZSBkaSBsb2dnaW5nIHBvcnRhYmlsZSBlZCBlbGVnYW50ZSBncmF6aWUgYWxsJ3VzbyBkaSBOTG9nIGUgU1FMaXRlLCBzdSBwaWF0dGFmb3JtYSAuTkVUIGUgZ3JhemllIGFsbCd1c28gZGkgcG9jaGUgY29uZmlndXJhemlvbmkuPC9wPg0KDQo8aDI+TkxvZzwvaDI+DQoNCjxwPk5Mb2cgw6kgdW5hIGxpYnJlcmlhIGRpIGxvZ2dpbmcgbGVnZ2VyYSBlIGdyYXR1aXRhLCBzdXBwb3J0YSBsJ2Vjb3Npc3RlbWEgLk5FVCAoU2lsdmVybGlnaHQsIFdpbmRvd3MgUGhvbmUgZXRjJmhlbGxpcDspOiA8YSBocmVmPSJodHRwOi8vbmxvZy1wcm9qZWN0Lm9yZy8iPmh0dHA6Ly9ubG9nLXByb2plY3Qub3JnLzwvYT4uIENvc3RpdXNjZSB1bidvcHppb25lIGVjY2VsbGVudGUgcGVyIHVuIGFtcGlvIHJhbmdlIGRpIHNjZW5hcmk6IGRhbGxlIHNlbXBsaWNpIHV0aWxpdGllcyBjcmVhdGUgbmVsIHF1b3RpZGlhbm8gYSBzZXJ2aXppIGNyaXRpY2kgZGkgcHJvZHV6aW9uZS4gQ29uc2VudGUgZGkgYXZlcmUgbXVsdGlwbGkgdGFyZ2V0LCBzaWFubyBlc3NpIGZpbGUsIGRhdGFiYXNlLCByaWdoZSBkaSBjb21hbmRvLCByZXRlIGVkIGVtYWlsLjwvcD4NCg0KPHA+PHN0cm9uZz5JbnN0YWxsYXppb25lPC9zdHJvbmc+PC9wPg0KDQo8cD5QYWNrYWdlIE1hbmFnZXI6PC9wPg0KDQo8cHJlPg0KPGNvZGU+UE0mZ3Q7IEluc3RhbGwtUGFja2FnZSBOTG9nPC9jb2RlPjwvcHJlPg0KDQo8cD5Ccm93c2VyIE51R2V0OjwvcD4NCg0KPHA+PGltZyBhbHQ9Ik5Mb2cgb24gTnVHZXQgcGFja2V0IG1hbmFnZXIiIHNyYz0iL0ltYWdlcy9wb3N0cy9ubG9nc3FsaXRlX25sb2cucG5nIiBjbGFzcz0iaW1hZ2UtY2VudGVyIiAvPjwvcD4NCg0KPGgyPlNRTGl0ZTwvaDI+DQoNCjxwPjxhIGhyZWY9Imh0dHA6Ly93d3cuc3FsaXRlLm9yZy8iPlNRTGl0ZTwvYT4gw6kgc2VtcGxpY2UgPGVtPm1vdG9yZSBkaSBkYXRhYmFzZTwvZW0+LCBkaXZlbnRhdG8gZmFtb3NvIG5lbCBtb25kbyBtb2JpbGUgZ3JhemllIGFsbGUgc3VlIHF1YWxpdMOhOiBwZXIgZXNzZXJlIGVzZWd1aXRvIG5vbiByaWNoaWVkZSBhbGN1biBkZW1vbmUgc2VydmVyIG5lIGNvbmZpZ3VyYXppb25pIHBhcnRpY29sYXJpLiBJbCBkYXRhYmFzZSDDqSB0aXBpY2FtZW50ZSByYXBwcmVzZW50YXRvIGRhIHVuIHNpbmdvbG8gZmlsZSAoZXN0ZW5zaW9uZSAuZGIzKSwgbWVudHJlIGxhIGxldHR1cmEgZSBsYSBzY3JpdHR1cmEgdmVuZ29ubyBnZXN0aXRlIGRhbGxlIGxpYnJlcmllIHNwZWNpZmljaGUgYSBzZWNvbmRhIGRlbGxhIHBpYXR0YWZvcm1hIGluIGN1aSB2aWVuZSBlc2VndWl0bywgZWQgZXNzZSBzb25vIHNvbGl0YW1lbnRlIG9wZW4gc291cmNlLjwvcD4NCg0KPHA+PHN0cm9uZz5TZXR1cDwvc3Ryb25nPjwvcD4NCg0KPHA+TCdpbnRlcmZhY2NpYSAuTkVUIHBpw7ogY2VsZWJyZSDDqSA8ZW0+U3lzdGVtLkRhdGEuU1FMaXRlPC9lbT48L3A+DQoNCjxwPlBhY2thZ2UgTWFuYWdlciBDb25zb2xlPC9wPg0KDQo8cHJlPg0KPGNvZGU+UE0mZ3Q7IEluc3RhbGwtUGFja2FnZSBTeXN0ZW0uRGF0YS5TUUxpdGU8L2NvZGU+PC9wcmU+DQoNCjxwPk51R2V0IGJyb3dzZXI8L3A+DQoNCjxwPjxpbWcgYWx0PSJTUWxpdGUgb24gTnVHZXQgcGFja2V0IG1hbmFnZXIiIHNyYz0iL0ltYWdlcy9wb3N0cy9ubG9nc3FsaXRlX3NxbGl0ZS5wbmciIGNsYXNzPSJpbWFnZS1jZW50ZXIiIC8+PC9wPg0KDQo8aDI+SWwgZmlsZSBkaSBjb25maWd1cmF6aW9uZSBOTG9nPC9oMj4NCg0KPHA+T3B6aW9uYWxlIG1hIHJhY2NvbWFuZGFiaWxlOiBsJ3V0aWxpenpvIGRpIHVuIGZpbGUgc2VwYXJhdG8gcGVyIGxlIGNvbmZpZ3VyYXppb25pIDxlbT5OTG9nPC9lbT4uIEFkIGVzZW1waW8gaW4gY2FzbyBkaSBkYW5uZWdnaWFtZW50byBkZWxsbyBzdGVzc28sIHNhcmViYmUgZGVzaWRlcmFiaWxlIGNoZSBzb2xvIGxhIHBhcnRlIGRpIGxvZ2dpbmcgZmFsbGlzc2UgZSBub24gbCdpbnRlcmEgYXBwbGljYXppb25lLiBBcHBsaWNhcmUgaSBwcmluY2lwaSBkZWxsYSA8ZW0+c2VwYXJhdGlvbiBvZiBjb25jZXJuczwvZW0+LCBxdWFuZG8gcG9zc2liaWxlLCDDqSBzZW1wcmUgdW4nb3R0aW1hIGNvc2EuPC9wPg0KDQo8cD48c3Ryb25nPkluc3RhbGxhemlvbmU8L3N0cm9uZz48L3A+DQoNCjxwPlBhY2thZ2UgTWFuYWdlcjwvcD4NCg0KPHByZT4NCjxjb2RlPlBNJmd0OyBJbnN0YWxsLVBhY2thZ2UgTkxvZy5Db25maWc8L2NvZGU+PC9wcmU+DQoNCjxwPkJyb3dzZXIgTnVHZXQ8L3A+DQoNCjxwPjxjb2RlPjxpbWcgYWx0PSJOTG9nIENvbmZpZ3VyYXRpb24gb24gTnVHZXQgcGFja2V0IG1hbmFnZXIiIHNyYz0iL0ltYWdlcy9wb3N0cy9ubG9nc3FsaXRlX25sb2ctY2ZnLnBuZyIgc3R5bGU9ImhlaWdodDo2MHB4OyB3aWR0aDo0MDBweCIgY2xhc3M9ImltYWdlLWNlbnRlciIgLz48L2NvZGU+PC9wPg0KDQo8aDI+RXNlZ3VpcmUgTkxvZyBlIFNRTGl0ZSBpbiB0YW5kZW08L2gyPg0KDQo8b2w+DQoJPGxpPg0KCTxwPjxzdHJvbmc+UHJlZGlzcG9uaSBpbCBkYXRhYmFzZSBTUUxpdGU8L3N0cm9uZz4sIHVzYSBpbCA8YSBocmVmPSJodHRwOi8vc291cmNlZm9yZ2UubmV0L3Byb2plY3RzL3NxbGl0ZWJyb3dzZXIvIj5icm93c2VyIGRpIERhdGFiYXNlIFNRTGl0ZTwvYT4gb2QgdW4gY2xpZW50IGNoZSBwcmVmZXJpc2NpIHBlciBjcmVhcmUgaWwgZGF0YWJhc2UsIHF1aW5kaSBlc2VndWkgaWwgc2VndWVudGUgc3RhdGVtZW50IFQtU1FMIHBlciBjcmVhcmUgbGEgPGVtPnRhYmVsbGEgZGVpIExvZzwvZW0+OjwvcD4NCg0KCTxwcmU+DQo8Y29kZT4gQ1JFQVRFIFRBQkxFIExvZyAoVGltZXN0YW1wIFRFWFQsIExvZ2xldmVsIFRFWFQsIExvZ2dlciBURVhULCANCiAgQ2FsbHNpdGUgVEVYVCwgTWVzc2FnZSBURVhUKSA8L2NvZGU+PC9wcmU+DQoJPC9saT4NCgk8bGk+DQoJPHA+PHN0cm9uZz5Db25uZXR0aSBsJ0FwcCBhbCBkYXRhYmFzZSBkYXRhYmFzZTwvc3Ryb25nPiwgZSBtb2RpZmljYSBsYSBjb25maWd1cmF6aW9uZSBOTG9nIGNvbWUgc2VndWU6PC9wPg0KDQoJPHByZT4NCjxjb2RlPiAgJmx0Oz94bWwgdmVyc2lvbj0mcXVvdDsxLjAmcXVvdDsgZW5jb2Rpbmc9JnF1b3Q7dXRmLTgmcXVvdDsgPyZndDsNCiAgJmx0O25sb2cgeG1sbnM9JnF1b3Q7aHR0cDovL3d3dy5ubG9nLXByb2plY3Qub3JnL3NjaGVtYXMvTkxvZy54c2QmcXVvdDsNCiAgICAgeG1sbnM6eHNpPSZxdW90O2h0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlJnF1b3Q7DQogICAgIHRocm93RXhjZXB0aW9ucz0mcXVvdDtmYWxzZSZxdW90OyZndDsNCiAgICZsdDt0YXJnZXRzJmd0Ow0KICAgICAmbHQ7dGFyZ2V0IG5hbWU9JnF1b3Q7ZGImcXVvdDsgeHNpOnR5cGU9JnF1b3Q7RGF0YWJhc2UmcXVvdDsgDQogICAgICAgICBkYlByb3ZpZGVyPSZxdW90O1N5c3RlbS5EYXRhLlNRTGl0ZSZxdW90OyBrZWVwQ29ubmVjdGlvbj0mcXVvdDtmYWxzZSZxdW90OyANCiAgICAgICAgIGNvbm5lY3Rpb25TdHJpbmc9JnF1b3Q7RGF0YSBTb3VyY2U9JHtiYXNlZGlyfVxMb2cuZGIzO1ZlcnNpb249MzsmcXVvdDsNCiAgICAgICAgIGNvbW1hbmRUZXh0PSZxdW90O0lOU0VSVCBpbnRvIExvZyhUaW1lc3RhbXAsIExvZ2xldmVsLCBMb2dnZXIsIENhbGxzaXRlLCBNZXNzYWdlKSANCiAgICAgICAgICB2YWx1ZXMoQFRpbWVzdGFtcCwgQExvZ2xldmVsLCBATG9nZ2VyLCBAQ2FsbHNpdGUsIEBNZXNzYWdlKSZxdW90OyZndDsNCiAgICAgICAgICAgJmx0O3BhcmFtZXRlciBuYW1lPSZxdW90O0BUaW1lc3RhbXAmcXVvdDsgbGF5b3V0PSZxdW90OyR7bG9uZ2RhdGV9JnF1b3Q7LyZndDsNCiAgICAgICAgICAgJmx0O3BhcmFtZXRlciBuYW1lPSZxdW90O0BMb2dsZXZlbCZxdW90OyBsYXlvdXQ9JnF1b3Q7JHtsZXZlbDp1cHBlcmNhc2U9dHJ1ZX0mcXVvdDsvJmd0Ow0KICAgICAgICAgICAmbHQ7cGFyYW1ldGVyIG5hbWU9JnF1b3Q7QExvZ2dlciZxdW90OyBsYXlvdXQ9JnF1b3Q7JHtsb2dnZXJ9JnF1b3Q7LyZndDsNCiAgICAgICAgICAgJmx0O3BhcmFtZXRlciBuYW1lPSZxdW90O0BDYWxsc2l0ZSZxdW90OyBsYXlvdXQ9JnF1b3Q7JHtjYWxsc2l0ZTpmaWxlbmFtZT10cnVlfSZxdW90Oy8mZ3Q7DQogICAgICAgICAgICZsdDtwYXJhbWV0ZXIgbmFtZT0mcXVvdDtATWVzc2FnZSZxdW90OyBsYXlvdXQ9JnF1b3Q7JHttZXNzYWdlfSZxdW90Oy8mZ3Q7DQogICAgICZsdDsvdGFyZ2V0Jmd0Ow0KICAgJmx0Oy90YXJnZXRzJmd0Ow0KICAgJmx0O3J1bGVzJmd0Ow0KICAgICAmbHQ7bG9nZ2VyIG5hbWU9JnF1b3Q7KiZxdW90OyBtaW5sZXZlbD0mcXVvdDtXYXJuJnF1b3Q7IHdyaXRlVG89JnF1b3Q7ZGImcXVvdDsgLyZndDsNCiAmbHQ7L3J1bGVzJmd0Ow0KICZsdDsvbmxvZyZndDs8L2NvZGU+PC9wcmU+DQoJPC9saT4NCgk8bGk+DQoJPHA+PHN0cm9uZz5Jbml6aWEgaWwgbG9nZ2luZzwvc3Ryb25nPjwvcD4NCg0KCTxwcmU+DQo8Y29kZT5jbGFzcyBQcm9ncmFtIHsNCiBzdGF0aWMgTG9nZ2VyIGxvZyA9IExvZ01hbmFnZXIuR2V0Q3VycmVudENsYXNzTG9nZ2VyKCk7DQoNCiBzdGF0aWMgdm9pZCBNYWluKHN0cmluZ1tdIGFyZ3MpDQogew0KICAgICBsb2cuSW5mbygmcXVvdDtMb2dnaW5nIGxpa2UgYSBib3NzJnF1b3Q7KTsNCiB9DQp9PC9jb2RlPg0KPC9wcmU+DQoJPC9saT4NCjwvb2w+DQoNCjxoMj5GYXR0byE8L2gyPg0KDQo8cD5QdW9pIHJpdmVkZXJlIGlsIGNvZGljZSBzb3JnZW50ZSBlIHNjYXJpY2FyZSB1biBwcm9nZXR0byBkaSBlc2VtcGlvIHF1aTo8YnIgLz4NCjxhIGhyZWY9Imh0dHBzOi8vZ2l0aHViLmNvbS9hYXp6b2xhL25sb2ctc3FsaXRlLyIgdGFyZ2V0PSJfYmxhbmsiPmh0dHBzOi8vZ2l0aHViLmNvbS9hYXp6b2xhL25sb2ctc3FsaXRlLzwvYT48L3A+ZAIGD2QWBAIDDxYCHgtfIUl0ZW1Db3VudAIBFgJmD2QWBgIBDw8WAh4ISW1hZ2VVcmwFP2h0dHA6Ly93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci9jNTE0YjE0MWI4MWMzZmFkN2MyZjE2OWJmY2QyNDk4NWRkAgIPFQG2AUZvciB0aGUgbGF0ZXN0IHZlcnNpb25zIG9mIHRoZSBwYWNrYWdlcyBhbmQgdmlzdWFsIHN0dWRpbyAyMDEzIHVwZGF0ZSAzIHlvdSBuZWVkIHRvIHNldCB0aGUgY29tbWFuZFR5cGU9IlRleHQiIGluIHRoZSB0YXJnZXQgdGFnIG9yIHlvdSB3aWxsIGdldCBhIG1ldGhvZCBub3Qgc3VwcG9ydGVkIGVycm9yIG1lc3NhZ2UuZAIDDw8WAh8ABQVFZGdhcmRkAgcPDxYCHwJoZGQCCQ9kFgICAQ9kFgpmDxYCHwEFQTxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC90d2l0dGVyLnN2ZycgYWx0PSdNeSBUd2l0dGVyIHByb2ZpbGUnIC8+ZAIBDxYCHwEFQzxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9saW5rZWRpbi5zdmcnIGFsdD0nTXkgTGlua2VkSW4gcHJvZmlsZScgLz5kAgIPFgIfAQVDPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL2ZhY2Vib29rLnN2ZycgYWx0PSdNeSBGYWNlYm9vayBwcm9maWxlJyAvPmQCAw8WAh8BBUU8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvcGludGVyZXN0LnN2ZycgYWx0PSdNeSBQaW50ZXJlc3QgcHJvZmlsZScgLz5kAgQPFgIfAQVFPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL2luc3RhZ3JhbS5zdmcnIGFsdD0nTXkgSW5zdGFncmFtIHByb2ZpbGUnIC8+ZAILD2QWBAIBDw8WAh8CaGRkAgMPZBYMZg9kFgJmDxYCHwEFBUFib3V0ZAIBD2QWAmYPFgIfAQUIQXJ0aWNsZXNkAgIPZBYCZg8WAh8BBQVCb29rc2QCAw9kFgJmDxYCHwEFB0NvbnRhY3RkAgQPZBYCZg8WAh8BBQhSU1MgZmVlZGQCBQ9kFgJmDxYCHwEFBUxvZ2luZAIPD2QWAgIFDxYCHwMCDxYeZg9kFgJmDxUDBWJvb2tzD2ZvbnQtc2l6ZToxMTIlOwVCb29rc2QCAQ9kFgJmDxUDEGRlY2lzaW9uLWZhdGlndWUPZm9udC1zaXplOjExMiU7EERlY2lzaW9uIEZhdGlndWVkAgIPZBYCZg8VAwRkaWV0D2ZvbnQtc2l6ZToxMTIlOwREaWV0ZAIDD2QWAmYPFQMOZXh0cmVtZS1zYXZpbmcPZm9udC1zaXplOjExOSU7DkV4dHJlbWUgU2F2aW5nZAIED2QWAmYPFQMHZmluYW5jZQ9mb250LXNpemU6MTEyJTsHRmluYW5jZWQCBQ9kFgJmDxUDFmZpbmFuY2lhbC1pbmRlcGVuZGVuY2UPZm9udC1zaXplOjEyNSU7FkZpbmFuY2lhbCBJbmRlcGVuZGVuY2VkAgYPZBYCZg8VAwdmaXRuZXNzD2ZvbnQtc2l6ZToxMTklOwdGaXRuZXNzZAIHD2QWAmYPFQMFZ2VhcnMPZm9udC1zaXplOjExMiU7BUdlYXJzZAIID2QWAmYPFQMNZ2VvLWFyYml0cmFnZQ9mb250LXNpemU6MTEyJTsNR2VvIEFyYml0cmFnZWQCCQ9kFgJmDxUDDGdvYWwtc2V0dGluZw9mb250LXNpemU6MTEyJTsMR29hbCBTZXR0aW5nZAIKD2QWAmYPFQMJbnV0cml0aW9uD2ZvbnQtc2l6ZToxMTIlOwlOdXRyaXRpb25kAgsPZBYCZg8VAxFwZXJzb25hbC1icmFuZGluZw9mb250LXNpemU6MTEyJTsRUGVyc29uYWwgQnJhbmRpbmdkAgwPZBYCZg8VAxRwZXJzb25hbC1kZXZlbG9wbWVudA9mb250LXNpemU6MTUwJTsUUGVyc29uYWwgRGV2ZWxvcG1lbnRkAg0PZBYCZg8VAwxwcm9kdWN0aXZpdHkPZm9udC1zaXplOjEyNSU7DFByb2R1Y3Rpdml0eWQCDg9kFgJmDxUDD3RpbWUtbWFuYWdlbWVudA9mb250LXNpemU6MTA2JTsPVGltZSBNYW5hZ2VtZW50ZGQ9AUiPPo9coefyS6jJT7SF1KUhj65zWhnkF422Ufd9Sw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResourcebd7d.js?d=60NHLgyriwaIxDY49sOyJoosR85E_8EBoHPuH8apHmhoztdyjrJJME7wLHYxt8bRE-HOjc8KEQA4Pz_NLHZK8iRlcBxoEIxqlKSNzP9Hs9E1&amp;t=638628208040000000" type="text/javascript"></script>
+
+
+<script src="../../ScriptResource09fd.js?d=2CR6ki1th7q4t6Y-4h70c_FHdhDF-na1jzn6LpnU1MSRHPySmTlk2OYyuOyEcEdLAR2f75mxOhtnv8dyCn78AbyvF1FmRXoxXAyFvJs1SnNAc9VfT8AkLpL-El_mOWKV6esRdEU1mbg1rq9eGwyRfGZAuPwUUP1qolkfBsTX-xk1&amp;t=6df849d2" type="text/javascript"></script>
+<script src="../../ScriptResource3c0a.js?d=XULVbsHDVLbz9U3XY3dNKjYVBPt4c7R_ZktYDXJ_Zx60ieLv6An0Xzl7Het_9Fy_In_smVeI0Pc5dONA2asvRZmieVw760RSqHbmH_l_5Q4sIABLtCdHnEzDVopo4mx-B6Nhb0lQqfEWhVQEekgZzma5IrR8LZvhzThsTn2RU2LpvBIciybh5-6AFlNDeyN00&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../../ScriptResource7bd5.js?d=lNE7WyNZxdgCabFQylFyEpxCnJY-ewkkPbvG_2F8V6j0wOEy85gWtvBe-NUxW11DkjzDBEEZLqx_BeVKW7WhiWwGZN6Hcq3c9JoecT8S-ZBzXrunzISICFVPY0pdk_z1o2_TZ7mat0ahtKkBATtk5K3gXCBFYrdSp5VITKX_GzHbDuyUGj1daO73xD_aD5JuOHEeG7LchY_7JlSH7YupYg2&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E7E8FB5" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAeOIgMrLTEvE+Ys/BRzGG0HuPOyILX5UpRRDlZ/QmDnD4OGP6xOFxkspoAx7VEKhYZI9A/oOhbGhHWNFB0XTJD4lqCkJUt9nkERcjLfVJH88JVOVkz7HoPpIe9czLngs/oc5G8HfsWhbGlSMPs6ElIxxeEOjSSpPdKpvkBqaxqrFqp095etM11AOfWyoeB8JQ8=" />
+</div>
+        <div id="body" class="col-sm-9">
+          <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sm', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+          
+<div id="ctl00_nt_pnlNotifications" role="alert">
+
+</div>
+          
+  <article class="panel">
+    <div class="panel-header">
+      <h1>Logging con NLog e SQLite</h1>
+      <span class="panel-subtitle">
+        Posted on 
+        <time datetime="2014-05-06T14:29:00.000Z">
+          2014-05-06 14:29
+        </time>
+        [<a href='index.html' target="_self" title='Permalink to Logging con NLog e SQLite'>Permalink</a>]
+      </span>
+    </div>
+    <div class="panel-body">
+      <p><img alt="Immagine introduttiva" src="../../Images/posts/nlogsqlite_love.png" style="height:190px; width:450px" class="image-center" /></p>
+
+<p>Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all'uso di NLog e SQLite, su piattaforma .NET e grazie all'uso di poche configurazioni.</p>
+
+<h2>NLog</h2>
+
+<p>NLog é una libreria di logging leggera e gratuita, supporta l'ecosistema .NET (Silverlight, Windows Phone etc&hellip;): <a href="http://nlog-project.org/">http://nlog-project.org/</a>. Costiusce un'opzione eccellente per un ampio range di scenari: dalle semplici utilities create nel quotidiano a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, righe di comando, rete ed email.</p>
+
+<p><strong>Installazione</strong></p>
+
+<p>Package Manager:</p>
+
+<pre>
+<code>PM&gt; Install-Package NLog</code></pre>
+
+<p>Browser NuGet:</p>
+
+<p><img alt="NLog on NuGet packet manager" src="../../Images/posts/nlogsqlite_nlog.png" class="image-center" /></p>
+
+<h2>SQLite</h2>
+
+<p><a href="http://www.sqlite.org/">SQLite</a> é semplice <em>motore di database</em>, diventato famoso nel mondo mobile grazie alle sue qualitá: per essere eseguito non richiede alcun demone server ne configurazioni particolari. Il database é tipicamente rappresentato da un singolo file (estensione .db3), mentre la lettura e la scrittura vengono gestite dalle librerie specifiche a seconda della piattaforma in cui viene eseguito, ed esse sono solitamente open source.</p>
+
+<p><strong>Setup</strong></p>
+
+<p>L'interfaccia .NET piú celebre é <em>System.Data.SQLite</em></p>
+
+<p>Package Manager Console</p>
+
+<pre>
+<code>PM&gt; Install-Package System.Data.SQLite</code></pre>
+
+<p>NuGet browser</p>
+
+<p><img alt="SQlite on NuGet packet manager" src="../../Images/posts/nlogsqlite_sqlite.png" class="image-center" /></p>
+
+<h2>Il file di configurazione NLog</h2>
+
+<p>Opzionale ma raccomandabile: l'utilizzo di un file separato per le configurazioni <em>NLog</em>. Ad esempio in caso di danneggiamento dello stesso, sarebbe desiderabile che solo la parte di logging fallisse e non l'intera applicazione. Applicare i principi della <em>separation of concerns</em>, quando possibile, é sempre un'ottima cosa.</p>
+
+<p><strong>Installazione</strong></p>
+
+<p>Package Manager</p>
+
+<pre>
+<code>PM&gt; Install-Package NLog.Config</code></pre>
+
+<p>Browser NuGet</p>
+
+<p><code><img alt="NLog Configuration on NuGet packet manager" src="../../Images/posts/nlogsqlite_nlog-cfg.png" style="height:60px; width:400px" class="image-center" /></code></p>
+
+<h2>Eseguire NLog e SQLite in tandem</h2>
+
+<ol>
+	<li>
+	<p><strong>Predisponi il database SQLite</strong>, usa il <a href="http://sourceforge.net/projects/sqlitebrowser/">browser di Database SQLite</a> od un client che preferisci per creare il database, quindi esegui il seguente statement T-SQL per creare la <em>tabella dei Log</em>:</p>
+
+	<pre>
+<code> CREATE TABLE Log (Timestamp TEXT, Loglevel TEXT, Logger TEXT, 
+  Callsite TEXT, Message TEXT) </code></pre>
+	</li>
+	<li>
+	<p><strong>Connetti l'App al database database</strong>, e modifica la configurazione NLog come segue:</p>
+
+	<pre>
+<code>  &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+  &lt;nlog xmlns=&quot;http://www.nlog-project.org/schemas/NLog.xsd&quot;
+     xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+     throwExceptions=&quot;false&quot;&gt;
+   &lt;targets&gt;
+     &lt;target name=&quot;db&quot; xsi:type=&quot;Database&quot; 
+         dbProvider=&quot;System.Data.SQLite&quot; keepConnection=&quot;false&quot; 
+         connectionString=&quot;Data Source=${basedir}\Log.db3;Version=3;&quot;
+         commandText=&quot;INSERT into Log(Timestamp, Loglevel, Logger, Callsite, Message) 
+          values(@Timestamp, @Loglevel, @Logger, @Callsite, @Message)&quot;&gt;
+           &lt;parameter name=&quot;@Timestamp&quot; layout=&quot;${longdate}&quot;/&gt;
+           &lt;parameter name=&quot;@Loglevel&quot; layout=&quot;${level:uppercase=true}&quot;/&gt;
+           &lt;parameter name=&quot;@Logger&quot; layout=&quot;${logger}&quot;/&gt;
+           &lt;parameter name=&quot;@Callsite&quot; layout=&quot;${callsite:filename=true}&quot;/&gt;
+           &lt;parameter name=&quot;@Message&quot; layout=&quot;${message}&quot;/&gt;
+     &lt;/target&gt;
+   &lt;/targets&gt;
+   &lt;rules&gt;
+     &lt;logger name=&quot;*&quot; minlevel=&quot;Warn&quot; writeTo=&quot;db&quot; /&gt;
+ &lt;/rules&gt;
+ &lt;/nlog&gt;</code></pre>
+	</li>
+	<li>
+	<p><strong>Inizia il logging</strong></p>
+
+	<pre>
+<code>class Program {
+ static Logger log = LogManager.GetCurrentClassLogger();
+
+ static void Main(string[] args)
+ {
+     log.Info(&quot;Logging like a boss&quot;);
+ }
+}</code>
+</pre>
+	</li>
+</ol>
+
+<h2>Fatto!</h2>
+
+<p>Puoi rivedere il codice sorgente e scaricare un progetto di esempio qui:<br />
+<a href="https://github.com/aazzola/nlog-sqlite/" target="_blank">https://github.com/aazzola/nlog-sqlite/</a></p>
+    </div>
+    <div class="categories">
+      Categories:
+      
+    </div>
+  </article>
+  <div class="panel-footer">
+    Share on:
+    <a href='https://twitter.com/intent/tweet?text=Logging%20con%20NLog%20e%20SQLite&amp;url=http%3a%2f%2fandreaazzola.com%2fit%2flogging-nlog-sqlite%2f' target="_blank" title="Share it on Twitter">Twitter</a>,&nbsp;
+    <a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2flogging-nlog-sqlite%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+    <a rel="author" href="../../index.html"></a>
+  </div>
+
+  
+  
+  
+<div class="panel">
+    <h3>Comments</h3>
+    <div class="action">
+        <a id="ctl00_cphBody_cmm_lbtNewComment1" class="action" href="javascript:__doPostBack(&#39;ctl00$cphBody$cmm$lbtNewComment1&#39;,&#39;&#39;)">Post a new comment</a>
+    </div>
+    <div class="panel-body" style="background-color:inherit; border-width:0px; padding:0px;">
+        
+                <div class="tl-1 comment">
+                    <img id="ctl00_cphBody_cmm_rptComments_ctl00_gvt" class="gravatar" src="http://www.gravatar.com/avatar/c514b141b81c3fad7c2f169bfcd24985" align="top" style="border-width:0px;" />
+                    <div>
+                        <p>For the latest versions of the packages and visual studio 2013 update 3 you need to set the commandType="Text" in the target tag or you will get a method not supported error message.</p>
+                        <em>&#126;<span id="ctl00_cphBody_cmm_rptComments_ctl00_lblName">Edgar</span></em>
+                    </div>
+                    <br style="clear:both" />
+                </div>
+            
+        
+    </div>
+    <div class="action">
+        
+    </div>
+</div>
+
+  
+    <script src="../../Scripts/highlight.js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+
+        </div>
+        <div id="menu1" class="col-sm-3 blog-sidebar">
+          
+<div class="sidebar-module sidebar-module-inset block avatar">
+    <img src="../../images/AndreaAzzola_Website200x200.png" height="180" width="180" alt="Author's portrait" />
+</div>
+          
+<nav class="sidebar-module sidebar-module-inset block about">
+  <div id="icons">
+	<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" text="Twitter" title="Stay up to date with my tweets"><img src='../../images/social/twitter.svg' alt='My Twitter profile' /></a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" text="LinkedIn" title="Find me on LinkedIn"><img src='../../images/social/linkedin.svg' alt='My LinkedIn profile' /></a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" text="Facebook" title="Get in touch with Facebook"><img src='../../images/social/facebook.svg' alt='My Facebook profile' /></a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" text="Pinterest" title="I&#39;m on Pinterest!"><img src='../../images/social/pinterest.svg' alt='My Pinterest profile' /></a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" text="Instagram" title="My Instagram profile"><img src='../../images/social/instagram.svg' alt='My Instagram profile' /></a>
+</div>
+  
+</nav>
+          
+<div class="sidebar-module">
+    
+    <ul id="ctl00_stp1_links" class="list-group"><li><a style="font-weight:bold" href="../../about/index.html" text="About" title="Short summary">About</a></li><li><a style="font-weight:bold" href="../../articles/index.html" text="Articles" title="Collection of all articles in this website">Articles</a></li><li><a style="font-weight:bold" href="../../books/index.html" text="Books" title="My book recommendations">Books</a></li><li><a style="font-weight:bold" href="../../contact/index.html" text="Contact" title="Short summary">Contact</a></li><li><a href="../../feed/index.html" text="RSS feed" title="Subscribe to this blog">RSS feed</a></li><li><a href="../../login/index.html" text="Login" title="Login">Login</a></li></ul>
+    <ul class="list-group">
+        <li><a id="ctl00_stp1_lbLanguageEN" class="lang-sm lang-lbl" lang="en" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageEN&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+        <li><a id="ctl00_stp1_lbLanguageIT" class="lang-sm lang-lbl" lang="it" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageIT&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+    </ul>
+    <br />
+</div>
+          
+
+<nav class="sidebar-module">
+    <h4>Newsletter</h4>
+    <input name="ctl00$newsletter$tbFirstName" type="text" id="ctl00_newsletter_tbFirstName" placeholder="First name" style="width:60%;" /><br />
+    <input name="ctl00$newsletter$tbEmail" type="text" id="ctl00_newsletter_tbEmail" placeholder="Email" style="width:90%;" /><br />
+
+    <input type="submit" name="ctl00$newsletter$btSubmit" value="Subscribe" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$newsletter$btSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_newsletter_btSubmit" />
+    <span id="ctl00_newsletter_rfvEmail" style="color:Red;visibility:hidden;">*</span>
+    <span id="ctl00_newsletter_revEmail" style="color:Red;visibility:hidden;">Invalid</span>
+</nav>
+
+          
+          
+          
+
+<div class="sidebar-module">
+  <h4>
+    Categories
+    <a href="../../category.html" title="All categories">
+      (All)
+    </a>
+  </h4>
+  
+      <a href="../../category/books/index.html" style='font-size:112%;' class="category">
+        Books
+      </a>
+    
+      <a href="../../category/decision-fatigue/index.html" style='font-size:112%;' class="category">
+        Decision Fatigue
+      </a>
+    
+      <a href="../../category/diet/index.html" style='font-size:112%;' class="category">
+        Diet
+      </a>
+    
+      <a href="../../category/extreme-saving/index.html" style='font-size:119%;' class="category">
+        Extreme Saving
+      </a>
+    
+      <a href="../../category/finance/index.html" style='font-size:112%;' class="category">
+        Finance
+      </a>
+    
+      <a href="../../category/financial-independence/index.html" style='font-size:125%;' class="category">
+        Financial Independence
+      </a>
+    
+      <a href="../../category/fitness/index.html" style='font-size:119%;' class="category">
+        Fitness
+      </a>
+    
+      <a href="../../category/gears/index.html" style='font-size:112%;' class="category">
+        Gears
+      </a>
+    
+      <a href="../../category/geo-arbitrage/index.html" style='font-size:112%;' class="category">
+        Geo Arbitrage
+      </a>
+    
+      <a href="../../category/goal-setting/index.html" style='font-size:112%;' class="category">
+        Goal Setting
+      </a>
+    
+      <a href="../../category/nutrition/index.html" style='font-size:112%;' class="category">
+        Nutrition
+      </a>
+    
+      <a href="../../category/personal-branding/index.html" style='font-size:112%;' class="category">
+        Personal Branding
+      </a>
+    
+      <a href="../../category/personal-development/index.html" style='font-size:150%;' class="category">
+        Personal Development
+      </a>
+    
+      <a href="../../category/productivity/index.html" style='font-size:125%;' class="category">
+        Productivity
+      </a>
+    
+      <a href="../../category/time-management/index.html" style='font-size:106%;' class="category">
+        Time Management
+      </a>
+    
+</div>
+
+          
+          
+        </div>
+      
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_newsletter_rfvEmail"), document.getElementById("ctl00_newsletter_revEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_newsletter_rfvEmail = document.all ? document.all["ctl00_newsletter_rfvEmail"] : document.getElementById("ctl00_newsletter_rfvEmail");
+ctl00_newsletter_rfvEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_rfvEmail.validationGroup = "Newsletter";
+ctl00_newsletter_rfvEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_newsletter_rfvEmail.initialvalue = "";
+var ctl00_newsletter_revEmail = document.all ? document.all["ctl00_newsletter_revEmail"] : document.getElementById("ctl00_newsletter_revEmail");
+ctl00_newsletter_revEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_revEmail.errormessage = "Invalid";
+ctl00_newsletter_revEmail.validationGroup = "Newsletter";
+ctl00_newsletter_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_newsletter_revEmail.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ctl00_newsletter_rfvEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_rfvEmail'));
+}
+
+document.getElementById('ctl00_newsletter_revEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_revEmail'));
+}
+//]]>
+</script>
+</form>
+    </div>
+    <footer>
+      <p>&copy; Copyright 2008-2025 - Andrea Azzola</p>
+    </footer>
+  </div>
+  
+  <script src="../../Scripts/async.js"></script>
+  <script src="../../Scripts/cookiechoices.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C3P9XZGVE9');
+
+    
+    document.addEventListener('DOMContentLoaded', function (event) {
+      cookieChoices.showCookieConsentBar('This website use cookies to improve the user experience. By continuing I\'ll assume that you\'re happy with it',
+        'Got it', null /*learn more*/, null/*url*/);
+    });
+  </script>
+</body>
+
+<!-- Mirrored from andreaazzola.com/it/logging-nlog-sqlite/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:57 GMT -->
+</html>

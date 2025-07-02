@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from andreaazzola.com/it/javascript-submit-post-form-data/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" type="image/png" href="../../images/favicon.png" />
+
+  <!-- JavaScript -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8XKTL2Q');</script>
+  <!-- End Google Tag Manager -->
+  <script src="../../../code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="http://load.sumome.com/" data-sumo-site-id="0bcf4270faa767709f6d2e505d84950ff777ed47fb7c0e004b02978a4d6f57b4" async="async"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /><link rel="stylesheet" href="../../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <script src="../../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="../../App_Themes/Ichigo/languages.min.css" rel="stylesheet" />
+  <!-- Heads -->
+  
+  <link rel="alternate" hreflang="en-US" href="../../post-data-js/index.html" /><link rel="alternate" hreflang="it" href="index.html" />
+  <meta name="description" content="Come effettuare il submit di un form tramite il metodo HTTP POST in JavaScript, per veicolare dati senza refresh o abuso di querystring: copia-incolla il codice" />
+  <link rel="canonical" href="index.html" />
+  
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Submit di un Form tramite POST JavaScript" />
+  <meta property="og:description" content="Come effettuare il submit di un form tramite il metodo HTTP POST in JavaScript, per veicolare dati senza refresh o abuso di querystring: copia-incolla il codice" />
+  
+  <meta property="og:url" content="http://andreaazzola.com/it/javascript-submit-post-form-data/" />
+  <meta property="article:published_time" content="2009-07-07T12:07:00Z" />
+  <meta property="og:site_name" content="Andrea Azzola" />
+
+  
+    <link href="../../Scripts/highlight.js/styles/default.css" rel="stylesheet" />
+  
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://andreaazzola.com/it/javascript-submit-post-form-data/"
+    },
+    "headline": "Submit di un Form tramite POST JavaScript",
+
+    "datePublished": "2009-07-07T12:07:00.000Z",
+    "dateModified": "2016-12-10T09:34:59.637Z",
+    "author": {
+      "@type": "Person",
+      "name": "Andrea Azzola"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Andrea Azzola",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://andreaazzola.com/Images/AndreaAzzola_Website200x200.png",
+        "width": 200,
+        "height": 200
+      }
+    },
+    "description": "Come effettuare il submit di un form tramite il metodo HTTP POST in JavaScript, per veicolare dati senza refresh o abuso di querystring: copia-incolla il codice",
+    "url": "http://andreaazzola.com/it/javascript-submit-post-form-data/"
+  }
+  </script>
+<link href="../../App_Themes/Ichigo/languages.min.css" type="text/css" rel="stylesheet" /><link href="../../App_Themes/Ichigo/StyleSheet.css" type="text/css" rel="stylesheet" /><title>
+	Submit di un Form tramite POST JavaScript - Andrea Azzola
+</title></head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8XKTL2Q"
+      height="0" width="0" style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container">
+    <header>
+      <span id="title">
+        <a href="../../index.html" title="Back to the Home Page">
+          Andrea Azzola
+        </a>
+      </span>
+      <p id="ctl00_subtitle" class="subtitle">Tips and Techniques for Lifestyle Design</p>
+    </header>
+    <div id="wrapper" class="row">
+      <form name="aspnetForm" method="post" action="#" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyNDY0NzQ1MQ9kFgJmD2QWBgIBDxYCHgRUZXh0BQ1BbmRyZWEgQXp6b2xhZAICDxYCHglpbm5lcmh0bWwFKFRpcHMgYW5kIFRlY2huaXF1ZXMgZm9yIExpZmVzdHlsZSBEZXNpZ25kAgMPZBYKAgMPZBYCAgIPDxYCHgdWaXNpYmxlZ2RkAgUPZBYGZg8WAh8ABSlTdWJtaXQgZGkgdW4gRm9ybSB0cmFtaXRlIFBPU1QgSmF2YVNjcmlwdGQCAQ8WAh8ABYkjPHA+U2Vjb25kbyBsZSBzcGVjaWZpY2hlIDxhIGhyZWY9Imh0dHA6Ly93d3cudzMub3JnL1RSL2h0bWw0MDEvIiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IkhUTUwgNC4wIHNwZWNpZmljYXRpb25zIGJ5IFczQyByZWNjb21lbmRhdGlvbiI+SFRNTCA0LjA8L2E+OjwvcD4NCg0KPHVsPg0KCSAgPGxpPgkJU2UgaWwgbWV0b2RvIMOpICZxdW90O0dFVCZxdW90OywgbG8gdXNlciBhZ2VudCBwcmVuZGUgaWwgdmFsb3JlIGRlbGwnYXppb25lLCB2aSBjb25jYXRlbmEgdW4gJz8nIGVkIGlsIGRhdGEgc2V0IGRlbCBmb3JtLCBtZWRpYW50ZSBpbCBjb250ZW50LXR5cGUgPGVtPmFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZDwvZW0+LiBRdWluZGkgbG8gdXNlciBhZ2VudCBpbm9sdHJhIGxhIHJpY2hpZXN0YSBpbmNsdWRlbmRvIHF1ZXN0byBVUkkuIEluIHF1ZXN0byBtb2RhbGl0w6EsIGkgZGF0aSBkZWwgZm9ybSBzb25vIHZpbmNvbGF0aSBhIGNvZGljaSBBU0NJSS48L2xpPg0KCSAgPGxpPlNlIGlsIG1ldG9kbyDDqSAmcXVvdDtQT1NUJnF1b3Q7LCBsbyB1c2VyIGFnZW50IGVmZmV0dHVhIHVuIHN1Ym1pdCBIVFRQIFBPU1QgdXRpbGl6emFuZG8gaWwgdmFsb3JlIGRlbGwnPGVtPmFjdGlvbjwvZW0+IGUgdW4gbWVzc2FnZ2lvIGNyZWF0byBpbiBhY2NvcmRvIGNvbiBpbCBjb250ZW50IHR5cGUgc3BlY2lmaWNhdG8gbmVsbCdhdHRyaWJ1dG8gPGVtPmVuY3R5cGU8L2VtPi48L2xpPg0KPC91bD4NCg0KPGgyPlF1YWxpIHNvbm8gaSB2YW50YWdnaSBkZWkgUE9TVCBKYXZhU2NyaXB0PzwvaDI+DQo8dWw+DQoJICA8bGk+RWZmZXR0dWFyZSByZWRpcmVjdCBkaXZlcnNpIGFsbCdhY3Rpb248L2xpPg0KCSAgPGxpPlZlaWNvbGFyZSBkYXRpIHNlbnphIHJlZnJlc2ggZGkgVUkgcGVyIGwnZW5kIHVzZXI8L2xpPg0KICA8bGk+RXZpdGFyZSBsJ2FidXNvIGRpIHF1ZXJ5IHN0cmluZyBlICdiZWxsaWZpY2FyZScgZ2xpIFVSTDwvbGk+DQo8L3VsPg0KDQo8aDI+RWZmZXR0dWFyZSB1biBzdWJtaXQgUE9TVDwvaDI+DQoJPHA+Q29waWEtaW5jb2xsYSBpbCBzZWd1ZW50ZSBjb2RpY2UgbmVsbGEgc2V6aW9uZSA8YSBocmVmPSJodHRwczovL2l0Lndpa2lwZWRpYS5vcmcvd2lraS9FbGVtZW50b19IVE1MIiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IlNlemlvbmUgSEVBRCBzdSBXaWtpcGVkaWEiPkhFQUQ8L2E+IGRlbGxhIHBhZ2luYSA8YSBocmVmPSJodHRwOi8vaXQud2lraXBlZGlhLm9yZy93aWtpL0h0bWwiIHRhcmdldD0iX2JsYW5rIiB0aXRsZT0iSFRNTCBvbiBXaWtpcGVkaWEiPkhUTUw8L2E+OjwvcD4NCjxwcmU+DQo8Y29kZSBjbGFzcz0iamF2YXNjcmlwdCI+Jmx0O3NjcmlwdCBsYW5ndWFnZT0mcXVvdDtqYXZhc2NyaXB0JnF1b3Q7Jmd0Ow0KZnVuY3Rpb24gcG9zdChkaWN0aW9uYXJ5LCB1cmwsIG1ldGhvZCkgew0KCW1ldGhvZCA9IG1ldGhvZCB8fCAmcXVvdDtwb3N0JnF1b3Q7OyAvLyBwb3N0IChpbXBvc3RhdG8gYSBkZWZhdWx0KSBwcHVyZSBnZXQNCg0KCS8vIENyZWEgbCdvZ2dldHRvIGZvcm0NCgl2YXIgZm9ybSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJnF1b3Q7Zm9ybSZxdW90Oyk7DQoJZm9ybS5zZXRBdHRyaWJ1dGUoJnF1b3Q7bWV0aG9kJnF1b3Q7LCBtZXRob2QpOw0KCWZvcm0uc2V0QXR0cmlidXRlKCZxdW90O2FjdGlvbiZxdW90OywgdXJsKTsNCg0KCS8vIFBlciBvZ25pIGNvcHBpYSBjaGlhdmUtdmFsb3JlDQoJZm9yIChrZXkgaW4gZGljdGlvbmFyeSkgew0KCQkvL2FsZXJ0KCYjMzk7a2V5OiAmIzM5OyArIGtleSArICYjMzk7LCB2YWx1ZTomIzM5OyArIGRpY3Rpb25hcnlba2V5XSk7IC8vIGRlYnVnDQoJCXZhciBoaWRkZW5GaWVsZCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJnF1b3Q7aW5wdXQmcXVvdDspOwkNCgkJaGlkZGVuRmllbGQuc2V0QXR0cmlidXRlKCZxdW90O3R5cGUmcXVvdDssICZxdW90O2hpZGRlbiZxdW90Oyk7IA0KCQloaWRkZW5GaWVsZC5zZXRBdHRyaWJ1dGUoJnF1b3Q7bmFtZSZxdW90Oywga2V5KTsNCgkJaGlkZGVuRmllbGQuc2V0QXR0cmlidXRlKCZxdW90O3ZhbHVlJnF1b3Q7LCBkaWN0aW9uYXJ5W2tleV0pOw0KCQkvLyBhcHBlbmRlIGlsIG51b3ZvIGNvbnRyb2xsbyBjcmVhdG8NCgkJZm9ybS5hcHBlbmRDaGlsZChoaWRkZW5GaWVsZCk7IA0KCX0NCg0KCWRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoZm9ybSk7IC8vIGluaWV0dGEgbCdvZ2dldHRvIGZvcm0gbmVsIGJvZHkgZGVsIERPTQ0KCWZvcm0uc3VibWl0KCk7DQp9DQombHQ7L3NjcmlwdCZndDs8L2NvZGU+PC9wcmU+DQoNCgk8aDI+Q29tZSBsbyB1c28/PC9oMj4NCgk8cD5Db3BpYSBpbCBzZWd1ZW50ZSBjb2RpY2UgbmVsbGEgc2V6aW9uZSA8YSBocmVmPSJodHRwczovL2l0Lndpa2lwZWRpYS5vcmcvd2lraS9FbGVtZW50b19IVE1MIiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IlNlemlvbmUgQk9EWSBzdSBXaWtpcGVkaWEiPkJPRFk8L2E+IGRlbGxhIHBhZ2luYSBIVE1MLiBDb21lIHZlZGkgdmllbmUgZGljaGlhcmF0YSB1bmEgY29sbGV6aW9uZSBkaSBvZ2dldHRpIChkaXppb25hcmlvKSwgcXVpbmRpIHZlbmdvbm8gYWdnaXVudGkgZHVlIHBhcmFtZXRyaS4gUHVvaSBhZ2dpdW5nZXJlIHF1YW50aSBwYXJhbWV0cmkgZGVzaWRlcmkuPC9wPg0KPHByZT4NCjxjb2RlPiZsdDtzY3JpcHQgbGFuZ3VhZ2U9JnF1b3Q7amF2YXNjcmlwdCZxdW90OyZndDsNCgl2YXIgbXlEaWN0aW9uYXJ5ID0gW107DQoJbXlEaWN0aW9uYXJ5WyZxdW90OzFzdEtleSZxdW90O10gPSAmcXVvdDsxc3RWYWx1ZSZxdW90OzsNCglteURpY3Rpb25hcnlbJnF1b3Q7Mm5kS2V5JnF1b3Q7XSA9ICZxdW90OzJuZFZhbHVlJnF1b3Q7Ow0KJmx0Oy9zY3JpcHQmZ3Q7DQoNCiZsdDtpbnB1dCB0eXBlPSZxdW90O2J1dHRvbiZxdW90OyB2YWx1ZT0mcXVvdDtDbGljayBtZSB0byBQT1NUJnF1b3Q7IA0KCW9uY2xpY2s9JnF1b3Q7amF2YXNjcmlwdDpwb3N0KG15RGljdGlvbmFyeSwgJiMzOTtkZXN0aW5hdGlvbi5odG1sJiMzOTspOyZxdW90OyAvJmd0Ow0KJmx0O2lucHV0IHR5cGU9JnF1b3Q7YnV0dG9uJnF1b3Q7IHZhbHVlPSZxdW90O0NsaWNrIG1lIHRvIEdFVCZxdW90OyANCglvbmNsaWNrPSZxdW90O2phdmFzY3JpcHQ6cG9zdChteURpY3Rpb25hcnksICYjMzk7ZGVzdGluYXRpb24uaHRtbCYjMzk7LCAmIzM5O2dldCYjMzk7KTsmcXVvdDsgLyZndDs8L2NvZGU+PC9wcmU+DQo8cD5MYSBmdW56aW9uZSBQT1NUIGFjY2V0dGEgdW4gPGEgaHJlZj0iaHR0cHM6Ly9pdC53aWtpcGVkaWEub3JnL3dpa2kvQXJyYXlfYXNzb2NpYXRpdm8iIHRhcmdldD0iX2JsYW5rIiB0aXRsZT0iQXNzb2NpYXRpdmUgYXJyYXkgb24gV2lraXBlZGlhIj5kaXppb25hcmlvPC9hPiwgdW5hIGRlc3RpbmF6aW9uZSA8YSBocmVmPSJodHRwOi8vaXQud2lraXBlZGlhLm9yZy93aWtpL1VybCIgdGFyZ2V0PSJfYmxhbmsiIHRpdGxlPSJVbmlmb3JtIFJlc291cmNlIExvY2F0b3Igb24gV2lraXBlZGlhIj5VUkw8L2E+LCBlIG9wemlvbmFsbWVudGUgaWwgbWV0b2RvIChQT1NUIG8gR0VULCBjYXNlIGluLXNlbnNpdGl2ZSkuPC9wPg0KPGgyPkwnYWx0ZXJuYXRpdm8galF1ZXJ5LnBvc3QoKTwvaDI+DQo8cD5TZSBqUXVlcnkgw6kgZ2nDoSBwYXJ0ZSBkZWxsYSB0dWEgc29sdXppb25lLCBwdW9pIHVzYXJlIGxhIGZ1bnppb25lIDxzdHJvbmc+alF1ZXJ5LnBvc3QoKTwvc3Ryb25nPiBpbiBzb3N0aXR1emlvbmU6PC9wPg0KPHByZT4NCjxjb2RlIGNsYXNzPSJqYXZhc2NyaXB0Ij5qUXVlcnkucG9zdCggdXJsIFssIGRhdGEgXSBbLCBzdWNjZXNzKGRhdGEsIHRleHRTdGF0dXMsIGpxWEhSKSBdIFssIGRhdGFUeXBlIF0gKQ0KPC9jb2RlPjwvcHJlPg0KPHA+Y2hlIGNvbnN0aXR1aXNjZSB1bidhYmJyZXZpYXppb25lIHBlciBsYSBmdW56aW9uZSBBamF4OjwvcD4NCjxwcmU+DQo8Y29kZSBjbGFzcz0iamF2YXNjcmlwdCI+JC5hamF4KHsNCiAgdHlwZTogJnF1b3Q7UE9TVCZxdW90OywNCiAgdXJsOiB1cmwsDQogIGRhdGE6IGRhdGEsDQogIHN1Y2Nlc3M6IHN1Y2Nlc3MsDQogIGRhdGFUeXBlOiBkYXRhVHlwZQ0KfSk7PC9jb2RlPjwvcHJlPg0KPHA+RHVucXVlLCBpbCBjb2RpY2UgZXF1aXZhbGVudGUgIGlsIFBPU1QgZGVpIHZhbG9yaSBtZW56aW9uYXRpIHNvcHJhIGluIGpRdWVyeSwgc2FyZWJiZTo8L3A+DQo8cHJlPg0KPGNvZGUgY2xhc3M9ImphdmFzY3JpcHQiPiQucG9zdCggJnF1b3Q7dGVzdC5waHAmcXVvdDssIHsgMXN0S2V5OiAmcXVvdDsxc3RWYWx1ZSZxdW90OywgMm5kS2V5OiAmcXVvdDsybmRWYWx1ZSZxdW90OyB9ICk7PC9jb2RlPjwvcHJlPg0KPHA+VWx0ZXJpb3JpIGRldHRhZ2xpIHJpZ3VhcmRvIGpRdWVyeS5wb3N0KCkgc29ubyBkaXNwb25pYmlsaSA8YSBocmVmPSJodHRwOi8vYXBpLmpxdWVyeS5jb20vanF1ZXJ5LnBvc3QvIiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9ImpRdWVyeS5wb3N0KCkgd2lraSI+YSBxdWVzdG8gbGluazwvYT4uPC9wPmQCBg8PFgIfAmhkFgICAw8WAh4LXyFJdGVtQ291bnQCCBYQZg9kFgYCAQ8PFgIeCEltYWdlVXJsBT9odHRwOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYjc2MTAyOGI3NzUxZjc2OWUyYTJjMGRlMGJjMjg3NWVkZAICDxUBWUp1c3QgdXNlZCB0aGlzIHNjcmlwdCB0byBQT1NUIGRhdGEgYWNyb3NzIFZpc3VhbEZvcmNlIHBhZ2VzIChTYWxlc2ZvcmNlLmNvbSksIHdvcmtzIGZpbmUuZAIDDw8WAh8ABVI8YSBocmVmPSJodHRwOi8vYnJrLm1lIiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IlZpc2l0IEFuZHJlYSdzIHdlYiBzaXRlIj5BbmRyZWE8L2E+ZGQCAQ9kFgYCAQ8PFgIfBAU/aHR0cDovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzA0NGRmYjM5NTgyODYwMzg4MDVkZDUzMDIyODFkYjMyZGQCAg8VATVIaSwgIFRoYW5rIHlvdSB2ZXJ5IG11Y2ggZm9yIHRoaXMgaGVscC4gR29vZCBhcnRpY2xlLmQCAw8PFgIfAAUFc2hpdmFkZAICD2QWBgIBDw8WAh8EBT9odHRwOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvNTJlMWM1NjFmMGIyZmU5MzVjMzNhNjUyZGVmYzY3ZmZkZAICDxUBKVRoYW5rIHlvdSBzbyBtdWNoIGZvciB0aGUgY29kZSBpbiBkZXRhaWwuZAIDDw8WAh8ABQlHZW9yZ2UgU05kZAIDD2QWBgIBDw8WAh8EBT9odHRwOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvZDQxZDhjZDk4ZjAwYjIwNGU5ODAwOTk4ZWNmODQyN2VkZAICDxUBJnZlcnkgdmVyeSB1c2VmdWwsdGhhbmsgeW91IHZlcnkgbXVjaCAuZAIDDw8WAh8ABQNUZWRkZAIED2QWBgIBDw8WAh8EBT9odHRwOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYjg0OGU4ZGI4MDRjZWU1YTkxZjMyNDMwZDlhNzM2NzRkZAICDxUBFU5pY2UgcG9zdC4gVGhhbmsgeW91LmQCAw8PFgIfAAUFZmVsaXhkZAIFD2QWBgIBDw8WAh8EBT9odHRwOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvMGMxNTk1MDNmMzhhN2M1NjYzNTNiNjJhY2RkZjlmODdkZAICDxUBuQFIb3cgZG8geW91IGNhdGNoIHRoZSByZXNwb25zZT8gSSBoYXZlIGEgVVJJIHRoYXQgaXMgYW4gTVZDIEFjdGlvbiB0aGF0IGFjY2VwdHMgUE9TVCBhbmQgcmV0dXJucyBKU09OLiBXaGF0IHdvdWxkIGJlIG5lZWRlZCB0byBwdXQgdGhlIHJldHVybmVkIEpTT04gc3RyaW5nIGludG8gYSB2YXJpYWJsZSBpbiB0aGUgc2NyaXB0P2QCAw8PFgIfAAUGc2V0aHg5ZGQCBg9kFgYCAQ8PFgIfBAU/aHR0cDovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2Q0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlZGQCAg8VATFFeGNlbGxlbnQgLSBzb2x2ZWQgbXkgcHJvYmxlbSBpbnN0YW50bHkgLSB0aGFua3MuZAIDDw8WAh8ABQRQaGlsZGQCBw9kFgYCAQ8PFgIfBAU/aHR0cDovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2Q0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlZGQCAg8VASlleGNlbGxlbnQgd29yayAmIGhlbHBmdWwgYXJ0aWNsZSAtIHRoYW5rc2QCAw8PFgIfAAUHUGhvZW5peGRkAgkPZBYCAgEPZBYKZg8WAh8BBUE8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvdHdpdHRlci5zdmcnIGFsdD0nTXkgVHdpdHRlciBwcm9maWxlJyAvPmQCAQ8WAh8BBUM8aW1nIHNyYz0nL2ltYWdlcy9zb2NpYWwvbGlua2VkaW4uc3ZnJyBhbHQ9J015IExpbmtlZEluIHByb2ZpbGUnIC8+ZAICDxYCHwEFQzxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9mYWNlYm9vay5zdmcnIGFsdD0nTXkgRmFjZWJvb2sgcHJvZmlsZScgLz5kAgMPFgIfAQVFPGltZyBzcmM9Jy9pbWFnZXMvc29jaWFsL3BpbnRlcmVzdC5zdmcnIGFsdD0nTXkgUGludGVyZXN0IHByb2ZpbGUnIC8+ZAIEDxYCHwEFRTxpbWcgc3JjPScvaW1hZ2VzL3NvY2lhbC9pbnN0YWdyYW0uc3ZnJyBhbHQ9J015IEluc3RhZ3JhbSBwcm9maWxlJyAvPmQCCw9kFgQCAQ8PFgIfAmhkZAIDD2QWDGYPZBYCZg8WAh8BBQVBYm91dGQCAQ9kFgJmDxYCHwEFCEFydGljbGVzZAICD2QWAmYPFgIfAQUFQm9va3NkAgMPZBYCZg8WAh8BBQdDb250YWN0ZAIED2QWAmYPFgIfAQUIUlNTIGZlZWRkAgUPZBYCZg8WAh8BBQVMb2dpbmQCDw9kFgICBQ8WAh8DAg8WHmYPZBYCZg8VAwVib29rcw9mb250LXNpemU6MTEyJTsFQm9va3NkAgEPZBYCZg8VAxBkZWNpc2lvbi1mYXRpZ3VlD2ZvbnQtc2l6ZToxMTIlOxBEZWNpc2lvbiBGYXRpZ3VlZAICD2QWAmYPFQMEZGlldA9mb250LXNpemU6MTEyJTsERGlldGQCAw9kFgJmDxUDDmV4dHJlbWUtc2F2aW5nD2ZvbnQtc2l6ZToxMTklOw5FeHRyZW1lIFNhdmluZ2QCBA9kFgJmDxUDB2ZpbmFuY2UPZm9udC1zaXplOjExMiU7B0ZpbmFuY2VkAgUPZBYCZg8VAxZmaW5hbmNpYWwtaW5kZXBlbmRlbmNlD2ZvbnQtc2l6ZToxMjUlOxZGaW5hbmNpYWwgSW5kZXBlbmRlbmNlZAIGD2QWAmYPFQMHZml0bmVzcw9mb250LXNpemU6MTE5JTsHRml0bmVzc2QCBw9kFgJmDxUDBWdlYXJzD2ZvbnQtc2l6ZToxMTIlOwVHZWFyc2QCCA9kFgJmDxUDDWdlby1hcmJpdHJhZ2UPZm9udC1zaXplOjExMiU7DUdlbyBBcmJpdHJhZ2VkAgkPZBYCZg8VAwxnb2FsLXNldHRpbmcPZm9udC1zaXplOjExMiU7DEdvYWwgU2V0dGluZ2QCCg9kFgJmDxUDCW51dHJpdGlvbg9mb250LXNpemU6MTEyJTsJTnV0cml0aW9uZAILD2QWAmYPFQMRcGVyc29uYWwtYnJhbmRpbmcPZm9udC1zaXplOjExMiU7EVBlcnNvbmFsIEJyYW5kaW5nZAIMD2QWAmYPFQMUcGVyc29uYWwtZGV2ZWxvcG1lbnQPZm9udC1zaXplOjE1MCU7FFBlcnNvbmFsIERldmVsb3BtZW50ZAIND2QWAmYPFQMMcHJvZHVjdGl2aXR5D2ZvbnQtc2l6ZToxMjUlOwxQcm9kdWN0aXZpdHlkAg4PZBYCZg8VAw90aW1lLW1hbmFnZW1lbnQPZm9udC1zaXplOjEwNiU7D1RpbWUgTWFuYWdlbWVudGRks5WBwJlb6CpdzZBtvIyXzN+WW0I7nbAyfEy1fA8U8IM=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResourcebd7d.js?d=60NHLgyriwaIxDY49sOyJoosR85E_8EBoHPuH8apHmhoztdyjrJJME7wLHYxt8bRE-HOjc8KEQA4Pz_NLHZK8iRlcBxoEIxqlKSNzP9Hs9E1&amp;t=638628208040000000" type="text/javascript"></script>
+
+
+<script src="../../ScriptResource09fd.js?d=2CR6ki1th7q4t6Y-4h70c_FHdhDF-na1jzn6LpnU1MSRHPySmTlk2OYyuOyEcEdLAR2f75mxOhtnv8dyCn78AbyvF1FmRXoxXAyFvJs1SnNAc9VfT8AkLpL-El_mOWKV6esRdEU1mbg1rq9eGwyRfGZAuPwUUP1qolkfBsTX-xk1&amp;t=6df849d2" type="text/javascript"></script>
+<script src="../../ScriptResource3c0a.js?d=XULVbsHDVLbz9U3XY3dNKjYVBPt4c7R_ZktYDXJ_Zx60ieLv6An0Xzl7Het_9Fy_In_smVeI0Pc5dONA2asvRZmieVw760RSqHbmH_l_5Q4sIABLtCdHnEzDVopo4mx-B6Nhb0lQqfEWhVQEekgZzma5IrR8LZvhzThsTn2RU2LpvBIciybh5-6AFlNDeyN00&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../../ScriptResource7bd5.js?d=lNE7WyNZxdgCabFQylFyEpxCnJY-ewkkPbvG_2F8V6j0wOEy85gWtvBe-NUxW11DkjzDBEEZLqx_BeVKW7WhiWwGZN6Hcq3c9JoecT8S-ZBzXrunzISICFVPY0pdk_z1o2_TZ7mat0ahtKkBATtk5K3gXCBFYrdSp5VITKX_GzHbDuyUGj1daO73xD_aD5JuOHEeG7LchY_7JlSH7YupYg2&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E7E8FB5" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAbL3BGPLdJX0la7WXWCQm/lg4Y/rE4XGSymgDHtUQqFhkj0D+g6FsaEdY0UHRdMkPiWoKQlS32eQRFyMt9UkfzwlU5WTPseg+kh71zMueCz+hzkbwd+xaFsaVIw+zoSUjHbTPZP5xxIdOBEDQ9iIGhZ3HVdPSNUCT3cNt9ud2qbTw==" />
+</div>
+        <div id="body" class="col-sm-9">
+          <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sm', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+          
+<div id="ctl00_nt_pnlNotifications" role="alert">
+
+</div>
+          
+  <article class="panel">
+    <div class="panel-header">
+      <h1>Submit di un Form tramite POST JavaScript</h1>
+      <span class="panel-subtitle">
+        Posted on 
+        <time datetime="2009-07-07T12:07:00.000Z">
+          2009-07-07 12:07
+        </time>
+        [<a href='index.html' target="_self" title='Permalink to Submit di un Form tramite POST JavaScript'>Permalink</a>]
+      </span>
+    </div>
+    <div class="panel-body">
+      <p>Secondo le specifiche <a href="http://www.w3.org/TR/html401/" target="_blank" title="HTML 4.0 specifications by W3C reccomendation">HTML 4.0</a>:</p>
+
+<ul>
+	  <li>		Se il metodo é &quot;GET&quot;, lo user agent prende il valore dell'azione, vi concatena un '?' ed il data set del form, mediante il content-type <em>application/x-www-form-urlencoded</em>. Quindi lo user agent inoltra la richiesta includendo questo URI. In questo modalitá, i dati del form sono vincolati a codici ASCII.</li>
+	  <li>Se il metodo é &quot;POST&quot;, lo user agent effettua un submit HTTP POST utilizzando il valore dell'<em>action</em> e un messaggio creato in accordo con il content type specificato nell'attributo <em>enctype</em>.</li>
+</ul>
+
+<h2>Quali sono i vantaggi dei POST JavaScript?</h2>
+<ul>
+	  <li>Effettuare redirect diversi all'action</li>
+	  <li>Veicolare dati senza refresh di UI per l'end user</li>
+  <li>Evitare l'abuso di query string e 'bellificare' gli URL</li>
+</ul>
+
+<h2>Effettuare un submit POST</h2>
+	<p>Copia-incolla il seguente codice nella sezione <a href="https://it.wikipedia.org/wiki/Elemento_HTML" target="_blank" title="Sezione HEAD su Wikipedia">HEAD</a> della pagina <a href="http://it.wikipedia.org/wiki/Html" target="_blank" title="HTML on Wikipedia">HTML</a>:</p>
+<pre>
+<code class="javascript">&lt;script language=&quot;javascript&quot;&gt;
+function post(dictionary, url, method) {
+	method = method || &quot;post&quot;; // post (impostato a default) ppure get
+
+	// Crea l'oggetto form
+	var form = document.createElement(&quot;form&quot;);
+	form.setAttribute(&quot;method&quot;, method);
+	form.setAttribute(&quot;action&quot;, url);
+
+	// Per ogni coppia chiave-valore
+	for (key in dictionary) {
+		//alert(&#39;key: &#39; + key + &#39;, value:&#39; + dictionary[key]); // debug
+		var hiddenField = document.createElement(&quot;input&quot;);	
+		hiddenField.setAttribute(&quot;type&quot;, &quot;hidden&quot;); 
+		hiddenField.setAttribute(&quot;name&quot;, key);
+		hiddenField.setAttribute(&quot;value&quot;, dictionary[key]);
+		// appende il nuovo controllo creato
+		form.appendChild(hiddenField); 
+	}
+
+	document.body.appendChild(form); // inietta l'oggetto form nel body del DOM
+	form.submit();
+}
+&lt;/script&gt;</code></pre>
+
+	<h2>Come lo uso?</h2>
+	<p>Copia il seguente codice nella sezione <a href="https://it.wikipedia.org/wiki/Elemento_HTML" target="_blank" title="Sezione BODY su Wikipedia">BODY</a> della pagina HTML. Come vedi viene dichiarata una collezione di oggetti (dizionario), quindi vengono aggiunti due parametri. Puoi aggiungere quanti parametri desideri.</p>
+<pre>
+<code>&lt;script language=&quot;javascript&quot;&gt;
+	var myDictionary = [];
+	myDictionary[&quot;1stKey&quot;] = &quot;1stValue&quot;;
+	myDictionary[&quot;2ndKey&quot;] = &quot;2ndValue&quot;;
+&lt;/script&gt;
+
+&lt;input type=&quot;button&quot; value=&quot;Click me to POST&quot; 
+	onclick=&quot;javascript:post(myDictionary, &#39;destination.html&#39;);&quot; /&gt;
+&lt;input type=&quot;button&quot; value=&quot;Click me to GET&quot; 
+	onclick=&quot;javascript:post(myDictionary, &#39;destination.html&#39;, &#39;get&#39;);&quot; /&gt;</code></pre>
+<p>La funzione POST accetta un <a href="https://it.wikipedia.org/wiki/Array_associativo" target="_blank" title="Associative array on Wikipedia">dizionario</a>, una destinazione <a href="http://it.wikipedia.org/wiki/Url" target="_blank" title="Uniform Resource Locator on Wikipedia">URL</a>, e opzionalmente il metodo (POST o GET, case in-sensitive).</p>
+<h2>L'alternativo jQuery.post()</h2>
+<p>Se jQuery é giá parte della tua soluzione, puoi usare la funzione <strong>jQuery.post()</strong> in sostituzione:</p>
+<pre>
+<code class="javascript">jQuery.post( url [, data ] [, success(data, textStatus, jqXHR) ] [, dataType ] )
+</code></pre>
+<p>che constituisce un'abbreviazione per la funzione Ajax:</p>
+<pre>
+<code class="javascript">$.ajax({
+  type: &quot;POST&quot;,
+  url: url,
+  data: data,
+  success: success,
+  dataType: dataType
+});</code></pre>
+<p>Dunque, il codice equivalente  il POST dei valori menzionati sopra in jQuery, sarebbe:</p>
+<pre>
+<code class="javascript">$.post( &quot;test.php&quot;, { 1stKey: &quot;1stValue&quot;, 2ndKey: &quot;2ndValue&quot; } );</code></pre>
+<p>Ulteriori dettagli riguardo jQuery.post() sono disponibili <a href="http://api.jquery.com/jquery.post/" target="_blank" title="jQuery.post() wiki">a questo link</a>.</p>
+    </div>
+    <div class="categories">
+      Categories:
+      
+    </div>
+  </article>
+  <div class="panel-footer">
+    Share on:
+    <a href='https://twitter.com/intent/tweet?text=Submit%20di%20un%20Form%20tramite%20POST%20JavaScript&amp;url=http%3a%2f%2fandreaazzola.com%2fit%2fjavascript-submit-post-form-data%2f' target="_blank" title="Share it on Twitter">Twitter</a>,&nbsp;
+    <a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fjavascript-submit-post-form-data%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+    <a rel="author" href="../../index.html"></a>
+  </div>
+
+  
+  
+  
+
+  
+    <script src="../../Scripts/highlight.js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+
+        </div>
+        <div id="menu1" class="col-sm-3 blog-sidebar">
+          
+<div class="sidebar-module sidebar-module-inset block avatar">
+    <img src="../../images/AndreaAzzola_Website200x200.png" height="180" width="180" alt="Author's portrait" />
+</div>
+          
+<nav class="sidebar-module sidebar-module-inset block about">
+  <div id="icons">
+	<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" text="Twitter" title="Stay up to date with my tweets"><img src='../../images/social/twitter.svg' alt='My Twitter profile' /></a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" text="LinkedIn" title="Find me on LinkedIn"><img src='../../images/social/linkedin.svg' alt='My LinkedIn profile' /></a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" text="Facebook" title="Get in touch with Facebook"><img src='../../images/social/facebook.svg' alt='My Facebook profile' /></a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" text="Pinterest" title="I&#39;m on Pinterest!"><img src='../../images/social/pinterest.svg' alt='My Pinterest profile' /></a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" text="Instagram" title="My Instagram profile"><img src='../../images/social/instagram.svg' alt='My Instagram profile' /></a>
+</div>
+  
+</nav>
+          
+<div class="sidebar-module">
+    
+    <ul id="ctl00_stp1_links" class="list-group"><li><a style="font-weight:bold" href="../../about/index.html" text="About" title="Short summary">About</a></li><li><a style="font-weight:bold" href="../../articles/index.html" text="Articles" title="Collection of all articles in this website">Articles</a></li><li><a style="font-weight:bold" href="../../books/index.html" text="Books" title="My book recommendations">Books</a></li><li><a style="font-weight:bold" href="../../contact/index.html" text="Contact" title="Short summary">Contact</a></li><li><a href="../../feed/index.html" text="RSS feed" title="Subscribe to this blog">RSS feed</a></li><li><a href="../../login/index.html" text="Login" title="Login">Login</a></li></ul>
+    <ul class="list-group">
+        <li><a id="ctl00_stp1_lbLanguageEN" class="lang-sm lang-lbl" lang="en" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageEN&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+        <li><a id="ctl00_stp1_lbLanguageIT" class="lang-sm lang-lbl" lang="it" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$stp1$lbLanguageIT&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></li>
+    </ul>
+    <br />
+</div>
+          
+
+<nav class="sidebar-module">
+    <h4>Newsletter</h4>
+    <input name="ctl00$newsletter$tbFirstName" type="text" id="ctl00_newsletter_tbFirstName" placeholder="First name" style="width:60%;" /><br />
+    <input name="ctl00$newsletter$tbEmail" type="text" id="ctl00_newsletter_tbEmail" placeholder="Email" style="width:90%;" /><br />
+
+    <input type="submit" name="ctl00$newsletter$btSubmit" value="Subscribe" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$newsletter$btSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_newsletter_btSubmit" />
+    <span id="ctl00_newsletter_rfvEmail" style="color:Red;visibility:hidden;">*</span>
+    <span id="ctl00_newsletter_revEmail" style="color:Red;visibility:hidden;">Invalid</span>
+</nav>
+
+          
+          
+          
+
+<div class="sidebar-module">
+  <h4>
+    Categories
+    <a href="../../category.html" title="All categories">
+      (All)
+    </a>
+  </h4>
+  
+      <a href="../../category/books/index.html" style='font-size:112%;' class="category">
+        Books
+      </a>
+    
+      <a href="../../category/decision-fatigue/index.html" style='font-size:112%;' class="category">
+        Decision Fatigue
+      </a>
+    
+      <a href="../../category/diet/index.html" style='font-size:112%;' class="category">
+        Diet
+      </a>
+    
+      <a href="../../category/extreme-saving/index.html" style='font-size:119%;' class="category">
+        Extreme Saving
+      </a>
+    
+      <a href="../../category/finance/index.html" style='font-size:112%;' class="category">
+        Finance
+      </a>
+    
+      <a href="../../category/financial-independence/index.html" style='font-size:125%;' class="category">
+        Financial Independence
+      </a>
+    
+      <a href="../../category/fitness/index.html" style='font-size:119%;' class="category">
+        Fitness
+      </a>
+    
+      <a href="../../category/gears/index.html" style='font-size:112%;' class="category">
+        Gears
+      </a>
+    
+      <a href="../../category/geo-arbitrage/index.html" style='font-size:112%;' class="category">
+        Geo Arbitrage
+      </a>
+    
+      <a href="../../category/goal-setting/index.html" style='font-size:112%;' class="category">
+        Goal Setting
+      </a>
+    
+      <a href="../../category/nutrition/index.html" style='font-size:112%;' class="category">
+        Nutrition
+      </a>
+    
+      <a href="../../category/personal-branding/index.html" style='font-size:112%;' class="category">
+        Personal Branding
+      </a>
+    
+      <a href="../../category/personal-development/index.html" style='font-size:150%;' class="category">
+        Personal Development
+      </a>
+    
+      <a href="../../category/productivity/index.html" style='font-size:125%;' class="category">
+        Productivity
+      </a>
+    
+      <a href="../../category/time-management/index.html" style='font-size:106%;' class="category">
+        Time Management
+      </a>
+    
+</div>
+
+          
+          
+        </div>
+      
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_newsletter_rfvEmail"), document.getElementById("ctl00_newsletter_revEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_newsletter_rfvEmail = document.all ? document.all["ctl00_newsletter_rfvEmail"] : document.getElementById("ctl00_newsletter_rfvEmail");
+ctl00_newsletter_rfvEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_rfvEmail.validationGroup = "Newsletter";
+ctl00_newsletter_rfvEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_newsletter_rfvEmail.initialvalue = "";
+var ctl00_newsletter_revEmail = document.all ? document.all["ctl00_newsletter_revEmail"] : document.getElementById("ctl00_newsletter_revEmail");
+ctl00_newsletter_revEmail.controltovalidate = "ctl00_newsletter_tbEmail";
+ctl00_newsletter_revEmail.errormessage = "Invalid";
+ctl00_newsletter_revEmail.validationGroup = "Newsletter";
+ctl00_newsletter_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_newsletter_revEmail.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ctl00_newsletter_rfvEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_rfvEmail'));
+}
+
+document.getElementById('ctl00_newsletter_revEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_newsletter_revEmail'));
+}
+//]]>
+</script>
+</form>
+    </div>
+    <footer>
+      <p>&copy; Copyright 2008-2025 - Andrea Azzola</p>
+    </footer>
+  </div>
+  
+  <script src="../../Scripts/async.js"></script>
+  <script src="../../Scripts/cookiechoices.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C3P9XZGVE9');
+
+    
+    document.addEventListener('DOMContentLoaded', function (event) {
+      cookieChoices.showCookieConsentBar('This website use cookies to improve the user experience. By continuing I\'ll assume that you\'re happy with it',
+        'Got it', null /*learn more*/, null/*url*/);
+    });
+  </script>
+</body>
+
+<!-- Mirrored from andreaazzola.com/it/javascript-submit-post-form-data/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 17:02:57 GMT -->
+</html>
