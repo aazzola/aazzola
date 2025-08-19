@@ -1,0 +1,30 @@
+baseURL = "https://andreaazzola.com/"
+languageCode = "en-us"
+title = "Andrea Azzola"
+theme = "PaperMod" # install below
+paginate = 10
+
+[params]
+  author = "Andrea Azzola"
+  description = "Tips and techniques for lifestyle design"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  defaultTheme = "auto"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    name = "Articles"
+    url = "/posts/"
+    weight = 20
+  [[menu.main]]
+    name = "Books"
+    url = "/books/"
+    weight = 30
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 40
