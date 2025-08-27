@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gears on Andrea Azzola</title>
+    <link>http://localhost:1313/categories/gears/</link>
+    <description>Recent content in Gears on Andrea Azzola</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Dec 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/gears/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ErgoDox Split Ergonomic Keyboard Review</title>
+      <link>http://localhost:1313/post/ergodox-ergonomic-keyboard-review/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/ergodox-ergonomic-keyboard-review/</guid>
+      <description>&lt;p&gt;The &lt;strong&gt;ErgoDox&lt;/strong&gt; is a DIY ergonomic keyboard, featuring a &lt;em&gt;split design&lt;/em&gt;—each half, one hand. The two halves are connected with a &lt;em&gt;phone TRRS connector cable&lt;/em&gt;, while the connection to the PC—or Mac or Unix—is obtained through a detachable mini USB.&lt;/p&gt;
+&lt;h2 id=&#34;history&#34;&gt;History&lt;/h2&gt;
+&lt;p&gt;The project &lt;a href=&#34;https://geekhack.org/index.php?topic=22780.0&#34;&gt;has been initiated&lt;/a&gt; by Dominic Beauchamp—aka Dox, from which the keyboard name derives—on the GeekHack.org forum; the design has been largely inspired by the &lt;a href=&#34;http://www.key64.org/&#34;&gt;Key64&lt;/a&gt; project by Nestor Diaz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Asus EeePC 1201HA Review</title>
+      <link>http://localhost:1313/post/asus-eeepc-1201ha/</link>
+      <pubDate>Sat, 09 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/asus-eeepc-1201ha/</guid>
+      <description>&lt;h2 id=&#34;first-look&#34;&gt;First Look&lt;/h2&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/asus-eeepc-1201ha-front.jpeg&#34;/&gt; &lt;figcaption&gt;
+            Asus EeePC 1201HA - Front view
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The EeePC 1201HA is part of a new generation of larger netbooks, not just in terms of size but also hardware.&lt;/p&gt;
+&lt;p&gt;It comes with Windows 7 (in some cases XP), provides opportunities for overclocking, can play movies in HD (decently up to 720p) with no trouble, has 2GB of RAM (&lt;em&gt;IMHO very valuable&lt;/em&gt;), 250GB of hard disk (+500 online, free for the first year), isolated keys, very light, autonomy is good: 7/8 hours in standard office applications.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

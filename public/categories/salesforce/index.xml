@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Salesforce on Andrea Azzola</title>
+    <link>http://localhost:1313/categories/salesforce/</link>
+    <description>Recent content in Salesforce on Andrea Azzola</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Jul 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/salesforce/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Future Count with Apex Code</title>
+      <link>http://localhost:1313/post/future-count-apex/</link>
+      <pubDate>Thu, 14 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/future-count-apex/</guid>
+      <description>&lt;p&gt;A simple snippet for counting &lt;code&gt;@future&lt;/code&gt; calls in a 24‑hour timespan, useful for monitoring peaks and acting accordingly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please note&lt;/strong&gt;: supports up to 50,000 future calls in a 24h timespan.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-apex&#34; data-lang=&#34;apex&#34;&gt;public with sharing class AsyncApexJobUtils {
+    public static integer futureCount() {
+        integer c = [select count() from AsyncApexJob
+            where JobType=&amp;#39;Future&amp;#39;
+            and CreatedDate &amp;gt;= :Datetime.now().addDays(-1) limit 50000];
+        system.debug(&amp;#39;#futureCount: &amp;#39; + c);
+        return c;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

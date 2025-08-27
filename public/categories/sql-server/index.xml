@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SQL Server on Andrea Azzola</title>
+    <link>http://localhost:1313/categories/sql-server/</link>
+    <description>Recent content in SQL Server on Andrea Azzola</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Mar 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/sql-server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean Up Stored Procedures Cache with SQL Server</title>
+      <link>http://localhost:1313/post/clean-sp-cache-sql-server/</link>
+      <pubDate>Fri, 06 Mar 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/clean-sp-cache-sql-server/</guid>
+      <description>&lt;p&gt;When deploying a stored procedure, cleaning up the database&amp;rsquo;s cache can help apply changes immediately. Have a look at the following code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- Cleans up db&amp;#39;s cache
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DECLARE&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;dbID INTEGER
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;dbID &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; dbid &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; master.dbo.sysdatabases &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;DBNameHere&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DBCC FLUSHPROCINDB (&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;dbID)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/cc297250.aspx&#34;&gt;DBCC FLUSHPROCINDB&lt;/a&gt; command allows specifying a particular database id, and then clears all the plans from it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,2390 @@
+[
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=e5ca9a5c-60d5-4954-8f78-bf4e3d891bef.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=e5ca9a5c-60d5-4954-8f78-bf4e3d891bef.clean.md",
+    "alias": "/resource?id=e5ca9a5c-60d5-4954-8f78-bf4e3d891bef.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=f6761147-7bbc-46c7-8570-63d69130785d.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=f6761147-7bbc-46c7-8570-63d69130785d.md",
+    "alias": "/resource?id=f6761147-7bbc-46c7-8570-63d69130785d.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=2d1f1445-5bfa-4c22-9c69-7ab3cfb54d6f.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=2d1f1445-5bfa-4c22-9c69-7ab3cfb54d6f.clean.md",
+    "alias": "/resource?id=2d1f1445-5bfa-4c22-9c69-7ab3cfb54d6f.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=dfe33712-1dce-496d-bf39-65da67db9d19.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=dfe33712-1dce-496d-bf39-65da67db9d19.clean.md",
+    "alias": "/resource?id=dfe33712-1dce-496d-bf39-65da67db9d19.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=6c2b1aa3-75e7-4e8f-94b5-11c32d12a835.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=6c2b1aa3-75e7-4e8f-94b5-11c32d12a835.clean.md",
+    "alias": "/resource?id=6c2b1aa3-75e7-4e8f-94b5-11c32d12a835.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=a9ccd316-c4c8-4200-bfc6-9e4793e6ae84.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=a9ccd316-c4c8-4200-bfc6-9e4793e6ae84.md",
+    "alias": "/resource?id=a9ccd316-c4c8-4200-bfc6-9e4793e6ae84.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=eef7a2b1-8ab8-48f9-b490-395cb0240b7d.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=eef7a2b1-8ab8-48f9-b490-395cb0240b7d.clean.md",
+    "alias": "/resource?id=eef7a2b1-8ab8-48f9-b490-395cb0240b7d.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d.md",
+    "alias": "/resource?id=23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=1d35b384-f05a-4132-8404-2c1ec239e21b.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=1d35b384-f05a-4132-8404-2c1ec239e21b.md",
+    "alias": "/resource?id=1d35b384-f05a-4132-8404-2c1ec239e21b.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=8f00cdb9-af64-4013-8d6a-8ceba633ddac.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=8f00cdb9-af64-4013-8d6a-8ceba633ddac.clean.md",
+    "alias": "/resource?id=8f00cdb9-af64-4013-8d6a-8ceba633ddac.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=e471776d-e79d-48ee-a946-a86f9425b3a6.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=e471776d-e79d-48ee-a946-a86f9425b3a6.md",
+    "alias": "/resource?id=e471776d-e79d-48ee-a946-a86f9425b3a6.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/contact.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/contact.md",
+    "alias": "/contact.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category.clean.md",
+    "alias": "/category.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category.md",
+    "alias": "/category.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/README.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/README.clean.md",
+    "alias": "/README.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=d39084a3-1ab1-4174-adab-ecdfabe2a46e.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=d39084a3-1ab1-4174-adab-ecdfabe2a46e.md",
+    "alias": "/resource?id=d39084a3-1ab1-4174-adab-ecdfabe2a46e.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=2d1f1445-5bfa-4c22-9c69-7ab3cfb54d6f.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=2d1f1445-5bfa-4c22-9c69-7ab3cfb54d6f.md",
+    "alias": "/resource?id=2d1f1445-5bfa-4c22-9c69-7ab3cfb54d6f.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=35a0565d-8f32-43a3-8334-fa0dc64144f1.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=35a0565d-8f32-43a3-8334-fa0dc64144f1.md",
+    "alias": "/resource?id=35a0565d-8f32-43a3-8334-fa0dc64144f1.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=e5ca9a5c-60d5-4954-8f78-bf4e3d891bef.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=e5ca9a5c-60d5-4954-8f78-bf4e3d891bef.md",
+    "alias": "/resource?id=e5ca9a5c-60d5-4954-8f78-bf4e3d891bef.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d.clean.md",
+    "alias": "/resource?id=23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=6c2b1aa3-75e7-4e8f-94b5-11c32d12a835.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=6c2b1aa3-75e7-4e8f-94b5-11c32d12a835.md",
+    "alias": "/resource?id=6c2b1aa3-75e7-4e8f-94b5-11c32d12a835.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=73deb6aa-04af-4eef-9451-38eceeb59d39.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=73deb6aa-04af-4eef-9451-38eceeb59d39.md",
+    "alias": "/resource?id=73deb6aa-04af-4eef-9451-38eceeb59d39.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=d2b396d2-fe28-4d7a-b35a-4267de1ff83b.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=d2b396d2-fe28-4d7a-b35a-4267de1ff83b.clean.md",
+    "alias": "/resource?id=d2b396d2-fe28-4d7a-b35a-4267de1ff83b.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=6e367c2b-43a6-44bd-b251-713c99601469.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=6e367c2b-43a6-44bd-b251-713c99601469.clean.md",
+    "alias": "/resource?id=6e367c2b-43a6-44bd-b251-713c99601469.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/index.clean.md",
+    "alias": "/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=f6761147-7bbc-46c7-8570-63d69130785d.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=f6761147-7bbc-46c7-8570-63d69130785d.clean.md",
+    "alias": "/resource?id=f6761147-7bbc-46c7-8570-63d69130785d.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/README.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/README.md",
+    "alias": "/README.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=a9ccd316-c4c8-4200-bfc6-9e4793e6ae84.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=a9ccd316-c4c8-4200-bfc6-9e4793e6ae84.clean.md",
+    "alias": "/resource?id=a9ccd316-c4c8-4200-bfc6-9e4793e6ae84.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=35a0565d-8f32-43a3-8334-fa0dc64144f1.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=35a0565d-8f32-43a3-8334-fa0dc64144f1.clean.md",
+    "alias": "/resource?id=35a0565d-8f32-43a3-8334-fa0dc64144f1.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=91ae0ec9-5a5f-4046-882e-0724d7875675.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=91ae0ec9-5a5f-4046-882e-0724d7875675.clean.md",
+    "alias": "/resource?id=91ae0ec9-5a5f-4046-882e-0724d7875675.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=02bd0078-9f37-47d2-af8d-16998080b639.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=02bd0078-9f37-47d2-af8d-16998080b639.clean.md",
+    "alias": "/resource?id=02bd0078-9f37-47d2-af8d-16998080b639.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=8f00cdb9-af64-4013-8d6a-8ceba633ddac.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=8f00cdb9-af64-4013-8d6a-8ceba633ddac.md",
+    "alias": "/resource?id=8f00cdb9-af64-4013-8d6a-8ceba633ddac.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/_index.md",
+    "alias": "/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=1d35b384-f05a-4132-8404-2c1ec239e21b.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=1d35b384-f05a-4132-8404-2c1ec239e21b.clean.md",
+    "alias": "/resource?id=1d35b384-f05a-4132-8404-2c1ec239e21b.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=5822d560-d3ed-48e8-88b4-5d510acff456.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=5822d560-d3ed-48e8-88b4-5d510acff456.clean.md",
+    "alias": "/resource?id=5822d560-d3ed-48e8-88b4-5d510acff456.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=eef7a2b1-8ab8-48f9-b490-395cb0240b7d.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=eef7a2b1-8ab8-48f9-b490-395cb0240b7d.md",
+    "alias": "/resource?id=eef7a2b1-8ab8-48f9-b490-395cb0240b7d.html"
+  },
+  {
+    "image_copy_failed": "../images/AndreaAzzola_Website200x200.png"
+  },
+  {
+    "image_copy_failed": "../images/social/twitter.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/linkedin.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/facebook.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/pinterest.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/instagram.svg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out.clean.md",
+    "alias": "/out.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=02bd0078-9f37-47d2-af8d-16998080b639.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=02bd0078-9f37-47d2-af8d-16998080b639.md",
+    "alias": "/resource?id=02bd0078-9f37-47d2-af8d-16998080b639.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=73deb6aa-04af-4eef-9451-38eceeb59d39.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=73deb6aa-04af-4eef-9451-38eceeb59d39.clean.md",
+    "alias": "/resource?id=73deb6aa-04af-4eef-9451-38eceeb59d39.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=5822d560-d3ed-48e8-88b4-5d510acff456.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=5822d560-d3ed-48e8-88b4-5d510acff456.md",
+    "alias": "/resource?id=5822d560-d3ed-48e8-88b4-5d510acff456.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=6e367c2b-43a6-44bd-b251-713c99601469.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=6e367c2b-43a6-44bd-b251-713c99601469.md",
+    "alias": "/resource?id=6e367c2b-43a6-44bd-b251-713c99601469.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=1094fb00-cc60-4b2d-a427-44fee83372e7.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=1094fb00-cc60-4b2d-a427-44fee83372e7.md",
+    "alias": "/resource?id=1094fb00-cc60-4b2d-a427-44fee83372e7.html"
+  },
+  {
+    "image_copy_failed": "../images/AndreaAzzola_Website200x200.png"
+  },
+  {
+    "image_copy_failed": "../images/social/twitter.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/linkedin.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/facebook.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/pinterest.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/instagram.svg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out.cleaned.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out.cleaned.clean.md",
+    "alias": "/out.cleaned.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=d39084a3-1ab1-4174-adab-ecdfabe2a46e.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=d39084a3-1ab1-4174-adab-ecdfabe2a46e.clean.md",
+    "alias": "/resource?id=d39084a3-1ab1-4174-adab-ecdfabe2a46e.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=e471776d-e79d-48ee-a946-a86f9425b3a6.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=e471776d-e79d-48ee-a946-a86f9425b3a6.clean.md",
+    "alias": "/resource?id=e471776d-e79d-48ee-a946-a86f9425b3a6.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/contact.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/contact.clean.md",
+    "alias": "/contact.clean.html"
+  },
+  {
+    "image_copy_failed": "../images/AndreaAzzola_Website200x200.png"
+  },
+  {
+    "image_copy_failed": "../images/social/twitter.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/linkedin.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/facebook.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/pinterest.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/instagram.svg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out.cleaned.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out.cleaned.md",
+    "alias": "/out.cleaned.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=1094fb00-cc60-4b2d-a427-44fee83372e7.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=1094fb00-cc60-4b2d-a427-44fee83372e7.clean.md",
+    "alias": "/resource?id=1094fb00-cc60-4b2d-a427-44fee83372e7.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=91ae0ec9-5a5f-4046-882e-0724d7875675.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=91ae0ec9-5a5f-4046-882e-0724d7875675.md",
+    "alias": "/resource?id=91ae0ec9-5a5f-4046-882e-0724d7875675.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=dfe33712-1dce-496d-bf39-65da67db9d19.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=dfe33712-1dce-496d-bf39-65da67db9d19.md",
+    "alias": "/resource?id=dfe33712-1dce-496d-bf39-65da67db9d19.html"
+  },
+  {
+    "image_copy_failed": "../images/AndreaAzzola_Website200x200.png"
+  },
+  {
+    "image_copy_failed": "../images/social/twitter.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/linkedin.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/facebook.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/pinterest.svg"
+  },
+  {
+    "image_copy_failed": "../images/social/instagram.svg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out.md",
+    "alias": "/out.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/resource?id=d2b396d2-fe28-4d7a-b35a-4267de1ff83b.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/resource?id=d2b396d2-fe28-4d7a-b35a-4267de1ff83b.md",
+    "alias": "/resource?id=d2b396d2-fe28-4d7a-b35a-4267de1ff83b.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/remix-nanni-hannibal-invasion/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/remix-nanni-hannibal-invasion/index.clean.md",
+    "alias": "/remix-nanni-hannibal-invasion/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/remix-nanni-hannibal-invasion/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/remix-nanni-hannibal-invasion/_index.md",
+    "alias": "/remix-nanni-hannibal-invasion/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/4092bff58b39c9dfefdcc0cd1bdcd6dfc5dfc52c.png"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/asus-eeepc-1201ha/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/asus-eeepc-1201ha/index.clean.md",
+    "alias": "/asus-eeepc-1201ha/index.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/4092bff58b39c9dfefdcc0cd1bdcd6dfc5dfc52c.png"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/asus-eeepc-1201ha/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/asus-eeepc-1201ha/_index.md",
+    "alias": "/asus-eeepc-1201ha/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-april-2010/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-april-2010/index.clean.md",
+    "alias": "/set-april-2010/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-april-2010/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-april-2010/_index.md",
+    "alias": "/set-april-2010/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/javascript-date-handling-format/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/javascript-date-handling-format/index.clean.md",
+    "alias": "/javascript-date-handling-format/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/javascript-date-handling-format/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/javascript-date-handling-format/_index.md",
+    "alias": "/javascript-date-handling-format/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/check-metamodel-existence-dynamic-data-application/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/check-metamodel-existence-dynamic-data-application/index.clean.md",
+    "alias": "/check-metamodel-existence-dynamic-data-application/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/check-metamodel-existence-dynamic-data-application/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/check-metamodel-existence-dynamic-data-application/_index.md",
+    "alias": "/check-metamodel-existence-dynamic-data-application/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/contact/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/contact/index.clean.md",
+    "alias": "/contact/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/contact/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/contact/_index.md",
+    "alias": "/contact/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/js-notification-panel-gmail/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/js-notification-panel-gmail/index.clean.md",
+    "alias": "/js-notification-panel-gmail/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/js-notification-panel-gmail/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/js-notification-panel-gmail/_index.md",
+    "alias": "/js-notification-panel-gmail/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/post/personal-branding-introduction.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/post/personal-branding-introduction.clean.md",
+    "alias": "/post/personal-branding-introduction.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/post/personal-branding-introduction.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/post/personal-branding-introduction.md",
+    "alias": "/post/personal-branding-introduction.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/personal-branding-introduction/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/personal-branding-introduction/index.clean.md",
+    "alias": "/personal-branding-introduction/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/personal-branding-introduction/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/personal-branding-introduction/_index.md",
+    "alias": "/personal-branding-introduction/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/meal-prep-pouches-quick-easy/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/meal-prep-pouches-quick-easy/index.clean.md",
+    "alias": "/meal-prep-pouches-quick-easy/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/meal-prep-pouches-quick-easy/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/meal-prep-pouches-quick-easy/_index.md",
+    "alias": "/meal-prep-pouches-quick-easy/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/nutrition.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/nutrition.md",
+    "alias": "/category/nutrition.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/goalodicy.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/goalodicy.md",
+    "alias": "/category/goalodicy.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/ergonomic.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/ergonomic.md",
+    "alias": "/category/ergonomic.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/fitness.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/fitness.md",
+    "alias": "/category/fitness.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/meal-prep.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/meal-prep.clean.md",
+    "alias": "/category/meal-prep.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/goal-setting.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/goal-setting.md",
+    "alias": "/category/goal-setting.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/personal-development.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/personal-development.clean.md",
+    "alias": "/category/personal-development.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/geo-arbitrage.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/geo-arbitrage.clean.md",
+    "alias": "/category/geo-arbitrage.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/geo-arbitrage.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/geo-arbitrage.md",
+    "alias": "/category/geo-arbitrage.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/gears.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/gears.clean.md",
+    "alias": "/category/gears.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/diet.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/diet.md",
+    "alias": "/category/diet.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/decluttering.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/decluttering.md",
+    "alias": "/category/decluttering.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/time-management.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/time-management.clean.md",
+    "alias": "/category/time-management.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/goal-setting.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/goal-setting.clean.md",
+    "alias": "/category/goal-setting.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/productivity.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/productivity.clean.md",
+    "alias": "/category/productivity.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/personal-branding.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/personal-branding.md",
+    "alias": "/category/personal-branding.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/books.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/books.clean.md",
+    "alias": "/category/books.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/financial-independence.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/financial-independence.md",
+    "alias": "/category/financial-independence.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/personal-branding.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/personal-branding.clean.md",
+    "alias": "/category/personal-branding.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/decision-fatigue.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/decision-fatigue.md",
+    "alias": "/category/decision-fatigue.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/meal-prep.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/meal-prep.md",
+    "alias": "/category/meal-prep.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/finance.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/finance.md",
+    "alias": "/category/finance.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/ergonomic.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/ergonomic.clean.md",
+    "alias": "/category/ergonomic.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/seo.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/seo.md",
+    "alias": "/category/seo.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/finance.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/finance.clean.md",
+    "alias": "/category/finance.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/nutrition.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/nutrition.clean.md",
+    "alias": "/category/nutrition.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/decluttering.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/decluttering.clean.md",
+    "alias": "/category/decluttering.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/productivity.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/productivity.md",
+    "alias": "/category/productivity.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/fitness.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/fitness.clean.md",
+    "alias": "/category/fitness.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/extreme-saving.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/extreme-saving.clean.md",
+    "alias": "/category/extreme-saving.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/goalodicy.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/goalodicy.clean.md",
+    "alias": "/category/goalodicy.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/decision-fatigue.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/decision-fatigue.clean.md",
+    "alias": "/category/decision-fatigue.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/entrepreneurship.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/entrepreneurship.clean.md",
+    "alias": "/category/entrepreneurship.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/time-management.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/time-management.md",
+    "alias": "/category/time-management.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/financial-independence.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/financial-independence.clean.md",
+    "alias": "/category/financial-independence.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/books.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/books.md",
+    "alias": "/category/books.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/diet.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/diet.clean.md",
+    "alias": "/category/diet.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/seo.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/seo.clean.md",
+    "alias": "/category/seo.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/extreme-saving.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/extreme-saving.md",
+    "alias": "/category/extreme-saving.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/gears.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/gears.md",
+    "alias": "/category/gears.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/personal-development.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/personal-development.md",
+    "alias": "/category/personal-development.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/entrepreneurship.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/entrepreneurship.md",
+    "alias": "/category/entrepreneurship.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/issues-ajax-custom-httpmodule/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/issues-ajax-custom-httpmodule/index.clean.md",
+    "alias": "/issues-ajax-custom-httpmodule/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/issues-ajax-custom-httpmodule/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/issues-ajax-custom-httpmodule/_index.md",
+    "alias": "/issues-ajax-custom-httpmodule/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fb7d17c4620245126e9cabe0052aa4d4b3ced57c.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/907ff5f7e08fc991a8bc8ebe6aeb6cd594c51b6c.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/042e9fd63787a92bc37d8069cf167ad8b808cdad.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/4811ab1059d91464e822fdf4548c18fb926b054c.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/c07a27df136d435ff31b4971716f674805086efa.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/f2f4f55893ff9536c21962b3671b20c35aa3edad.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/e2920a1068790c8a8f3d796111251dd608a49fc0.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/e15f5839eba3c1f9f13d7411e449f3ed49fe9e69.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/77689b746c34f719ddfd114636d666122d5f28f2.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/337803694e31422477b035fccdcd761612f16102.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/81fbbd0e5233d83321fb7050fdb2ef8ca87540df.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5babe20f304bf1b89b7d4cb17212dac2570c14f5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/65154c102afb134bbe4a98b43ed82ddd1dc9530a.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fd5710c2d93637f56ac2aac8ae75b809e0a580fc.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5b3089749c1e8455b4092e53deaf32903694004f.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a51a02bc2e94abe30b1bbdceb904dd804086169b.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/f4f1b84c2530f49075c9b68b8d7397c39b867e41.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fe7bbcf97c1719e2b5e9184caa775d532cc06ff5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/01d60a14f38f16cb3a08234d11750e026942a70b.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fecee415d91981c71620eb1865669dd48f43e8b5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/c3265c62c1ff94bd4fb6779881da93e438625d36.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/d999207a5dbd010e05c2453d0255aa4bde97fa24.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/258cf7c02b65b45e2bd70f128c36733062417950.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/f3f361c79ebf492e2b1e98810a162d2505fe543f.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/73fe57adbc193554b4285d7880cd836c7a98bf65.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/97a9161f5f98782228b07f562fb7a801ae800499.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/34387789c558b49268fed21550bf4f3e9aa1b6f2.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fc69cfde94465b10189c0fe0e3c6ecad1296a08a.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/0fef83e99fa00bb82c2a980979b42857ee63b606.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5f21032b91c0d3116e98540666aa5d8ce0649538.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/90e594e4d8aaefd388f696ccdbf53597b9ba9aa5.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fa91375275e3e1c8fcd8f79bcae5d85593a33c67.gif"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out/macchine-sottovuoto-alimenti.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out/macchine-sottovuoto-alimenti.clean.md",
+    "alias": "/out/macchine-sottovuoto-alimenti.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fbf5da420ff48d5076002ddd79cd90448ded6293.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/7e59659c8f3c3a7a9e936b718c4f3c83c7c2ea86.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/ecfec27263608c4ae7cd4f8e0cebb1b061df2ac3.gif"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/2d6187cb69ac15eab919f2af4e64d33d9586055e.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/e5ed5240a488d4cfafd8832cdf45cd26e0d5c6e5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/b3cfe27bdf86d6c7f2af668bb450d87e445233b1.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/e7e8d468cd0ea35e5e87b310e8554eaa1da7baf3.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/b23e7391e23b5e29f27d3b55755b88568d3ee9c3.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/085b0e705c8abedd05cc8b3584b71bc6e3670986.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8b8b58d2d63f93e2a132f4ecac0babb9915b749c.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5422a40a4786196842309eb9e0872bee855221dd.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/ecfec27263608c4ae7cd4f8e0cebb1b061df2ac3.gif"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8ed57c071229e3d40861c17521b7b6e47f8f1e70.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/209da617d1ef1ee86c1b4583ae93a70658cb1a21.svg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out/flaem-nuova-aco1066-alimenti-trasparente.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out/flaem-nuova-aco1066-alimenti-trasparente.clean.md",
+    "alias": "/out/flaem-nuova-aco1066-alimenti-trasparente.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/4811ab1059d91464e822fdf4548c18fb926b054c.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/0fef83e99fa00bb82c2a980979b42857ee63b606.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5f21032b91c0d3116e98540666aa5d8ce0649538.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fa91375275e3e1c8fcd8f79bcae5d85593a33c67.gif"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fb7d17c4620245126e9cabe0052aa4d4b3ced57c.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/907ff5f7e08fc991a8bc8ebe6aeb6cd594c51b6c.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/042e9fd63787a92bc37d8069cf167ad8b808cdad.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/c07a27df136d435ff31b4971716f674805086efa.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/f2f4f55893ff9536c21962b3671b20c35aa3edad.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/e2920a1068790c8a8f3d796111251dd608a49fc0.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/e15f5839eba3c1f9f13d7411e449f3ed49fe9e69.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/77689b746c34f719ddfd114636d666122d5f28f2.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/337803694e31422477b035fccdcd761612f16102.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/81fbbd0e5233d83321fb7050fdb2ef8ca87540df.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5babe20f304bf1b89b7d4cb17212dac2570c14f5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/65154c102afb134bbe4a98b43ed82ddd1dc9530a.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fd5710c2d93637f56ac2aac8ae75b809e0a580fc.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5b3089749c1e8455b4092e53deaf32903694004f.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a51a02bc2e94abe30b1bbdceb904dd804086169b.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/f4f1b84c2530f49075c9b68b8d7397c39b867e41.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fe7bbcf97c1719e2b5e9184caa775d532cc06ff5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/01d60a14f38f16cb3a08234d11750e026942a70b.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fecee415d91981c71620eb1865669dd48f43e8b5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/54b7d148d6f7116b7ca4b2955ca1a8f82550219d.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a8b5e35e2eb048c0c1907463c67599064a92ea47.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/c3265c62c1ff94bd4fb6779881da93e438625d36.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/d999207a5dbd010e05c2453d0255aa4bde97fa24.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/258cf7c02b65b45e2bd70f128c36733062417950.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/f3f361c79ebf492e2b1e98810a162d2505fe543f.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/73fe57adbc193554b4285d7880cd836c7a98bf65.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/97a9161f5f98782228b07f562fb7a801ae800499.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/34387789c558b49268fed21550bf4f3e9aa1b6f2.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fc69cfde94465b10189c0fe0e3c6ecad1296a08a.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/90e594e4d8aaefd388f696ccdbf53597b9ba9aa5.svg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out/macchine-sottovuoto-alimenti.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out/macchine-sottovuoto-alimenti.md",
+    "alias": "/out/macchine-sottovuoto-alimenti.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fbf5da420ff48d5076002ddd79cd90448ded6293.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/aa8b98f428c32e70b6018e3d3459f6807b31f87f.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5cd59bfe4a937a18239a901fb7a3909599d696c8.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fbffaa9621488833cbbe317738bd0854122471b7.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/d532c1c6aa324168386370e72c44cb905c3a2fb5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a1b52cffe28137a3906c7e018e27328a95217bc6.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/678eec20655fd73503240762acf2bb17cf300c45.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8cccb11dbc010d4790883ae7c4135f4ccddee162.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/37d2c8241961b14a9981341b54f230b943a74648.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8be6397c2de511afbb578ae4078dda266cb671ca.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/ecfec27263608c4ae7cd4f8e0cebb1b061df2ac3.gif"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8ed57c071229e3d40861c17521b7b6e47f8f1e70.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/209da617d1ef1ee86c1b4583ae93a70658cb1a21.svg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out/sigilla-sacchetti-200mm-professionale.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out/sigilla-sacchetti-200mm-professionale.clean.md",
+    "alias": "/out/sigilla-sacchetti-200mm-professionale.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/e5ed5240a488d4cfafd8832cdf45cd26e0d5c6e5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/b3cfe27bdf86d6c7f2af668bb450d87e445233b1.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/e7e8d468cd0ea35e5e87b310e8554eaa1da7baf3.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/b23e7391e23b5e29f27d3b55755b88568d3ee9c3.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/085b0e705c8abedd05cc8b3584b71bc6e3670986.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8b8b58d2d63f93e2a132f4ecac0babb9915b749c.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5422a40a4786196842309eb9e0872bee855221dd.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/ecfec27263608c4ae7cd4f8e0cebb1b061df2ac3.gif"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fbf5da420ff48d5076002ddd79cd90448ded6293.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/7e59659c8f3c3a7a9e936b718c4f3c83c7c2ea86.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/ecfec27263608c4ae7cd4f8e0cebb1b061df2ac3.gif"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/2d6187cb69ac15eab919f2af4e64d33d9586055e.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8ed57c071229e3d40861c17521b7b6e47f8f1e70.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/209da617d1ef1ee86c1b4583ae93a70658cb1a21.svg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out/flaem-nuova-aco1066-alimenti-trasparente.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out/flaem-nuova-aco1066-alimenti-trasparente.md",
+    "alias": "/out/flaem-nuova-aco1066-alimenti-trasparente.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fbffaa9621488833cbbe317738bd0854122471b7.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/d532c1c6aa324168386370e72c44cb905c3a2fb5.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/a1b52cffe28137a3906c7e018e27328a95217bc6.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/678eec20655fd73503240762acf2bb17cf300c45.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8cccb11dbc010d4790883ae7c4135f4ccddee162.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/37d2c8241961b14a9981341b54f230b943a74648.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8be6397c2de511afbb578ae4078dda266cb671ca.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/ecfec27263608c4ae7cd4f8e0cebb1b061df2ac3.gif"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/fbf5da420ff48d5076002ddd79cd90448ded6293.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/aa8b98f428c32e70b6018e3d3459f6807b31f87f.png"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/5cd59bfe4a937a18239a901fb7a3909599d696c8.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/8ed57c071229e3d40861c17521b7b6e47f8f1e70.svg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/209da617d1ef1ee86c1b4583ae93a70658cb1a21.svg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out/sigilla-sacchetti-200mm-professionale.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out/sigilla-sacchetti-200mm-professionale.md",
+    "alias": "/out/sigilla-sacchetti-200mm-professionale.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/consuming-net-web-services-using-php-nusoap/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/consuming-net-web-services-using-php-nusoap/index.clean.md",
+    "alias": "/consuming-net-web-services-using-php-nusoap/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/consuming-net-web-services-using-php-nusoap/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/consuming-net-web-services-using-php-nusoap/_index.md",
+    "alias": "/consuming-net-web-services-using-php-nusoap/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/table-size-space-sql-server/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/table-size-space-sql-server/index.clean.md",
+    "alias": "/table-size-space-sql-server/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/table-size-space-sql-server/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/table-size-space-sql-server/_index.md",
+    "alias": "/table-size-space-sql-server/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/transform-sentence-slug-js/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/transform-sentence-slug-js/index.clean.md",
+    "alias": "/transform-sentence-slug-js/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/transform-sentence-slug-js/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/transform-sentence-slug-js/_index.md",
+    "alias": "/transform-sentence-slug-js/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/robo-advisor-digital-portfolio-investing/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/robo-advisor-digital-portfolio-investing/index.clean.md",
+    "alias": "/robo-advisor-digital-portfolio-investing/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/robo-advisor-digital-portfolio-investing/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/robo-advisor-digital-portfolio-investing/_index.md",
+    "alias": "/robo-advisor-digital-portfolio-investing/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/articles/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/articles/index.clean.md",
+    "alias": "/articles/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/articles/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/articles/_index.md",
+    "alias": "/articles/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/remix-francois-le-roy-mosquito/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/remix-francois-le-roy-mosquito/index.clean.md",
+    "alias": "/remix-francois-le-roy-mosquito/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/remix-francois-le-roy-mosquito/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/remix-francois-le-roy-mosquito/_index.md",
+    "alias": "/remix-francois-le-roy-mosquito/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/post-data-js/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/post-data-js/index.clean.md",
+    "alias": "/post-data-js/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/post-data-js/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/post-data-js/_index.md",
+    "alias": "/post-data-js/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/requiredfieldvalidator-radcombobox/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/requiredfieldvalidator-radcombobox/index.clean.md",
+    "alias": "/requiredfieldvalidator-radcombobox/index.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/requiredfieldvalidator-radcombobox/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/requiredfieldvalidator-radcombobox/_index.md",
+    "alias": "/requiredfieldvalidator-radcombobox/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/intermittent-fasting-diet-benefits/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/intermittent-fasting-diet-benefits/index.clean.md",
+    "alias": "/intermittent-fasting-diet-benefits/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/intermittent-fasting-diet-benefits/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/intermittent-fasting-diet-benefits/_index.md",
+    "alias": "/intermittent-fasting-diet-benefits/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/waking-up-early-get-things-done/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/waking-up-early-get-things-done/index.clean.md",
+    "alias": "/waking-up-early-get-things-done/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/waking-up-early-get-things-done/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/waking-up-early-get-things-done/_index.md",
+    "alias": "/waking-up-early-get-things-done/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/review-filco-majestouch2-tenkeyless-ninja/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/review-filco-majestouch2-tenkeyless-ninja/index.clean.md",
+    "alias": "/review-filco-majestouch2-tenkeyless-ninja/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/review-filco-majestouch2-tenkeyless-ninja/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/review-filco-majestouch2-tenkeyless-ninja/_index.md",
+    "alias": "/review-filco-majestouch2-tenkeyless-ninja/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/ergodox-ergonomic-keyboard-review/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/ergodox-ergonomic-keyboard-review/index.clean.md",
+    "alias": "/ergodox-ergonomic-keyboard-review/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/ergodox-ergonomic-keyboard-review/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/ergodox-ergonomic-keyboard-review/_index.md",
+    "alias": "/ergodox-ergonomic-keyboard-review/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/about/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/about/index.clean.md",
+    "alias": "/about/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/about/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/about/_index.md",
+    "alias": "/about/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/luck-surface-area/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/luck-surface-area/index.clean.md",
+    "alias": "/luck-surface-area/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/luck-surface-area/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/luck-surface-area/_index.md",
+    "alias": "/luck-surface-area/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/books/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/books/index.clean.md",
+    "alias": "/books/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/books/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/books/_index.md",
+    "alias": "/books/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/log-http-requests/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/log-http-requests/index.clean.md",
+    "alias": "/log-http-requests/index.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/log-http-requests/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/log-http-requests/_index.md",
+    "alias": "/log-http-requests/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/ichigo-asp-net-blogging-engine/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/ichigo-asp-net-blogging-engine/index.clean.md",
+    "alias": "/ichigo-asp-net-blogging-engine/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/ichigo-asp-net-blogging-engine/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/ichigo-asp-net-blogging-engine/_index.md",
+    "alias": "/ichigo-asp-net-blogging-engine/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-connectionstring-runtime-dynamicdata/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-connectionstring-runtime-dynamicdata/index.clean.md",
+    "alias": "/set-connectionstring-runtime-dynamicdata/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-connectionstring-runtime-dynamicdata/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-connectionstring-runtime-dynamicdata/_index.md",
+    "alias": "/set-connectionstring-runtime-dynamicdata/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/upload-large-files-asp-net/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/upload-large-files-asp-net/index.clean.md",
+    "alias": "/upload-large-files-asp-net/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/upload-large-files-asp-net/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/upload-large-files-asp-net/_index.md",
+    "alias": "/upload-large-files-asp-net/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/get-radio-checked-js/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/get-radio-checked-js/index.clean.md",
+    "alias": "/get-radio-checked-js/index.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/get-radio-checked-js/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/get-radio-checked-js/_index.md",
+    "alias": "/get-radio-checked-js/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/call-async-method/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/call-async-method/index.clean.md",
+    "alias": "/call-async-method/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/call-async-method/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/call-async-method/_index.md",
+    "alias": "/call-async-method/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/salesforce-backup-organization-svn-git/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/salesforce-backup-organization-svn-git/index.clean.md",
+    "alias": "/salesforce-backup-organization-svn-git/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/salesforce-backup-organization-svn-git/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/salesforce-backup-organization-svn-git/_index.md",
+    "alias": "/salesforce-backup-organization-svn-git/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/getupandcode-podcast-review/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/getupandcode-podcast-review/index.clean.md",
+    "alias": "/getupandcode-podcast-review/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/getupandcode-podcast-review/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/getupandcode-podcast-review/_index.md",
+    "alias": "/getupandcode-podcast-review/index.html"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "/images/books/essentialism-disciplined-pursuit-greg-mckeown_150.png"
+  },
+  {
+    "image_copy_failed": "/images/books/how-win-friends-influence-people_150.png"
+  },
+  {
+    "image_copy_failed": "/images/books/job-free-achieve-financial-freedom_150.png"
+  },
+  {
+    "image_copy_failed": "/images/books/happiness-advantage-principles-psychology-performance-ebook_150.png"
+  },
+  {
+    "image_copy_failed": "/images/books/ego-enemy-ryan-holiday_150.png"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/images/posts/aspnet_sublime_pkgmng_kulture.png"
+  },
+  {
+    "image_copy_failed": "/images/posts/aspnet_sublime_pkgmng_omnisharp.png"
+  },
+  {
+    "image_copy_failed": "/images/posts/aspnet_sublime_helloweb.png"
+  },
+  {
+    "image_copy_failed": "../Images/posts/ergodox_side.jpg"
+  },
+  {
+    "image_copy_failed": "../Images/posts/ergodox_front.jpg"
+  },
+  {
+    "image_copy_failed": "../Images/posts/ergodox_aerial.jpg"
+  },
+  {
+    "image_copy_failed": "../Images/posts/ergodox_connectivity.jpg"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_side.jpg"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_back.jpg"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_foot.jpg"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_lights.jpg"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_workstation.jpg"
+  },
+  {
+    "image_copy_failed": "/Images/posts/nlogsqlite_love.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/nlogsqlite_nlog.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/nlogsqlite_sqlite.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/nlogsqlite_nlog-cfg.png"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_pomodairo.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_pomodairo-collapsed.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_focusbooster.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_focusbooster-collapsed.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_tomighty-windows.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_tomighty-mac.png"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "/images/posts/sennheiser-hd-25-review.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/feed/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/feed/index.clean.md",
+    "alias": "/feed/index.clean.html"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_side.jpg"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_back.jpg"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_foot.jpg"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_lights.jpg"
+  },
+  {
+    "image_copy_failed": "/images/posts/filcomajestouch_workstation.jpg"
+  },
+  {
+    "image_copy_failed": "/Images/posts/nlogsqlite_love.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/nlogsqlite_nlog.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/nlogsqlite_sqlite.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/nlogsqlite_nlog-cfg.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_pomodairo.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_pomodairo-collapsed.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_focusbooster.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_focusbooster-collapsed.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_tomighty-windows.png"
+  },
+  {
+    "image_copy_failed": "/Images/posts/pomodoro_tomighty-mac.png"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "/images/books/essentialism-disciplined-pursuit-greg-mckeown_150.png"
+  },
+  {
+    "image_copy_failed": "/images/books/how-win-friends-influence-people_150.png"
+  },
+  {
+    "image_copy_failed": "/images/books/job-free-achieve-financial-freedom_150.png"
+  },
+  {
+    "image_copy_failed": "/images/books/happiness-advantage-principles-psychology-performance-ebook_150.png"
+  },
+  {
+    "image_copy_failed": "/images/books/ego-enemy-ryan-holiday_150.png"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/images/posts/aspnet_sublime_pkgmng_kulture.png"
+  },
+  {
+    "image_copy_failed": "/images/posts/aspnet_sublime_pkgmng_omnisharp.png"
+  },
+  {
+    "image_copy_failed": "/images/posts/aspnet_sublime_helloweb.png"
+  },
+  {
+    "image_copy_failed": "../Images/posts/ergodox_side.jpg"
+  },
+  {
+    "image_copy_failed": "../Images/posts/ergodox_front.jpg"
+  },
+  {
+    "image_copy_failed": "../Images/posts/ergodox_aerial.jpg"
+  },
+  {
+    "image_copy_failed": "../Images/posts/ergodox_connectivity.jpg"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "/resource"
+  },
+  {
+    "image_copy_failed": "http://andreaazzola.com/resource"
+  },
+  {
+    "image_copy_failed": "/images/posts/sennheiser-hd-25-review.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/feed/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/feed/_index.md",
+    "alias": "/feed/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/sennheiser-hd-25-review/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/sennheiser-hd-25-review/index.clean.md",
+    "alias": "/sennheiser-hd-25-review/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/sennheiser-hd-25-review/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/sennheiser-hd-25-review/_index.md",
+    "alias": "/sennheiser-hd-25-review/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/goal-blindness-goalodicy/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/goal-blindness-goalodicy/index.clean.md",
+    "alias": "/goal-blindness-goalodicy/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/goal-blindness-goalodicy/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/goal-blindness-goalodicy/_index.md",
+    "alias": "/goal-blindness-goalodicy/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/aspnet-vnext-mac-os-omnisharp-kulture/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/aspnet-vnext-mac-os-omnisharp-kulture/index.clean.md",
+    "alias": "/aspnet-vnext-mac-os-omnisharp-kulture/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/aspnet-vnext-mac-os-omnisharp-kulture/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/aspnet-vnext-mac-os-omnisharp-kulture/_index.md",
+    "alias": "/aspnet-vnext-mac-os-omnisharp-kulture/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/review-10x-rule-grant-cardone/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/review-10x-rule-grant-cardone/index.clean.md",
+    "alias": "/review-10x-rule-grant-cardone/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/review-10x-rule-grant-cardone/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/review-10x-rule-grant-cardone/_index.md",
+    "alias": "/review-10x-rule-grant-cardone/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/havisi-magic-emi/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/havisi-magic-emi/index.clean.md",
+    "alias": "/havisi-magic-emi/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/havisi-magic-emi/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/havisi-magic-emi/_index.md",
+    "alias": "/havisi-magic-emi/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-september-2010/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-september-2010/index.clean.md",
+    "alias": "/set-september-2010/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-september-2010/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-september-2010/_index.md",
+    "alias": "/set-september-2010/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/downsizing-home-and-earn-time-money/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/downsizing-home-and-earn-time-money/index.clean.md",
+    "alias": "/downsizing-home-and-earn-time-money/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/downsizing-home-and-earn-time-money/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/downsizing-home-and-earn-time-money/_index.md",
+    "alias": "/downsizing-home-and-earn-time-money/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/seo-asp-net-routing/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/seo-asp-net-routing/index.clean.md",
+    "alias": "/seo-asp-net-routing/index.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/seo-asp-net-routing/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/seo-asp-net-routing/_index.md",
+    "alias": "/seo-asp-net-routing/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-june-2010/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-june-2010/index.clean.md",
+    "alias": "/set-june-2010/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-june-2010/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-june-2010/_index.md",
+    "alias": "/set-june-2010/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-november-2009/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-november-2009/index.clean.md",
+    "alias": "/set-november-2009/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-november-2009/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-november-2009/_index.md",
+    "alias": "/set-november-2009/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/what-is-geo-arbitrage/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/what-is-geo-arbitrage/index.clean.md",
+    "alias": "/what-is-geo-arbitrage/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/what-is-geo-arbitrage/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/what-is-geo-arbitrage/_index.md",
+    "alias": "/what-is-geo-arbitrage/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/path-to-financial-independence/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/path-to-financial-independence/index.clean.md",
+    "alias": "/path-to-financial-independence/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/path-to-financial-independence/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/path-to-financial-independence/_index.md",
+    "alias": "/path-to-financial-independence/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-february-2010/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-february-2010/index.clean.md",
+    "alias": "/set-february-2010/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/set-february-2010/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/set-february-2010/_index.md",
+    "alias": "/set-february-2010/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/human-multitasking/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/human-multitasking/index.clean.md",
+    "alias": "/human-multitasking/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/human-multitasking/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/human-multitasking/_index.md",
+    "alias": "/human-multitasking/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/mavensmate-unable-github-windows/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/mavensmate-unable-github-windows/index.clean.md",
+    "alias": "/mavensmate-unable-github-windows/index.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/mavensmate-unable-github-windows/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/mavensmate-unable-github-windows/_index.md",
+    "alias": "/mavensmate-unable-github-windows/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/future-count-apex/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/future-count-apex/index.clean.md",
+    "alias": "/future-count-apex/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/future-count-apex/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/future-count-apex/_index.md",
+    "alias": "/future-count-apex/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/search-email-inbox-csharp/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/search-email-inbox-csharp/index.clean.md",
+    "alias": "/search-email-inbox-csharp/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/search-email-inbox-csharp/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/search-email-inbox-csharp/_index.md",
+    "alias": "/search-email-inbox-csharp/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/using-ajax-modalpopup-targetcontrol/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/using-ajax-modalpopup-targetcontrol/index.clean.md",
+    "alias": "/using-ajax-modalpopup-targetcontrol/index.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/using-ajax-modalpopup-targetcontrol/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/using-ajax-modalpopup-targetcontrol/_index.md",
+    "alias": "/using-ajax-modalpopup-targetcontrol/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/web-service-reference-vs/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/web-service-reference-vs/index.clean.md",
+    "alias": "/web-service-reference-vs/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/web-service-reference-vs/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/web-service-reference-vs/_index.md",
+    "alias": "/web-service-reference-vs/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/login/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/login/index.clean.md",
+    "alias": "/login/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/login/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/login/_index.md",
+    "alias": "/login/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/logging-nlog-sqlite/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/logging-nlog-sqlite/index.clean.md",
+    "alias": "/logging-nlog-sqlite/index.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/logging-nlog-sqlite/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/logging-nlog-sqlite/_index.md",
+    "alias": "/logging-nlog-sqlite/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/salesforce-debug-log-apex/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/salesforce-debug-log-apex/index.clean.md",
+    "alias": "/salesforce-debug-log-apex/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/salesforce-debug-log-apex/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/salesforce-debug-log-apex/_index.md",
+    "alias": "/salesforce-debug-log-apex/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/pomodoro-apps/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/pomodoro-apps/index.clean.md",
+    "alias": "/pomodoro-apps/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/pomodoro-apps/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/pomodoro-apps/_index.md",
+    "alias": "/pomodoro-apps/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/saving-traditional-wet-shaving/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/saving-traditional-wet-shaving/index.clean.md",
+    "alias": "/saving-traditional-wet-shaving/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/saving-traditional-wet-shaving/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/saving-traditional-wet-shaving/_index.md",
+    "alias": "/saving-traditional-wet-shaving/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/multiple-columns-dynamic-data/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/multiple-columns-dynamic-data/index.clean.md",
+    "alias": "/multiple-columns-dynamic-data/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/multiple-columns-dynamic-data/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/multiple-columns-dynamic-data/_index.md",
+    "alias": "/multiple-columns-dynamic-data/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/clean-sp-cache-sql-server/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/clean-sp-cache-sql-server/index.clean.md",
+    "alias": "/clean-sp-cache-sql-server/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/clean-sp-cache-sql-server/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/clean-sp-cache-sql-server/_index.md",
+    "alias": "/clean-sp-cache-sql-server/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/javascript-submit-post-form-data/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/javascript-submit-post-form-data/index.clean.md",
+    "alias": "/it/javascript-submit-post-form-data/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/javascript-submit-post-form-data/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/javascript-submit-post-form-data/_index.md",
+    "alias": "/it/javascript-submit-post-form-data/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/recensione-10x-rule-grant-cardone/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/recensione-10x-rule-grant-cardone/index.clean.md",
+    "alias": "/it/recensione-10x-rule-grant-cardone/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/recensione-10x-rule-grant-cardone/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/recensione-10x-rule-grant-cardone/_index.md",
+    "alias": "/it/recensione-10x-rule-grant-cardone/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/goalodicy-obiettivo-distruttivo/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/goalodicy-obiettivo-distruttivo/index.clean.md",
+    "alias": "/it/goalodicy-obiettivo-distruttivo/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/goalodicy-obiettivo-distruttivo/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/goalodicy-obiettivo-distruttivo/_index.md",
+    "alias": "/it/goalodicy-obiettivo-distruttivo/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/geo-arbitrage/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/geo-arbitrage/index.clean.md",
+    "alias": "/it/geo-arbitrage/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/geo-arbitrage/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/geo-arbitrage/_index.md",
+    "alias": "/it/geo-arbitrage/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/multitasking-umano/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/multitasking-umano/index.clean.md",
+    "alias": "/it/multitasking-umano/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/multitasking-umano/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/multitasking-umano/_index.md",
+    "alias": "/it/multitasking-umano/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/risparmio-rasatura-tradizionale/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/risparmio-rasatura-tradizionale/index.clean.md",
+    "alias": "/it/risparmio-rasatura-tradizionale/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/risparmio-rasatura-tradizionale/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/risparmio-rasatura-tradizionale/_index.md",
+    "alias": "/it/risparmio-rasatura-tradizionale/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/downsizing-ridimensionamento-casa/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/downsizing-ridimensionamento-casa/index.clean.md",
+    "alias": "/it/downsizing-ridimensionamento-casa/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/downsizing-ridimensionamento-casa/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/downsizing-ridimensionamento-casa/_index.md",
+    "alias": "/it/downsizing-ridimensionamento-casa/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/luck-surface-area/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/luck-surface-area/index.clean.md",
+    "alias": "/it/luck-surface-area/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/luck-surface-area/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/luck-surface-area/_index.md",
+    "alias": "/it/luck-surface-area/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/preparazione-pasti-sacchetti-facile-veloce/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/preparazione-pasti-sacchetti-facile-veloce/index.clean.md",
+    "alias": "/it/preparazione-pasti-sacchetti-facile-veloce/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/preparazione-pasti-sacchetti-facile-veloce/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/preparazione-pasti-sacchetti-facile-veloce/_index.md",
+    "alias": "/it/preparazione-pasti-sacchetti-facile-veloce/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/indipendenza-finanziaria-la-strada/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/indipendenza-finanziaria-la-strada/index.clean.md",
+    "alias": "/it/indipendenza-finanziaria-la-strada/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/indipendenza-finanziaria-la-strada/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/indipendenza-finanziaria-la-strada/_index.md",
+    "alias": "/it/indipendenza-finanziaria-la-strada/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/aspnet-vnext-mac-os-omnisharp-kulture/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/aspnet-vnext-mac-os-omnisharp-kulture/index.clean.md",
+    "alias": "/it/aspnet-vnext-mac-os-omnisharp-kulture/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/aspnet-vnext-mac-os-omnisharp-kulture/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/aspnet-vnext-mac-os-omnisharp-kulture/_index.md",
+    "alias": "/it/aspnet-vnext-mac-os-omnisharp-kulture/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/introduzione-personal-branding/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/introduzione-personal-branding/index.clean.md",
+    "alias": "/it/introduzione-personal-branding/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/introduzione-personal-branding/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/introduzione-personal-branding/_index.md",
+    "alias": "/it/introduzione-personal-branding/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/svegliarsi-presto-mattina-come-perche/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/svegliarsi-presto-mattina-come-perche/index.clean.md",
+    "alias": "/it/svegliarsi-presto-mattina-come-perche/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/svegliarsi-presto-mattina-come-perche/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/svegliarsi-presto-mattina-come-perche/_index.md",
+    "alias": "/it/svegliarsi-presto-mattina-come-perche/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/robo-advisor-consulenza-per-investire/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/robo-advisor-consulenza-per-investire/index.clean.md",
+    "alias": "/it/robo-advisor-consulenza-per-investire/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/robo-advisor-consulenza-per-investire/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/robo-advisor-consulenza-per-investire/_index.md",
+    "alias": "/it/robo-advisor-consulenza-per-investire/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/dieta-digiuno-intermittente/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/dieta-digiuno-intermittente/index.clean.md",
+    "alias": "/it/dieta-digiuno-intermittente/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/dieta-digiuno-intermittente/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/dieta-digiuno-intermittente/_index.md",
+    "alias": "/it/dieta-digiuno-intermittente/index.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/logging-nlog-sqlite/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/logging-nlog-sqlite/index.clean.md",
+    "alias": "/it/logging-nlog-sqlite/index.clean.html"
+  },
+  {
+    "image_copy_failed": "../andrea-hugo-starter/static/39cebc4727e83b50df6dc01c90b776912d049d54.jpg"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/it/logging-nlog-sqlite/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/it/logging-nlog-sqlite/_index.md",
+    "alias": "/it/logging-nlog-sqlite/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out/moneyfarm/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out/moneyfarm/index.clean.md",
+    "alias": "/out/moneyfarm/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/out/moneyfarm/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/out/moneyfarm/_index.md",
+    "alias": "/out/moneyfarm/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/extreme-saving/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/extreme-saving/index.clean.md",
+    "alias": "/category/extreme-saving/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/extreme-saving/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/extreme-saving/_index.md",
+    "alias": "/category/extreme-saving/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/decluttering/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/decluttering/index.clean.md",
+    "alias": "/category/decluttering/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/decluttering/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/decluttering/_index.md",
+    "alias": "/category/decluttering/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/big-data/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/big-data/index.clean.md",
+    "alias": "/category/big-data/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/big-data/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/big-data/_index.md",
+    "alias": "/category/big-data/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/entrepreneurship/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/entrepreneurship/index.clean.md",
+    "alias": "/category/entrepreneurship/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/entrepreneurship/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/entrepreneurship/_index.md",
+    "alias": "/category/entrepreneurship/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/geo-arbitrage/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/geo-arbitrage/index.clean.md",
+    "alias": "/category/geo-arbitrage/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/geo-arbitrage/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/geo-arbitrage/_index.md",
+    "alias": "/category/geo-arbitrage/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/diet/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/diet/index.clean.md",
+    "alias": "/category/diet/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/diet/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/diet/_index.md",
+    "alias": "/category/diet/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/goal-setting/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/goal-setting/index.clean.md",
+    "alias": "/category/goal-setting/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/goal-setting/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/goal-setting/_index.md",
+    "alias": "/category/goal-setting/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/books/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/books/index.clean.md",
+    "alias": "/category/books/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/books/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/books/_index.md",
+    "alias": "/category/books/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/financial-independence/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/financial-independence/index.clean.md",
+    "alias": "/category/financial-independence/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/financial-independence/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/financial-independence/_index.md",
+    "alias": "/category/financial-independence/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/meal-prep/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/meal-prep/index.clean.md",
+    "alias": "/category/meal-prep/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/meal-prep/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/meal-prep/_index.md",
+    "alias": "/category/meal-prep/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/personal-development/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/personal-development/index.clean.md",
+    "alias": "/category/personal-development/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/personal-development/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/personal-development/_index.md",
+    "alias": "/category/personal-development/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/finance/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/finance/index.clean.md",
+    "alias": "/category/finance/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/finance/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/finance/_index.md",
+    "alias": "/category/finance/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/fitness/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/fitness/index.clean.md",
+    "alias": "/category/fitness/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/fitness/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/fitness/_index.md",
+    "alias": "/category/fitness/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/goalodicy/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/goalodicy/index.clean.md",
+    "alias": "/category/goalodicy/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/goalodicy/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/goalodicy/_index.md",
+    "alias": "/category/goalodicy/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/nutrition/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/nutrition/index.clean.md",
+    "alias": "/category/nutrition/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/nutrition/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/nutrition/_index.md",
+    "alias": "/category/nutrition/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/seo/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/seo/index.clean.md",
+    "alias": "/category/seo/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/seo/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/seo/_index.md",
+    "alias": "/category/seo/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/gears/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/gears/index.clean.md",
+    "alias": "/category/gears/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/gears/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/gears/_index.md",
+    "alias": "/category/gears/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/ergonomic/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/ergonomic/index.clean.md",
+    "alias": "/category/ergonomic/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/ergonomic/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/ergonomic/_index.md",
+    "alias": "/category/ergonomic/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/personal-branding/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/personal-branding/index.clean.md",
+    "alias": "/category/personal-branding/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/personal-branding/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/personal-branding/_index.md",
+    "alias": "/category/personal-branding/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/decision-fatigue/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/decision-fatigue/index.clean.md",
+    "alias": "/category/decision-fatigue/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/decision-fatigue/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/decision-fatigue/_index.md",
+    "alias": "/category/decision-fatigue/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/time-management/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/time-management/index.clean.md",
+    "alias": "/category/time-management/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/time-management/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/time-management/_index.md",
+    "alias": "/category/time-management/index.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/productivity/index.clean.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/productivity/index.clean.md",
+    "alias": "/category/productivity/index.clean.html"
+  },
+  {
+    "src": "/Users/andrea/Downloads/andrea-site-import/content-import/category/productivity/index.md",
+    "dst": "/Users/andrea/Downloads/andrea-hugo-starter/content/category/productivity/_index.md",
+    "alias": "/category/productivity/index.html"
+  }
+]

@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Andrea Azzola</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Andrea Azzola</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Aug 2025 18:15:45 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Tue, 19 Aug 2025 18:15:45 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;Feel free to reach out for projects, advice, or simply a friendly hello.&lt;/p&gt;
+&lt;form name=&#34;contact&#34; action=&#34;https://formspree.io/f/XXXXXXXX&#34; method=&#34;POST&#34;&gt;
+  &lt;label for=&#34;name&#34;&gt;Name*&lt;/label&gt;
+  &lt;input type=&#34;text&#34; id=&#34;name&#34; name=&#34;name&#34; placeholder=&#34;Your name&#34; autocomplete=&#34;name&#34; required&gt;
+&lt;p&gt;&lt;label for=&#34;email&#34;&gt;Email*&lt;/label&gt;
+&lt;input type=&#34;email&#34; id=&#34;email&#34; name=&#34;_replyto&#34; placeholder=&#34;your@email.com&#34; autocomplete=&#34;email&#34; required&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label for=&#34;subject&#34;&gt;Subject&lt;/label&gt;
+&lt;input type=&#34;text&#34; id=&#34;subject&#34; name=&#34;subject&#34; placeholder=&#34;What is this about?&#34; autocomplete=&#34;off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label for=&#34;message&#34;&gt;Message*&lt;/label&gt;&lt;/p&gt;
+  &lt;textarea id=&#34;message&#34; name=&#34;message&#34; rows=&#34;6&#34; placeholder=&#34;Write your message...&#34; required&gt;&lt;/textarea&gt;
+  &lt;button type=&#34;submit&#34; aria-label=&#34;Send message&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;18&#34; height=&#34;18&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;
+      &lt;path d=&#34;M2.01 21L23 12 2.01 3 2 10l15 2-15 2z&#34;/&gt;
+    &lt;/svg&gt;
+    &lt;span&gt;Send&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/form&gt;
+&lt;div class=&#34;form-status&#34; aria-live=&#34;polite&#34; hidden&gt;&lt;/div&gt;
+&lt;p&gt;Alternatively, you can also reach me on &lt;a href=&#34;https://www.linkedin.com/in/andreaazzola/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;LinkedIn&lt;/a&gt; or &lt;a href=&#34;https://x.com/AndreaAzzola&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;X/Twitter&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Readme</title>
+      <link>http://localhost:1313/readme/</link>
+      <pubDate>Tue, 19 Aug 2025 16:25:18 +0000</pubDate>
+      <guid>http://localhost:1313/readme/</guid>
+      <description>&lt;p&gt;This folder contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;filters/clean.lua&lt;/code&gt; — Pandoc Lua filter to strip attributes, flatten Div/Span, and parse simple Raw HTML.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scripts/clean_post.py&lt;/code&gt; — regex-based second pass to tidy leftovers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;recommended-conversion-pipeline&#34;&gt;Recommended conversion pipeline&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Convert HTML → Markdown with Pandoc &lt;strong&gt;using the Lua filter&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pandoc -f html-native_divs-native_spans -t gfm --wrap&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;preserve --strip-comments &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --lua-filter&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;filters/clean.lua &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  -o out.md in.html
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Optional: run the Python post-processor to remove trivial leftovers:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python scripts/clean_post.py out.md out.cleaned.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Add Hugo front matter at the top of each file and drop into &lt;code&gt;content/&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Risparmiare con la Rasatura Tradizionale</title>
+      <link>http://localhost:1313/it/risparmio-rasatura-tradizionale/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/risparmio-rasatura-tradizionale/</guid>
+      <description>&lt;h1 id=&#34;risparmiare-con-la-rasatura-tradizionale&#34;&gt;Risparmiare con la Rasatura Tradizionale&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2018-04-07 10:02
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Risparmiare con la Rasatura Tradizionale&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Il multilama che possiedo è un Gillette &amp;ldquo;Fusion ProGlide&amp;rdquo;, un rasoio molto efficace, dotato di testina mobile che permette di raggiungere tutte le sporgenze e depressioni del viso velocemente, senza troppi rischi. È dotato di un meccanismo a vibrazione, che lo rende molto confortevole. Ma il costo delle ricariche, non meno di 11 euro per 4 cartucce, non è dei più modesti.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Save Money with Traditional Wet Shaving</title>
+      <link>http://localhost:1313/post/saving-traditional-wet-shaving/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/saving-traditional-wet-shaving/</guid>
+      <description>&lt;p&gt;I own a Gillette “Fusion ProGlide” (&lt;a href=&#34;https://amzn.to/2QK1ot3&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;amazon link&lt;/a&gt;), a very effective multi‑blade razor, equipped with a movable head that allows for reaching all the face’s nooks and crannies quickly, pretty much without risks. It features a vibrating mechanism, which makes it very comfortable. But the cost of cartridges, no less than 11 euros for 4, is not cheap.&lt;/p&gt;
+&lt;p&gt;For some years now I’ve been interested in minimalism, especially from a financial point of view, trying to reason about where money can be spent consciously. There’s no guarantee in the path of the “becoming man” for “shaving orientation”: when the first beard appears, our fathers usually direct us towards the multi‑blade as a practical and rarely dangerous option. With the passing of years it becomes a plateau for many men.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Book Review: The 10X Rule by Grant Cardone</title>
+      <link>http://localhost:1313/post/review-10x-rule-grant-cardone/</link>
+      <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/review-10x-rule-grant-cardone/</guid>
+      <description>&lt;p&gt;Among the bestsellers in the self‑help category on Audible, &lt;strong&gt;The 10X Rule&lt;/strong&gt; is a book about productivity in the business world. It underlines the importance of not limiting goals and of &lt;em&gt;taking 10× higher levels of action&lt;/em&gt; to achieve them, placing success as essential: &lt;em&gt;“if you&amp;rsquo;re not first, you&amp;rsquo;re last.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The author is &lt;strong&gt;Grant Cardone&lt;/strong&gt;, an American entrepreneur. He began his career as a car salesman, later became CEO of Freedom Motorsports Group Inc., and worked on a National Geographic TV series called &lt;em&gt;Turnaround King&lt;/em&gt;, helping small businesses get back on their feet. Author of several books, he now directs &lt;em&gt;Cardone Acquisitions&lt;/em&gt;, &lt;em&gt;Cardone Enterprises&lt;/em&gt; and &lt;em&gt;The Cardone Group&lt;/em&gt;; he has been listed by Forbes among notable marketing influencers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Recensione: The 10X Rule, di Grant Cardone</title>
+      <link>http://localhost:1313/it/recensione-10x-rule-grant-cardone/</link>
+      <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/recensione-10x-rule-grant-cardone/</guid>
+      <description>&lt;h1 id=&#34;recensione-the-10x-rule-di-grant-cardone&#34;&gt;Recensione: The 10X Rule, di Grant Cardone&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-12-04 17:03
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Recensione: The 10X Rule, di Grant Cardone&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Tra i bestseller della categoria self help su Audible.com, &lt;strong&gt;The 10X Rule&lt;/strong&gt; é un libro che tratta di produttivitá contestualizzata al mondo business, sottolinea l&amp;rsquo;importanza di non porre limiti ai propri obiettivi e di dedicare &lt;em&gt;un impegno 10 volte maggiore&lt;/em&gt; per raggiungerli, ponendo il successo come un traguardo imprescindibile &lt;em&gt;&amp;ldquo;If you&amp;rsquo;re not first, you&amp;rsquo;re last&amp;rdquo;&lt;/em&gt;: se non sei il primo, sei l&amp;rsquo;ultimo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Downsizing your Home to Earn Back Time and Money</title>
+      <link>http://localhost:1313/post/downsizing-home-and-earn-time-money/</link>
+      <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/downsizing-home-and-earn-time-money/</guid>
+      <description>&lt;p&gt;Luxury cars, cumbersome ski gear, guest rooms, a very spruced up guest bathroom, the second TV… these are only a few of the ways in which you can demonstrate your own success, the belonging to a ‘better’ social class. Collecting thousands of objects which are losing their value throughout time, possessing some spaces that require a full day of maintenance — &lt;em&gt;a wellbeing which is often misleading.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Downsizing is applied when families own a house that is above their necessities. Nowadays, it is not uncommon to see that, depending on the occasion, families tend to move into larger houses: a significant sale, an unexpected inheritance; in most cases, ‘to expand oneself’ is emotionally satisfying, but rationally speaking, it is less convenient and justifiable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ridimensionare la Casa per Guadagnare Tempo e Denaro</title>
+      <link>http://localhost:1313/it/downsizing-ridimensionamento-casa/</link>
+      <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/downsizing-ridimensionamento-casa/</guid>
+      <description>&lt;h1 id=&#34;ridimensionare-la-casa-per-guadagnare-tempo-e-denaro&#34;&gt;Ridimensionare la Casa per Guadagnare Tempo e Denaro&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-11-02 21:30
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Ridimensionare la Casa per Guadagnare Tempo e Denaro&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;auto di lusso, l&amp;rsquo;ingombrante attrezzatura da sci, la stanza degli ospiti, l&amp;rsquo;agghindatissimo bagno di cortesia, il secondo televisore&amp;hellip; Sono solo alcuni dei modi con é possibile dimostrare il proprio successo, l&amp;rsquo;appartenenza ad un ceto sociale &amp;lsquo;migliore&amp;rsquo;. Collezionare migliaia di oggetti che perdono irrimediabimente valore con il tempo, possedere spazi che richiedono giornate di manutenzione, &lt;em&gt;un benessere spesso illusorio.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Robo-advisors, la Consulenza Automatica ed Efficiente</title>
+      <link>http://localhost:1313/it/robo-advisor-consulenza-per-investire/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/robo-advisor-consulenza-per-investire/</guid>
+      <description>&lt;h1 id=&#34;robo-advisors-la-consulenza-automatica-ed-efficiente&#34;&gt;Robo-advisors, la Consulenza Automatica ed Efficiente&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-10-31 08:51
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Robo-advisors, la Consulenza Automatica ed Efficiente&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;I robo-advisor &lt;strong&gt;sono software capaci di fornire consulenze d&amp;rsquo;investimento&lt;/strong&gt; operando mediante algoritmi di ribilanciamento. Possono &lt;em&gt;limitarsi alla consulenza&lt;/em&gt;, lasciando all&amp;rsquo;investitore l&amp;rsquo;onere e la libertá di gestire l&amp;rsquo;investimento, oppure possono appoggiarsi a conti bancari fino ad automatizzare &lt;em&gt;l&amp;rsquo;intera gestione del portfolio&lt;/em&gt;. Garantiscono la diversificazione del capitale, possono essere alimentati con depositi occasionali e &lt;em&gt;piani di accumulo (PAC)&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Robo-advisors, When Investing Advice Becomes Digital and Efficient</title>
+      <link>http://localhost:1313/post/robo-advisor-digital-portfolio-investing/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/robo-advisor-digital-portfolio-investing/</guid>
+      <description>&lt;h1 id=&#34;robo-advisors-when-investing-advice-becomes-digital-and-efficient&#34;&gt;Robo-advisors, When Investing Advice Becomes Digital and Efficient&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-10-31 08:51
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Robo-advisors, When Investing Advice Becomes Digital and Efficient&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Robot-advisors &lt;strong&gt;are software able to provide investment advices&lt;/strong&gt; by operating through rebalancing algorithms. They can &lt;em&gt;limit themselves to advice&lt;/em&gt;, giving the investor the duty and the freedom to manage the investment; or they can lean on some bank accounts to get &lt;em&gt;the whole portfolio management&lt;/em&gt; automated. They guarantee the capital diversification, and can be fed through random deposits and &lt;em&gt;dollar cost averaging (DCA)&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reads</title>
+      <link>http://localhost:1313/books/</link>
+      <pubDate>Sat, 22 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/books/</guid>
+      <description>&lt;p&gt;A list of what I believe to be the best books ever written, books that had a profound impact on my life. You can &lt;a href=&#34;https://www.goodreads.com/user/show/23362785-andrea-azzola&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;follow me on GoodReads&lt;/a&gt; for more recommendations.&lt;/p&gt;
+&lt;h2 id=&#34;personal-development&#34;&gt;Personal Development&lt;/h2&gt;
+&lt;h3 id=&#34;essentialism-the-disciplined-pursuit-of-less&#34;&gt;Essentialism: The Disciplined Pursuit of Less&lt;/h3&gt;
+&lt;h4 id=&#34;by-greg-mckeown&#34;&gt;by Greg McKeown&lt;/h4&gt;
+&lt;p&gt;The Way of the Essentialist isn&amp;rsquo;t about getting more done in less time. It&amp;rsquo;s about getting only the right things done. It is not a time management strategy, or a productivity technique. It is a systematic discipline for discerning what is absolutely essential, then eliminating everything that is not, so we can make the highest possible contribution towards the things that really matter…
+&lt;a href=&#34;https://www.amazon.com/gp/product/0804137382/ref=as_li_tl?ie=UTF8&amp;amp;tag=aazzola00-20&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;linkCode=as2&amp;amp;creativeASIN=0804137382&amp;amp;linkId=5744615c65c4f446385c87a9d1a762a6&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Get a copy on Amazon&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Preparazione di Pasti in Sacchetti Facile e Veloce</title>
+      <link>http://localhost:1313/it/preparazione-pasti-sacchetti-facile-veloce/</link>
+      <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/preparazione-pasti-sacchetti-facile-veloce/</guid>
+      <description>&lt;h1 id=&#34;preparazione-di-pasti-in-sacchetti-facile-e-veloce&#34;&gt;Preparazione di Pasti in Sacchetti Facile e Veloce&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-10-02 19:53
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Preparazione di Pasti in Sacchetti Facile e Veloce&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Vi sono piú ragioni per la preparazione di pasti in quantitá ed anticipo puó essere tremendamente conveniente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Risparmiare tempo&lt;/strong&gt;: si cucina, si fa la spesa, e si lavano le stoviglie una sola volta&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Controllo della dieta&lt;/strong&gt;: la disponibilitá di pasti &lt;em&gt;strategici&lt;/em&gt; pronti all&amp;rsquo;uso, aiuta a combattere la tentazione del cibo spazzatura&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Risparmiare denaro&lt;/strong&gt;: acquistare in quantitá é conveniente, si risparmia anche in trasporti (da e verso l&amp;rsquo;ipermercato) e detergenti&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In particolare, questo articolo tratta di un metodo di conservazione che aiuta nella preparazione di pasti anche per periodi lunghi mesi, il metodo é concettualmente molto semplice da adottottare ma soprattutto molto pratico.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quick and Easy Meal Prep Pouches</title>
+      <link>http://localhost:1313/post/meal-prep-pouches-quick-easy/</link>
+      <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/meal-prep-pouches-quick-easy/</guid>
+      <description>&lt;h1 id=&#34;quick-and-easy-meal-prep-pouches&#34;&gt;Quick and Easy Meal Prep Pouches&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-10-02 19:53
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Quick and Easy Meal Prep Pouches&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Meal prepping in advance and quantity is beneficial for 3 main reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Save time&lt;/strong&gt;: cooking, shopping and washing dishes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diet control&lt;/strong&gt;: a batch of strategic meals helps fight junk food&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Save money&lt;/strong&gt;: buying in quantity is cheaper, traveling to the supermarket only once is cheaper as well, you save on cleaning materials too&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Specifically, In this article I’ll teach you how to prepare meals for several months using a practical technique that’s very easy to implement.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dieta del Digiuno Intermittente, Cos</title>
+      <link>http://localhost:1313/it/dieta-digiuno-intermittente/</link>
+      <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/dieta-digiuno-intermittente/</guid>
+      <description>&lt;h1 id=&#34;dieta-del-digiuno-intermittente-cos&#34;&gt;Dieta del Digiuno Intermittente, Cos&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-09-06 06:20
+[&amp;lt;a href=&amp;ldquo;&lt;a href=&#34;http://andreaazzola.com/it/dieta-digiuno-intermittente/%22&#34;&gt;http://andreaazzola.com/it/dieta-digiuno-intermittente/&amp;quot;&lt;/a&gt; target=&amp;quot;_self&amp;rdquo; data-é=&amp;quot;&amp;quot; data-e=&amp;quot;&amp;quot; data-come=&amp;quot;&amp;quot; data-funziona&amp;rsquo;=&amp;quot;&amp;quot; title=&amp;ldquo;Permalink to Dieta del Digiuno Intermittente, Cos&amp;rdquo;&amp;gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Ho sempre trovato difficile dimagrire lentamente, purtroppo sono una buona forchetta, ed a volte vedo nel cibo una ricompensa al termine di una giornate stressante, autocontrollarmi una volta addentato il primo boccone mi é difficile mentre per assurdo l&amp;rsquo;astensione dal pasto mi é decisamente piú facile. Non soffro di obesitá, ho sempre praticato sport e da 16 anni pesi in palestra; semplicemente con il pretesto della prova costume alle porte e conscio di qualche chilo di troppo, mi sono impegnato per rimediare.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Intermittent Fasting: Diet and Benefits</title>
+      <link>http://localhost:1313/post/intermittent-fasting-diet-benefits/</link>
+      <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/intermittent-fasting-diet-benefits/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve always found it difficult to lose weight slowly. I&amp;rsquo;m a hearty eater and sometimes see food as a reward at the end of a stressful day. Once I start, self‑control can be hard—but, paradoxically, strict abstention is much easier. I&amp;rsquo;m not obese thanks to regular sport, yet—with the “beach‑body readiness” pretext—I decided to shed a few extra kilos.&lt;/p&gt;
+&lt;h2 id=&#34;the-intermittent-fasting-diet&#34;&gt;The Intermittent Fasting Diet&lt;/h2&gt;
+&lt;p&gt;A few weeks ago I chose to adopt &lt;strong&gt;intermittent fasting&lt;/strong&gt; (IF). I&amp;rsquo;m not new to it: I often eat once a day, so between one meal and the next I wait ~23 hours. The goal is to concentrate meals in a small window: 8 hours or less (down to one meal a day, but not beyond). It can be practiced daily, on alternate days, or only on certain days of the week. The approach emulates natural cycles of abundance and shortage: in nature an adult would likely have one main meal per day with some snacks, not the six balanced meals many diets consider indispensable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Lever Called Geo-Arbitrage</title>
+      <link>http://localhost:1313/post/what-is-geo-arbitrage/</link>
+      <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/what-is-geo-arbitrage/</guid>
+      <description>&lt;h1 id=&#34;a-lever-called-geo-arbitrage&#34;&gt;A Lever Called Geo-Arbitrage&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-06-20 18:18
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to A Lever Called Geo-Arbitrage&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;h2 id=&#34;geo-arbitrage&#34;&gt;Geo-Arbitrage&lt;/h2&gt;
+&lt;p&gt;The geo-arbitrage (geographic arbitration) is the practice of economic-financial speculation based on disparity between geographic locations and different markets. The term was devised by the author Tim Ferris in the bestseller book &lt;a href=&#34;https://www.amazon.com/gp/product/0307465357/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;amp;tag=aazzola00-20&amp;amp;creative=9325&amp;amp;linkCode=as2&amp;amp;creativeASIN=0307465357&amp;amp;linkId=b2415b234e27b70a4d047b1a8d5a63ae&#34; target=&#34;_blank&#34; rel=&#34;nofollow&#34; title=&#34;The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich on Amazon&#34;&gt;The 4-Hour Workweek&lt;/a&gt;. In the following two paragraphs I&amp;rsquo;ll analyze ways in which an individual could benefit from geo-arbitrage.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La Leva Chiamata &amp;quot;Geo Arbitrage&amp;quot;</title>
+      <link>http://localhost:1313/it/geo-arbitrage/</link>
+      <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/geo-arbitrage/</guid>
+      <description>&lt;h1 id=&#34;la-leva-chiamata-geo-arbitrage&#34;&gt;La Leva Chiamata &amp;quot;Geo Arbitrage&amp;quot;&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-06-20 18:18
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to La Leva Chiamata &amp;quot;Geo Arbitrage&amp;quot;&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;h2 id=&#34;il-geo-arbitrage&#34;&gt;Il Geo-Arbitrage&lt;/h2&gt;
+&lt;p&gt;Il geo-arbitrage (arbitraggio geografico) é una pratica di speculazione economico-finanziaria basata sulle disparitá tra locazioni geografiche e mercati differenti. Il termine é stato coniato dall&amp;rsquo;autore Tim Ferris nel libro best seller &lt;a href=&#34;https://www.amazon.com/gp/product/8860521475/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;amp;tag=aazzola00-20&amp;amp;creative=9325&amp;amp;linkCode=as2&amp;amp;creativeASIN=8860521475&amp;amp;linkId=e0ba76ff32ce117f14b69154ac4beeec&#34; target=&#34;_blank&#34; title=&#34;4 ore alla settimana. Ricchi e felici lavorando dieci volte meno su Amazon&#34;&gt;4 ore alla settimana. Ricchi e felici lavorando dieci volte meno&lt;/a&gt;. Analizziamo di seguito due modi in cui un individuo puó beneficiare del geo-arbitrage.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Goalodicy, L</title>
+      <link>http://localhost:1313/it/goalodicy-obiettivo-distruttivo/</link>
+      <pubDate>Sat, 14 May 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/goalodicy-obiettivo-distruttivo/</guid>
+      <description>&lt;h1 id=&#34;goalodicy-l&#34;&gt;Goalodicy, L&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-05-14 09:16
+[&amp;lt;a href=&amp;ldquo;index.html&amp;rdquo; target=&amp;quot;_self&amp;quot; data-obiettivo=&amp;quot;&amp;quot; data-distruttivo&amp;rsquo;=&amp;quot;&amp;quot; title=&amp;ldquo;Permalink to Goalodicy, L&amp;rdquo;&amp;gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;h2 id=&#34;la-goalodicy&#34;&gt;La Goalodicy&lt;/h2&gt;
+&lt;p&gt;La &lt;em&gt;goalodicy&lt;/em&gt; é una condizione tale per cui l&amp;rsquo;ossessione nel perseguire un obiettivo, porta l&amp;rsquo;individuo ad ignorare il proprio contesto. Il termine, coniato dal &lt;a href=&#34;http://business.gwu.edu/profiles/d-christopher-kayes/&#34; target=&#34;_blank&#34; title=&#34;Profilo accademico D. Christopher Kayes&#34;&gt;D. Christopher Kayes&lt;/a&gt; della Washington University, é frutto della fusione delle parole Inglesi &lt;em&gt;goal&lt;/em&gt; (obiettivo) e &lt;em&gt;theodicy&lt;/em&gt;, la cui etimologia indica un&amp;rsquo;origine greca in &amp;ldquo;&lt;em&gt;giustizia divina&lt;/em&gt;&amp;rdquo;. Un&amp;rsquo;altro termine sinonimo é &lt;em&gt;goal blindness&lt;/em&gt;, che possiamo tradurre come &lt;em&gt;cecitá da obiettivo&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Goalodicy Trap</title>
+      <link>http://localhost:1313/post/goal-blindness-goalodicy/</link>
+      <pubDate>Sat, 14 May 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/goal-blindness-goalodicy/</guid>
+      <description>&lt;h2 id=&#34;the-goalodicy&#34;&gt;The Goalodicy&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;goalodicy&lt;/em&gt; is the obsession in pursuing a goal, a compulsion such that the individual often ignores its own context. The term, coined by &lt;a href=&#34;http://business.gwu.edu/profiles/d-christopher-kayes/&#34;&gt;D. Christopher Kayes&lt;/a&gt; of the University of Washington, is a merge of the English words &lt;em&gt;goal&lt;/em&gt; and &lt;em&gt;theodicy&lt;/em&gt;, which etymology suggests a similarity to &amp;ldquo;divine justice&amp;rdquo; in Greek. Another common term for goalodicy is &lt;em&gt;goal-blindness&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-everest-disaster&#34;&gt;The Everest Disaster&lt;/h2&gt;
+&lt;p&gt;In May 1996, 34 climbers departed to the conquest of Mount Everest, the planet’s highest summit. The team was preparing at field IV, 7900 meters of altitude, the last checkpoint before the final goal at 8848 meters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Svegliarsi Presto la Mattina, Come e Perché</title>
+      <link>http://localhost:1313/it/svegliarsi-presto-mattina-come-perche/</link>
+      <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/svegliarsi-presto-mattina-come-perche/</guid>
+      <description>&lt;h1 id=&#34;svegliarsi-presto-la-mattina-come-e-perché&#34;&gt;Svegliarsi Presto la Mattina, Come e Perché&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-03-26 19:31
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Svegliarsi Presto la Mattina, Come e Perché&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Freelance al lavoro di mattina&lt;/p&gt;
+&lt;p&gt;Il semplice svegliarsi presto puó essere una tecnica di produttivitá molto semplice ed efficace. É uno dei migliori approcci che ho scelto di includere nel mio arsenale e quindi ecco la mia esperienza.&lt;/p&gt;
+&lt;h2 id=&#34;attingere-all-forza-di-volontá&#34;&gt;Attingere all Forza di Volontá&lt;/h2&gt;
+&lt;p&gt;Sono le 8, qualcuno direbbe non esattamente presto, ma é Sabato e per me questo é il proverbiale “rimanere a letto”… Normalmente sarei sveglio alle 6, nonostante il mio impiego inizi alle 9. A quest’ora riesco ad affrontare qualcosa per cui normalmente la sera non avrei le energie mentali: scrivere questo post.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Waking Up Early And Getting Things Done</title>
+      <link>http://localhost:1313/post/waking-up-early-get-things-done/</link>
+      <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/waking-up-early-get-things-done/</guid>
+      <description>&lt;h1 id=&#34;waking-up-early-and-getting-things-done&#34;&gt;Waking Up Early And Getting Things Done&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-03-26 19:31
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Waking Up Early And Getting Things Done&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Freelance woman working in the morning in her kitchen&lt;/p&gt;
+&lt;p&gt;The simple wake up early can be a very simple and effective productivity technique. In fact, it is one of the best approaches in my arsenal, explanation follows.&lt;/p&gt;
+&lt;h2 id=&#34;draw-from-willpower&#34;&gt;Draw from Willpower&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s 8 am, some would say not exactly early, but it is saturday and for me this is the proverbial &amp;ldquo;stay in bed&amp;rdquo;… Normally I would wake up at 6 am, despite my job doesn&amp;rsquo;t require my presence before 9 am. At this hour I can deal with something for which normally, in the evening I would not have the mental energy for, like writing this post.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La Strada per l</title>
+      <link>http://localhost:1313/it/indipendenza-finanziaria-la-strada/</link>
+      <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/indipendenza-finanziaria-la-strada/</guid>
+      <description>&lt;h1 id=&#34;la-strada-per-l&#34;&gt;La Strada per l&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-03-20 15:45
+[&amp;lt;a href=&amp;ldquo;index.html&amp;rdquo; target=&amp;quot;_self&amp;quot; data-indipendenza=&amp;quot;&amp;quot; data-finanziaria&amp;rsquo;=&amp;quot;&amp;quot; title=&amp;ldquo;Permalink to La Strada per l&amp;rdquo;&amp;gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Con il termine &lt;em&gt;indipendenza finanziaria&lt;/em&gt; o &lt;em&gt;libertá finanziaria&lt;/em&gt;, si indica generalmente uno stato dell’individuo tale per cui il soddisfacimento delle necessitá primarie non richiede la partecipazione ad un impiego lavorativo. Si é finanziariamente indipendenti quando la differenza tra gli introiti dati dalle rendite—divendi societari, vendita di prodotti, affitti di immobili etc…, é le spese di sostentamento copre i bisogni.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Path to Financial Independence</title>
+      <link>http://localhost:1313/post/path-to-financial-independence/</link>
+      <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/path-to-financial-independence/</guid>
+      <description>&lt;h1 id=&#34;the-path-to-financial-independence&#34;&gt;The Path to Financial Independence&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2016-03-20 15:45
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to The Path to Financial Independence&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Business man jumping into a beach&lt;/p&gt;
+&lt;p&gt;The term &lt;em&gt;financial independence&lt;/em&gt; indicates a state o finances for which the individual can fulfill primary needs without participating in an employment. It is usually achieved when the difference between &lt;em&gt;recurring revenue&lt;/em&gt;—corporate divends, product sales, real estate rentals etc…—and &lt;em&gt;living expenses&lt;/em&gt; satisfies the basic quota for personal sustenance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Get Up And Code Podcast Review</title>
+      <link>http://localhost:1313/post/getupandcode-podcast-review/</link>
+      <pubDate>Sat, 17 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/getupandcode-podcast-review/</guid>
+      <description>&lt;p&gt;&lt;em&gt;I remember one time that I was under a pretty heavy barbell doing chest presses. I was listening to the podcast and the host made a very good joke, I lost my temper, I almost dropped the weight on myself and bursted out laughing in the middle of a otherwise very silent but also very populated gym. Luckily, I kept a bit of self control and saved possibly a few ribs. So be advised, and &lt;strong&gt;listen responsibly ;)&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Il principio della Luck Surface Area</title>
+      <link>http://localhost:1313/it/luck-surface-area/</link>
+      <pubDate>Fri, 26 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/luck-surface-area/</guid>
+      <description>&lt;h1 id=&#34;il-principio-della-luck-surface-area&#34;&gt;Il principio della Luck Surface Area&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-12-26 10:19
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Il principio della Luck Surface Area&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Il principio della &lt;strong&gt;Luck Surface Area&lt;/strong&gt; o &amp;ldquo;Superficie dell&amp;rsquo;Area di Fortuna&amp;rdquo; come vorrebbe la traduzione, accreditato a Jason Roberts, asserisce che incrementi di &lt;em&gt;fortuna&lt;/em&gt; in un dato campo d&amp;rsquo;interesse, sono ottenibili grazie al &lt;em&gt;fare&lt;/em&gt; ed al &lt;em&gt;parlarne&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;la-formula&#34;&gt;La Formula&lt;/h2&gt;
+&lt;p&gt;La ricetta potrebbe non suonare nuova ai piú, é un concetto assimilabile all&amp;rsquo;ABC dei principi di &lt;em&gt;influenza&lt;/em&gt; e &lt;em&gt;advertising&lt;/em&gt; ma quel che lo rende notevole, facile da ricordare e da spiegare, é in questo caso é la semplicitá, ad esempio considerando il caso d&amp;rsquo;uso del &lt;a href=&#34;../../post/personal-branding-introduction.html&#34; target=&#34;_new&#34; title=&#34;Personal Branding, a Brief Introduction&#34;&gt;personal branding&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Luck Surface Area Principle</title>
+      <link>http://localhost:1313/post/luck-surface-area/</link>
+      <pubDate>Fri, 26 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/luck-surface-area/</guid>
+      <description>&lt;h1 id=&#34;the-luck-surface-area-principle&#34;&gt;The Luck Surface Area Principle&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-12-26 10:19
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to The Luck Surface Area Principle&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Luck Surface Area&lt;/strong&gt; principle, credited to Jason Roberts, states that increments of &lt;strong&gt;luck&lt;/strong&gt; in a certain field of interest, can be achieved by &lt;strong&gt;doing&lt;/strong&gt; and &lt;strong&gt;telling&lt;/strong&gt; about it.&lt;/p&gt;
+&lt;h2 id=&#34;the-formula&#34;&gt;The Formula&lt;/h2&gt;
+&lt;p&gt;The recipe may not sound new to many—the concept is ABC for &lt;em&gt;influence&lt;/em&gt; and &lt;em&gt;advertising&lt;/em&gt;—but what I found interesting, is its simplicity, that makes it easy to rememeber and explain, and its applicability to &lt;a href=&#34;../post/personal-branding-introduction.html&#34; target=&#34;_new&#34; title=&#34;Personal Branding, a Brief Introduction&#34;&gt;personal branding&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eseguire ASP.NET vNext su Mac OS con Kulture e Omnisharp</title>
+      <link>http://localhost:1313/it/aspnet-vnext-mac-os-omnisharp-kulture/</link>
+      <pubDate>Sat, 20 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/aspnet-vnext-mac-os-omnisharp-kulture/</guid>
+      <description>&lt;h1 id=&#34;eseguire-aspnet-vnext-su-mac-os-con-kulture-e-omnisharp&#34;&gt;Eseguire ASP.NET vNext su Mac OS con Kulture e Omnisharp&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-12-20 07:15
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Eseguire ASP.NET vNext su Mac OS con Kulture e Omnisharp&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;articolo descrive &lt;strong&gt;come eseguire ASP.NET vNext&lt;/strong&gt; con sistema operativo &lt;em&gt;Mac OS X&lt;/em&gt;. La procedura richiede alcuni passaggi é necessario un pizzico di pazienza, fortunatamente OS X include il software prerequisito &lt;em&gt;Ruby&lt;/em&gt; alla versione 2.0 su Mavericks e Yosemite, 1.8.7 su Mountain Lion, Lion e Snow Leopard.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to run ASP.NET vNext on Mac OS with Kulture and OmniSharp</title>
+      <link>http://localhost:1313/post/aspnet-vnext-mac-os-omnisharp-kulture/</link>
+      <pubDate>Sat, 20 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/aspnet-vnext-mac-os-omnisharp-kulture/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Note: This article was originally written in 2014. ASP.NET vNext and KVM/KRE were early projects that later evolved into .NET Core and the modern .NET SDK. Instructions are kept for historical purposes.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The article will describe &lt;strong&gt;how to run ASP.NET vNext&lt;/strong&gt; on &lt;strong&gt;Mac OS X&lt;/strong&gt;. The process, requires multiple configurations and therefore some patience. Luckily, OS X already includes one of the pre-requirements, &lt;strong&gt;Ruby&lt;/strong&gt;, 2.0 on Mavericks and Yosemite, 1.8.7 on Mountain Lion, Lion, and Snow Leopard.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ErgoDox Split Ergonomic Keyboard Review</title>
+      <link>http://localhost:1313/post/ergodox-ergonomic-keyboard-review/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/ergodox-ergonomic-keyboard-review/</guid>
+      <description>&lt;p&gt;The &lt;strong&gt;ErgoDox&lt;/strong&gt; is a DIY ergonomic keyboard, featuring a &lt;em&gt;split design&lt;/em&gt;—each half, one hand. The two halves are connected with a &lt;em&gt;phone TRRS connector cable&lt;/em&gt;, while the connection to the PC—or Mac or Unix—is obtained through a detachable mini USB.&lt;/p&gt;
+&lt;h2 id=&#34;history&#34;&gt;History&lt;/h2&gt;
+&lt;p&gt;The project &lt;a href=&#34;https://geekhack.org/index.php?topic=22780.0&#34;&gt;has been initiated&lt;/a&gt; by Dominic Beauchamp—aka Dox, from which the keyboard name derives—on the GeekHack.org forum; the design has been largely inspired by the &lt;a href=&#34;http://www.key64.org/&#34;&gt;Key64&lt;/a&gt; project by Nestor Diaz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cos</title>
+      <link>http://localhost:1313/it/introduzione-personal-branding/</link>
+      <pubDate>Sat, 07 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/introduzione-personal-branding/</guid>
+      <description>&lt;h1 id=&#34;cos&#34;&gt;Cos&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-06-07 16:00
+[&amp;lt;a href=&amp;ldquo;&lt;a href=&#34;http://andreaazzola.com/it/introduzione-personal-branding/%22&#34;&gt;http://andreaazzola.com/it/introduzione-personal-branding/&amp;quot;&lt;/a&gt; target=&amp;quot;_self&amp;rdquo; data-è=&amp;quot;&amp;quot; data-il=&amp;quot;&amp;quot; data-personal=&amp;quot;&amp;quot; data-branding&amp;rsquo;=&amp;quot;&amp;quot; title=&amp;ldquo;Permalink to Cos&amp;rdquo;&amp;gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Il personal branding è un ramo del marketing ed in particolare un set di tecniche per gestire la percezione pubblica di una persona. Mi interesso di sviluppo personale ed imprenditoria, e questo articolo discute alcuni principi chiave del personal branding che ho raccolto nel tempo e nella letteratura.&lt;/p&gt;
+&lt;h2 id=&#34;è-sopravvivenza&#34;&gt;È sopravvivenza&lt;/h2&gt;
+&lt;p&gt;Nei tempi moderni non è un mistero che le più grandi aziende al mondo scommettano sulla presenza web. Mentre la stabilità dei contratti di lavoro è continuamente messa a repentaglio dalla competizione globale, dall&amp;rsquo;outsourcing e dall&amp;rsquo;automazione, l&amp;rsquo;informazione la fa da cittadino di prima classe. Gli head hunters… ed i datori di lavoro in generale, trovano spesso tutte le crendenziali di cui hanno bisogno con semplici ricerche internet o raccomandazioni. La velocità di questo cambiamento potrebbe pur sembrare modesta, ma non conosce arresti.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Personal Branding, a Brief Introduction</title>
+      <link>http://localhost:1313/post/personal-branding-introduction/</link>
+      <pubDate>Sat, 07 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/personal-branding-introduction/</guid>
+      <description>&lt;h1 id=&#34;personal-branding-a-brief-introduction&#34;&gt;Personal Branding, a Brief Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-06-07 16:00
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Personal Branding, a Brief Introduction&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Personal branding is a branch of marketing and a set of techniques for &lt;em&gt;nurturing&lt;/em&gt; the public &lt;em&gt;perception of self&lt;/em&gt;. I&amp;rsquo;m a software developer with interest in personal development and entrepreneurship, the article discuss a few key principles I&amp;rsquo;ve learn over time and literature.&lt;/p&gt;
+&lt;h2 id=&#34;its-a-matter-of-survival&#34;&gt;It&amp;rsquo;s a matter of survival&lt;/h2&gt;
+&lt;p&gt;We all live in times when big corporations are in the web, when stability of work contracts is challenged everyday by competition and outsourcing to to the cheapest. Information is a first class citizen, HR departments can conduct pretty much of all of their research through &lt;em&gt;LinkedIn and Google&lt;/em&gt;. Change might be subtle but it&amp;rsquo;s unrelentingly pulling the levers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Filco Majestouch-2 Tenkeyless Ninja Mechanical Keyboard Review</title>
+      <link>http://localhost:1313/post/review-filco-majestouch2-tenkeyless-ninja/</link>
+      <pubDate>Thu, 29 May 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/review-filco-majestouch2-tenkeyless-ninja/</guid>
+      <description>&lt;h1 id=&#34;filco-majestouch-2-tenkeyless-ninja-mechanical-keyboard-review&#34;&gt;Filco Majestouch-2 Tenkeyless Ninja Mechanical Keyboard Review&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-05-29 11:58
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Filco Majestouch-2 Tenkeyless Ninja Mechanical Keyboard Review&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://amzn.to/1NW62IY&#34; target=&#34;_blank&#34; title=&#34;Buy Filco Majestouch-2 on Amazon&#34;&gt;Filco Majestouch-2 Ninja Tenkeyless black&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Filco Majestouch-2 Tenkeyless Ninja&lt;/strong&gt; is a &lt;strong&gt;japanese mechanical keyboard&lt;/strong&gt; that sport semi-blank keys, n-key rollover and it&amp;rsquo;s built like a tank&amp;hellip; plus, &lt;strong&gt;it&amp;rsquo;s ninja&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Here is why I love it and why I think you should do too:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logging con NLog e SQLite</title>
+      <link>http://localhost:1313/it/logging-nlog-sqlite/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/logging-nlog-sqlite/</guid>
+      <description>&lt;h1 id=&#34;logging-con-nlog-e-sqlite&#34;&gt;Logging con NLog e SQLite&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-05-06 14:29
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Logging con NLog e SQLite&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Immagine introduttiva&lt;/p&gt;
+&lt;p&gt;Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all&amp;rsquo;uso di NLog e SQLite, su piattaforma .NET e grazie all&amp;rsquo;uso di poche configurazioni.&lt;/p&gt;
+&lt;h2 id=&#34;nlog&#34;&gt;NLog&lt;/h2&gt;
+&lt;p&gt;NLog é una libreria di logging leggera e gratuita, supporta l&amp;rsquo;ecosistema .NET (Silverlight, Windows Phone etc…): &lt;a href=&#34;http://nlog-project.org/&#34;&gt;http://nlog-project.org/&lt;/a&gt;. Costiusce un&amp;rsquo;opzione eccellente per un ampio range di scenari: dalle semplici utilities create nel quotidiano a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, righe di comando, rete ed email.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logging with NLog and SQLite</title>
+      <link>http://localhost:1313/post/logging-nlog-sqlite/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/logging-nlog-sqlite/</guid>
+      <description>&lt;h1 id=&#34;logging-with-nlog-and-sqlite&#34;&gt;Logging with NLog and SQLite&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-05-06 14:29
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Logging with NLog and SQLite&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Introductory image&lt;/p&gt;
+&lt;p&gt;This article explains how to achieve a portable and elegant &lt;em&gt;logging&lt;/em&gt; solution with NLog and SQLite, the solution targets the .NET platform and only requires a few configurations.&lt;/p&gt;
+&lt;h2 id=&#34;nlog&#34;&gt;NLog&lt;/h2&gt;
+&lt;p&gt;NLog is a free and lightweight logging library, supports .NET, Silverlight and Windows Phone &lt;a href=&#34;http://nlog-project.org/&#34;&gt;http://nlog-project.org/&lt;/a&gt;. It is an excellent option for a wide range of scenarios: from simple day-to-day utilities, to critical production services. It also enables your application to have multiple and diverse targets, both files, databases, output consoles, networks, email and so on are supported.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MavensMate unable to reach GitHub on Windows</title>
+      <link>http://localhost:1313/post/mavensmate-unable-github-windows/</link>
+      <pubDate>Sun, 06 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/mavensmate-unable-github-windows/</guid>
+      <description>&lt;h1 id=&#34;mavensmate-unable-to-reach-github-on-windows&#34;&gt;MavensMate unable to reach GitHub on Windows&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-04-06 09:22
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to MavensMate unable to reach GitHub on Windows&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://mavensmate.com/&#34; target=&#34;_blank&#34; title=&#34;Mavens Mate page&#34;&gt;MavensMate&lt;/a&gt; is a great plugin for the Force.com platform, built on the &lt;a href=&#34;http://www.sublimetext.com/&#34; target=&#34;_blank&#34; title=&#34;Sublime Text page&#34;&gt;Sublime Text IDE&lt;/a&gt;. It is provided by the community (with &lt;a href=&#34;http://www.joe-ferraro.com/&#34; target=&#34;_blank&#34; title=&#34;Joe Ferraro personal website&#34;&gt;Joe Ferraro&lt;/a&gt; as the creator and main contributor) as a free alternative to the well known &lt;a href=&#34;https://wiki.developerforce.com/page/Force.com_IDE&#34; target=&#34;_blank&#34; title=&#34;Force.com IDE official page&#34;&gt;Force.com IDE&lt;/a&gt; shipped by &lt;em&gt;Salesforce.com&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A few handy Pomodoro Timer Apps for Mac and Windows</title>
+      <link>http://localhost:1313/post/pomodoro-apps/</link>
+      <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/pomodoro-apps/</guid>
+      <description>&lt;h1 id=&#34;a-few-handy-pomodoro-timer-apps-for-mac-and-windows&#34;&gt;A few handy Pomodoro Timer Apps for Mac and Windows&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-03-27 15:29
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to A few handy Pomodoro Timer Apps for Mac and Windows&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;It is same to assume, that if you landed on this page, you already know about the &lt;strong&gt;&lt;a href=&#34;http://pomodorotechnique.com/&#34; target=&#34;_blank&#34; title=&#34;The Pomodoro technique official website&#34;&gt;Pomodo Technique&lt;/a&gt;&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Work &lt;u&gt;25 minutes&lt;/u&gt; on a well defined activity, no distraction allowed&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rest &lt;u&gt;5 minutes&lt;/u&gt;, or &lt;u&gt;15 minutes after 4 pomos&lt;/u&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Start over&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let&amp;rsquo;s make just a short recap of the key benefits:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Search Email Inbox with C#</title>
+      <link>http://localhost:1313/post/search-email-inbox-csharp/</link>
+      <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/search-email-inbox-csharp/</guid>
+      <description>&lt;h1 id=&#34;search-email-inbox-with-c&#34;&gt;Search Email Inbox with C#&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-03-27 17:23
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Search Email Inbox with C#&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;A few years ago I helped managing a &lt;a href=&#34;http://magmaglobalgroove.com&#34; target=&#34;_blank&#34; title=&#34;Visit MaGmA Global Radio&#34;&gt;radio&lt;/a&gt; and I needed a tool—an &lt;em&gt;ASP.NET&lt;/em&gt; web page—for the periodical download of promo mixes. They were linked in some emails recognizable by a few keywords.&lt;/p&gt;
+&lt;p&gt;The following, is the stripped down &lt;strong&gt;C# snippet&lt;/strong&gt; from the tool, it demonostrate how to perform both the &lt;em&gt;search inside the email&amp;rsquo;s subject and body&lt;/em&gt;, and the download, with the use of the &lt;strong&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol&#34; target=&#34;_blank&#34; title=&#34;IMAP on wikipedia&#34;&gt;IMAP&lt;/a&gt;&lt;/strong&gt; protocol:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Humans and Multitasking</title>
+      <link>http://localhost:1313/post/human-multitasking/</link>
+      <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/human-multitasking/</guid>
+      <description>&lt;h1 id=&#34;humans-and-multitasking&#34;&gt;Humans and Multitasking&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-01-30 21:22
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Humans and Multitasking&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;h2 id=&#34;multitasking&#34;&gt;Multitasking&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://it.wikipedia.org/wiki/Multitasking&#34; target=&#34;_blank&#34;&gt;Multitasking&lt;/a&gt; means the capability of executing multiple tasks concurrently. The &lt;em&gt;multitasking&lt;/em&gt; concept find its origins in the computer industry. Nowadays consumer computers, phones, tablets are perfectly capable of running multiple logics in the same time window, they&amp;rsquo;ve become so good at this that some company are already focusing toward the next big step, &lt;a href=&#34;http://en.wikipedia.org/wiki/Anticipation_(artificial_intelligence)&#34; target=&#34;_blank&#34;&gt;anticipatory computing&lt;/a&gt; (eg: Google Now). Assisted &lt;em&gt;multitasking&lt;/em&gt; brings huge benefits in terms of productivity, some computations can be anticipated and so them results, which is a huge win for everyone. But other than devices, can, our brain, multitask? The answer is apparently, &lt;em&gt;no&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Il Multitasking, Una Tecnica di Improduttivitá?</title>
+      <link>http://localhost:1313/it/multitasking-umano/</link>
+      <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/multitasking-umano/</guid>
+      <description>&lt;h1 id=&#34;il-multitasking-una-tecnica-di-improduttivitá&#34;&gt;Il Multitasking, Una Tecnica di Improduttivitá?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2014-01-30 21:22
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Il Multitasking, Una Tecnica di Improduttivitá?&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;h2 id=&#34;il-multitasking&#34;&gt;Il Multitasking&lt;/h2&gt;
+&lt;p&gt;Il &lt;a href=&#34;http://it.wikipedia.org/wiki/Multitasking&#34; target=&#34;_blank&#34;&gt;multitasking&lt;/a&gt; é la capacitá di eseguire piú attivitá contemporaneamente. Il concetto ha origine nell&amp;rsquo;industria dei computer; i PC, i telefoni ed i tablet ne sono già perfettemente capaci, gli algoritmi nascono oramai per anticipare i bisogni e le attivitá—l&amp;rsquo; &lt;a href=&#34;http://en.wikipedia.org/wiki/Anticipation_(artificial_intelligence)&#34; target=&#34;_blank&#34;&gt;anticipatory computing&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;Il multitasking apporta evidenti in termini di produttivitá e spesso noi umani andiamo orgogliosi di questa capacitá. Ma puó il nostro cervello, fare del multitasking, come inteso dalla definizione? La risposta a quanto pare, è &lt;em&gt;no&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Manage and format Dates with JavaScript</title>
+      <link>http://localhost:1313/post/javascript-date-handling-format/</link>
+      <pubDate>Thu, 14 Nov 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/javascript-date-handling-format/</guid>
+      <description>&lt;h1 id=&#34;manage-and-format-dates-with-javascript&#34;&gt;Manage and format Dates with JavaScript&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2013-11-14 11:39
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Manage and format Dates with JavaScript&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;JavaScript has a &lt;strong&gt;&lt;em&gt;Date&lt;/em&gt; object&lt;/strong&gt; wich you can use to handle dates. Supported &lt;em&gt;constructors&lt;/em&gt; are:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;new Date() // with current date and time
+new Date(numeric) // by adding N milliseconds to the Unix epoch time (1970-01-01T00:00:00Z)
+new Date(year, month, day, hour, minute, second, millisecond)
+new Date(year, month, day) // the time part will equal &amp;quot;00:00.000&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are some built-in methods that can be used to extract or set dateparts:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ichigo, an ASP.NET Blogging Engine</title>
+      <link>http://localhost:1313/post/ichigo-asp-net-blogging-engine/</link>
+      <pubDate>Tue, 12 Nov 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/ichigo-asp-net-blogging-engine/</guid>
+      <description>&lt;h1 id=&#34;ichigo-an-aspnet-blogging-engine&#34;&gt;Ichigo, an ASP.NET Blogging Engine&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2013-11-12 19:34
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Ichigo, an ASP.NET Blogging Engine&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;With this post, I intend to leave a trace of the specs of this &lt;em&gt;blog&lt;/em&gt;, I&amp;rsquo;ve started this project in 2008 and never publicy mentioned it.&lt;/p&gt;
+&lt;p&gt;Codename is &lt;em&gt;Ichigo&lt;/em&gt;, named after &lt;a href=&#34;http://en.wikipedia.org/wiki/Ichigo_Kurosaki&#34; target=&#34;_blank&#34; title=&#34;Kurosaki Ichigo Wikipedia page&#34;&gt;&lt;em&gt;Kurosaki Ichigo&lt;/em&gt;&lt;/a&gt; which is the main character for the popular manga serie *&lt;a href=&#34;http://en.wikipedia.org/wiki/Bleach_(manga)&#34; target=&#34;_blank&#34; title=&#34;Bleach (Manga) Wikipedia page&#34;&gt;Bleach&lt;/a&gt; *by Mr. Tite Kubo. There&amp;rsquo;s no particular reason for the reference, I just like the manga.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automate SVN/Git Backups of Entire Salesforce.com Organizations</title>
+      <link>http://localhost:1313/post/salesforce-backup-organization-svn-git/</link>
+      <pubDate>Thu, 17 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/salesforce-backup-organization-svn-git/</guid>
+      <description>&lt;h1 id=&#34;automate-svngit-backups-of-entire-salesforcecom-organizations&#34;&gt;Automate SVN/Git Backups of Entire Salesforce.com Organizations&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2013-10-17 10:36
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Automate SVN/Git Backups of Entire Salesforce.com Organizations&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;The following solution involves two popolar SCM (SVN and Git), an always-on server (I use &lt;em&gt;Windows&lt;/em&gt;, you may want to opt for the cloud) and a few free tools. You will need the &lt;em&gt;Force.com Migration Tool&lt;/em&gt;, &lt;em&gt;Apache Ant&lt;/em&gt;, and &lt;em&gt;Java JDK&lt;/em&gt;. Start by setting things up with the following checklist:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Get Size of Tables with SQL Server</title>
+      <link>http://localhost:1313/post/table-size-space-sql-server/</link>
+      <pubDate>Wed, 16 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/table-size-space-sql-server/</guid>
+      <description>&lt;h1 id=&#34;get-size-of-tables-with-sql-server&#34;&gt;Get Size of Tables with SQL Server&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2013-10-16 11:07
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Get Size of Tables with SQL Server&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;A snippet for getting the size for all tables in a &lt;em&gt;SQL Server&lt;/em&gt; database that might prove useful for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Get a better understanding where most of your data is going&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find database bottlenecks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Free up disk space&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reducing maintenance cost&lt;/p&gt;
+&lt;p&gt;WITH table_space_usage (schema_name, table_name, used, reserved, ind_rows, tbl_rows)
+AS (SELECT s.Name, o.Name, p.used_page_count * 8, p.reserved_page_count * 8, p.row_count,
+CASE WHEN i.index_id in ( 0, 1 ) THEN p.row_count ELSE 0 END
+FROM sys.dm_db_partition_stats p
+INNER JOIN sys.objects as o ON o.object_id = p.object_id
+INNER JOIN sys.schemas as s ON s.schema_id = o.schema_id
+LEFT OUTER JOIN sys.indexes as i on i.object_id = p.object_id
+and i.index_id = p.index_id
+WHERE o.type_desc = &amp;lsquo;USER_TABLE&amp;rsquo; and o.is_ms_shipped = 0
+)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dealing with Salesforce Maximum Debug Log Size</title>
+      <link>http://localhost:1313/post/salesforce-debug-log-apex/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/salesforce-debug-log-apex/</guid>
+      <description>&lt;h1 id=&#34;dealing-with-salesforce-maximum-debug-log-size&#34;&gt;Dealing with Salesforce Maximum Debug Log Size&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2013-07-18 11:02
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Dealing with Salesforce Maximum Debug Log Size&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;When working with &lt;em&gt;Apex code&lt;/em&gt; which iterates a lot, you may need to deal with a truncated &lt;em&gt;log&lt;/em&gt;, the error looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MAXIMUM DEBUG LOG SIZE REACHED&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;At time of writing, the maximum allowed sized for a &lt;em&gt;debug log&lt;/em&gt; is 2 megabytes.&lt;/p&gt;
+&lt;p&gt;The default &lt;em&gt;monitoring level&lt;/em&gt; for &lt;em&gt;Apex code&lt;/em&gt; in fact include a lot of clutter that most of the time you won&amp;rsquo;t need (like METHOD_ENTRY, METHOD_EXIT), and by common practice, you should put a &lt;em&gt;log filter&lt;/em&gt; on the &lt;em&gt;monitored user&lt;/em&gt;, or the &lt;em&gt;classes&lt;/em&gt; involved in the transaction by putting and &lt;em&gt;override flag&lt;/em&gt; on them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Remix Out! Magic Emi by Havisi</title>
+      <link>http://localhost:1313/post/havisi-magic-emi/</link>
+      <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/havisi-magic-emi/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m happy to announce that &lt;strong&gt;Magic Emi by Havisi&lt;/strong&gt; is now available on Beatport, including my remix (&lt;em&gt;Icaro&lt;/em&gt;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Title:&lt;/strong&gt; &lt;em&gt;Magic Emi&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Artist:&lt;/strong&gt; &lt;em&gt;Havisi&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Remixes:&lt;/strong&gt; &lt;a href=&#34;http://soundcloud.com/nanni-1&#34;&gt;Nanni&lt;/a&gt;{target=&amp;quot;_blank&amp;quot;}, &lt;a href=&#34;http://www.myspace.com/soundsimo&#34;&gt;Simone Barbieri Viale&lt;/a&gt;{target=&amp;quot;_blank&amp;quot;}, &lt;a href=&#34;http://icaro.dj&#34;&gt;Icaro&lt;/a&gt;{target=&amp;quot;_blank&amp;quot;}&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Released by:&lt;/strong&gt; &lt;em&gt;Mile End Records&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Release/catalogue number:&lt;/strong&gt; MILE170&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Release date:&lt;/strong&gt; Feb 21, 2012&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;preview&#34;&gt;Preview&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;(Audio preview or embed was here in the original post)&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Future Count with Apex Code</title>
+      <link>http://localhost:1313/post/future-count-apex/</link>
+      <pubDate>Thu, 14 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/future-count-apex/</guid>
+      <description>&lt;p&gt;A simple snippet for counting &lt;code&gt;@future&lt;/code&gt; calls in a 24‑hour timespan, useful for monitoring peaks and acting accordingly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please note&lt;/strong&gt;: supports up to 50,000 future calls in a 24h timespan.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-apex&#34; data-lang=&#34;apex&#34;&gt;public with sharing class AsyncApexJobUtils {
+    public static integer futureCount() {
+        integer c = [select count() from AsyncApexJob
+            where JobType=&amp;#39;Future&amp;#39;
+            and CreatedDate &amp;gt;= :Datetime.now().addDays(-1) limit 50000];
+        system.debug(&amp;#39;#futureCount: &amp;#39; + c);
+        return c;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Simulating a RequiredFieldValidator when using a RadComboBox</title>
+      <link>http://localhost:1313/post/requiredfieldvalidator-radcombobox/</link>
+      <pubDate>Fri, 22 Oct 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/requiredfieldvalidator-radcombobox/</guid>
+      <description>&lt;h1 id=&#34;simulating-a-requiredfieldvalidator-when-using-a-radcombobox&#34;&gt;Simulating a RequiredFieldValidator when using a RadComboBox&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-10-22 13:44
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Simulating a RequiredFieldValidator when using a RadComboBox&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Telerik&amp;rsquo;s &lt;a href=&#34;http://www.telerik.com/products/aspnet-ajax/combobox.aspx&#34; target=&#34;_blank&#34;&gt;RadComboBox&lt;/a&gt; does not behave like a traditional &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.dropdownlist.aspx&#34; target=&#34;_blank&#34;&gt;DropDownList&lt;/a&gt;. You may consider to use a &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.customvalidator.aspx&#34; target=&#34;_blank&#34;&gt;CustomValidator&lt;/a&gt; instead, here is the code:&lt;/p&gt;
+&lt;h2 id=&#34;step-1-markup&#34;&gt;Step 1: Markup&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;asp:Label ID=&amp;quot;lblExample&amp;quot; runat=&amp;quot;server&amp;quot; AssociatedControlID=&amp;quot;rcbExample&amp;quot;
+    Text=&amp;quot;Example&amp;quot; /&amp;gt;
+&amp;lt;telerik:RadComboBox ID=&amp;quot;rcbExample&amp;quot; runat=&amp;quot;server&amp;quot; /&amp;gt;
+&amp;lt;asp:CustomValidator ID=&amp;quot;cvlExample&amp;quot; runat=&amp;quot;server&amp;quot; ControlToValidate=&amp;quot;rcbExample&amp;quot;
+    Text=&amp;quot;*&amp;quot; ClientValidationFunction=&amp;quot;cvlExampleValidate&amp;quot;
+    OnServerValidate=&amp;quot;cvlExample_ServerValidate&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;step-2-client-side-validation&#34;&gt;Step 2: Client-side validation:&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;function cvlExampleValidate(source, args) {
+    args.IsValid = radComboValidate(&amp;quot;&amp;lt;%= rcbExample.ClientID %&amp;gt;&amp;quot;);
+}
+
+function radComboValidate(controlName) {
+    var combo = $find(controlName);
+    var text = combo.get_text();
+
+    if (text.length &amp;lt; 1)
+        return false;
+    else {
+        var node = combo.findItemByText(text);
+        if (node) {
+            var value = node.get_value();
+
+            if (value.length &amp;gt; 0)
+                return true;
+        }
+        else
+            return false;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;step-3-server-side-valitation&#34;&gt;Step 3: Server-side valitation:&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;protected void cvlStatus_ServerValidate(object source, ServerValidateEventArgs args)
+{
+    args.IsValid = rcbStatus.SelectedValue.Length &amp;gt; 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Categories:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Turn Sentences into Slugs with JavaScript</title>
+      <link>http://localhost:1313/post/transform-sentence-slug-js/</link>
+      <pubDate>Wed, 20 Oct 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/transform-sentence-slug-js/</guid>
+      <description>&lt;h1 id=&#34;turn-sentences-into-slugs-with-javascript&#34;&gt;Turn Sentences into Slugs with JavaScript&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-10-20 15:56
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Turn Sentences into Slugs with JavaScript&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;The script allows you to turn a &lt;em&gt;text string&lt;/em&gt; into a proper &lt;a href=&#34;http://en.wikipedia.org/wiki/Slug_%28web_publishing%29&#34; target=&#34;_blank&#34; title=&#34;Definition of URL slug&#34;&gt;URL slug&lt;/a&gt;. It&amp;rsquo;s a mix of both &lt;a href=&#34;http://jquery.com&#34; target=&#34;_blank&#34;&gt;jQuery&lt;/a&gt; and standard &lt;a href=&#34;http://andreaazzola.com/category/javascript&#34; target=&#34;_blank&#34; title=&#34;JavaScript posts&#34;&gt;JavaScript&lt;/a&gt;, thought it can be easily turned into pure JS.  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// Handles typing
+$(document).ready(function () {
+    // If the Title is specified, avoids overwrite
+    if ($(&#39;controlId&#39;).val().length == 0) {
+        $(&#39;controlId&#39;).keypress(function () {
+            $(&#39;controlId&#39;).val(slugify($(&#39;controlId&#39;).val().toLowerCase()));
+        });
+    }
+});
+
+// Replacements
+function slugify(text) {
+    text = text.replace(/[^-a-zA-Z0-9,&amp;amp;\s]+/ig, &#39;&#39;);
+    text = text.replace(/-/gi, &amp;quot;_&amp;quot;);
+    text = text.replace(/\s/gi, &amp;quot;-&amp;quot;);
+    return text;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Categories:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Remix Out! Hannibal Invasion by NaNni</title>
+      <link>http://localhost:1313/post/remix-nanni-hannibal-invasion/</link>
+      <pubDate>Sat, 16 Oct 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/remix-nanni-hannibal-invasion/</guid>
+      <description>&lt;h1 id=&#34;new-remix-out-hannibal-invasion-by-nanni&#34;&gt;New Remix Out! Hannibal Invasion by NaNni&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-10-16 11:14
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to New Remix Out! Hannibal Invasion by NaNni&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m happy to announce that &lt;strong&gt;Hannibal Invasion by NaNni&lt;/strong&gt; is now available on Beatport, including my remix (Icaro)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Title: &lt;em&gt;Hannibal Invasion&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Artist: &lt;a href=&#34;https://www.facebook.com/Nannimusic&#34; target=&#34;_blank&#34; title=&#34;NanNi Facebook page&#34;&gt;NaNni&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remixes: &lt;a href=&#34;https://soundcloud.com/francoisleroy&#34; target=&#34;_blank&#34; title=&#34;Francois Le Roy&amp;#39;s SoundCloud&#34;&gt;Francois Le Roy&lt;/a&gt;, &lt;a href=&#34;http://icaro.dj/&#34; target=&#34;_blank&#34; title=&#34;Icaro official website&#34;&gt;Icaro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Released by: &lt;a href=&#34;https://www.facebook.com/labelcoderecordsofficialpage&#34; target=&#34;_blank&#34;&gt;Label Code Records&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release/catalogue number: LC22&lt;/li&gt;
+&lt;li&gt;Release date: Oct 13, 2010&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;preview&#34;&gt;Preview&lt;/h2&gt;
+&lt;p&gt;Categories:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New DJ Set! September 2010 for MaGmA Radio Sho</title>
+      <link>http://localhost:1313/post/set-september-2010/</link>
+      <pubDate>Sat, 04 Sep 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/set-september-2010/</guid>
+      <description>&lt;h1 id=&#34;new-dj-set-september-2010-for-magma-radio-sho&#34;&gt;New DJ Set! September 2010 for MaGmA Radio Sho&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-09-04 08:00
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to New DJ Set! September 2010 for MaGmA Radio Sho&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my DJ set aired in September 2010 for the &lt;a href=&#34;http://www.magmaglobalgroove.com&#34; target=&#34;_blank&#34; title=&#34;MaGmA Official Website&#34;&gt;MaGmA Radio Show&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.mixcloud.com/icaro/september-2010-magma/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=resource_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;September 2010 - MaGmA&lt;/a&gt; by &lt;a href=&#34;http://www.mixcloud.com/icaro/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=profile_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Icaro&lt;/a&gt; on &lt;a href=&#34;http://www.mixcloud.com/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=homepage_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Mixcloud&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tracklist&#34;&gt;Tracklist&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Niala&amp;rsquo;kil - World Office (NK 2010 Edit) [Big Mama&amp;rsquo;s House Records]&lt;/li&gt;
+&lt;li&gt;Davide Squillace - Cubism [Desolat]&lt;/li&gt;
+&lt;li&gt;Loco Dice - Definition [Desolat]&lt;/li&gt;
+&lt;li&gt;DJ Vibe, Carlos Fauvrelle, Alan T - Hot Room feat. Alan T (Oscar G Tropicasa Mix) [Stereo Productions]&lt;/li&gt;
+&lt;li&gt;Pablo Cahn - Elle [Cadenza]&lt;/li&gt;
+&lt;li&gt;Nick Curly - Aymara [8bit]&lt;/li&gt;
+&lt;li&gt;Robyn - Hang With Me (Kaiserdisco Remix) [Konichiwa Records]&lt;/li&gt;
+&lt;li&gt;Santos, Alex Dolby - No Walls (Maher Daniel Remix) [Bedrock Records]&lt;/li&gt;
+&lt;li&gt;Forty Fingerz - Wizard [Receive Records]&lt;/li&gt;
+&lt;li&gt;Marshall - Just Believe [303Lovers]&lt;/li&gt;
+&lt;li&gt;Monika Kruse - Wavedancer (Pig &amp;amp; Dan Remix) [Ministry Of Sound]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;contacts&#34;&gt;Contacts&lt;/h2&gt;
+&lt;p&gt;Info &amp;amp; Remix enquires: icaro [at] icaro.dj
+Booking: icaro [at] icaro.dj&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New DJ Set! June 2010 for the MaGmA Radio Sho</title>
+      <link>http://localhost:1313/post/set-june-2010/</link>
+      <pubDate>Mon, 14 Jun 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/set-june-2010/</guid>
+      <description>&lt;h1 id=&#34;new-dj-set-june-2010-for-the-magma-radio-sho&#34;&gt;New DJ Set! June 2010 for the MaGmA Radio Sho&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-06-14 02:02
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to New DJ Set! June 2010 for the MaGmA Radio Sho&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my DJ set aired in June 2010 on the &lt;a href=&#34;http://www.magmaglobalgroove.com&#34; target=&#34;_blank&#34; title=&#34;MaGmA Official Website&#34;&gt;MaGmA Radio Show&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.mixcloud.com/icaro/june-2010-magma/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=resource_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;June 2010 - MaGmA&lt;/a&gt; by &lt;a href=&#34;http://www.mixcloud.com/icaro/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=profile_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Icaro&lt;/a&gt; on &lt;a href=&#34;http://www.mixcloud.com/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=homepage_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Mixcloud&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tracklist&#34;&gt;Tracklist&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Ben Watt, Stimming, Julia Biel - Bright Star [Buzzin&amp;rsquo; Fly Records]&lt;/li&gt;
+&lt;li&gt;Pleasurekraft - Tarantula [Eklektisch]&lt;/li&gt;
+&lt;li&gt;Findling, Lihab - Stay Down [Kindish]&lt;/li&gt;
+&lt;li&gt;Filthy Rich - Deeper (Original Club Mix) [Toolroom]&lt;/li&gt;
+&lt;li&gt;SKJG Project - Tenerife Y La Gomera [Cr2 Records]&lt;/li&gt;
+&lt;li&gt;Anil Chawla - Do It [Great Stuff Recordings]&lt;/li&gt;
+&lt;li&gt;Flavio Diaz, Kaiserdisco - Jaune [Drumcode]&lt;/li&gt;
+&lt;li&gt;Afrojack, Bobby Burns - Ghettoblaster [Tiger Records]&lt;/li&gt;
+&lt;li&gt;Disco Trek - Cuemba (Slicerboys Remix) [Whitepromo]&lt;/li&gt;
+&lt;li&gt;Kaskade, Haley - Dynasty feat. Haley (Dada Life) [Ultra]&lt;/li&gt;
+&lt;li&gt;Aaren San - Apes From Space (Dirtyloud Remix) [Aelaektropopp]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;contacts&#34;&gt;Contacts&lt;/h2&gt;
+&lt;p&gt;Info &amp;amp; Remix enquires: icaro [at] icaro.dj
+Booking: icaro [at] icaro.dj&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Import Web service References in .NET</title>
+      <link>http://localhost:1313/post/web-service-reference-vs/</link>
+      <pubDate>Wed, 09 Jun 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/web-service-reference-vs/</guid>
+      <description>&lt;h1 id=&#34;import-web-service-references-in-net&#34;&gt;Import Web service References in .NET&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-06-09 13:13
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Import Web service References in .NET&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;WARNING: the content of this post has been flagged as &amp;ldquo;out of date&amp;rdquo; by the author&lt;/p&gt;
+&lt;p&gt;You may need to consume &lt;a href=&#34;http://en.wikipedia.org/wiki/Web_service&#34; target=&#34;_blank&#34;&gt;Web services&lt;/a&gt; from  client applications. &lt;a href=&#34;http://msdn.microsoft.com/en-us/vstudio/default.aspx&#34; target=&#34;_blank&#34;&gt;Visual Studio&lt;/a&gt; provides tools for generating proxy classes, which in this case, however, may be ineffective.&lt;/p&gt;
+&lt;h2 id=&#34;the-wsdlexe-tool&#34;&gt;The wsdl.exe tool&lt;/h2&gt;
+&lt;p&gt;You can use the &lt;a href=&#34;http://en.wikipedia.org/wiki/Cmd&#34; target=&#34;_blank&#34;&gt;command prompt&lt;/a&gt; tool &lt;em&gt;wsdl.exe&lt;/em&gt; included within the &lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;amp;FamilyID=fe6f2099-b7b4-4f47-a244-c96d69c35dec&#34; id=&#34;jnk9&#34; target=&#34;_blank&#34; title=&#34;NET Framework 2.0 SDK&#34;&gt;NET Framework 2.0 SDK&lt;/a&gt;. This tool accepts the path to a &lt;a href=&#34;http://en.wikipedia.org/wiki/Web_Services_Description_Language&#34; target=&#34;_blank&#34;&gt;WSDL&lt;/a&gt; file and generates the proxy class automatically.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>April 2010 - MaGmA Radio Show</title>
+      <link>http://localhost:1313/post/set-april-2010/</link>
+      <pubDate>Thu, 27 May 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/set-april-2010/</guid>
+      <description>&lt;h1 id=&#34;april-2010---magma-radio-show&#34;&gt;April 2010 - MaGmA Radio Show&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-05-27 17:48
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to April 2010 - MaGmA Radio Show&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my DJ set aired in April 2010 on the &lt;a href=&#34;http://www.magmaglobalgroove.com&#34; target=&#34;_blank&#34; title=&#34;MaGmA Official Website&#34;&gt;MaGmA Radio Show&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.mixcloud.com/icaro/april-2010-magma/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=resource_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;April 2010 - MaGmA&lt;/a&gt; by &lt;a href=&#34;http://www.mixcloud.com/icaro/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=profile_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Icaro&lt;/a&gt; on &lt;a href=&#34;http://www.mixcloud.com/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=homepage_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Mixcloud&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tracklist&#34;&gt;Tracklist&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Steed Lord - You (Keinekemusik Remix) [Get Physical Music]&lt;/li&gt;
+&lt;li&gt;Kaiserdisco - Amalfino [MBF]&lt;/li&gt;
+&lt;li&gt;Jay Lumen, Umek - Sinful Ladies [Great Stuff Recordings]&lt;/li&gt;
+&lt;li&gt;Kaiserdisco - Aguja [MBF]&lt;/li&gt;
+&lt;li&gt;Meat Katie - Lucia (Flavio Diaz Remix) [LOT49]&lt;/li&gt;
+&lt;li&gt;Lissat, Voltaxx - 8 Days In Kazantip (Federico Milani Remix) [303Lovers]&lt;/li&gt;
+&lt;li&gt;Duca - Home [Tribal Vision Records]&lt;/li&gt;
+&lt;li&gt;A. Mochi - Whiplash [Figure]&lt;/li&gt;
+&lt;li&gt;Alex Di Stefano - Something Is Moving [Mantide Records]&lt;/li&gt;
+&lt;li&gt;Meck, Dino - Feels Like A Prayer (Michael Woods Remix) [Toolroom Records]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;contacts&#34;&gt;Contacts&lt;/h2&gt;
+&lt;p&gt;Info &amp;amp; Remix enquires: icaro [at] icaro.dj
+Booking: icaro [at] icaro.dj&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to log HTTP requests with PHP</title>
+      <link>http://localhost:1313/post/log-http-requests/</link>
+      <pubDate>Thu, 27 May 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/log-http-requests/</guid>
+      <description>&lt;h1 id=&#34;how-to-log-http-requests-with-php&#34;&gt;How to log HTTP requests with PHP&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-05-27 18:11
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to How to log HTTP requests with PHP&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;Sometimes you need to understand &lt;strong&gt;precisely&lt;/strong&gt; how the &lt;a href=&#34;http://en.wikipedia.org/wiki/Http#Client_request&#34; target=&#34;_blank&#34; title=&#34;See what HTTP request means on WikiPedia&#34;&gt;HTTP request&lt;/a&gt; is submitted to the &lt;strong&gt;server&lt;/strong&gt;. If you&amp;rsquo;re working with &lt;a href=&#34;http://www.salesforce.com&#34; title=&#34;Go to Salesforce.com&#34;&gt;Salesforce.com&lt;/a&gt;, you probably don&amp;rsquo;t have easy or intuitive tools to understand how a message is &lt;strong&gt;serialized&lt;/strong&gt; and sent by the runtime to the &lt;strong&gt;server&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New DJ Set! February 2010 for the MaGmA Radio Show</title>
+      <link>http://localhost:1313/post/set-february-2010/</link>
+      <pubDate>Sun, 07 Feb 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/set-february-2010/</guid>
+      <description>&lt;h1 id=&#34;new-dj-set-february-2010-for-the-magma-radio-show&#34;&gt;New DJ Set! February 2010 for the MaGmA Radio Show&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-02-07 18:44
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to New DJ Set! February 2010 for the MaGmA Radio Show&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my DJ set aired in February 2010 on the &lt;a href=&#34;http://www.magmaglobalgroove.com&#34; target=&#34;_blank&#34; title=&#34;MaGmA Official Website&#34;&gt;MaGmA Radio Show&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.mixcloud.com/icaro/february-2010-magma/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=resource_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;February 2010 - MaGmA&lt;/a&gt; by &lt;a href=&#34;http://www.mixcloud.com/icaro/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=profile_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Icaro&lt;/a&gt; on &lt;a href=&#34;http://www.mixcloud.com/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=homepage_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Mixcloud&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tracklist&#34;&gt;Tracklist&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Jakiro - Caveman [eVapour8]&lt;/li&gt;
+&lt;li&gt;Moonbeam - Tiger [Traum]&lt;/li&gt;
+&lt;li&gt;Lila D. - Wet (The Midnight Perverts Remix) [Dialtone Records]&lt;/li&gt;
+&lt;li&gt;[a]pendics.shuffle &amp;amp; Dilo - Vaquero [Trapez]&lt;/li&gt;
+&lt;li&gt;FLOW Superstars - Special Stuff (Ian F Remix) [Hell Yeah]&lt;/li&gt;
+&lt;li&gt;James Kameran &amp;amp; Joe Smilovitch - Time [Amazone13]&lt;/li&gt;
+&lt;li&gt;4D - Amped [4DigitalAudio]&lt;/li&gt;
+&lt;li&gt;Denis A - Heroine [DAR]&lt;/li&gt;
+&lt;li&gt;Peter Horrevorts – Bloody Hands [Gem Records]&lt;/li&gt;
+&lt;li&gt;Perfect Stranger - Prata da Casa (Ritkam &amp;amp; Bansi Remix) [Flow Vinyl]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Categories:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Improve ASP.NET SEO by using System.Web.Routing</title>
+      <link>http://localhost:1313/post/seo-asp-net-routing/</link>
+      <pubDate>Mon, 18 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/seo-asp-net-routing/</guid>
+      <description>&lt;h1 id=&#34;improve-aspnet-seo-by-using-systemwebrouting&#34;&gt;Improve ASP.NET SEO by using System.Web.Routing&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2010-01-18 20:57
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Improve ASP.NET SEO by using System.Web.Routing&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;This page is specific to Microsoft Visual Studio 2008/.NET Framework 3.5 or higher&lt;/p&gt;
+&lt;h2 id=&#34;seo-and-aspnet&#34;&gt;SEO and ASP.NET&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;As an &lt;a href=&#34;http://en.wikipedia.org/wiki/Internet_marketing&#34; title=&#34;Internet marketing&#34;&gt;Internet marketing&lt;/a&gt; strategy, SEO considers how search engines work and what people search for. Optimizing a website primarily involves editing its content and &lt;a href=&#34;http://en.wikipedia.org/wiki/HTML&#34; title=&#34;HTML&#34;&gt;HTML&lt;/a&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Web_crawler&#34; title=&#34;Web crawler&#34;&gt;indexing activities&lt;/a&gt; of search engines.&lt;/em&gt;&amp;rdquo; [source: &lt;a href=&#34;http://en.wikipedia.org/wiki/Search_engine_optimization&#34; id=&#34;d5rp&#34; title=&#34;wikipedia.org&#34;&gt;wikipedia.org&lt;/a&gt;]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Asus EeePC 1201HA Review</title>
+      <link>http://localhost:1313/post/asus-eeepc-1201ha/</link>
+      <pubDate>Sat, 09 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/asus-eeepc-1201ha/</guid>
+      <description>&lt;h2 id=&#34;first-look&#34;&gt;First Look&lt;/h2&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/asus-eeepc-1201ha-front.jpeg&#34;/&gt; &lt;figcaption&gt;
+            Asus EeePC 1201HA - Front view
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The EeePC 1201HA is part of a new generation of larger netbooks, not just in terms of size but also hardware.&lt;/p&gt;
+&lt;p&gt;It comes with Windows 7 (in some cases XP), provides opportunities for overclocking, can play movies in HD (decently up to 720p) with no trouble, has 2GB of RAM (&lt;em&gt;IMHO very valuable&lt;/em&gt;), 250GB of hard disk (+500 online, free for the first year), isolated keys, very light, autonomy is good: 7/8 hours in standard office applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New DJ Set! November 2009 for the MaGmA Radio Show</title>
+      <link>http://localhost:1313/post/set-november-2009/</link>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/set-november-2009/</guid>
+      <description>&lt;h1 id=&#34;new-dj-set-november-2009-for-the-magma-radio-show&#34;&gt;New DJ Set! November 2009 for the MaGmA Radio Show&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2009-12-22 12:59
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to New DJ Set! November 2009 for the MaGmA Radio Show&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my DJ set aired in November 2009 on the &lt;a href=&#34;http://www.magmaglobalgroove.com&#34; target=&#34;_blank&#34; title=&#34;MaGmA Official Website&#34;&gt;MaGmA Radio Show&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.mixcloud.com/icaro/november-2009-magma/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=resource_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;November 2009 - MaGmA&lt;/a&gt; by &lt;a href=&#34;http://www.mixcloud.com/icaro/?utm_source=widget&amp;amp;amp;utm_medium=web&amp;amp;amp;utm_campaign=base_links&amp;amp;amp;utm_term=profile_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Icaro&lt;/a&gt; on &lt;a href=&#34;http://www.mixcloud.com/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=homepage_link&#34; target=&#34;_blank&#34; style=&#34;color:#808080; font-weight:bold;&#34;&gt;Mixcloud&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tracklist&#34;&gt;Tracklist&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;SLOK - Freak [Circle Music]&lt;/li&gt;
+&lt;li&gt;Kriminal - Soon [Nutempo Records]&lt;/li&gt;
+&lt;li&gt;Daniele Papini - Junk Dancer [Mija]&lt;/li&gt;
+&lt;li&gt;Umek - S Cream (Peter Taster Remix) [Hell Yeah]&lt;/li&gt;
+&lt;li&gt;Mikas - Elipse (Manuel De La Mare Remix) [Progressive Grooves]&lt;/li&gt;
+&lt;li&gt;Manuel De La Mare - The Holy Cow [303Lovers]&lt;/li&gt;
+&lt;li&gt;Alan Fitzpatrick - Static [Drumcode]&lt;/li&gt;
+&lt;li&gt;Lissat &amp;amp; Voltaxx - The Music And Me (Manuel De La Mare Remix) [Leaders Of The New School]&lt;/li&gt;
+&lt;li&gt;Dave Seaman &amp;amp; Josh Grabriel - Heyaah (Francis Preve Remix) [Different Pieces]&lt;/li&gt;
+&lt;li&gt;Marshall, Charlie, Peter - CPM 02 [303Lovers]&lt;/li&gt;
+&lt;li&gt;Speca, Roman, Gertz - Happy Time (Tomy Declerque Remix) [Speca Records]&lt;/li&gt;
+&lt;li&gt;Sean Quinn - Rentless (Steve Ward Remix) [Drum Ride Recordings]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Categories:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Remix Out! Mosquito by Francois Le Roy</title>
+      <link>http://localhost:1313/post/remix-francois-le-roy-mosquito/</link>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/remix-francois-le-roy-mosquito/</guid>
+      <description>&lt;h1 id=&#34;new-remix-out-mosquito-by-francois-le-roy&#34;&gt;New Remix Out! Mosquito by Francois Le Roy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2009-12-22 13:30
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to New Remix Out! Mosquito by Francois Le Roy&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Twerok Records is proud to present a new artist for the label, Francois Le Roy and his new single &amp;ldquo;Mosquito&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Title: &lt;em&gt;Mosquito&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Artist: &lt;a href=&#34;https://soundcloud.com/francoisleroy&#34; target=&#34;_blank&#34; title=&#34;Francois Le Roy soundcloud&#34;&gt;&lt;strong&gt;Francois Le Roy&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Label: &lt;a href=&#34;http://www.twerok.se/&#34; target=&#34;_blank&#34; title=&#34;Twerok official website&#34;&gt;&lt;em&gt;Twerok Records&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;preview&#34;&gt;Preview&lt;/h2&gt;
+&lt;p&gt;The preview is available on &lt;a href=&#34;http://www.junodownload.com/artists/Francois+Le+Roy/releases/&#34; target=&#34;_blank&#34;&gt;Juno Download&lt;/a&gt;. Including my remix (Icaro), check it out:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Call async methods with C#</title>
+      <link>http://localhost:1313/post/call-async-method/</link>
+      <pubDate>Thu, 15 Oct 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/call-async-method/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Note: This article was originally written in 2009 and may be obsolete due to C# technology improvements.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This article shows how to delegate work to an asynchronous thread in C#, allowing for code execution and app responsiveness. You might go a step further by implementing error notifications, polling, or waiting for the procedure to complete at a certain point.&lt;/p&gt;
+&lt;p&gt;Suppose you have the following method:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cs&#34; data-lang=&#34;cs&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; UploadFile(&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; path)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;//... uploads some file to the server&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt;(Exception ex)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;// ... handle errors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And you are implementing it as a web service: you are asked to give an immediate response and upload the file &lt;em&gt;asynchronously&lt;/em&gt;, as the user won&amp;rsquo;t need the upload immediately.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>POST data with JavaScript</title>
+      <link>http://localhost:1313/post/post-data-js/</link>
+      <pubDate>Tue, 07 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/post-data-js/</guid>
+      <description>&lt;h1 id=&#34;post-data-with-javascript&#34;&gt;POST data with JavaScript&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2009-07-07 12:07
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to POST data with JavaScript&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The &lt;a href=&#34;http://www.w3.org/TR/html401/&#34; target=&#34;_blank&#34; title=&#34;HTML 4.0 specifications by W3C reccomendation&#34;&gt;HTML 4.0 specs&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the method is &amp;ldquo;get&amp;rdquo; - -, the user agent takes the value of action, appends a ? to it, then appends the form data set, encoded using the application/x-www-form-urlencoded content type. The user agent then traverses the link to this URI. In this scenario, form data are restricted to ASCII codes.&lt;/li&gt;
+&lt;li&gt;If the method is &amp;ldquo;post&amp;rdquo; &amp;ndash;, the user agent conducts an HTTP post transaction using the value of the action attribute and a message created according to the content type specified by the enctype attribute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;What are the benefits of performing POSTs via JavaScript?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Submit di un Form tramite POST JavaScript</title>
+      <link>http://localhost:1313/it/javascript-submit-post-form-data/</link>
+      <pubDate>Tue, 07 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/javascript-submit-post-form-data/</guid>
+      <description>&lt;h1 id=&#34;submit-di-un-form-tramite-post-javascript&#34;&gt;Submit di un Form tramite POST JavaScript&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2009-07-07 12:07
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Submit di un Form tramite POST JavaScript&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Secondo le specifiche &lt;a href=&#34;http://www.w3.org/TR/html401/&#34; target=&#34;_blank&#34; title=&#34;HTML 4.0 specifications by W3C reccomendation&#34;&gt;HTML 4.0&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Se il metodo é &amp;ldquo;GET&amp;rdquo;, lo user agent prende il valore dell&amp;rsquo;azione, vi concatena un &amp;lsquo;?&amp;rsquo; ed il data set del form, mediante il content-type &lt;em&gt;application/x-www-form-urlencoded&lt;/em&gt;. Quindi lo user agent inoltra la richiesta includendo questo URI. In questo modalitá, i dati del form sono vincolati a codici ASCII.&lt;/li&gt;
+&lt;li&gt;Se il metodo é &amp;ldquo;POST&amp;rdquo;, lo user agent effettua un submit HTTP POST utilizzando il valore dell&amp;rsquo;&lt;em&gt;action&lt;/em&gt; e un messaggio creato in accordo con il content type specificato nell&amp;rsquo;attributo &lt;em&gt;enctype&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;quali-sono-i-vantaggi-dei-post-javascript&#34;&gt;Quali sono i vantaggi dei POST JavaScript?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Effettuare redirect diversi all&amp;rsquo;action&lt;/li&gt;
+&lt;li&gt;Veicolare dati senza refresh di UI per l&amp;rsquo;end user&lt;/li&gt;
+&lt;li&gt;Evitare l&amp;rsquo;abuso di query string e &amp;lsquo;bellificare&amp;rsquo; gli URL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;effettuare-un-submit-post&#34;&gt;Effettuare un submit POST&lt;/h2&gt;
+&lt;p&gt;Copia-incolla il seguente codice nella sezione &lt;a href=&#34;https://it.wikipedia.org/wiki/Elemento_HTML&#34; target=&#34;_blank&#34; title=&#34;Sezione HEAD su Wikipedia&#34;&gt;HEAD&lt;/a&gt; della pagina &lt;a href=&#34;http://it.wikipedia.org/wiki/Html&#34; target=&#34;_blank&#34; title=&#34;HTML on Wikipedia&#34;&gt;HTML&lt;/a&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sennheiser HD 25-II headphones review</title>
+      <link>http://localhost:1313/post/sennheiser-hd-25-review/</link>
+      <pubDate>Fri, 12 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/sennheiser-hd-25-review/</guid>
+      <description>&lt;h1 id=&#34;sennheiser-hd-25-ii-headphones-review&#34;&gt;Sennheiser HD 25-II headphones review&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2009-06-12 09:25
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Sennheiser HD 25-II headphones review&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;h2 id=&#34;what-you-get&#34;&gt;What you get&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Headphones&lt;/li&gt;
+&lt;li&gt;Bag&lt;/li&gt;
+&lt;li&gt;Replacement ear pads&lt;/li&gt;
+&lt;li&gt;Adapter to 6.3 mm stereo jack plug&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;my-impressions&#34;&gt;My impressions&lt;/h2&gt;
+&lt;p&gt;I first heard about this model from a professional producer a while ago. Although Sennheiser is one of the most renowned headphone manifacturers, competition was high and so the offer. Since I was a beginner I took the advice. Lots of years have passed since then, and they&amp;rsquo;re still one of the best DJ/producer headphone you can get. Mine doesn&amp;rsquo;t have a single scratch, although they had a pretty &amp;lsquo;intense&amp;rsquo; life.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript Auto-collapsing Notification Panel</title>
+      <link>http://localhost:1313/post/js-notification-panel-gmail/</link>
+      <pubDate>Fri, 29 May 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/js-notification-panel-gmail/</guid>
+      <description>&lt;h1 id=&#34;javascript-auto-collapsing-notification-panel&#34;&gt;JavaScript Auto-collapsing Notification Panel&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2009-05-29 16:33
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to JavaScript Auto-collapsing Notification Panel&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;In almost all web applications comes the moment when it becomes necessary to show some notifications to the user. Fairly widespread practice even when elegance was unimportant and web pages didn&amp;rsquo;t show great dynamic qualities, was the use of the method &lt;em&gt;alert()&lt;/em&gt; from JavaScript.&lt;/p&gt;
+&lt;p&gt;Nowadays, the practice of interacting with the &lt;a href=&#34;http://en.wikipedia.org/wiki/Document_Object_Model&#34; target=&#34;_blank&#34; title=&#34;Document Object Model&#34;&gt;DOM&lt;/a&gt; is a widespread, so you&amp;rsquo;d be able to write some functions in a more elegant, advanced and enjoyable way for the user.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Get and Set Radio Controls Checked Value with JavaScript</title>
+      <link>http://localhost:1313/post/get-radio-checked-js/</link>
+      <pubDate>Fri, 20 Mar 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/get-radio-checked-js/</guid>
+      <description>&lt;p&gt;Suppose you have the following &lt;strong&gt;radio&lt;/strong&gt; controls:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Book&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;asp&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checked&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&amp;gt;ASP .NET&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;input&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Book&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wcf&amp;#34;&lt;/span&gt;&amp;gt;Windows Presentation Foundation&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;input&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Book&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;slg&amp;#34;&lt;/span&gt;&amp;gt;Silverlight 2.0&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;input&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;How do you get the selected value via JavaScript?&lt;/strong&gt;&lt;br&gt;
+As you can see in the example, radio controls are declared with a &lt;strong&gt;name&lt;/strong&gt; attribute (not an &lt;strong&gt;id&lt;/strong&gt;). The browser treats each radio input as a different element, but the common &lt;code&gt;name&lt;/code&gt; value groups them logically.&lt;/p&gt;
+&lt;h2 id=&#34;the-getelementsbyname-method&#34;&gt;The &lt;code&gt;getElementsByName&lt;/code&gt; Method&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-71555259&#34;&gt;W3C Documentation&lt;/a&gt; — This method allows you to obtain a collection of controls from the &lt;a href=&#34;http://en.wikipedia.org/wiki/Document_Object_Model&#34;&gt;DOM&lt;/a&gt; by specifying the common &lt;strong&gt;name&lt;/strong&gt; value.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clean Up Stored Procedures Cache with SQL Server</title>
+      <link>http://localhost:1313/post/clean-sp-cache-sql-server/</link>
+      <pubDate>Fri, 06 Mar 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/clean-sp-cache-sql-server/</guid>
+      <description>&lt;p&gt;When deploying a stored procedure, cleaning up the database&amp;rsquo;s cache can help apply changes immediately. Have a look at the following code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- Cleans up db&amp;#39;s cache
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DECLARE&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;dbID INTEGER
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;dbID &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; dbid &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; master.dbo.sysdatabases &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;DBNameHere&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DBCC FLUSHPROCINDB (&lt;span style=&#34;color:#f92672&#34;&gt;@&lt;/span&gt;dbID)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/cc297250.aspx&#34;&gt;DBCC FLUSHPROCINDB&lt;/a&gt; command allows specifying a particular database id, and then clears all the plans from it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Handle Multiple Columns as One with Dynamic Data</title>
+      <link>http://localhost:1313/post/multiple-columns-dynamic-data/</link>
+      <pubDate>Sun, 02 Nov 2008 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/multiple-columns-dynamic-data/</guid>
+      <description>&lt;h1 id=&#34;handle-multiple-columns-as-one-with-dynamic-data&#34;&gt;Handle Multiple Columns as One with Dynamic Data&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2008-11-02 15:50
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Handle Multiple Columns as One with Dynamic Data&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;I need to schedule some tasks with ASP .NET and save a &amp;ldquo;Start date&amp;rdquo; and an &amp;ldquo;Interval&amp;rdquo;, stored respectively as date (&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.datetime.aspx&#34; target=&#34;_blank&#34;&gt;DateTime&lt;/a&gt;) and long (&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.datetime.aspx&#34; target=&#34;_blank&#34;&gt;TimeSpan.Ticks&lt;/a&gt;) in my database.&lt;/p&gt;
+&lt;p&gt;Editing ticks values is not exactly what I define good UX, so I binded the proper &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.datetime.aspx&#34; target=&#34;_blank&#34;&gt;MetaColumn&lt;/a&gt;, to the proper &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.dynamicdata.metacolumn.uihint.aspx&#34; target=&#34;_blank&#34;&gt;UIHint&lt;/a&gt;. After a few tests, I noticed how my GUI was - working, but not easy to understand as I was expecting.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Allow the Upload of Large Files with ASP.NET</title>
+      <link>http://localhost:1313/post/upload-large-files-asp-net/</link>
+      <pubDate>Tue, 24 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/upload-large-files-asp-net/</guid>
+      <description>&lt;h1 id=&#34;allow-the-upload-of-large-files-with-aspnet&#34;&gt;Allow the Upload of Large Files with ASP.NET&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2008-06-24 14:30
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Allow the Upload of Large Files with ASP.NET&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;I found &lt;a href=&#34;http://www.codeproject.com/KB/aspnet/uploadlargefilesaspnet.aspx&#34; target=&#34;_blank&#34; title=&#34;Setting up Web.config to allow uploading of large files by ASP.net&#34;&gt;this post&lt;/a&gt; while googling a bit&amp;hellip; and I&amp;rsquo;m reporting the just the essentials, for further reference.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;configuration&amp;gt;
+  ...
+
+  &amp;lt;system.web&amp;gt;
+  ...
+    &amp;lt;httpRuntime
+      executionTimeout=&amp;quot;240&amp;quot;
+      maxRequestLength=&amp;quot;16384&amp;quot;
+      useFullyQualifiedRedirectUrl=&amp;quot;false&amp;quot;
+      minFreeThreads=&amp;quot;8&amp;quot;
+      minLocalRequestFreeThreads=&amp;quot;4&amp;quot;
+      appRequestQueueLimit=&amp;quot;100&amp;quot;
+      enableVersionHeader=&amp;quot;true&amp;quot; /&amp;gt;
+  &amp;lt;system.web&amp;gt;
+&amp;lt;/configuration&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will allow for the upload of a 16mb content.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Check the MetaModel Existence while Running a Dynamic Data Application</title>
+      <link>http://localhost:1313/post/check-metamodel-existence-dynamic-data-application/</link>
+      <pubDate>Wed, 18 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/check-metamodel-existence-dynamic-data-application/</guid>
+      <description>&lt;p&gt;In the web application that I&amp;rsquo;m developing using Dynamic Data, I set the DataContext at runtime. The application might bind different contexts depending on many variables. I usually test it on two different browsers, and, because of the session, I need to pass the same procedure twice. The second time, the DataContext is already set, so I don&amp;rsquo;t need to register the context anymore. The simple condition I use:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cs&#34; data-lang=&#34;cs&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (System.Web.DynamicData.MetaModel.Default == &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Register context and routes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Otherwise I would get this exception:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Set the ConnectionString at Runtime with DynamicData</title>
+      <link>http://localhost:1313/post/set-connectionstring-runtime-dynamicdata/</link>
+      <pubDate>Mon, 16 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/set-connectionstring-runtime-dynamicdata/</guid>
+      <description>&lt;h1 id=&#34;set-the-connectionstring-at-runtime-with-dynamicdata&#34;&gt;Set the ConnectionString at Runtime with DynamicData&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2008-06-16 11:20
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Set the ConnectionString at Runtime with DynamicData&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;The following snippet customizes the .NET ConnectionString property at runtime in a Dynamic Data application.&lt;/p&gt;
+&lt;p&gt;Edit the file &lt;strong&gt;Global.asax&lt;/strong&gt; and modify the &lt;strong&gt;RegisterRoutes(RouteCollection routes)&lt;/strong&gt; method. Instead of the following statement:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cs&#34; data-lang=&#34;cs&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model.RegisterContext(&lt;span style=&#34;color:#66d9ef&#34;&gt;typeof&lt;/span&gt;(XYZDataContext), &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ContextConfiguration() { ScaffoldAllTables = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Use&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cs&#34; data-lang=&#34;cs&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model.RegisterContext
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    () =&amp;gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; XYZDataContext(connectionString),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ContextConfiguration() { ScaffoldAllTables = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Where &lt;em&gt;connectionString&lt;/em&gt; is your string value. The &lt;strong&gt;RegisterRoutes&lt;/strong&gt;&amp;rsquo;s parameter collection can be customized without comprimosing the application functionality.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Consuming .NET Webservices Using PHP and NuSoap</title>
+      <link>http://localhost:1313/post/consuming-net-web-services-using-php-nusoap/</link>
+      <pubDate>Tue, 23 Oct 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/consuming-net-web-services-using-php-nusoap/</guid>
+      <description>&lt;p&gt;In my scenario a .NET webservice offers particular encrypting capabilities. I need to consume the webservice with PHP by sending my plain string to get an encrypted one in return. The .NET webservice is working properly. I found the &lt;a href=&#34;http://sourceforge.net/projects/nusoap/&#34;&gt;NuSoap&lt;/a&gt; library, and adopted it.&lt;/p&gt;
+&lt;p&gt;Here the inclusion:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;require_once&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;lib/nusoap.php&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And here the code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// requires web service&amp;#39;s specifications aka wsdl
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// $parameters:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// requires following the array &amp;#39;notation&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// array(&amp;#39;parameters&amp;#39; =&amp;gt; (array(&amp;#39;text&amp;#39; =&amp;gt; &amp;#39;Hello World!!!&amp;#39;)));
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// that equals to Hello World!!!
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// $proxy (-&amp;gt;host, -&amp;gt;port, -&amp;gt;username, -&amp;gt;password)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// optional, uses a proxy server
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;consume_webservice&lt;/span&gt;($wsdl, $method, $parameters, $debug &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;, $proxy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($proxy &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;host&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;port&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;username&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    $client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;soapclient&lt;/span&gt;($wsdl, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;, $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;host&lt;/span&gt;, $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;port&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;username&lt;/span&gt;, $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    $err &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getError&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($err)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Constructor error&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; $err;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    $result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;call&lt;/span&gt;($method, $parameters);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// check for a fault
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fault&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Fault&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;print_r&lt;/span&gt;($result);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;// check for errors
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        $err &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getError&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($err)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Error&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; $err;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($debug)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Request&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;htmlspecialchars&lt;/span&gt;($client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;request&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ENT_QUOTES&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Response&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;htmlspecialchars&lt;/span&gt;($client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ENT_QUOTES&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Debug&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;htmlspecialchars&lt;/span&gt;($client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;debug_str&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ENT_QUOTES&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; $result;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This approach works only with &lt;a href=&#34;http://en.wikipedia.org/wiki/SOAP&#34;&gt;SOAP&lt;/a&gt; webservices. Please note that .NET web services include all response content into a &amp;ldquo;&lt;em&gt;parameters&lt;/em&gt;&amp;rdquo; section by design.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using an ajax:ModalPopup Without a TargetControl</title>
+      <link>http://localhost:1313/post/using-ajax-modalpopup-targetcontrol/</link>
+      <pubDate>Tue, 25 Sep 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/using-ajax-modalpopup-targetcontrol/</guid>
+      <description>&lt;h1 id=&#34;using-an-ajaxmodalpopup-without-a-targetcontrol&#34;&gt;Using an ajax:ModalPopup Without a TargetControl&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2007-09-25 09:41
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Using an ajax:ModalPopup Without a TargetControl&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;The ModalPopup extender requires a control for firing up, that can be set through the &lt;em&gt;TargetControlID&lt;/em&gt; property. However, sometimes you may want to show and hide the panel programmatically. All you need, is a fake activator like following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;the-extender&#34;&gt;The Extender&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;ajax:ModalPopupExtender&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ID=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mpeInfo&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;runat=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;server&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TargetControlID=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; divFakeActivator &amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;PopupControlID=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pnlInfo&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CancelControlID=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bttInfoClose&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;the-panel&#34;&gt;The Panel&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;asp:Panel&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ID=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pnlInfo&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;runat=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;server&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hello World!!!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/asp:Panel&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;the-c-code&#34;&gt;The C# code&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;// C#
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mpeInfo.Show();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mpeInfo.Hide();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Categories:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Issues With AJAX and a Custom HttpModule</title>
+      <link>http://localhost:1313/post/issues-ajax-custom-httpmodule/</link>
+      <pubDate>Sat, 18 Jun 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/issues-ajax-custom-httpmodule/</guid>
+      <description>&lt;h1 id=&#34;issues-with-ajax-and-a-custom-httpmodule&#34;&gt;Issues With AJAX and a Custom HttpModule&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../index.html&#34; title=&#34;Back to the Home Page&#34;&gt;Andrea Azzola&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Posted on
+2005-06-18 17:32
+[&lt;a href=&#34;index.html&#34; target=&#34;_self&#34; title=&#34;Permalink to Issues With AJAX and a Custom HttpModule&#34;&gt;Permalink&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;My web app needs to catch every non-existent path as a search string, because I&amp;rsquo;m implementing an HttpModule that handle URLs in a SEO friendly way:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  http://contoso.com/search-string
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But the AJAX script module (a.k.a. &amp;ldquo;ScriptModule&amp;rdquo;) decides to quit on me. So I add the following module:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,125 @@
+:root { --_radius: var(--radius, 8px); }
+
+form[name="contact"] { max-width: 720px; }
+
+form[name="contact"] label {
+  display: block;
+  margin: 1rem 0 .35rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+form[name="contact"] input[type="text"],
+form[name="contact"] input[type="email"],
+form[name="contact"] input[type="url"],
+form[name="contact"] input[type="tel"],
+form[name="contact"] select,
+form[name="contact"] textarea {
+  width: 100%;
+  background: var(--entry);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: var(--_radius);
+  padding: .75rem 1rem;
+  box-sizing: border-box;
+}
+
+form[name="contact"] input::placeholder,
+form[name="contact"] textarea::placeholder {
+  color: var(--secondary);
+  opacity: .9;
+}
+
+form[name="contact"] input:focus,
+form[name="contact"] textarea:focus,
+form[name="contact"] select:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+form[name="contact"] button[type="submit"] {
+  margin-top: 1rem;
+  border: none;
+  border-radius: var(--_radius);
+  background: var(--primary);
+  color: var(--theme);
+  padding: .7rem 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  transition: background .2s ease, transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+form[name="contact"] button[type="submit"]:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+}
+
+form[name="contact"] button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Enhanced states and helpers (scoped to contact form) */
+form[name="contact"] input[type="text"],
+form[name="contact"] input[type="email"],
+form[name="contact"] input[type="url"],
+form[name="contact"] input[type="tel"],
+form[name="contact"] select,
+form[name="contact"] textarea{
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+  caret-color: var(--primary);
+  line-height: 1.4;
+  min-height: 42px;
+}
+
+form[name="contact"] input:focus,
+form[name="contact"] textarea:focus,
+form[name="contact"] select:focus{
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+form[name="contact"] .help{
+  margin-top: .35rem;
+  color: var(--secondary);
+  font-size: .925rem;
+}
+
+form[name="contact"] .form-status{
+  margin-top: 1rem;
+  padding: .75rem 1rem;
+  border-radius: var(--_radius);
+  background: var(--entry);
+  border: 1px solid var(--border);
+}
+
+form[name="contact"] .form-status.success{
+  border-color: color-mix(in srgb, var(--primary) 55%, var(--border));
+}
+
+form[name="contact"] .form-status.error{
+  border-color: color-mix(in srgb, #ff4d4f 55%, var(--border));
+}
+
+form[name="contact"] button[type="submit"][disabled]{
+  opacity: .7;
+  cursor: not-allowed;
+  filter: grayscale(20%);
+}
+
+/* Autofill fix for Safari/Chrome */
+form[name="contact"] input:-webkit-autofill,
+form[name="contact"] textarea:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0px 1000px var(--entry) inset;
+  -webkit-text-fill-color: var(--primary);
+}
+
+/* spacing below the form */
+form[name="contact"] + .form-status { margin-top: 1rem; }
+form[name="contact"] + .form-status + p { margin-top: 1.5rem; }
+form[name="contact"] + p { margin-top: 1.5rem; }

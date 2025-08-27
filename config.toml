@@ -2,7 +2,8 @@ baseURL = "https://andreaazzola.com/"
 languageCode = "en-us"
 title = "Andrea Azzola"
 theme = "PaperMod" # install below
-paginate = 10
+pagerSize = 10
+defaultContentLanguage = "en"
 
 [params]
   author = "Andrea Azzola"
@@ -10,21 +11,91 @@ paginate = 10
   ShowReadingTime = true
   ShowShareButtons = true
   defaultTheme = "auto"
+  mainSections = ["post","it"]
+  ShowSocialIcons = true
+
+[[params.socialIcons]]
+  name = "instagram"
+  url = "https://instagram.com/andrea.azzola"
+
+# [[params.socialIcons]]
+#   name = "instagram"
+#   url = "https://www.instagram.com/aa.cookingdiary/"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://x.com/AndreaAzzola"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/andreaazzola/"
+
+[[params.socialIcons]]
+  name = "pinterest"
+  url = "https://www.pinterest.com/andreaazzola"
+
+[[params.socialIcons]]
+  name = "facebook"
+  url = "https://www.facebook.com/andrea.azzola"
+
+[[params.socialIcons]]
+  name = "goodreads"
+  url = "https://www.goodreads.com/andreaazzola"
+
+[[params.socialIcons]]
+  name = "spotify"
+  url = "https://open.spotify.com/user/1166954579"
+
+[[params.socialIcons]]
+  name = "soundcloud"
+  url = "https://soundcloud.com/icaromusic"
+
+[[params.socialIcons]]
+  name = "trakt"
+  url = "https://trakt.tv/users/aazzola"
+
+[[params.socialIcons]]
+  name = "reddit"
+  url = "https://www.reddit.com/u/aazzola/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 
 [menu]
   [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 10
-  [[menu.main]]
     name = "Articles"
-    url = "/posts/"
+    url = "/post/"
     weight = 20
   [[menu.main]]
-    name = "Books"
+    name = "Reads"
     url = "/books/"
     weight = 30
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
     weight = 40
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params.profileMode]
+enabled = true
+title = "Hi! I'm Andrea"
+subtitle = "I read, listen to music (used to make it), I'm a home cook, and into fitness and diet. I work as a manager in an IT company, designing and managing Salesforce enterprise systems. You can get in touch with me through the contact form or my social accounts."
+imageURL = "/images/AndreaAzzola_Website200x200.png"
+imageTitle = "Andrea Azzola"
+imageWidth = 160
+imageHeight = 160
+
+[[params.profileMode.buttons]]
+name = "Articles"
+url = "/post/"
+
+[[params.profileMode.buttons]]
+name = "Reads"
+url = "/books/"
+
+[[params.profileMode.buttons]]
+name = "Contact"
+url = "/contact/"
