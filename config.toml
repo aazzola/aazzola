@@ -1,4 +1,6 @@
-baseURL = "https://andreaazzola.com/"
+baseURL = "https://aazzola.github.io/aazzola/"
+canonifyURLs = true
+relativeURLs = true
 languageCode = "en-us"
 title = "Andrea Azzola"
 theme = "PaperMod" # install below
