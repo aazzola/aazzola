@@ -36,7 +36,12 @@ jobs:
       - name: Build
         env:
           HUGO_ENV: production
-        run: hugo --minify --gc --cleanDestinationDir --baseURL "https://aazzola.github.io/aazzola/"
+        run: hugo --minify --gc --cleanDestinationDir --baseURL "https://andreaazzola.com/"
+
+      - name: Ensure CNAME in artifact
+        run: |
+          mkdir -p public
+          echo "andreaazzola.com" > public/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
