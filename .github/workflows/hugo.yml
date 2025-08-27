@@ -20,6 +20,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -28,7 +34,9 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        env:
+          HUGO_ENV: production
+        run: hugo --minify --gc --cleanDestinationDir --baseURL "https://aazzola.github.io/aazzola/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
