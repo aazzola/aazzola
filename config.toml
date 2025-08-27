@@ -1,4 +1,4 @@
-baseURL = "https://aazzola.github.io/aazzola/"
+baseURL = "https://andreaazzola.com/"
 canonifyURLs = true
 relativeURLs = false
 languageCode = "en-us"
@@ -15,6 +15,13 @@ defaultContentLanguage = "en"
   defaultTheme = "auto"
   mainSections = ["post","it"]
   ShowSocialIcons = true
+
+[params.assets]
+favicon = "/favicon.ico"
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon.png"
+appleTouchIcon = "/apple-touch-icon.png"
+# safariPinnedTab = "/safari-pinned-tab.svg"
 
 [[params.socialIcons]]
   name = "instagram"
@@ -85,7 +92,7 @@ defaultContentLanguage = "en"
 enabled = true
 title = "Hi! I'm Andrea"
 subtitle = "I read, listen to music (used to make it), I'm a home cook, and into fitness and diet. I work as a manager in an IT company, designing and managing Salesforce enterprise systems. You can get in touch with me through the contact form or my social accounts."
-imageURL = "https://aazzola.github.io/aazzola/images/AndreaAzzola_Website200x200.png"
+imageURL = "/images/AndreaAzzola_Website200x200.png"
 imageTitle = "Andrea Azzola"
 imageWidth = 160
 imageHeight = 160
