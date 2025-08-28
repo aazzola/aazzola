@@ -15,7 +15,7 @@ Posted on
 
 ## La Goalodicy
 
-La *goalodicy* é una condizione tale per cui l'ossessione nel perseguire un obiettivo, porta l'individuo ad ignorare il proprio contesto. Il termine, coniato dal <a href="http://business.gwu.edu/profiles/d-christopher-kayes/" target="_blank" title="Profilo accademico D. Christopher Kayes">D. Christopher Kayes</a> della Washington University, é frutto della fusione delle parole Inglesi *goal* (obiettivo) e *theodicy*, la cui etimologia indica un'origine greca in "*giustizia divina*". Un'altro termine sinonimo é *goal blindness*, che possiamo tradurre come *cecitá da obiettivo*.
+La *goalodicy* é una condizione tale per cui l'ossessione nel perseguire un obiettivo, porta l'individuo ad ignorare il proprio contesto. Il termine, coniato dal <a href="https://business.gwu.edu/profiles/d-christopher-kayes/" target="_blank" title="Profilo accademico D. Christopher Kayes">D. Christopher Kayes</a> della Washington University, é frutto della fusione delle parole Inglesi *goal* (obiettivo) e *theodicy*, la cui etimologia indica un'origine greca in "*giustizia divina*". Un'altro termine sinonimo é *goal blindness*, che possiamo tradurre come *cecitá da obiettivo*.
 
 ## La Disgrazia dell'Everest
 
@@ -70,7 +70,7 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Goalodicy,%20L" data-obiettivo="" data-distruttivo&url="http%3a%2f%2fandreaazzola.com%2fit%2fgoalodicy-obiettivo-distruttivo%2f&#39;" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fgoalodicy-obiettivo-distruttivo%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fgoalodicy-obiettivo-distruttivo%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 ### Comments
@@ -79,7 +79,7 @@ Share on:
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

@@ -13,7 +13,7 @@ Posted on
 2010-10-20 15:56
 \[<a href="index.html" target="_self" title="Permalink to Turn Sentences into Slugs with JavaScript">Permalink</a>\]
 
-The script allows you to turn a *text string* into a proper <a href="http://en.wikipedia.org/wiki/Slug_%28web_publishing%29" target="_blank" title="Definition of URL slug">URL slug</a>. It's a mix of both <a href="http://jquery.com" target="_blank">jQuery</a> and standard <a href="http://andreaazzola.com/category/javascript" target="_blank" title="JavaScript posts">JavaScript</a>, thought it can be easily turned into pure JS.  
+The script allows you to turn a *text string* into a proper <a href="https://en.wikipedia.org/wiki/Slug_%28web_publishing%29" target="_blank" title="Definition of URL slug">URL slug</a>. It's a mix of both <a href="https://jquery.com" target="_blank">jQuery</a> and standard <a href="https://andreaazzola.com/category/javascript" target="_blank" title="JavaScript posts">JavaScript</a>, thought it can be easily turned into pure JS.  
 
     // Handles typing
     $(document).ready(function () {
@@ -37,7 +37,7 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Turn%20Sentences%20into%20Slugs%20with%20JavaScript&amp;url=http%3a%2f%2fandreaazzola.com%2ftransform-sentence-slug-js%2f" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2ftransform-sentence-slug-js%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2ftransform-sentence-slug-js%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 ### Comments
@@ -46,7 +46,7 @@ Share on:
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

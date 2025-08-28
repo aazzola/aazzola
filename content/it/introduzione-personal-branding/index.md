@@ -11,7 +11,7 @@ date: 2014-06-07T00:00:00
 
 Posted on
 2014-06-07 16:00
-\[<a href="http://andreaazzola.com/it/introduzione-personal-branding/" target="_self" data-è="" data-il="" data-personal="" data-branding'="" title="Permalink to Cos">Permalink</a>\]
+\[<a href="https://andreaazzola.com/it/introduzione-personal-branding/" target="_self" data-è="" data-il="" data-personal="" data-branding'="" title="Permalink to Cos">Permalink</a>\]
 
 Il personal branding è un ramo del marketing ed in particolare un set di tecniche per gestire la percezione pubblica di una persona. Mi interesso di sviluppo personale ed imprenditoria, e questo articolo discute alcuni principi chiave del personal branding che ho raccolto nel tempo e nella letteratura.
 
@@ -64,7 +64,7 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Cos" data-è="" data-il="" data-personal="" data-branding&url="http%3a%2f%2fandreaazzola.com%2fit%2fintroduzione-personal-branding%2f&#39;" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fintroduzione-personal-branding%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fintroduzione-personal-branding%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 ### Comments
@@ -73,7 +73,7 @@ Share on:
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

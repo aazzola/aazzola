@@ -17,16 +17,16 @@ L'articolo descrive **come eseguire ASP.NET vNext** con sistema operativo *Mac O
 
 ## Sublime Text
 
-Un *text editor avanzato* molto diffuso per Mac OS X é **<a href="http://www.sublimetext.com/" target="_blank" title="Sito ufficiale di Sublime Text">Sublime Text</a>**, personalmente lo uso in Windows, per sviluppare soluzioni <a href="http://andreaazzola.com/category/salesforcecom" target="_blank" title="Salesforce.com posts">Salesforce.com</a> o piú semplicemente prendere note e redarre questo articolo in HTML. Altri editor dichiarati supportati—nel momento in cui scrivo—sono:
+Un *text editor avanzato* molto diffuso per Mac OS X é **<a href="http://www.sublimetext.com/" target="_blank" title="Sito ufficiale di Sublime Text">Sublime Text</a>**, personalmente lo uso in Windows, per sviluppare soluzioni <a href="https://andreaazzola.com/category/salesforcecom" target="_blank" title="Salesforce.com posts">Salesforce.com</a> o piú semplicemente prendere note e redarre questo articolo in HTML. Altri editor dichiarati supportati—nel momento in cui scrivo—sono:
 
 - Atom - <a href="https://atom.io/" target="_blank" title="Atom editor">https://atom.io/</a>
 - Emacs - <a href="http://www.gnu.org/software/emacs/" target="_blank" title="Emacs editor">http://www.gnu.org/software/emacs/</a>
-- Brackets - <a href="http://brackets.io/" target="_blank" title="Brackets editor">http://brackets.io/</a>
+- Brackets - <a href="https://brackets.io/" target="_blank" title="Brackets editor">http://brackets.io/</a>
 - Vim - <a href="http://www.vim.org/" target="_blank" title="Vim editor">http://www.vim.org/</a>
 
 ## Homebrew
 
-<a href="http://brew.sh/" target="_blank">Homebrew</a> é un *package manager* open source per Mac OS X, per funzionare necessita di *git* e di *ruby*. Per verificarne l'installazione é sufficiente aprire il terminale e lanciare il comando `brew doctor`. Se l'esito é `command not found` significa che brew, non é installato; possiamo provvedere con il seguente comando:`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+<a href="https://brew.sh/" target="_blank">Homebrew</a> é un *package manager* open source per Mac OS X, per funzionare necessita di *git* e di *ruby*. Per verificarne l'installazione é sufficiente aprire il terminale e lanciare il comando `brew doctor`. Se l'esito é `command not found` significa che brew, non é installato; possiamo provvedere con il seguente comando:`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 ## KVM, Mono and KRE
 
@@ -69,7 +69,7 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Eseguire%20ASP.NET%20vNext%20su%20Mac%20OS%20con%20Kulture%20e%20Omnisharp&amp;url=http%3a%2f%2fandreaazzola.com%2fit%2faspnet-vnext-mac-os-omnisharp-kulture%2f" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2faspnet-vnext-mac-os-omnisharp-kulture%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2faspnet-vnext-mac-os-omnisharp-kulture%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 ### Comments
@@ -78,7 +78,7 @@ Share on:
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

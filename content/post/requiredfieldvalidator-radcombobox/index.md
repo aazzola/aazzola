@@ -13,7 +13,7 @@ Posted on
 2010-10-22 13:44
 \[<a href="index.html" target="_self" title="Permalink to Simulating a RequiredFieldValidator when using a RadComboBox">Permalink</a>\]
 
-Telerik's <a href="http://www.telerik.com/products/aspnet-ajax/combobox.aspx" target="_blank">RadComboBox</a> does not behave like a traditional <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.dropdownlist.aspx" target="_blank">DropDownList</a>. You may consider to use a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.customvalidator.aspx" target="_blank">CustomValidator</a> instead, here is the code:
+Telerik's <a href="http://www.telerik.com/products/aspnet-ajax/combobox.aspx" target="_blank">RadComboBox</a> does not behave like a traditional <a href="https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.dropdownlist.aspx" target="_blank">DropDownList</a>. You may consider to use a <a href="https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.customvalidator.aspx" target="_blank">CustomValidator</a> instead, here is the code:
 
 ## Step 1: Markup
 
@@ -60,7 +60,7 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Simulating%20a%20RequiredFieldValidator%20when%20using%20a%20RadComboBox&amp;url=http%3a%2f%2fandreaazzola.com%2frequiredfieldvalidator-radcombobox%2f" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2frequiredfieldvalidator-radcombobox%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2frequiredfieldvalidator-radcombobox%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 ### Comments
@@ -75,7 +75,7 @@ Thanks, this was useful.
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

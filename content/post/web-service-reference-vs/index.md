@@ -15,11 +15,11 @@ Posted on
 
 WARNING: the content of this post has been flagged as "out of date" by the author
 
-You may need to consume <a href="http://en.wikipedia.org/wiki/Web_service" target="_blank">Web services</a> from  client applications. <a href="http://msdn.microsoft.com/en-us/vstudio/default.aspx" target="_blank">Visual Studio</a> provides tools for generating proxy classes, which in this case, however, may be ineffective.
+You may need to consume <a href="https://en.wikipedia.org/wiki/Web_service" target="_blank">Web services</a> from  client applications. <a href="https://msdn.microsoft.com/en-us/vstudio/default.aspx" target="_blank">Visual Studio</a> provides tools for generating proxy classes, which in this case, however, may be ineffective.
 
 ## The wsdl.exe tool
 
-You can use the <a href="http://en.wikipedia.org/wiki/Cmd" target="_blank">command prompt</a> tool *wsdl.exe* included within the <a href="http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=fe6f2099-b7b4-4f47-a244-c96d69c35dec" id="jnk9" target="_blank" title="NET Framework 2.0 SDK">NET Framework 2.0 SDK</a>. This tool accepts the path to a <a href="http://en.wikipedia.org/wiki/Web_Services_Description_Language" target="_blank">WSDL</a> file and generates the proxy class automatically.
+You can use the <a href="https://en.wikipedia.org/wiki/Cmd" target="_blank">command prompt</a> tool *wsdl.exe* included within the <a href="http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=fe6f2099-b7b4-4f47-a244-c96d69c35dec" id="jnk9" target="_blank" title="NET Framework 2.0 SDK">NET Framework 2.0 SDK</a>. This tool accepts the path to a <a href="https://en.wikipedia.org/wiki/Web_Services_Description_Language" target="_blank">WSDL</a> file and generates the proxy class automatically.
 
 ## Example
 
@@ -34,7 +34,7 @@ In this example we're saying:
 - "/l" - the target language
 
 A complete list of options is available at this Url:
-<a href="http://msdn.microsoft.com/en-gb/library/7h3ystb6%28v=VS.80%29.aspx" target="_blank">http://msdn.microsoft.com/en-gb/library/7h3ystb6%28v=VS.80%29.aspx</a>
+<a href="https://msdn.microsoft.com/en-gb/library/7h3ystb6%28v=VS.80%29.aspx" target="_blank">http://msdn.microsoft.com/en-gb/library/7h3ystb6%28v=VS.80%29.aspx</a>
 If you plan on generation more files related to classes in the same namespace, is useful to remember that some objects are implicitly declared many times, these duplicates must be removed manually.
 
 ## Related articles:
@@ -45,7 +45,7 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Import%20Web%20service%20References%20in%20.NET&amp;url=http%3a%2f%2fandreaazzola.com%2fweb-service-reference-vs%2f" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fweb-service-reference-vs%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fweb-service-reference-vs%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 ### Comments
@@ -54,7 +54,7 @@ Share on:
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

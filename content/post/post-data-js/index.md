@@ -26,7 +26,7 @@ Posted on
 
 ## The 'post' function
 
-Copy and paste the following code in the <a href="http://en.wikipedia.org/wiki/HTML_element" target="_blank" title="HEAD section on Wikipedia">HEAD</a> section of your <a href="http://en.wikipedia.org/wiki/Html" target="_blank" title="HTML on Wikipedia">HTML</a> page
+Copy and paste the following code in the <a href="https://en.wikipedia.org/wiki/HTML_element" target="_blank" title="HEAD section on Wikipedia">HEAD</a> section of your <a href="https://en.wikipedia.org/wiki/Html" target="_blank" title="HTML on Wikipedia">HTML</a> page
 
     <script language="javascript">
     function post(dictionary, url, method) {
@@ -54,7 +54,7 @@ Copy and paste the following code in the <a href="http://en.wikipedia.org/wiki/H
     </script>
 
 **How do I use it?**
-Copy the following code in the <a href="http://en.wikipedia.org/wiki/Body_text#Document_elements" target="_blank" title="BODY section on Wikipedia">BODY</a> section of your HTML page.
+Copy the following code in the <a href="https://en.wikipedia.org/wiki/Body_text#Document_elements" target="_blank" title="BODY section on Wikipedia">BODY</a> section of your HTML page.
 As you can see a dictionary object is declared as first, then two parameters are added.
 You can add as many parameters as you need.
 
@@ -69,7 +69,7 @@ You can add as many parameters as you need.
     <input type="button" value="Click me to GET"
         onclick="javascript:post(myDictionary, 'destination.html', 'get');" />
 
-The post function accepts a <a href="http://en.wikipedia.org/wiki/Associative_array" target="_blank" title="Associative array on Wikipedia">dictionary</a> object, a destination <a href="http://en.wikipedia.org/wiki/Url" target="_blank" title="Uniform Resource Locator on Wikipedia">URL</a>, and optionally, the method (post or get, case in-sensitive).
+The post function accepts a <a href="https://en.wikipedia.org/wiki/Associative_array" target="_blank" title="Associative array on Wikipedia">dictionary</a> object, a destination <a href="https://en.wikipedia.org/wiki/Url" target="_blank" title="Uniform Resource Locator on Wikipedia">URL</a>, and optionally, the method (post or get, case in-sensitive).
 
 ## The jQuery.post() alternative
 
@@ -97,12 +97,12 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=POST%20data%20with%20JavaScript&amp;url=http%3a%2f%2fandreaazzola.com%2fpost-data-js%2f" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fpost-data-js%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fpost-data-js%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

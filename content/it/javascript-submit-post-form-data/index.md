@@ -26,7 +26,7 @@ Secondo le specifiche <a href="http://www.w3.org/TR/html401/" target="_blank" ti
 
 ## Effettuare un submit POST
 
-Copia-incolla il seguente codice nella sezione <a href="https://it.wikipedia.org/wiki/Elemento_HTML" target="_blank" title="Sezione HEAD su Wikipedia">HEAD</a> della pagina <a href="http://it.wikipedia.org/wiki/Html" target="_blank" title="HTML on Wikipedia">HTML</a>:
+Copia-incolla il seguente codice nella sezione <a href="https://it.wikipedia.org/wiki/Elemento_HTML" target="_blank" title="Sezione HEAD su Wikipedia">HEAD</a> della pagina <a href="https://it.wikipedia.org/wiki/Html" target="_blank" title="HTML on Wikipedia">HTML</a>:
 
     <script language="javascript">
     function post(dictionary, url, method) {
@@ -68,7 +68,7 @@ Copia il seguente codice nella sezione <a href="https://it.wikipedia.org/wiki/El
     <input type="button" value="Click me to GET"
         onclick="javascript:post(myDictionary, 'destination.html', 'get');" />
 
-La funzione POST accetta un <a href="https://it.wikipedia.org/wiki/Array_associativo" target="_blank" title="Associative array on Wikipedia">dizionario</a>, una destinazione <a href="http://it.wikipedia.org/wiki/Url" target="_blank" title="Uniform Resource Locator on Wikipedia">URL</a>, e opzionalmente il metodo (POST o GET, case in-sensitive).
+La funzione POST accetta un <a href="https://it.wikipedia.org/wiki/Array_associativo" target="_blank" title="Associative array on Wikipedia">dizionario</a>, una destinazione <a href="https://it.wikipedia.org/wiki/Url" target="_blank" title="Uniform Resource Locator on Wikipedia">URL</a>, e opzionalmente il metodo (POST o GET, case in-sensitive).
 
 ## L'alternativo jQuery.post()
 
@@ -96,12 +96,12 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Submit%20di%20un%20Form%20tramite%20POST%20JavaScript&amp;url=http%3a%2f%2fandreaazzola.com%2fit%2fjavascript-submit-post-form-data%2f" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fjavascript-submit-post-form-data%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fjavascript-submit-post-form-data%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

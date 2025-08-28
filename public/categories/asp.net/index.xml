@@ -1,25 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>ASP.NET on Andrea Azzola</title>
-    <link>http://localhost:1313/categories/asp.net/</link>
-    <description>Recent content in ASP.NET on Andrea Azzola</description>
-    <generator>Hugo -- 0.148.2</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 18 Jun 2008 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/asp.net/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Check the MetaModel Existence while Running a Dynamic Data Application</title>
-      <link>http://localhost:1313/post/check-metamodel-existence-dynamic-data-application/</link>
-      <pubDate>Wed, 18 Jun 2008 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/check-metamodel-existence-dynamic-data-application/</guid>
-      <description>&lt;p&gt;In the web application that I&amp;rsquo;m developing using Dynamic Data, I set the DataContext at runtime. The application might bind different contexts depending on many variables. I usually test it on two different browsers, and, because of the session, I need to pass the same procedure twice. The second time, the DataContext is already set, so I don&amp;rsquo;t need to register the context anymore. The simple condition I use:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cs&#34; data-lang=&#34;cs&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (System.Web.DynamicData.MetaModel.Default == &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Register context and routes&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Otherwise I would get this exception:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ASP.NET on Andrea Azzola</title><link>https://andreaazzola.com/categories/asp.net/</link><description>Recent content in ASP.NET on Andrea Azzola</description><generator>Hugo -- 0.148.2</generator><language>en-us</language><lastBuildDate>Tue, 12 Nov 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://andreaazzola.com/categories/asp.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Ichigo, an ASP.NET Blogging Engine</title><link>https://andreaazzola.com/post/ichigo-asp-net-blogging-engine/</link><pubDate>Tue, 12 Nov 2013 00:00:00 +0000</pubDate><guid>https://andreaazzola.com/post/ichigo-asp-net-blogging-engine/</guid><description>&lt;p>With this post, I intend to leave a trace of the specs of this &lt;em>blog&lt;/em>. I started this project in 2008 and never publicly mentioned it.&lt;/p>
+&lt;p>Codename is &lt;em>Ichigo&lt;/em>, named after &lt;a href="https://en.wikipedia.org/wiki/Ichigo_Kurosaki">Kurosaki Ichigo&lt;/a>, the main character of the manga series &lt;a href="https://en.wikipedia.org/wiki/Bleach_(manga)">Bleach&lt;/a> by Tite Kubo. There’s no particular reason for the reference—I just like the manga.&lt;/p>
+&lt;p>Since then, the blog has been a playground to experiment with technologies, including &lt;a href="https://learn.microsoft.com/en-us/ef/">Entity Framework&lt;/a>, &lt;a href="https://learn.microsoft.com/en-us/previous-versions/ee845452(v=vs.100)">Dynamic Data&lt;/a>, URL Routing, &lt;a href="https://www.asp.net/ajax">ASP.NET AJAX&lt;/a>, &lt;a href="https://jquery.com/">jQuery&lt;/a>, &lt;code>@font-face&lt;/code>, and &lt;a href="https://oauth.net/">OAuth&lt;/a>.&lt;/p></description></item><item><title>Check the MetaModel Existence while Running a Dynamic Data Application</title><link>https://andreaazzola.com/post/check-metamodel-existence-dynamic-data-application/</link><pubDate>Wed, 18 Jun 2008 00:00:00 +0000</pubDate><guid>https://andreaazzola.com/post/check-metamodel-existence-dynamic-data-application/</guid><description>&lt;p>In the web application that I&amp;rsquo;m developing using Dynamic Data, I set the DataContext at runtime. The application might bind different contexts depending on many variables. I usually test it on two different browsers, and, because of the session, I need to pass the same procedure twice. The second time, the DataContext is already set, so I don&amp;rsquo;t need to register the context anymore. The simple condition I use:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> (System.Web.DynamicData.MetaModel.Default == &lt;span style="color:#66d9ef">null&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Register context and routes&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Otherwise I would get this exception:&lt;/p></description></item><item><title>Issues With AJAX and a Custom HttpModule</title><link>https://andreaazzola.com/post/issues-ajax-custom-httpmodule/</link><pubDate>Sat, 18 Jun 2005 00:00:00 +0000</pubDate><guid>https://andreaazzola.com/post/issues-ajax-custom-httpmodule/</guid><description>&lt;p>My web app needs to catch every non‑existent path as a search string, because I&amp;rsquo;m implementing an &lt;strong>HttpModule&lt;/strong> that handles URLs in an SEO‑friendly way, e.g.:&lt;/p>
+&lt;pre tabindex="0">&lt;code>http://contoso.com/search-string
+&lt;/code>&lt;/pre>&lt;p>But the Microsoft AJAX &lt;strong>ScriptModule&lt;/strong> interfered, causing runtime errors like &lt;em>&amp;ldquo;AJAX Framework failed to load…&amp;rdquo;&lt;/em>. The fix was to register my module &lt;strong>after&lt;/strong> the ScriptModule and selectively bypass AJAX requests.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;add&lt;/span> &lt;span style="color:#a6e22e">name=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;ScriptModule&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">type=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;System.Web.Handlers.ScriptModule, System.Web.Extensions, ...&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;add&lt;/span> &lt;span style="color:#a6e22e">name=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;MyModule&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">type=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;MyModule&amp;#34;&lt;/span> &lt;span style="color:#f92672">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> System;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> System.Linq;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> System.Web;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">MyModule&lt;/span> : IHttpModule
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> Init(HttpApplication context)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> context.PostResolveRequestCache += Application_OnAfterProcess;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> Application_OnAfterProcess(&lt;span style="color:#66d9ef">object&lt;/span> source, EventArgs e)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> application = (HttpApplication)source;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> context = application.Context;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (context.Request.Headers[&lt;span style="color:#e6db74">&amp;#34;x-microsoftajax&amp;#34;&lt;/span>] == &lt;span style="color:#66d9ef">null&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (!System.IO.File.Exists(application.Request.PhysicalPath) &amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> !application.Request.Url.ToString().Contains(&lt;span style="color:#e6db74">&amp;#34;.axd&amp;#34;&lt;/span>) &amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> !application.Request.Url.ToString().Contains(&lt;span style="color:#e6db74">&amp;#34;.asmx&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">string&lt;/span> newUrl = &lt;span style="color:#e6db74">&amp;#34;~/Search.aspx?q=&amp;#34;&lt;/span> +
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> context.Server.UrlEncode(application.Request.Url.Segments.Last());
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// other logic here…&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> context.RewritePath(newUrl);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> Dispose() { }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This runs at &lt;strong>PostResolveRequestCache&lt;/strong> and, when the special &lt;code>x-microsoftajax&lt;/code> header is absent, it rewrites unknown paths to your search page while letting AJAX handlers (&lt;code>*.axd&lt;/code>, &lt;code>*.asmx&lt;/code>) pass through normally.&lt;/p></description></item></channel></rss>

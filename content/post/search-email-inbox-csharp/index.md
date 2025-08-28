@@ -13,9 +13,9 @@ Posted on
 2014-03-27 17:23
 \[<a href="index.html" target="_self" title="Permalink to Search Email Inbox with C#">Permalink</a>\]
 
-A few years ago I helped managing a <a href="http://magmaglobalgroove.com" target="_blank" title="Visit MaGmA Global Radio">radio</a> and I needed a tool—an *ASP.NET* web page—for the periodical download of promo mixes. They were linked in some emails recognizable by a few keywords.
+A few years ago I helped managing a <a href="https://magmaglobalgroove.com" target="_blank" title="Visit MaGmA Global Radio">radio</a> and I needed a tool—an *ASP.NET* web page—for the periodical download of promo mixes. They were linked in some emails recognizable by a few keywords.
 
-The following, is the stripped down **C# snippet** from the tool, it demonostrate how to perform both the *search inside the email's subject and body*, and the download, with the use of the **<a href="http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol" target="_blank" title="IMAP on wikipedia">IMAP</a>** protocol:
+The following, is the stripped down **C# snippet** from the tool, it demonostrate how to perform both the *search inside the email's subject and body*, and the download, with the use of the **<a href="https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol" target="_blank" title="IMAP on wikipedia">IMAP</a>** protocol:
 
     using (ImapClient ic = new ImapClient("imap.gmail.com", "gmail@gmail.com", "mypassword",
         ImapClient.AuthMethods.Login, 993, true))
@@ -48,7 +48,7 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Search%20Email%20Inbox%20with%20C#&amp;url=http%3a%2f%2fandreaazzola.com%2fsearch-email-inbox-csharp%2f" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fsearch-email-inbox-csharp%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fsearch-email-inbox-csharp%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 ### Comments
@@ -57,7 +57,7 @@ Share on:
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

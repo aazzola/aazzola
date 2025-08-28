@@ -11,7 +11,7 @@ date: 2016-09-06T00:00:00
 
 Posted on
 2016-09-06 06:20
-\[<a href="http://andreaazzola.com/it/dieta-digiuno-intermittente/" target="_self" data-é="" data-e="" data-come="" data-funziona'="" title="Permalink to Dieta del Digiuno Intermittente, Cos">Permalink</a>\]
+\[<a href="https://andreaazzola.com/it/dieta-digiuno-intermittente/" target="_self" data-é="" data-e="" data-come="" data-funziona'="" title="Permalink to Dieta del Digiuno Intermittente, Cos">Permalink</a>\]
 
 Ho sempre trovato difficile dimagrire lentamente, purtroppo sono una buona forchetta, ed a volte vedo nel cibo una ricompensa al termine di una giornate stressante, autocontrollarmi una volta addentato il primo boccone mi é difficile mentre per assurdo l'astensione dal pasto mi é decisamente piú facile. Non soffro di obesitá, ho sempre praticato sport e da 16 anni pesi in palestra; semplicemente con il pretesto della prova costume alle porte e conscio di qualche chilo di troppo, mi sono impegnato per rimediare.
 
@@ -61,7 +61,7 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Dieta%20del%20Digiuno%20Intermittente,%20Cos" data-é="" data-e="" data-come="" data-funziona&url="http%3a%2f%2fandreaazzola.com%2fit%2fdieta-digiuno-intermittente%2f&#39;" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fdieta-digiuno-intermittente%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fdieta-digiuno-intermittente%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 ### Comments
@@ -70,7 +70,7 @@ Share on:
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>

@@ -15,7 +15,7 @@ Posted on
 
 ## Il Multitasking
 
-Il <a href="http://it.wikipedia.org/wiki/Multitasking" target="_blank">multitasking</a> é la capacitá di eseguire piú attivitá contemporaneamente. Il concetto ha origine nell'industria dei computer; i PC, i telefoni ed i tablet ne sono già perfettemente capaci, gli algoritmi nascono oramai per anticipare i bisogni e le attivitá—l' <a href="http://en.wikipedia.org/wiki/Anticipation_(artificial_intelligence)" target="_blank">anticipatory computing</a> .
+Il <a href="https://it.wikipedia.org/wiki/Multitasking" target="_blank">multitasking</a> é la capacitá di eseguire piú attivitá contemporaneamente. Il concetto ha origine nell'industria dei computer; i PC, i telefoni ed i tablet ne sono già perfettemente capaci, gli algoritmi nascono oramai per anticipare i bisogni e le attivitá—l' <a href="https://en.wikipedia.org/wiki/Anticipation_(artificial_intelligence)" target="_blank">anticipatory computing</a> .
 
 Il multitasking apporta evidenti in termini di produttivitá e spesso noi umani andiamo orgogliosi di questa capacitá. Ma puó il nostro cervello, fare del multitasking, come inteso dalla definizione? La risposta a quanto pare, è *no*.
 
@@ -58,7 +58,7 @@ Categories:
 
 Share on:
 <a href="https://twitter.com/intent/tweet?text=Il%20Multitasking,%20Una%20Tecnica%20di%20Improduttivitá?&amp;url=http%3a%2f%2fandreaazzola.com%2fit%2fmultitasking-umano%2f" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="http://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fmultitasking-umano%2f" target="_blank" title="Share it on Facebook">Facebook</a>
+<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fmultitasking-umano%2f" target="_blank" title="Share it on Facebook">Facebook</a>
 <a href="https://AndreaAzzola.com" rel="author"></a>
 
 ### Comments
@@ -67,7 +67,7 @@ Share on:
 
 Author's portrait
 
-<a href="http://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="http://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="http://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="http://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
+<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
 
 - <a href="../../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
 - <a href="../../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>
