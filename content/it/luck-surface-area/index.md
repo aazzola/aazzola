@@ -1,89 +1,34 @@
 ---
-title: "Il principio della Luck Surface Area"
-type: it
+title: "Il Principio della Luck Surface Area"
+type: post
 draft: false
 date: 2014-12-26T00:00:00
+categories: ["Sviluppo Personale", "Personal Branding"]
+tags: ["luck surface area", "fortuna", "fare", "parlarne", "Jason Roberts"]
 ---
-# Il principio della Luck Surface Area
 
-[Andrea Azzola](../../index.html "Back to the Home Page")
-
-
-Posted on
-2014-12-26 10:19
-\[<a href="index.html" target="_self" title="Permalink to Il principio della Luck Surface Area">Permalink</a>\]
-
-Il principio della **Luck Surface Area** o "Superficie dell'Area di Fortuna" come vorrebbe la traduzione, accreditato a Jason Roberts, asserisce che incrementi di *fortuna* in un dato campo d'interesse, sono ottenibili grazie al *fare* ed al *parlarne*.
+Il principio della **Luck Surface Area**, o "Superficie dell'Area di Fortuna" come vorrebbe la traduzione, è accreditato a Jason Roberts. Asserisce che incrementi di *fortuna* in un dato campo d'interesse sono ottenibili grazie a due azioni: *fare* e *parlarne*.
 
 ## La Formula
 
-La ricetta potrebbe non suonare nuova ai piú, é un concetto assimilabile all'ABC dei principi di *influenza* e *advertising* ma quel che lo rende notevole, facile da ricordare e da spiegare, é in questo caso é la semplicitá, ad esempio considerando il caso d'uso del <a href="../../post/personal-branding-introduction.html" target="_new" title="Personal Branding, a Brief Introduction">personal branding</a>.
+> **L = D × T**
 
-> L = D \* T
+La ricetta potrebbe non sembrare nuova: è un concetto vicino ai principi base di *influenza* e *advertising*. Quello che lo rende notevole è la semplicità. Un esempio chiaro si trova nel contesto del [personal branding](/it/introduzione-personal-branding/).
 
 ### Fare
 
-Il *fare* non solo ci permette di concludere del lavoro, ma accresce la nostra credebilitá, favorendo lo sviluppo di skill e stamina. I traguardi ottenuti grazie al fare, sono fonti di grande motivazione.
+Il *fare* non solo ci permette di completare del lavoro, ma accresce anche la nostra credibilità, favorendo lo sviluppo di competenze e resilienza. I traguardi raggiunti grazie al fare sono una potente fonte di motivazione.
 
 ### Parlare
 
-Parlane chiaramente ci espone a consigli, lodi o critiche. Il fine non é ottenere il cosiddetto "buy-in", ma una sincero apprezzamento. Le persone genuinamente entusiaste sono generalmente coerenti, promuovono e attraggono altri di simili opinioni. L'entusiasmo é ottimo modo per accattivare l'attenzione delle persone.
+Il *parlare* espone a consigli, lodi o critiche. Non serve ottenere "buy-in", ma un sincero apprezzamento. Le persone genuinamente entusiaste sono coerenti, promuovono e attraggono altri con la stessa visione. L'entusiasmo è un ottimo catalizzatore di attenzione.
 
-Il risultato atteso é un "ritorno in opportunitá". Qualcuno potrebbe essere interessarsi direttamente al "fare" in questione, o il "fare" potrebbe contribuire quello di qualcun altro, comunque alimentantando il business.
+Il risultato atteso è un *ritorno in opportunità*. Qualcuno potrebbe essere interessato direttamente al *fare* in questione, o questo potrebbe contribuire a quello di qualcun altro, alimentando così ulteriori possibilità.
 
-Roberts pone l'accento su un aspetto del parlare: l'efficacia, come ad esempio "rivolgersi al giusto target di utenza".
+Roberts sottolinea che l’efficacia del parlare è legata a rivolgersi al giusto target.
 
-## Unendo i puntini
+## Unendo i Puntini
 
-I principi di personal development spesso descrivono semplici ed importanti dinamiche del quotidiano a cui spesso non poniamo troppa attenzione.
+Molti principi di sviluppo personale descrivono dinamiche quotidiane semplici ma fondamentali, a cui spesso non poniamo abbastanza attenzione.
 
-É molto famosa ad esempio la <a href="https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)" target="_blank" title="1% rule (Internet culture)">1% rule</a>.
-Essa enuncia che l'1% delle persone su Internet *crea*, un'altro 9% *contribuisce* mentre i restanti osservano.
-É una correlazione semplice ma abbastanza indicativa di come il principio della *Luck Surface Area* sia giustificazione per la fama di cui blogger, youtuber e influencer godono al giorno d'oggi.
-
-Categories:
-<a href="../../category/personal-development.html" class="tag">Personal Development</a><a href="../../category/personal-branding.html" class="tag">Personal Branding</a>
-
-Share on:
-<a href="https://twitter.com/intent/tweet?text=Il%20principio%20della%20Luck%20Surface%20Area&amp;url=http%3a%2f%2fandreaazzola.com%2fit%2fluck-surface-area%2f" target="_blank" title="Share it on Twitter">Twitter</a>, 
-<a href="https://facebook.com/sharer.php?u=http%3a%2f%2fandreaazzola.com%2fit%2fluck-surface-area%2f" target="_blank" title="Share it on Facebook">Facebook</a>
-<a href="https://AndreaAzzola.com" rel="author"></a>
-
-### Comments
-
-<a href="javascript:__doPostBack(&#39;ctl00$cphBody$cmm$lbtNewComment1&#39;,&#39;&#39;)" id="ctl00_cphBody_cmm_lbtNewComment1" class="action">Post a new comment</a>
-
-Author's portrait
-
-<a href="https://twitter.com/AndreaAzzola" rel="me" target="_blank" data-text="Twitter" title="Stay up to date with my tweets">My Twitter profile</a><a href="https://www.linkedin.com/in/andreaazzola" rel="me" target="_blank" data-text="LinkedIn" title="Find me on LinkedIn">My LinkedIn profile</a><a href="https://www.facebook.com/andrea.azzola" rel="me" target="_blank" data-text="Facebook" title="Get in touch with Facebook">My Facebook profile</a><a href="http://www.pinterest.com/andreaazzola" rel="me" target="_blank" data-text="Pinterest" title="I&#39;m on Pinterest!">My Pinterest profile</a><a href="https://instagram.com/andrea.azzola" rel="me" target="_blank" data-text="Instagram" title="My Instagram profile">My Instagram profile</a>
-
-- <a href="../../about/index.html" style="font-weight:bold" data-text="About" title="Short summary">About</a>
-- <a href="../../articles/index.html" style="font-weight:bold" data-text="Articles" title="Collection of all articles in this website">Articles</a>
-- <a href="../../books/index.html" style="font-weight:bold" data-text="Books" title="My book recommendations">Books</a>
-- <a href="../../contact/index.html" style="font-weight:bold" data-text="Contact" title="Short summary">Contact</a>
-- <a href="../../feed/index.html" data-text="RSS feed" title="Subscribe to this blog">RSS feed</a>
-- <a href="../../login/index.html" data-text="Login" title="Login">Login</a>
-
-- <a href="javascript:WebForm_DoPostBackWithOptions(new%20WebForm_PostBackOptions(%22ctl00$stp1$lbLanguageEN%22,%20%22%22,%20true,%20%22%22,%20%22%22,%20false,%20true))" id="ctl00_stp1_lbLanguageEN" class="lang-sm lang-lbl" lang="en"></a>
-- <a href="javascript:WebForm_DoPostBackWithOptions(new%20WebForm_PostBackOptions(%22ctl00$stp1$lbLanguageIT%22,%20%22%22,%20true,%20%22%22,%20%22%22,%20false,%20true))" id="ctl00_stp1_lbLanguageIT" class="lang-sm lang-lbl" lang="it"></a>
-
-#### Newsletter
-
- 
- 
-
-<a href="../../category/books/index.html" class="category" style="font-size:112%;">Books</a>
-<a href="../../category/decision-fatigue/index.html" class="category" style="font-size:112%;">Decision Fatigue</a>
-<a href="../../category/diet/index.html" class="category" style="font-size:112%;">Diet</a>
-<a href="../../category/extreme-saving/index.html" class="category" style="font-size:119%;">Extreme Saving</a>
-<a href="../../category/finance/index.html" class="category" style="font-size:112%;">Finance</a>
-<a href="../../category/financial-independence/index.html" class="category" style="font-size:125%;">Financial Independence</a>
-<a href="../../category/fitness/index.html" class="category" style="font-size:119%;">Fitness</a>
-<a href="../../category/gears/index.html" class="category" style="font-size:112%;">Gears</a>
-<a href="../../category/geo-arbitrage/index.html" class="category" style="font-size:112%;">Geo Arbitrage</a>
-<a href="../../category/goal-setting/index.html" class="category" style="font-size:112%;">Goal Setting</a>
-<a href="../../category/nutrition/index.html" class="category" style="font-size:112%;">Nutrition</a>
-<a href="../../category/personal-branding/index.html" class="category" style="font-size:112%;">Personal Branding</a>
-<a href="../../category/personal-development/index.html" class="category" style="font-size:150%;">Personal Development</a>
-<a href="../../category/productivity/index.html" class="category" style="font-size:125%;">Productivity</a>
-<a href="../../category/time-management/index.html" class="category" style="font-size:106%;">Time Management</a>
+È molto citata, ad esempio, la [1% rule](https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)){:target="_blank" rel="noopener"}, secondo cui solo l'1% delle persone online *crea* contenuti, un altro 9% *contribuisce* e il resto osserva. È una correlazione che giustifica, in parte, la fama di cui godono blogger, youtuber e influencer.
