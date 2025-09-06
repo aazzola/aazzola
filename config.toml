@@ -3,11 +3,13 @@ canonifyURLs = true
 relativeURLs = false
 languageCode = "en-us"
 title = "Andrea Azzola"
+googleAnalytics = "G-C3P9XZGVE9"
 theme = "PaperMod" # install below
 pagerSize = 10
 defaultContentLanguage = "en"
 
 [params]
+  env = "production"
   author = "Andrea Azzola"
   description = "Tips and techniques for lifestyle design"
   ShowReadingTime = true
