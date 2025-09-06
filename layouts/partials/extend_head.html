@@ -1,0 +1,43 @@
+{{- /* Head custom content area start */ -}}
+{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
+{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+{{- /* Head custom content area end */ -}}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    palette: {
+      popup: { background: "#2e2e33" },
+      button: { background: "#f1d600", text: "#000" }
+    },
+    theme: "classic",
+    content: {
+      message: "This website uses Google Analytics to collect usage data.",
+      dismiss: "Accept",
+      deny: "Decline",
+      link: "Learn more",
+      href: "/privacy/"
+    },
+    type: "opt-in",
+    onInitialise: function(status) {
+      if (status == "allow") enableGA();
+    },
+    onStatusChange: function(status) {
+      if (status == "allow") enableGA();
+    }
+  });
+});
+
+function enableGA(){
+  var ga = document.createElement("script");
+  ga.setAttribute("async","");
+  ga.src = "https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9";
+  document.head.appendChild(ga);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3P9XZGVE9');
+}
+</script>
