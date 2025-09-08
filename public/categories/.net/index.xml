@@ -1,57 +1,102 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>.NET on Andrea Azzola</title><link>https://andreaazzola.com/categories/.net/</link><description>Recent content in .NET on Andrea Azzola</description><generator>Hugo -- 0.148.2</generator><language>en-us</language><lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://andreaazzola.com/categories/.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Logging with NLog and SQLite</title><link>https://andreaazzola.com/post/logging-nlog-sqlite/</link><pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate><guid>https://andreaazzola.com/post/logging-nlog-sqlite/</guid><description>&lt;p>This article explains how to achieve a portable and elegant &lt;em>logging&lt;/em> solution with &lt;strong>NLog&lt;/strong> and &lt;strong>SQLite&lt;/strong> on the .NET platform with a few configurations.&lt;/p>
-&lt;h2 id="nlog">NLog&lt;/h2>
-&lt;p>NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). &lt;a href="https://nlog-project.org/" target="_blank" rel="noopener">nlog-project.org&lt;/a>&lt;/p>
-&lt;p>&lt;strong>Install (NuGet Package Manager Console)&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-powershell" data-lang="powershell">&lt;span style="display:flex;">&lt;span>PM&amp;gt; Install-Package NLog
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="sqlite">SQLite&lt;/h2>
-&lt;p>&lt;a href="https://www.sqlite.org/" target="_blank" rel="noopener">SQLite&lt;/a> is a simple embedded database engine. No separate server daemon is required; the database is a single file (e.g., &lt;code>.db3&lt;/code>).&lt;/p></description></item><item><title>Consuming .NET Webservices Using PHP and NuSoap</title><link>https://andreaazzola.com/post/consuming-net-web-services-using-php-nusoap/</link><pubDate>Tue, 23 Oct 2007 00:00:00 +0000</pubDate><guid>https://andreaazzola.com/post/consuming-net-web-services-using-php-nusoap/</guid><description>&lt;p>In my scenario a .NET webservice offers particular encrypting capabilities. I need to consume the webservice with PHP by sending my plain string to get an encrypted one in return. The .NET webservice is working properly. I found the &lt;a href="http://sourceforge.net/projects/nusoap/">NuSoap&lt;/a> library, and adopted it.&lt;/p>
-&lt;p>Here the inclusion:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">require_once&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;lib/nusoap.php&amp;#39;&lt;/span>);
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And here the code:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// requires web service&amp;#39;s specifications aka wsdl
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// $parameters:
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// requires following the array &amp;#39;notation&amp;#39;
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// array(&amp;#39;parameters&amp;#39; =&amp;gt; (array(&amp;#39;text&amp;#39; =&amp;gt; &amp;#39;Hello World!!!&amp;#39;)));
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// that equals to Hello World!!!
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// $proxy (-&amp;gt;host, -&amp;gt;port, -&amp;gt;username, -&amp;gt;password)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// optional, uses a proxy server
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">function&lt;/span> &lt;span style="color:#a6e22e">consume_webservice&lt;/span>($wsdl, $method, $parameters, $debug &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>, $proxy &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> ($proxy &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> $proxy&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">host&lt;/span> &lt;span style="color:#f92672">=&lt;/span> $proxy&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">port&lt;/span> &lt;span style="color:#f92672">=&lt;/span> $proxy&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">username&lt;/span> &lt;span style="color:#f92672">=&lt;/span> $proxy&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">password&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> $client &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> &lt;span style="color:#a6e22e">soapclient&lt;/span>($wsdl, &lt;span style="color:#66d9ef">true&lt;/span>, $proxy&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">host&lt;/span>, $proxy&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">port&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> $proxy&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">username&lt;/span>, $proxy&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">password&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> $err &lt;span style="color:#f92672">=&lt;/span> $client&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">getError&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> ($err)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">echo&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Constructor error&amp;#39;&lt;/span> &lt;span style="color:#f92672">.&lt;/span> $err;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> $result &lt;span style="color:#f92672">=&lt;/span> $client&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">call&lt;/span>($method, $parameters);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// check for a fault
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span> ($client&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">fault&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">echo&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Fault&amp;#39;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">print_r&lt;/span>($result);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">else&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// check for errors
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> $err &lt;span style="color:#f92672">=&lt;/span> $client&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">getError&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> ($err)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">echo&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Error&amp;#39;&lt;/span> &lt;span style="color:#f92672">.&lt;/span> $err;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> ($debug)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">echo&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Request&amp;#39;&lt;/span> &lt;span style="color:#f92672">.&lt;/span> &lt;span style="color:#a6e22e">htmlspecialchars&lt;/span>($client&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">request&lt;/span>, &lt;span style="color:#a6e22e">ENT_QUOTES&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">echo&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Response&amp;#39;&lt;/span> &lt;span style="color:#f92672">.&lt;/span> &lt;span style="color:#a6e22e">htmlspecialchars&lt;/span>($client&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">response&lt;/span>, &lt;span style="color:#a6e22e">ENT_QUOTES&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">echo&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Debug&amp;#39;&lt;/span> &lt;span style="color:#f92672">.&lt;/span> &lt;span style="color:#a6e22e">htmlspecialchars&lt;/span>($client&lt;span style="color:#f92672">-&amp;gt;&lt;/span>&lt;span style="color:#a6e22e">debug_str&lt;/span>, &lt;span style="color:#a6e22e">ENT_QUOTES&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> $result;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This approach works only with &lt;a href="http://en.wikipedia.org/wiki/SOAP">SOAP&lt;/a> webservices. Please note that .NET web services include all response content into a &amp;ldquo;&lt;em>parameters&lt;/em>&amp;rdquo; section by design.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>.NET on Andrea Azzola</title>
+    <link>http://localhost:1313/categories/.net/</link>
+    <description>Recent content in .NET on Andrea Azzola</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logging con NLog e SQLite</title>
+      <link>http://localhost:1313/it/logging-nlog-sqlite/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/logging-nlog-sqlite/</guid>
+      <description>&lt;p&gt;Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all&amp;rsquo;uso di &lt;strong&gt;NLog&lt;/strong&gt; e &lt;strong&gt;SQLite&lt;/strong&gt;, su piattaforma .NET e con poche configurazioni.&lt;/p&gt;
+&lt;h2 id=&#34;nlog&#34;&gt;NLog&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://nlog-project.org/&#34;&gt;NLog&lt;/a&gt; è una libreria di logging leggera e gratuita che supporta l&amp;rsquo;ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un&amp;rsquo;opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logging with NLog and SQLite</title>
+      <link>http://localhost:1313/post/logging-nlog-sqlite/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/logging-nlog-sqlite/</guid>
+      <description>&lt;p&gt;This article explains how to achieve a portable and elegant &lt;em&gt;logging&lt;/em&gt; solution with &lt;strong&gt;NLog&lt;/strong&gt; and &lt;strong&gt;SQLite&lt;/strong&gt; on the .NET platform with a few configurations.&lt;/p&gt;
+&lt;h2 id=&#34;nlog&#34;&gt;NLog&lt;/h2&gt;
+&lt;p&gt;NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). &lt;a href=&#34;https://nlog-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nlog-project.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install (NuGet Package Manager Console)&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PM&amp;gt; Install-Package NLog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;sqlite&#34;&gt;SQLite&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.sqlite.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SQLite&lt;/a&gt; is a simple embedded database engine. No separate server daemon is required; the database is a single file (e.g., &lt;code&gt;.db3&lt;/code&gt;).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Import Web Service References in .NET</title>
+      <link>http://localhost:1313/post/web-service-reference-vs/</link>
+      <pubDate>Wed, 09 Jun 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/web-service-reference-vs/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note (2025):&lt;/strong&gt; This post refers to .NET Framework 2.0 era tools such as &lt;strong&gt;wsdl.exe&lt;/strong&gt;. Modern .NET projects generally use &lt;code&gt;Connected Services&lt;/code&gt; in Visual Studio or &lt;code&gt;dotnet svcutil&lt;/code&gt;. The example is preserved for historical reference.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;You may need to consume &lt;a href=&#34;https://en.wikipedia.org/wiki/Web_service&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Web services&lt;/a&gt; from client applications. &lt;a href=&#34;https://visualstudio.microsoft.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual Studio&lt;/a&gt; provides tools for generating proxy classes, which in some cases may be insufficient. In those cases, the &lt;code&gt;wsdl.exe&lt;/code&gt; tool is an alternative.&lt;/p&gt;
+&lt;h2 id=&#34;the-wsdlexe-tool&#34;&gt;The wsdl.exe tool&lt;/h2&gt;
+&lt;p&gt;You can use the &lt;a href=&#34;https://en.wikipedia.org/wiki/Cmd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;command prompt&lt;/a&gt; tool &lt;strong&gt;wsdl.exe&lt;/strong&gt;, included within the &lt;a href=&#34;https://www.microsoft.com/en-us/download/details.aspx?id=19988&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; title=&#34;NET Framework 2.0 SDK&#34;&gt;.NET Framework 2.0 SDK&lt;/a&gt;. This tool accepts the path to a &lt;a href=&#34;https://en.wikipedia.org/wiki/Web_Services_Description_Language&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WSDL&lt;/a&gt; file and generates the proxy class automatically.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Consuming .NET Webservices Using PHP and NuSoap</title>
+      <link>http://localhost:1313/post/consuming-net-web-services-using-php-nusoap/</link>
+      <pubDate>Tue, 23 Oct 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/consuming-net-web-services-using-php-nusoap/</guid>
+      <description>&lt;p&gt;In my scenario a .NET webservice offers particular encrypting capabilities. I need to consume the webservice with PHP by sending my plain string to get an encrypted one in return. The .NET webservice is working properly. I found the &lt;a href=&#34;http://sourceforge.net/projects/nusoap/&#34;&gt;NuSoap&lt;/a&gt; library, and adopted it.&lt;/p&gt;
+&lt;p&gt;Here the inclusion:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;require_once&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;lib/nusoap.php&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And here the code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// requires web service&amp;#39;s specifications aka wsdl
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// $parameters:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// requires following the array &amp;#39;notation&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// array(&amp;#39;parameters&amp;#39; =&amp;gt; (array(&amp;#39;text&amp;#39; =&amp;gt; &amp;#39;Hello World!!!&amp;#39;)));
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// that equals to Hello World!!!
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// $proxy (-&amp;gt;host, -&amp;gt;port, -&amp;gt;username, -&amp;gt;password)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// optional, uses a proxy server
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;consume_webservice&lt;/span&gt;($wsdl, $method, $parameters, $debug &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;, $proxy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($proxy &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;host&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;port&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;username&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    $client &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;soapclient&lt;/span&gt;($wsdl, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;, $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;host&lt;/span&gt;, $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;port&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;username&lt;/span&gt;, $proxy&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;password&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    $err &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getError&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($err)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Constructor error&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; $err;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    $result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;call&lt;/span&gt;($method, $parameters);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// check for a fault
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fault&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Fault&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;print_r&lt;/span&gt;($result);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;// check for errors
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        $err &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getError&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($err)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Error&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; $err;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ($debug)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Request&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;htmlspecialchars&lt;/span&gt;($client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;request&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ENT_QUOTES&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Response&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;htmlspecialchars&lt;/span&gt;($client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ENT_QUOTES&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Debug&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;htmlspecialchars&lt;/span&gt;($client&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;debug_str&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ENT_QUOTES&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; $result;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This approach works only with &lt;a href=&#34;http://en.wikipedia.org/wiki/SOAP&#34;&gt;SOAP&lt;/a&gt; webservices. Please note that .NET web services include all response content into a &amp;ldquo;&lt;em&gt;parameters&lt;/em&gt;&amp;rdquo; section by design.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

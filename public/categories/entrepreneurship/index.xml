@@ -1,2 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Entrepreneurship on Andrea Azzola</title><link>https://andreaazzola.com/categories/entrepreneurship/</link><description>Recent content in Entrepreneurship on Andrea Azzola</description><generator>Hugo -- 0.148.2</generator><language>en-us</language><lastBuildDate>Sun, 04 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://andreaazzola.com/categories/entrepreneurship/index.xml" rel="self" type="application/rss+xml"/><item><title>Book Review: The 10X Rule by Grant Cardone</title><link>https://andreaazzola.com/post/review-10x-rule-grant-cardone/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><guid>https://andreaazzola.com/post/review-10x-rule-grant-cardone/</guid><description>&lt;p>Among the bestsellers in the self‑help category on Audible, &lt;strong>The 10X Rule&lt;/strong> is a book about productivity in the business world. It underlines the importance of not limiting goals and of &lt;em>taking 10× higher levels of action&lt;/em> to achieve them, placing success as essential: &lt;em>“if you&amp;rsquo;re not first, you&amp;rsquo;re last.”&lt;/em>&lt;/p>
-&lt;p>The author is &lt;strong>Grant Cardone&lt;/strong>, an American entrepreneur. He began his career as a car salesman, later became CEO of Freedom Motorsports Group Inc., and worked on a National Geographic TV series called &lt;em>Turnaround King&lt;/em>, helping small businesses get back on their feet. Author of several books, he now directs &lt;em>Cardone Acquisitions&lt;/em>, &lt;em>Cardone Enterprises&lt;/em> and &lt;em>The Cardone Group&lt;/em>; he has been listed by Forbes among notable marketing influencers.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Entrepreneurship on Andrea Azzola</title>
+    <link>http://localhost:1313/categories/entrepreneurship/</link>
+    <description>Recent content in Entrepreneurship on Andrea Azzola</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/entrepreneurship/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book Review: The 10X Rule by Grant Cardone</title>
+      <link>http://localhost:1313/post/review-10x-rule-grant-cardone/</link>
+      <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/review-10x-rule-grant-cardone/</guid>
+      <description>&lt;p&gt;Among the bestsellers in the self‑help category on Audible, &lt;strong&gt;The 10X Rule&lt;/strong&gt; is a book about productivity in the business world. It underlines the importance of not limiting goals and of &lt;em&gt;taking 10× higher levels of action&lt;/em&gt; to achieve them, placing success as essential: &lt;em&gt;“if you&amp;rsquo;re not first, you&amp;rsquo;re last.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The author is &lt;strong&gt;Grant Cardone&lt;/strong&gt;, an American entrepreneur. He began his career as a car salesman, later became CEO of Freedom Motorsports Group Inc., and worked on a National Geographic TV series called &lt;em&gt;Turnaround King&lt;/em&gt;, helping small businesses get back on their feet. Author of several books, he now directs &lt;em&gt;Cardone Acquisitions&lt;/em&gt;, &lt;em&gt;Cardone Enterprises&lt;/em&gt; and &lt;em&gt;The Cardone Group&lt;/em&gt;; he has been listed by Forbes among notable marketing influencers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Recensione: The 10X Rule, di Grant Cardone</title>
+      <link>http://localhost:1313/it/recensione-10x-rule-grant-cardone/</link>
+      <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/recensione-10x-rule-grant-cardone/</guid>
+      <description>&lt;p&gt;Tra i bestseller della categoria &lt;em&gt;self help&lt;/em&gt; su Audible.com, &lt;strong&gt;The 10X Rule&lt;/strong&gt; è un libro che tratta di produttività contestualizzata al mondo business. Sottolinea l&amp;rsquo;importanza di non porre limiti ai propri obiettivi e di dedicare &lt;em&gt;un impegno dieci volte maggiore&lt;/em&gt; per raggiungerli, ponendo il successo come un traguardo imprescindibile: &lt;em&gt;&amp;ldquo;If you&amp;rsquo;re not first, you&amp;rsquo;re last&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;autore del libro è Grant Cardone, un imprenditore americano dal patrimonio stimato di 500 milioni di dollari. Inizia la carriera come venditore d&amp;rsquo;auto, diventa CEO della Freedom Motorsports Group Inc. (Los Angeles) e partecipa a una serie televisiva per National Geographic, &lt;em&gt;Turnaround King&lt;/em&gt;, dove aiuta piccole attività a rimettersi in piedi. Autore di circa dieci libri, oggi dirige le società &lt;em&gt;Cardone Acquisitions&lt;/em&gt;, &lt;em&gt;Cardone Enterprises&lt;/em&gt; e &lt;em&gt;The Cardone Group&lt;/em&gt;. Forbes lo ha indicato come uno dei marketing influencer più promettenti per il 2017.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

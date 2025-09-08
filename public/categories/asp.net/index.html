@@ -1,20 +1,409 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>ASP.NET | Andrea Azzola</title><meta name=keywords content><meta name=description content="Tips and techniques for lifestyle design"><meta name=author content="Andrea Azzola"><link rel=canonical href=https://andreaazzola.com/categories/asp.net/><link crossorigin=anonymous href=https://andreaazzola.com/assets/css/stylesheet.bceb41a4bb17d04980cc69a98224770eef3d291c9915d1304e9e8f13443532b4.css integrity="sha256-vOtBpLsX0EmAzGmpgiR3Du89KRyZFdEwTp6PE0Q1MrQ=" rel="preload stylesheet" as=style><link rel=icon href=https://andreaazzola.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://andreaazzola.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://andreaazzola.com/favicon.png><link rel=apple-touch-icon href=https://andreaazzola.com/apple-touch-icon.png><link rel=mask-icon href=https://andreaazzola.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://andreaazzola.com/categories/asp.net/index.xml><link rel=alternate hreflang=en href=https://andreaazzola.com/categories/asp.net/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://andreaazzola.com/categories/asp.net/"><meta property="og:site_name" content="Andrea Azzola"><meta property="og:title" content="ASP.NET"><meta property="og:description" content="Tips and techniques for lifestyle design"><meta property="og:locale" content="en-us"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="ASP.NET"><meta name=twitter:description content="Tips and techniques for lifestyle design"></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://andreaazzola.com/ accesskey=h title="Andrea Azzola (Alt + H)">Andrea Azzola</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://andreaazzola.com/post/ title=Articles><span>Articles</span></a></li><li><a href=https://andreaazzola.com/books/ title=Reads><span>Reads</span></a></li><li><a href=https://andreaazzola.com/contact/ title=Contact><span>Contact</span></a></li></ul></nav></header><main class=main><header class=page-header><h1>ASP.NET</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Ichigo, an ASP.NET Blogging Engine</h2></header><div class=entry-content><p>With this post, I intend to leave a trace of the specs of this blog. I started this project in 2008 and never publicly mentioned it.
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>ASP.NET | Andrea Azzola</title>
+<meta name="keywords" content="">
+<meta name="description" content="Tips and techniques for lifestyle design">
+<meta name="author" content="Andrea Azzola">
+<link rel="canonical" href="http://localhost:1313/categories/asp.net/">
+<link crossorigin="anonymous" href="http://localhost:1313/assets/css/stylesheet.bceb41a4bb17d04980cc69a98224770eef3d291c9915d1304e9e8f13443532b4.css" integrity="sha256-vOtBpLsX0EmAzGmpgiR3Du89KRyZFdEwTp6PE0Q1MrQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/asp.net/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/categories/asp.net/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    palette: {
+      popup: { background: "#2e2e33" },
+      button: { background: "#f1d600", text: "#000" }
+    },
+    theme: "classic",
+    content: {
+      message: "This website uses Google Analytics to collect usage data.",
+      dismiss: "Accept",
+      deny: "Decline",
+      link: "Learn more",
+      href: "/privacy/"
+    },
+    type: "opt-in",
+    onInitialise: function(status) {
+      if (status == "allow") enableGA();
+    },
+    onStatusChange: function(status) {
+      if (status == "allow") enableGA();
+    }
+  });
+});
+
+function enableGA(){
+  var ga = document.createElement("script");
+  ga.setAttribute("async","");
+  ga.src = "https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9";
+  document.head.appendChild(ga);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3P9XZGVE9');
+}
+</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-C3P9XZGVE9');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/categories/asp.net/">
+  <meta property="og:site_name" content="Andrea Azzola">
+  <meta property="og:title" content="ASP.NET">
+  <meta property="og:description" content="Tips and techniques for lifestyle design">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ASP.NET">
+<meta name="twitter:description" content="Tips and techniques for lifestyle design">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Andrea Azzola (Alt + H)">Andrea Azzola</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/post/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/books/" title="Reads">
+                    <span>Reads</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    ASP.NET
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Eseguire ASP.NET vNext su Mac OS con Kulture e Omnisharp
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>L’articolo descrive come eseguire ASP.NET vNext con sistema operativo Mac OS X. La procedura richiede alcuni passaggi e un po’ di pazienza. Fortunatamente OS X include già il prerequisito Ruby: versione 2.0 su Mavericks/Yosemite, 1.8.7 su Mountain Lion, Lion e Snow Leopard.
+Sublime Text Un text editor avanzato molto diffuso per Mac OS X è Sublime Text{:target=&#34;_blank&#34;}. Personalmente lo uso anche in Windows per sviluppare soluzioni Salesforce.com{:target=&#34;_blank&#34;} o per prendere note e redigere articoli in HTML. Altri editor supportati all’epoca della scrittura erano:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-12-20 00:00:00 +0000 UTC'>December 20, 2014</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Eseguire ASP.NET vNext su Mac OS con Kulture e Omnisharp" href="http://localhost:1313/it/aspnet-vnext-mac-os-omnisharp-kulture/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ichigo, an ASP.NET Blogging Engine
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>With this post, I intend to leave a trace of the specs of this blog. I started this project in 2008 and never publicly mentioned it.
 Codename is Ichigo, named after Kurosaki Ichigo, the main character of the manga series Bleach by Tite Kubo. There’s no particular reason for the reference—I just like the manga.
 Since then, the blog has been a playground to experiment with technologies, including Entity Framework, Dynamic Data, URL Routing, ASP.NET AJAX, jQuery, @font-face, and OAuth.
-...</p></div><footer class=entry-footer><span title='2013-11-12 00:00:00 +0000 UTC'>November 12, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Ichigo, an ASP.NET Blogging Engine" href=https://andreaazzola.com/post/ichigo-asp-net-blogging-engine/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Simulating a RequiredFieldValidator with RadComboBox</h2></header><div class=entry-content><p>Telerik’s RadComboBox does not behave like a traditional DropDownList. Instead of a RequiredFieldValidator, you should use a CustomValidator. Here’s an implementation.
-Step 1: Markup &lt;asp:Label ID="lblExample" runat="server" AssociatedControlID="rcbExample" Text="Example" /> &lt;telerik:RadComboBox ID="rcbExample" runat="server" /> &lt;asp:CustomValidator ID="cvlExample" runat="server" ControlToValidate="rcbExample" Text="*" ClientValidationFunction="cvlExampleValidate" OnServerValidate="cvlExample_ServerValidate" /> Step 2: Client-side validation function cvlExampleValidate(source, args) { args.IsValid = radComboValidate("&lt;%= rcbExample.ClientID %>"); } function radComboValidate(controlName) { var combo = $find(controlName); var text = combo.get_text(); if (text.length &lt; 1) return false; var node = combo.findItemByText(text); if (node) { var value = node.get_value(); return value.length > 0; } return false; } Step 3: Server-side validation protected void cvlStatus_ServerValidate(object source, ServerValidateEventArgs args) { args.IsValid = rcbStatus.SelectedValue.Length > 0; } Note (2025): This article is from 2010. Telerik’s RadControls have evolved significantly since then; check the current Telerik UI for ASP.NET AJAX documentation for modern practices.
-...</p></div><footer class=entry-footer><span title='2010-10-22 00:00:00 +0000 UTC'>October 22, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Simulating a RequiredFieldValidator with RadComboBox" href=https://andreaazzola.com/post/requiredfieldvalidator-radcombobox/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Handle Multiple Columns as One with Dynamic Data</h2></header><div class=entry-content><p>Sometimes you need to schedule tasks in ASP.NET and save both a Start Date and an Interval, stored respectively as DateTime and TimeSpan.Ticks in your database.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-11-12 00:00:00 +0000 UTC'>November 12, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Ichigo, an ASP.NET Blogging Engine" href="http://localhost:1313/post/ichigo-asp-net-blogging-engine/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Simulating a RequiredFieldValidator with RadComboBox
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Telerik’s RadComboBox does not behave like a traditional DropDownList. Instead of a RequiredFieldValidator, you should use a CustomValidator. Here’s an implementation.
+Step 1: Markup &lt;asp:Label ID=&#34;lblExample&#34; runat=&#34;server&#34; AssociatedControlID=&#34;rcbExample&#34; Text=&#34;Example&#34; /&gt; &lt;telerik:RadComboBox ID=&#34;rcbExample&#34; runat=&#34;server&#34; /&gt; &lt;asp:CustomValidator ID=&#34;cvlExample&#34; runat=&#34;server&#34; ControlToValidate=&#34;rcbExample&#34; Text=&#34;*&#34; ClientValidationFunction=&#34;cvlExampleValidate&#34; OnServerValidate=&#34;cvlExample_ServerValidate&#34; /&gt; Step 2: Client-side validation function cvlExampleValidate(source, args) { args.IsValid = radComboValidate(&#34;&lt;%= rcbExample.ClientID %&gt;&#34;); } function radComboValidate(controlName) { var combo = $find(controlName); var text = combo.get_text(); if (text.length &lt; 1) return false; var node = combo.findItemByText(text); if (node) { var value = node.get_value(); return value.length &gt; 0; } return false; } Step 3: Server-side validation protected void cvlStatus_ServerValidate(object source, ServerValidateEventArgs args) { args.IsValid = rcbStatus.SelectedValue.Length &gt; 0; } Note (2025): This article is from 2010. Telerik’s RadControls have evolved significantly since then; check the current Telerik UI for ASP.NET AJAX documentation for modern practices.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-22 00:00:00 +0000 UTC'>October 22, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Simulating a RequiredFieldValidator with RadComboBox" href="http://localhost:1313/post/requiredfieldvalidator-radcombobox/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Improve ASP.NET SEO by using System.Web.Routing
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This page is specific to Microsoft Visual Studio 2008/.NET Framework 3.5 or higher.
+SEO and ASP.NET “As an Internet marketing strategy, SEO considers how search engines work and what people search for. Optimizing a website primarily involves editing its content and HTML indexing activities of search engines.” — wikipedia.org
+Search Engine Friendly URLs vs “Dirty” URLs Example:
+SEF URL: http://AndreaAzzola.com/seo-asp-net-routing RAW URL: http://AndreaAzzola.com/Post.aspx?id=cd171f7c-560d-4a62-8d65-16b87419a58c SEFs are better to write, remember, understand, and maintain. In the example above you can immediately understand what the resource is about, while the RAW version is difficult to read and almost impossible to remember.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-01-18 00:00:00 +0000 UTC'>January 18, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Improve ASP.NET SEO by using System.Web.Routing" href="http://localhost:1313/post/seo-asp-net-routing/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Handle Multiple Columns as One with Dynamic Data
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Sometimes you need to schedule tasks in ASP.NET and save both a Start Date and an Interval, stored respectively as DateTime and TimeSpan.Ticks in your database.
 Editing raw tick values is not exactly good UX, so I bound the proper MetaColumn to the proper UIHint. After some tests, I noticed the GUI was functional but not as intuitive as expected.
 The solution was to customize the FieldTemplateUserControl of Dynamic Data, to display and save multiple columns I needed (Start Date, Start Time, Occurs – Daily, Weekly, Monthly, etc.).
-...</p></div><footer class=entry-footer><span title='2008-11-02 00:00:00 +0000 UTC'>November 2, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Handle Multiple Columns as One with Dynamic Data" href=https://andreaazzola.com/post/multiple-columns-dynamic-data/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Check the MetaModel Existence while Running a Dynamic Data Application</h2></header><div class=entry-content><p>In the web application that I’m developing using Dynamic Data, I set the DataContext at runtime. The application might bind different contexts depending on many variables. I usually test it on two different browsers, and, because of the session, I need to pass the same procedure twice. The second time, the DataContext is already set, so I don’t need to register the context anymore. The simple condition I use:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-11-02 00:00:00 +0000 UTC'>November 2, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Handle Multiple Columns as One with Dynamic Data" href="http://localhost:1313/post/multiple-columns-dynamic-data/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Allow the Upload of Large Files with ASP.NET
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>When working with ASP.NET you may need to increase the default limit for file uploads. By editing the Web.config file you can allow larger payloads.
+Example configuration:
+&lt;configuration&gt; &lt;system.web&gt; &lt;httpRuntime executionTimeout=&#34;240&#34; maxRequestLength=&#34;16384&#34; useFullyQualifiedRedirectUrl=&#34;false&#34; minFreeThreads=&#34;8&#34; minLocalRequestFreeThreads=&#34;4&#34; appRequestQueueLimit=&#34;100&#34; enableVersionHeader=&#34;true&#34; /&gt; &lt;/system.web&gt; &lt;/configuration&gt; This configuration allows the upload of files up to 16 MB.
+Note (2025): The default settings and limits may have changed in more recent versions of ASP.NET/.NET. Check the Microsoft documentation for updated guidance.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-06-24 00:00:00 +0000 UTC'>June 24, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Allow the Upload of Large Files with ASP.NET" href="http://localhost:1313/post/upload-large-files-asp-net/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Check the MetaModel Existence while Running a Dynamic Data Application
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In the web application that I’m developing using Dynamic Data, I set the DataContext at runtime. The application might bind different contexts depending on many variables. I usually test it on two different browsers, and, because of the session, I need to pass the same procedure twice. The second time, the DataContext is already set, so I don’t need to register the context anymore. The simple condition I use:
 if (System.Web.DynamicData.MetaModel.Default == null) { // Register context and routes ... } Otherwise I would get this exception:
-...</p></div><footer class=entry-footer><span title='2008-06-18 00:00:00 +0000 UTC'>June 18, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Check the MetaModel Existence while Running a Dynamic Data Application" href=https://andreaazzola.com/post/check-metamodel-existence-dynamic-data-application/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Issues With AJAX and a Custom HttpModule</h2></header><div class=entry-content><p>My web app needs to catch every non‑existent path as a search string, because I’m implementing an HttpModule that handles URLs in an SEO‑friendly way, e.g.:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-06-18 00:00:00 +0000 UTC'>June 18, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Check the MetaModel Existence while Running a Dynamic Data Application" href="http://localhost:1313/post/check-metamodel-existence-dynamic-data-application/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Set the ConnectionString at Runtime with DynamicData
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Note (2025): This article dates back to 2008 and refers to ASP.NET Dynamic Data, which is legacy today. Concepts can still be useful historically, but for modern .NET consider newer frameworks and data‑binding approaches.
+The following snippet customizes the .NET ConnectionString at runtime in a Dynamic Data application.
+Edit Global.asax and modify the RegisterRoutes(RouteCollection routes) method. Instead of:
+model.RegisterContext(typeof(XYZDataContext), new ContextConfiguration() { ScaffoldAllTables = true }); Use:
+model.RegisterContext( () =&gt; new XYZDataContext(connectionString), new ContextConfiguration { ScaffoldAllTables = true } ); Where connectionString is your string value. You can customize the RegisterRoutes parameter collection without compromising application functionality.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-06-16 00:00:00 +0000 UTC'>June 16, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Set the ConnectionString at Runtime with DynamicData" href="http://localhost:1313/post/set-connectionstring-runtime-dynamicdata/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Using an ajax:ModalPopup Without a TargetControl
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The ModalPopup extender usually requires a control for firing up, set through the TargetControlID property. However, sometimes you may want to show and hide the panel programmatically. All you need is a fake activator, like the following:
+The Extender &lt;ajax:ModalPopupExtender ID=&#34;mpeInfo&#34; runat=&#34;server&#34; TargetControlID=&#34;divFakeActivator&#34; PopupControlID=&#34;pnlInfo&#34; CancelControlID=&#34;bttInfoClose&#34; /&gt; The Panel &lt;asp:Panel ID=&#34;pnlInfo&#34; runat=&#34;server&#34;&gt; Hello World!!! &lt;/asp:Panel&gt; The C# code // Show and hide programmatically mpeInfo.Show(); mpeInfo.Hide(); Note (2025): This post reflects an older ASP.NET AJAX pattern. In modern frameworks you would likely manage modal dialogs through client‑side libraries (e.g., Bootstrap, React, Blazor components).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-09-25 00:00:00 +0000 UTC'>September 25, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Using an ajax:ModalPopup Without a TargetControl" href="http://localhost:1313/post/using-ajax-modalpopup-targetcontrol/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Issues With AJAX and a Custom HttpModule
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>My web app needs to catch every non‑existent path as a search string, because I’m implementing an HttpModule that handles URLs in an SEO‑friendly way, e.g.:
 http://contoso.com/search-string But the Microsoft AJAX ScriptModule interfered, causing runtime errors like “AJAX Framework failed to load…”. The fix was to register my module after the ScriptModule and selectively bypass AJAX requests.
-&lt;add name="ScriptModule" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, ..." /> &lt;add name="MyModule" type="MyModule" /> using System; using System.Linq; using System.Web; public class MyModule : IHttpModule { public void Init(HttpApplication context) { context.PostResolveRequestCache += Application_OnAfterProcess; } private void Application_OnAfterProcess(object source, EventArgs e) { var application = (HttpApplication)source; var context = application.Context; if (context.Request.Headers["x-microsoftajax"] == null) { if (!System.IO.File.Exists(application.Request.PhysicalPath) && !application.Request.Url.ToString().Contains(".axd") && !application.Request.Url.ToString().Contains(".asmx")) { string newUrl = "~/Search.aspx?q=" + context.Server.UrlEncode(application.Request.Url.Segments.Last()); // other logic here… context.RewritePath(newUrl); } } } public void Dispose() { } } This runs at PostResolveRequestCache and, when the special x-microsoftajax header is absent, it rewrites unknown paths to your search page while letting AJAX handlers (*.axd, *.asmx) pass through normally.
-...</p></div><footer class=entry-footer><span title='2005-06-18 00:00:00 +0000 UTC'>June 18, 2005</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Issues With AJAX and a Custom HttpModule" href=https://andreaazzola.com/post/issues-ajax-custom-httpmodule/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://andreaazzola.com/>Andrea Azzola</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+&lt;add name=&#34;ScriptModule&#34; type=&#34;System.Web.Handlers.ScriptModule, System.Web.Extensions, ...&#34; /&gt; &lt;add name=&#34;MyModule&#34; type=&#34;MyModule&#34; /&gt; using System; using System.Linq; using System.Web; public class MyModule : IHttpModule { public void Init(HttpApplication context) { context.PostResolveRequestCache &#43;= Application_OnAfterProcess; } private void Application_OnAfterProcess(object source, EventArgs e) { var application = (HttpApplication)source; var context = application.Context; if (context.Request.Headers[&#34;x-microsoftajax&#34;] == null) { if (!System.IO.File.Exists(application.Request.PhysicalPath) &amp;&amp; !application.Request.Url.ToString().Contains(&#34;.axd&#34;) &amp;&amp; !application.Request.Url.ToString().Contains(&#34;.asmx&#34;)) { string newUrl = &#34;~/Search.aspx?q=&#34; &#43; context.Server.UrlEncode(application.Request.Url.Segments.Last()); // other logic here… context.RewritePath(newUrl); } } } public void Dispose() { } } This runs at PostResolveRequestCache and, when the special x-microsoftajax header is absent, it rewrites unknown paths to your search page while letting AJAX handlers (*.axd, *.asmx) pass through normally.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2005-06-18 00:00:00 +0000 UTC'>June 18, 2005</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Issues With AJAX and a Custom HttpModule" href="http://localhost:1313/post/issues-ajax-custom-httpmodule/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Andrea Azzola</a></span> · 
+
+    <span><a href="http://localhost:1313/privacy/">Privacy Policy</a></span> · <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

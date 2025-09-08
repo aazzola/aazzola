@@ -1,34 +1,408 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Programming | Andrea Azzola</title><meta name=keywords content><meta name=description content="Tips and techniques for lifestyle design"><meta name=author content="Andrea Azzola"><link rel=canonical href=https://andreaazzola.com/categories/programming/><link crossorigin=anonymous href=https://andreaazzola.com/assets/css/stylesheet.bceb41a4bb17d04980cc69a98224770eef3d291c9915d1304e9e8f13443532b4.css integrity="sha256-vOtBpLsX0EmAzGmpgiR3Du89KRyZFdEwTp6PE0Q1MrQ=" rel="preload stylesheet" as=style><link rel=icon href=https://andreaazzola.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://andreaazzola.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://andreaazzola.com/favicon.png><link rel=apple-touch-icon href=https://andreaazzola.com/apple-touch-icon.png><link rel=mask-icon href=https://andreaazzola.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://andreaazzola.com/categories/programming/index.xml><link rel=alternate hreflang=en href=https://andreaazzola.com/categories/programming/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://andreaazzola.com/categories/programming/"><meta property="og:site_name" content="Andrea Azzola"><meta property="og:title" content="Programming"><meta property="og:description" content="Tips and techniques for lifestyle design"><meta property="og:locale" content="en-us"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Programming"><meta name=twitter:description content="Tips and techniques for lifestyle design"></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://andreaazzola.com/ accesskey=h title="Andrea Azzola (Alt + H)">Andrea Azzola</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://andreaazzola.com/post/ title=Articles><span>Articles</span></a></li><li><a href=https://andreaazzola.com/books/ title=Reads><span>Reads</span></a></li><li><a href=https://andreaazzola.com/contact/ title=Contact><span>Contact</span></a></li></ul></nav></header><main class=main><header class=page-header><h1>Programming</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Logging with NLog and SQLite</h2></header><div class=entry-content><p>This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Programming | Andrea Azzola</title>
+<meta name="keywords" content="">
+<meta name="description" content="Tips and techniques for lifestyle design">
+<meta name="author" content="Andrea Azzola">
+<link rel="canonical" href="http://localhost:1313/categories/programming/">
+<link crossorigin="anonymous" href="http://localhost:1313/assets/css/stylesheet.bceb41a4bb17d04980cc69a98224770eef3d291c9915d1304e9e8f13443532b4.css" integrity="sha256-vOtBpLsX0EmAzGmpgiR3Du89KRyZFdEwTp6PE0Q1MrQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/programming/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/categories/programming/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    palette: {
+      popup: { background: "#2e2e33" },
+      button: { background: "#f1d600", text: "#000" }
+    },
+    theme: "classic",
+    content: {
+      message: "This website uses Google Analytics to collect usage data.",
+      dismiss: "Accept",
+      deny: "Decline",
+      link: "Learn more",
+      href: "/privacy/"
+    },
+    type: "opt-in",
+    onInitialise: function(status) {
+      if (status == "allow") enableGA();
+    },
+    onStatusChange: function(status) {
+      if (status == "allow") enableGA();
+    }
+  });
+});
+
+function enableGA(){
+  var ga = document.createElement("script");
+  ga.setAttribute("async","");
+  ga.src = "https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9";
+  document.head.appendChild(ga);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3P9XZGVE9');
+}
+</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3P9XZGVE9"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-C3P9XZGVE9');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/categories/programming/">
+  <meta property="og:site_name" content="Andrea Azzola">
+  <meta property="og:title" content="Programming">
+  <meta property="og:description" content="Tips and techniques for lifestyle design">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Programming">
+<meta name="twitter:description" content="Tips and techniques for lifestyle design">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Andrea Azzola (Alt + H)">Andrea Azzola</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/post/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/books/" title="Reads">
+                    <span>Reads</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Programming
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Eseguire ASP.NET vNext su Mac OS con Kulture e Omnisharp
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>L’articolo descrive come eseguire ASP.NET vNext con sistema operativo Mac OS X. La procedura richiede alcuni passaggi e un po’ di pazienza. Fortunatamente OS X include già il prerequisito Ruby: versione 2.0 su Mavericks/Yosemite, 1.8.7 su Mountain Lion, Lion e Snow Leopard.
+Sublime Text Un text editor avanzato molto diffuso per Mac OS X è Sublime Text{:target=&#34;_blank&#34;}. Personalmente lo uso anche in Windows per sviluppare soluzioni Salesforce.com{:target=&#34;_blank&#34;} o per prendere note e redigere articoli in HTML. Altri editor supportati all’epoca della scrittura erano:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-12-20 00:00:00 +0000 UTC'>December 20, 2014</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Eseguire ASP.NET vNext su Mac OS con Kulture e Omnisharp" href="http://localhost:1313/it/aspnet-vnext-mac-os-omnisharp-kulture/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Logging with NLog and SQLite
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.
 NLog NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). nlog-project.org
 Install (NuGet Package Manager Console)
-PM> Install-Package NLog SQLite SQLite is a simple embedded database engine. No separate server daemon is required; the database is a single file (e.g., .db3).
-...</p></div><footer class=entry-footer><span title='2014-05-06 00:00:00 +0000 UTC'>May 6, 2014</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Logging with NLog and SQLite" href=https://andreaazzola.com/post/logging-nlog-sqlite/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>MavensMate unable to reach GitHub on Windows</h2></header><div class=entry-content><p>MavensMate was a popular community plugin for the Force.com platform, built on the Sublime Text IDE (created and maintained by Joe Ferraro) as a free alternative to the official Force.com IDE.
+PM&gt; Install-Package NLog SQLite SQLite is a simple embedded database engine. No separate server daemon is required; the database is a single file (e.g., .db3).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-05-06 00:00:00 +0000 UTC'>May 6, 2014</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Logging with NLog and SQLite" href="http://localhost:1313/post/logging-nlog-sqlite/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MavensMate unable to reach GitHub on Windows
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>MavensMate was a popular community plugin for the Force.com platform, built on the Sublime Text IDE (created and maintained by Joe Ferraro) as a free alternative to the official Force.com IDE.
 Under certain conditions on Windows 7/8 (often proxy/firewall configurations), installation could fail with an error similar to:
 Installation of Sublime Text plugin failed. This is likely due to the installer being unable to reach GitHub. If you are behind a firewall or using a proxy, you should configure git accordingly (google: git config --global https.proxy) and ensure your HTTPS/HTTPS_PROXY environment variable(s) are set properly. Otherwise, please log an issue on the MavensMate GitHub project. There is an existing GitHub issue with a workaround suggested by Joe Ferraro. The steps that worked for me were:
-...</p></div><footer class=entry-footer><span title='2014-04-06 00:00:00 +0000 UTC'>April 6, 2014</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to MavensMate unable to reach GitHub on Windows" href=https://andreaazzola.com/post/mavensmate-unable-github-windows/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Manage and format Dates with JavaScript</h2></header><div class=entry-content><p>Update (2025): This article was written in 2013. It still offers useful basics, but a few notes:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-04-06 00:00:00 +0000 UTC'>April 6, 2014</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to MavensMate unable to reach GitHub on Windows" href="http://localhost:1313/post/mavensmate-unable-github-windows/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Search Email Inbox with C#
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Note (2025): This post dates back to 2014 and uses password‑based IMAP access for Gmail. Modern Gmail/Google Workspace typically requires OAuth 2.0 and app passwords/“less secure apps” are disabled. The example is kept for archival purposes; adapt authentication accordingly in new projects.
+A few years ago I helped manage a radio and I needed a tool—an ASP.NET web page—for the periodical download of promo mixes. They were linked in emails recognizable by a few keywords.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-03-27 00:00:00 +0000 UTC'>March 27, 2014</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Search Email Inbox with C#" href="http://localhost:1313/post/search-email-inbox-csharp/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Manage and format Dates with JavaScript
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Update (2025): This article was written in 2013. It still offers useful basics, but a few notes:
 Date.getMonth() is zero‑based (January = 0). Date.getDay() returns the weekday (0–6), not the day of month. There is no setDay() or setUTCDay() method in JavaScript. Moment.js is in maintenance mode; modern alternatives include Luxon, date‑fns, and native Intl.DateTimeFormat. Consider these for new projects. JavaScript has a Date object you can use to handle dates. Supported constructors are:
-...</p></div><footer class=entry-footer><span title='2013-11-14 00:00:00 +0000 UTC'>November 14, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Manage and format Dates with JavaScript" href=https://andreaazzola.com/post/javascript-date-handling-format/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Ichigo, an ASP.NET Blogging Engine</h2></header><div class=entry-content><p>With this post, I intend to leave a trace of the specs of this blog. I started this project in 2008 and never publicly mentioned it.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-11-14 00:00:00 +0000 UTC'>November 14, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Manage and format Dates with JavaScript" href="http://localhost:1313/post/javascript-date-handling-format/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ichigo, an ASP.NET Blogging Engine
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>With this post, I intend to leave a trace of the specs of this blog. I started this project in 2008 and never publicly mentioned it.
 Codename is Ichigo, named after Kurosaki Ichigo, the main character of the manga series Bleach by Tite Kubo. There’s no particular reason for the reference—I just like the manga.
 Since then, the blog has been a playground to experiment with technologies, including Entity Framework, Dynamic Data, URL Routing, ASP.NET AJAX, jQuery, @font-face, and OAuth.
-...</p></div><footer class=entry-footer><span title='2013-11-12 00:00:00 +0000 UTC'>November 12, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Ichigo, an ASP.NET Blogging Engine" href=https://andreaazzola.com/post/ichigo-asp-net-blogging-engine/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Future Count with Apex Code</h2></header><div class=entry-content><p>A simple snippet for counting @future calls in a 24‑hour timespan, useful for monitoring peaks and acting accordingly.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-11-12 00:00:00 +0000 UTC'>November 12, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Ichigo, an ASP.NET Blogging Engine" href="http://localhost:1313/post/ichigo-asp-net-blogging-engine/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Get Size of Tables with SQL Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A snippet for getting the size for all tables in a SQL Server database that might prove useful to:
+understand where most of your data is going find database bottlenecks free up disk space reduce maintenance cost WITH table_space_usage (schema_name, table_name, used, reserved, ind_rows, tbl_rows) AS ( SELECT s.name, o.name, p.used_page_count * 8, -- KB p.reserved_page_count * 8, -- KB p.row_count, CASE WHEN i.index_id IN (0,1) THEN p.row_count ELSE 0 END FROM sys.dm_db_partition_stats AS p INNER JOIN sys.objects AS o ON o.object_id = p.object_id INNER JOIN sys.schemas AS s ON s.schema_id = o.schema_id LEFT OUTER JOIN sys.indexes AS i ON i.object_id = p.object_id AND i.index_id = p.index_id WHERE o.type_desc = &#39;USER_TABLE&#39; AND o.is_ms_shipped = 0 ) SELECT t.schema_name, t.table_name, SUM(t.used) AS used_in_kb, SUM(t.reserved) AS reserved_in_kb, SUM(t.tbl_rows) AS rows FROM table_space_usage AS t GROUP BY t.schema_name, t.table_name ORDER BY used_in_kb DESC; </p>
+  </div>
+  <footer class="entry-footer"><span title='2013-10-16 00:00:00 +0000 UTC'>October 16, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Get Size of Tables with SQL Server" href="http://localhost:1313/post/table-size-space-sql-server/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Future Count with Apex Code
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A simple snippet for counting @future calls in a 24‑hour timespan, useful for monitoring peaks and acting accordingly.
 Please note: supports up to 50,000 future calls in a 24h timespan.
-public with sharing class AsyncApexJobUtils { public static integer futureCount() { integer c = [select count() from AsyncApexJob where JobType='Future' and CreatedDate >= :Datetime.now().addDays(-1) limit 50000]; system.debug('#futureCount: ' + c); return c; } }</p></div><footer class=entry-footer><span title='2011-07-14 00:00:00 +0000 UTC'>July 14, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Future Count with Apex Code" href=https://andreaazzola.com/post/future-count-apex/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Simulating a RequiredFieldValidator with RadComboBox</h2></header><div class=entry-content><p>Telerik’s RadComboBox does not behave like a traditional DropDownList. Instead of a RequiredFieldValidator, you should use a CustomValidator. Here’s an implementation.
-Step 1: Markup &lt;asp:Label ID="lblExample" runat="server" AssociatedControlID="rcbExample" Text="Example" /> &lt;telerik:RadComboBox ID="rcbExample" runat="server" /> &lt;asp:CustomValidator ID="cvlExample" runat="server" ControlToValidate="rcbExample" Text="*" ClientValidationFunction="cvlExampleValidate" OnServerValidate="cvlExample_ServerValidate" /> Step 2: Client-side validation function cvlExampleValidate(source, args) { args.IsValid = radComboValidate("&lt;%= rcbExample.ClientID %>"); } function radComboValidate(controlName) { var combo = $find(controlName); var text = combo.get_text(); if (text.length &lt; 1) return false; var node = combo.findItemByText(text); if (node) { var value = node.get_value(); return value.length > 0; } return false; } Step 3: Server-side validation protected void cvlStatus_ServerValidate(object source, ServerValidateEventArgs args) { args.IsValid = rcbStatus.SelectedValue.Length > 0; } Note (2025): This article is from 2010. Telerik’s RadControls have evolved significantly since then; check the current Telerik UI for ASP.NET AJAX documentation for modern practices.
-...</p></div><footer class=entry-footer><span title='2010-10-22 00:00:00 +0000 UTC'>October 22, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Simulating a RequiredFieldValidator with RadComboBox" href=https://andreaazzola.com/post/requiredfieldvalidator-radcombobox/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>How to Log HTTP Requests with PHP</h2></header><div class=entry-content><p>Note (2025): This post was written in 2010. The sample uses ereg, which has been deprecated in PHP 5.3 and removed as of PHP 7. Use preg_match or other modern approaches for production code. The article remains here for archival and historical interest.
-Sometimes you need to understand precisely how the HTTP request is submitted to the server. If you’re working with Salesforce.com, you probably don’t have easy or intuitive tools to understand how a message is serialized and sent by the runtime to the server.
-...</p></div><footer class=entry-footer><span title='2010-05-27 00:00:00 +0000 UTC'>May 27, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to How to Log HTTP Requests with PHP" href=https://andreaazzola.com/post/log-http-requests/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Call async methods with C#</h2></header><div class=entry-content><p>Note: This article was originally written in 2009 and may be obsolete due to C# technology improvements.
-This article shows how to delegate work to an asynchronous thread in C#, allowing for code execution and app responsiveness. You might go a step further by implementing error notifications, polling, or waiting for the procedure to complete at a certain point.
-Suppose you have the following method:
-public void UploadFile(string path) { try { //... uploads some file to the server } catch(Exception ex) { // ... handle errors } } And you are implementing it as a web service: you are asked to give an immediate response and upload the file asynchronously, as the user won’t need the upload immediately.
-...</p></div><footer class=entry-footer><span title='2009-10-15 00:00:00 +0000 UTC'>October 15, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to Call async methods with C#" href=https://andreaazzola.com/post/call-async-method/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>POST data with JavaScript</h2></header><div class=entry-content><p>Note (2025): This article dates back to 2009. The examples remain useful, though modern apps often prefer fetch()/XHR or form submissions driven by frameworks. The classic form‑build approach below still works universally.
-HTML 4.0 (W3C) defines how browsers submit forms:
-GET: append query string to the action URL (application/x-www-form-urlencoded). POST: send a request body to the action URL, using the content type indicated by enctype. Programmatic POST helper Add this in your page head:
-...</p></div><footer class=entry-footer><span title='2009-07-07 00:00:00 +0000 UTC'>July 7, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to POST data with JavaScript" href=https://andreaazzola.com/post/post-data-js/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>JavaScript Auto-collapsing Notification Panel</h2></header><div class=entry-content><p>Note (2025): This article was originally written in 2009. The example code (inline onclick, manual style.display changes) reflects practices of that era. Modern JavaScript uses event listeners, unobtrusive DOM manipulation, and CSS transitions. The post is kept here as an archive and for historical interest.
-In almost all web applications comes the moment when it becomes necessary to show some notifications to the user. A common practice in the past, even when elegance was unimportant and web pages didn’t show much dynamic behavior, was the use of the method alert() from JavaScript.
-...</p></div><footer class=entry-footer><span title='2009-05-29 00:00:00 +0000 UTC'>May 29, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer><a class=entry-link aria-label="post link to JavaScript Auto-collapsing Notification Panel" href=https://andreaazzola.com/post/js-notification-panel-gmail/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://andreaazzola.com/categories/programming/page/2/>Next&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://andreaazzola.com/>Andrea Azzola</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+public with sharing class AsyncApexJobUtils { public static integer futureCount() { integer c = [select count() from AsyncApexJob where JobType=&#39;Future&#39; and CreatedDate &gt;= :Datetime.now().addDays(-1) limit 50000]; system.debug(&#39;#futureCount: &#39; &#43; c); return c; } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2011-07-14 00:00:00 +0000 UTC'>July 14, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Future Count with Apex Code" href="http://localhost:1313/post/future-count-apex/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Simulating a RequiredFieldValidator with RadComboBox
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Telerik’s RadComboBox does not behave like a traditional DropDownList. Instead of a RequiredFieldValidator, you should use a CustomValidator. Here’s an implementation.
+Step 1: Markup &lt;asp:Label ID=&#34;lblExample&#34; runat=&#34;server&#34; AssociatedControlID=&#34;rcbExample&#34; Text=&#34;Example&#34; /&gt; &lt;telerik:RadComboBox ID=&#34;rcbExample&#34; runat=&#34;server&#34; /&gt; &lt;asp:CustomValidator ID=&#34;cvlExample&#34; runat=&#34;server&#34; ControlToValidate=&#34;rcbExample&#34; Text=&#34;*&#34; ClientValidationFunction=&#34;cvlExampleValidate&#34; OnServerValidate=&#34;cvlExample_ServerValidate&#34; /&gt; Step 2: Client-side validation function cvlExampleValidate(source, args) { args.IsValid = radComboValidate(&#34;&lt;%= rcbExample.ClientID %&gt;&#34;); } function radComboValidate(controlName) { var combo = $find(controlName); var text = combo.get_text(); if (text.length &lt; 1) return false; var node = combo.findItemByText(text); if (node) { var value = node.get_value(); return value.length &gt; 0; } return false; } Step 3: Server-side validation protected void cvlStatus_ServerValidate(object source, ServerValidateEventArgs args) { args.IsValid = rcbStatus.SelectedValue.Length &gt; 0; } Note (2025): This article is from 2010. Telerik’s RadControls have evolved significantly since then; check the current Telerik UI for ASP.NET AJAX documentation for modern practices.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-22 00:00:00 +0000 UTC'>October 22, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Simulating a RequiredFieldValidator with RadComboBox" href="http://localhost:1313/post/requiredfieldvalidator-radcombobox/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Turn Sentences into Slugs with JavaScript
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This simple script converts a text string into a valid URL slug. It mixes jQuery with standard JavaScript, and can be easily adapted to pure JS.
+&lt;!-- Example input element --&gt; &lt;input id=&#34;controlId&#34; type=&#34;text&#34; /&gt; // Handles typing $(document).ready(function () { // If the Title is specified, avoid overwrite if ($(&#39;#controlId&#39;).val().length === 0) { $(&#39;#controlId&#39;).on(&#39;keypress&#39;, function () { $(&#39;#controlId&#39;).val(slugify($(&#39;#controlId&#39;).val().toLowerCase())); }); } }); // Replacements function slugify(text) { text = text.replace(/[^-a-zA-Z0-9,&amp;\s]&#43;/g, &#39;&#39;); text = text.replace(/-/g, &#39;_&#39;); text = text.replace(/\s/g, &#39;-&#39;); return text; } Note (2025): For modern projects you may also want to normalize accents (é → e), trim repeated separators, and prefer input event instead of keypress. This post keeps the original 2010 logic.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-20 00:00:00 +0000 UTC'>October 20, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Andrea Azzola</footer>
+  <a class="entry-link" aria-label="post link to Turn Sentences into Slugs with JavaScript" href="http://localhost:1313/post/transform-sentence-slug-js/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://localhost:1313/categories/programming/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Andrea Azzola</a></span> · 
+
+    <span><a href="http://localhost:1313/privacy/">Privacy Policy</a></span> · <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

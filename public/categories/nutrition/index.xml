@@ -1,11 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Nutrition on Andrea Azzola</title><link>https://andreaazzola.com/categories/nutrition/</link><description>Recent content in Nutrition on Andrea Azzola</description><generator>Hugo -- 0.148.2</generator><language>en-us</language><lastBuildDate>Sun, 02 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://andreaazzola.com/categories/nutrition/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick and Easy Meal Prep Pouches</title><link>https://andreaazzola.com/post/meal-prep-pouches-quick-easy/</link><pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate><guid>https://andreaazzola.com/post/meal-prep-pouches-quick-easy/</guid><description>&lt;p>Meal prepping in advance and quantity is beneficial for three main reasons:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Save time&lt;/strong>: cooking, shopping, and washing dishes&lt;/li>
-&lt;li>&lt;strong>Diet control&lt;/strong>: a batch of strategic meals helps fight junk food&lt;/li>
-&lt;li>&lt;strong>Save money&lt;/strong>: buying in quantity is cheaper; fewer supermarket trips and less use of cleaning supplies&lt;/li>
-&lt;/ol>
-&lt;p>Specifically, in this article I’ll explain how to prepare meals for several months using a practical technique that’s easy to implement.&lt;/p>
-&lt;h2 id="meal-prep-pouches">Meal Prep Pouches&lt;/h2>
-&lt;p>The advantage of meal‑prep pouches, as opposed to classic plastic containers, is the &lt;strong>compact space&lt;/strong> and the &lt;strong>reduced air inside&lt;/strong> (less air equals fewer bacteria). The less space our pouches use, the more we’ll be able to store and benefit without cooking again.&lt;/p></description></item><item><title>Intermittent Fasting: Diet and Benefits</title><link>https://andreaazzola.com/post/intermittent-fasting-diet-benefits/</link><pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate><guid>https://andreaazzola.com/post/intermittent-fasting-diet-benefits/</guid><description>&lt;p>I&amp;rsquo;ve always found it difficult to lose weight slowly. I&amp;rsquo;m a hearty eater and sometimes see food as a reward at the end of a stressful day. Once I start, self‑control can be hard—but, paradoxically, strict abstention is much easier. I&amp;rsquo;m not obese thanks to regular sport, yet—with the “beach‑body readiness” pretext—I decided to shed a few extra kilos.&lt;/p>
-&lt;h2 id="the-intermittent-fasting-diet">The Intermittent Fasting Diet&lt;/h2>
-&lt;p>A few weeks ago I chose to adopt &lt;strong>intermittent fasting&lt;/strong> (IF). I&amp;rsquo;m not new to it: I often eat once a day, so between one meal and the next I wait ~23 hours. The goal is to concentrate meals in a small window: 8 hours or less (down to one meal a day, but not beyond). It can be practiced daily, on alternate days, or only on certain days of the week. The approach emulates natural cycles of abundance and shortage: in nature an adult would likely have one main meal per day with some snacks, not the six balanced meals many diets consider indispensable.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nutrition on Andrea Azzola</title>
+    <link>http://localhost:1313/categories/nutrition/</link>
+    <description>Recent content in Nutrition on Andrea Azzola</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/nutrition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Preparazione di Pasti in Sacchetti Facile e Veloce</title>
+      <link>http://localhost:1313/it/preparazione-pasti-sacchetti-facile-veloce/</link>
+      <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/it/preparazione-pasti-sacchetti-facile-veloce/</guid>
+      <description>&lt;p&gt;Vi sono diverse ragioni per cui la preparazione dei pasti in anticipo può essere estremamente conveniente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Risparmiare tempo&lt;/strong&gt;: si cucina, si fa la spesa e si lavano le stoviglie una sola volta&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Controllo della dieta&lt;/strong&gt;: avere pasti &lt;em&gt;strategici&lt;/em&gt; pronti aiuta a combattere la tentazione del cibo spazzatura&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Risparmiare denaro&lt;/strong&gt;: acquistare in quantità è conveniente; si risparmia anche in trasporti e detergenti&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In particolare, questo articolo descrive un metodo di conservazione pratico e semplice da adottare, utile anche per periodi lunghi.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quick and Easy Meal Prep Pouches</title>
+      <link>http://localhost:1313/post/meal-prep-pouches-quick-easy/</link>
+      <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/meal-prep-pouches-quick-easy/</guid>
+      <description>&lt;p&gt;Meal prepping in advance and quantity is beneficial for three main reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Save time&lt;/strong&gt;: cooking, shopping, and washing dishes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diet control&lt;/strong&gt;: a batch of strategic meals helps fight junk food&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Save money&lt;/strong&gt;: buying in quantity is cheaper; fewer supermarket trips and less use of cleaning supplies&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Specifically, in this article I’ll explain how to prepare meals for several months using a practical technique that’s easy to implement.&lt;/p&gt;
+&lt;h2 id=&#34;meal-prep-pouches&#34;&gt;Meal Prep Pouches&lt;/h2&gt;
+&lt;p&gt;The advantage of meal‑prep pouches, as opposed to classic plastic containers, is the &lt;strong&gt;compact space&lt;/strong&gt; and the &lt;strong&gt;reduced air inside&lt;/strong&gt; (less air equals fewer bacteria). The less space our pouches use, the more we’ll be able to store and benefit without cooking again.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Intermittent Fasting: Diet and Benefits</title>
+      <link>http://localhost:1313/post/intermittent-fasting-diet-benefits/</link>
+      <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/intermittent-fasting-diet-benefits/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve always found it difficult to lose weight slowly. I&amp;rsquo;m a hearty eater and sometimes see food as a reward at the end of a stressful day. Once I start, self‑control can be hard—but, paradoxically, strict abstention is much easier. I&amp;rsquo;m not obese thanks to regular sport, yet—with the “beach‑body readiness” pretext—I decided to shed a few extra kilos.&lt;/p&gt;
+&lt;h2 id=&#34;the-intermittent-fasting-diet&#34;&gt;The Intermittent Fasting Diet&lt;/h2&gt;
+&lt;p&gt;A few weeks ago I chose to adopt &lt;strong&gt;intermittent fasting&lt;/strong&gt; (IF). I&amp;rsquo;m not new to it: I often eat once a day, so between one meal and the next I wait ~23 hours. The goal is to concentrate meals in a small window: 8 hours or less (down to one meal a day, but not beyond). It can be practiced daily, on alternate days, or only on certain days of the week. The approach emulates natural cycles of abundance and shortage: in nature an adult would likely have one main meal per day with some snacks, not the six balanced meals many diets consider indispensable.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
