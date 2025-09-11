@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Redirecting…</title>
+</head><body>
+<script>
+(function(){
+  var map = {{ site.Data.redirects | jsonify }};
+  function go(x){ if(map && map[x]){ location.replace(map[x]); return true } return false }
+  var p = location.pathname.replace(/\/{2,}/g,'/'); if(!p.startsWith('/')) p='/'+p;
+  if(go(p)) return;
+  if(go(p.replace(/index\.html$/,''))) return;
+  if(p.endsWith('/')) { if(go(p.slice(0,-1))) return; } else { if(go(p+'/')) return; }
+  if(go(p.toLowerCase())) return;
+  location.href = '/';
+})();
+</script>
+</body></html>
