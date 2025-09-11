@@ -7,6 +7,7 @@ categories: ["Sviluppo Personale", "Personal Branding"]
 tags: ["luck surface area", "fortuna", "fare", "parlarne", "Jason Roberts"]
 ---
 
+<p align="center"><img src="/images/resource?id=1094fb00-cc60-4b2d-a427-44fee83372e7-2.jpg" loading="lazy" alt=""></p>
 Il principio della **Luck Surface Area**, o "Superficie dell'Area di Fortuna" come vorrebbe la traduzione, è accreditato a Jason Roberts. Asserisce che incrementi di *fortuna* in un dato campo d'interesse sono ottenibili grazie a due azioni: *fare* e *parlarne*.
 
 ## La Formula

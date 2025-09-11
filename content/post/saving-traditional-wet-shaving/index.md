@@ -6,6 +6,7 @@ date: 2018-04-07T00:00:00
 categories: ["Extreme Saving"]
 ---
 
+<p align="center"><img src="/images/resource?id=6e367c2b-43a6-44bd-b251-713c99601469-2.jpg" loading="lazy" alt=""></p>
 I own a Gillette “Fusion ProGlide” (<a href="https://amzn.to/2QK1ot3" target="_blank" rel="noopener noreferrer">amazon link</a>), a very effective multi‑blade razor, equipped with a movable head that allows for reaching all the face’s nooks and crannies quickly, pretty much without risks. It features a vibrating mechanism, which makes it very comfortable. But the cost of cartridges, no less than 11 euros for 4, is not cheap.
 
 For some years now I’ve been interested in minimalism, especially from a financial point of view, trying to reason about where money can be spent consciously. There’s no guarantee in the path of the “becoming man” for “shaving orientation”: when the first beard appears, our fathers usually direct us towards the multi‑blade as a practical and rarely dangerous option. With the passing of years it becomes a plateau for many men.

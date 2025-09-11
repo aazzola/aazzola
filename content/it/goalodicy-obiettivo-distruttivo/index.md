@@ -7,6 +7,7 @@ categories: ["Sviluppo Personale", "Goal Setting", "Psicologia"]
 tags: ["goalodicy", "goal blindness", "ossessione", "Everest", "criterio SMART"]
 ---
 
+<p align="center"><img src="/images/resource?id=2d1f1445-5bfa-4c22-9c69-7ab3cfb54d6f-2.jpg" loading="lazy" alt=""></p>
 ## La Goalodicy
 
 La *goalodicy* è una condizione in cui l'ossessione per un obiettivo porta l'individuo a ignorare il proprio contesto. Il termine, coniato da <a href="https://business.gwu.edu/profiles/d-christopher-kayes/" target="_blank" rel="noopener" title="Profilo accademico D. Christopher Kayes">D. Christopher Kayes</a> della Washington University, nasce dalla fusione delle parole inglesi *goal* (obiettivo) e *theodicy* (dal greco “giustizia divina”). Un termine analogo è *goal blindness*, che possiamo tradurre come *cecità da obiettivo*.

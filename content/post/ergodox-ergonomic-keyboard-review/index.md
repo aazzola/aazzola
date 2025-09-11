@@ -6,6 +6,10 @@ date: 2014-12-09T00:00:00
 categories: ["Gears", "Ergonomic"]
 ---
 
+<p align="center"><img src="/images/ergodox_side-1.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/ergodox_front-1.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/ergodox_aerial-1.jpg" loading="lazy" alt=""></p>
+
 The **ErgoDox** is a DIY ergonomic keyboard, featuring a *split design*—each half, one hand. The two halves are connected with a *phone TRRS connector cable*, while the connection to the PC—or Mac or Unix—is obtained through a detachable mini USB.
 
 ## History

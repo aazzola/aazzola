@@ -6,6 +6,7 @@ date: 2016-11-02T00:00:00
 categories: ["Financial Independence", "Extreme Saving", "Finance", "Decluttering"]
 ---
 
+<p align="center"><img src="/images/resource?id=6c2b1aa3-75e7-4e8f-94b5-11c32d12a835-2.jpg" loading="lazy" alt=""></p>
 Luxury cars, cumbersome ski gear, guest rooms, a very spruced up guest bathroom, the second TV… these are only a few of the ways in which you can demonstrate your own success, the belonging to a ‘better’ social class. Collecting thousands of objects which are losing their value throughout time, possessing some spaces that require a full day of maintenance — *a wellbeing which is often misleading.*
 
 Downsizing is applied when families own a house that is above their necessities. Nowadays, it is not uncommon to see that, depending on the occasion, families tend to move into larger houses: a significant sale, an unexpected inheritance; in most cases, ‘to expand oneself’ is emotionally satisfying, but rationally speaking, it is less convenient and justifiable.

@@ -7,6 +7,7 @@ categories: ["Personal Development", "Personal Branding"]
 tags: ["personal branding", "career", "reputation", "marketing", "content"]
 ---
 
+<p align="center"><img src="/images/resource?id=73deb6aa-04af-4eef-9451-38eceeb59d39-2.jpg" loading="lazy" alt=""></p>
 Personal branding is a branch of marketing and a set of techniques for *nurturing* the public *perception of self*. I'm a software developer with interest in personal development and entrepreneurship, and this article discusses a few key principles I've learned over time and through literature.
 
 ## It's a matter of survival

@@ -7,6 +7,7 @@ categories: ["Gears"]
 tags: ["headphones", "DJ", "Sennheiser", "review", "audio"]
 ---
 
+<p align="center"><img src="/images/sennheiser-hd-25-review-1.jpg" loading="lazy" alt=""></p>
 ## What you get
 
 - Headphones

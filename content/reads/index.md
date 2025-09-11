@@ -24,7 +24,7 @@ The Way of the Essentialist isn't about getting more done in less time. It's abo
 Since its release in 1936, How to Win Friends and Influence People has sold more than 15 million copies. Dale Carnegie's first book is a timeless bestseller, packed with rock-solid advice that has carried thousands of now famous people up the ladder of success in their business and personal lives.…
 <a href="https://www.amazon.com/gp/product/0671027034/ref=as_li_tl?ie=UTF8&amp;tag=aazzola00-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0671027034&amp;linkId=f32d00b1ecb1240c69871cfb158be9a5" target="_blank" rel="noopener noreferrer nofollow sponsored">Get a copy on Amazon</a>
 
-{{< figure src="/images/hjob-free-achieve-financial-freedom_150.png" alt="Book cover" caption="Book cover" >}}
+{{< figure src="/images/job-free-achieve-financial-freedom_150.png" alt="Book cover" caption="Book cover" >}}
 
 ### Job Free: Four Ways to Quit the Rat Race
 #### by Jake Desyllas

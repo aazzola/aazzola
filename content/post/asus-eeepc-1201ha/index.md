@@ -6,6 +6,7 @@ date: 2010-01-09T00:00:00
 categories: ["Gears"]
 ---
 
+<p align="center"><img src="/images/resource?id=a9ccd316-c4c8-4200-bfc6-9e4793e6ae84-2.jpg" loading="lazy" alt=""></p>
 ## First Look
 
 {{< figure src="/images/asus-eeepc-1201ha-front.jpeg" title="Asus EeePC 1201HA - Front view" >}}

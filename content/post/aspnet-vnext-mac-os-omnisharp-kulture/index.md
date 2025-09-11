@@ -5,6 +5,8 @@ draft: false
 date: 2014-12-20T00:00:00
 ---
 
+<p align="center"><img src="/images/aspnet_sublime_pkgmng_kulture-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/aspnet_sublime_pkgmng_omnisharp-1.png" loading="lazy" alt=""></p>
 *Note: This article was originally written in 2014. ASP.NET vNext and KVM/KRE were early projects that later evolved into .NET Core and the modern .NET SDK. Instructions are kept for historical purposes.*
 
 The article will describe **how to run ASP.NET vNext** on **Mac OS X**. The process, requires multiple configurations and therefore some patience. Luckily, OS X already includes one of the pre-requirements, **Ruby**, 2.0 on Mavericks and Yosemite, 1.8.7 on Mountain Lion, Lion, and Snow Leopard.

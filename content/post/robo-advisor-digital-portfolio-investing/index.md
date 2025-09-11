@@ -7,6 +7,7 @@ categories: ["Finance", "Financial Independence"]
 tags: ["robo-advisors", "fintech", "investing", "digital portfolio", "moneyfarm"]
 ---
 
+<p align="center"><img src="/images/resource?id=02bd0078-9f37-47d2-af8d-16998080b639-2.jpg" loading="lazy" alt=""></p>
 Robot-advisors **are software able to provide investment advice** by operating through rebalancing algorithms. They can *limit themselves to advice*, giving the investor the duty and the freedom to manage the investment; or they can lean on some bank accounts to get *the whole portfolio management* automated. They guarantee diversification, and can be fed through random deposits and *dollar cost averaging (DCA)*.
 
 ## About my experience

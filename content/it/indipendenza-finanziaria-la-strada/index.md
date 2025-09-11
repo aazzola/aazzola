@@ -7,6 +7,7 @@ categories: ["Indipendenza Finanziaria", "Risparmio Estremo", "Geo Arbitrage", "
 tags: ["indipendenza finanziaria", "libertà finanziaria", "rendite passive", "risparmio", "frugalità"]
 ---
 
+<p align="center"><img src="/images/resource?id=eef7a2b1-8ab8-48f9-b490-395cb0240b7d-2.png" loading="lazy" alt=""></p>
 Con il termine *indipendenza finanziaria* o *libertà finanziaria* si indica generalmente uno stato dell’individuo tale per cui il soddisfacimento delle necessità primarie non richiede la partecipazione a un impiego lavorativo. Si è finanziariamente indipendenti quando la differenza tra gli introiti derivanti da rendite—dividendi societari, vendita di prodotti, affitti di immobili ecc.—e le spese di sostentamento copre i bisogni.
 
 Il cammino dell’*indipendenza finanziaria* è solitamente intrapreso da persone con un forte desiderio di libertà, oppure da individui che hanno capitali a disposizione e cercano modi intelligenti di gestirli. Il raggiungimento di tale risultato è raramente frutto della fortuna—come la proverbiale vincita alla lotteria—quanto piuttosto di una disciplina sviluppata nella gestione della propria *finanza personale*, con un pizzico di spirito imprenditoriale.

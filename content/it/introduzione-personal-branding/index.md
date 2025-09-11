@@ -7,6 +7,7 @@ categories: ["Sviluppo Personale", "Personal Branding", "Carriera"]
 tags: ["personal branding", "identità", "carriera", "capitale sociale", "reputazione online"]
 ---
 
+<p align="center"><img src="/images/resource?id=73deb6aa-04af-4eef-9451-38eceeb59d39-2.jpg" loading="lazy" alt=""></p>
 Il **personal branding** è un ramo del marketing ed in particolare un insieme di tecniche per gestire la percezione pubblica di una persona. Mi interesso di sviluppo personale ed imprenditoria, e questo articolo discute alcuni principi chiave del personal branding che ho raccolto nel tempo e nella letteratura.
 
 ## È sopravvivenza

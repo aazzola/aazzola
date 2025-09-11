@@ -7,6 +7,7 @@ categories: ["Nutrizione", "Fitness", "Dieta"]
 tags: ["digiuno intermittente", "alimentazione", "perdita di peso", "metabolismo", "BMR"]
 ---
 
+<p align="center"><img src="/images/resource?id=f6761147-7bbc-46c7-8570-63d69130785d-2.jpg" loading="lazy" alt=""></p>
 Ho sempre trovato difficile dimagrire lentamente. Purtroppo sono una buona forchetta e a volte vedo nel cibo una ricompensa al termine di una giornata stressante. Autocontrollarmi una volta addentato il primo boccone mi è difficile, mentre paradossalmente l'astensione dal pasto mi è decisamente più semplice. Non soffro di obesità: ho sempre praticato sport e da 16 anni pesi in palestra. Semplicemente, con il pretesto della prova costume alle porte e conscio di qualche chilo di troppo, mi sono impegnato per rimediare.
 
 ## Dieta del Digiuno Intermittente

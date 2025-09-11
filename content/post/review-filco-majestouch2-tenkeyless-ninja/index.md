@@ -7,6 +7,10 @@ categories: ["Gears"]
 tags: ["keyboard", "mechanical", "Filco", "Cherry MX", "tenkeyless", "review"]
 ---
 
+<p align="center"><img src="/images/filcomajestouch_side-1.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/filcomajestouch_back-1.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/filcomajestouch_foot-1.jpg" loading="lazy" alt=""></p>
+
 <a href="http://amzn.to/1NW62IY" target="_blank" rel="nofollow noopener" title="Buy Filco Majestouch-2 on Amazon">Filco Majestouch-2 Ninja Tenkeyless black</a>
 
 The **Filco Majestouch-2 Tenkeyless Ninja** is a **japanese mechanical keyboard** that sport semi-blank keys, n-key rollover and it's built like a tank... plus, **it's ninja**!

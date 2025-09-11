@@ -7,6 +7,7 @@ categories: ["Extreme Saving", "Lifestyle", "Grooming"]
 tags: ["rasatura tradizionale", "safety razor", "Gillette Fusion ProGlide", "risparmio", "minimalismo"]
 ---
 
+<p align="center"><img src="/images/resource?id=6e367c2b-43a6-44bd-b251-713c99601469-2.jpg" loading="lazy" alt=""></p>
 Il multilama che possiedo è un Gillette *Fusion ProGlide*, un rasoio molto efficace, dotato di testina mobile che permette di raggiungere tutte le sporgenze e depressioni del viso velocemente, senza troppi rischi. È dotato di un meccanismo a vibrazione che lo rende confortevole. Ma il costo delle ricariche, non meno di 11 euro per 4 cartucce, non è tra i più modesti.
 
 Da qualche anno mi interesso di minimalismo, soprattutto dal punto di vista finanziario. Cerco di spendere in modo più conscio e razionale. Non sempre infatti esiste un vero “orientamento” alla rasatura: spesso i padri indirizzano i figli verso il multilama, pratico e poco pericoloso. Con il tempo, per molti diventa semplicemente un’abitudine.

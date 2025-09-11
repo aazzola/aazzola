@@ -7,7 +7,10 @@
 <meta name="robots" content="index, follow">
 <title>Logging con NLog e SQLite | Andrea Azzola</title>
 <meta name="keywords" content="NLog, SQLite, logging, configurazione, C#">
-<meta name="description" content="Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all&rsquo;uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.
+<meta name="description" content="
+
+
+Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all&rsquo;uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.
 NLog
 NLog è una libreria di logging leggera e gratuita che supporta l&rsquo;ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un&rsquo;opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.">
 <meta name="author" content="Andrea Azzola">
@@ -111,7 +114,8 @@ function enableGA(){
       </script><meta property="og:url" content="http://localhost:1313/it/logging-nlog-sqlite/">
   <meta property="og:site_name" content="Andrea Azzola">
   <meta property="og:title" content="Logging con NLog e SQLite">
-  <meta property="og:description" content="Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all’uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.
+  <meta property="og:description" content="
+Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all’uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.
 NLog NLog è una libreria di logging leggera e gratuita che supporta l’ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un’opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
@@ -125,7 +129,10 @@ NLog NLog è una libreria di logging leggera e gratuita che supporta l’ecosist
     <meta property="article:tag" content="C#">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Logging con NLog e SQLite">
-<meta name="twitter:description" content="Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all&rsquo;uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.
+<meta name="twitter:description" content="
+
+
+Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all&rsquo;uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.
 NLog
 NLog è una libreria di logging leggera e gratuita che supporta l&rsquo;ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un&rsquo;opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.">
 
@@ -156,11 +163,11 @@ NLog è una libreria di logging leggera e gratuita che supporta l&rsquo;ecosiste
   "@type": "BlogPosting",
   "headline": "Logging con NLog e SQLite",
   "name": "Logging con NLog e SQLite",
-  "description": "Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all\u0026rsquo;uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.\nNLog NLog è una libreria di logging leggera e gratuita che supporta l\u0026rsquo;ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un\u0026rsquo;opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.\n",
+  "description": "\nQuesto articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all\u0026rsquo;uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.\nNLog NLog è una libreria di logging leggera e gratuita che supporta l\u0026rsquo;ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un\u0026rsquo;opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.\n",
   "keywords": [
     "NLog", "SQLite", "logging", "configurazione", "C#"
   ],
-  "articleBody": "Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all’uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.\nNLog NLog è una libreria di logging leggera e gratuita che supporta l’ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un’opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.\nInstallazione\nPackage Manager:\nPM\u003e Install-Package NLog SQLite SQLite è un motore di database semplice e leggero, molto diffuso soprattutto in ambito mobile. Non richiede alcun demone server né configurazioni particolari. Il database è un singolo file (estensione .db3), mentre lettura e scrittura vengono gestite da librerie specifiche per piattaforma, generalmente open source.\nSetup\nL’interfaccia .NET più comune è System.Data.SQLite.\nPackage Manager Console:\nPM\u003e Install-Package System.Data.SQLite File di configurazione NLog È opzionale ma consigliato usare un file separato per le configurazioni di NLog. In questo modo, eventuali errori nel logging non compromettono l’intera applicazione (separation of concerns).\nInstallazione\nPM\u003e Install-Package NLog.Config Eseguire NLog e SQLite insieme Predisponi il database SQLite: usa il SQLite Database Browser o un altro client a scelta per creare il database, quindi esegui lo statement SQL seguente per creare la tabella dei log:\nCREATE TABLE Log ( Timestamp TEXT, Loglevel TEXT, Logger TEXT, Callsite TEXT, Message TEXT ) Configura NLog per scrivere sul database:\n\u003c?xml version=\"1.0\" encoding=\"utf-8\" ?\u003e ",
+  "articleBody": "\nQuesto articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all’uso di NLog e SQLite, su piattaforma .NET e con poche configurazioni.\nNLog NLog è una libreria di logging leggera e gratuita che supporta l’ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un’opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.\nInstallazione\nPackage Manager:\nPM\u003e Install-Package NLog SQLite SQLite è un motore di database semplice e leggero, molto diffuso soprattutto in ambito mobile. Non richiede alcun demone server né configurazioni particolari. Il database è un singolo file (estensione .db3), mentre lettura e scrittura vengono gestite da librerie specifiche per piattaforma, generalmente open source.\nSetup\nL’interfaccia .NET più comune è System.Data.SQLite.\nPackage Manager Console:\nPM\u003e Install-Package System.Data.SQLite File di configurazione NLog È opzionale ma consigliato usare un file separato per le configurazioni di NLog. In questo modo, eventuali errori nel logging non compromettono l’intera applicazione (separation of concerns).\nInstallazione\nPM\u003e Install-Package NLog.Config Eseguire NLog e SQLite insieme Predisponi il database SQLite: usa il SQLite Database Browser o un altro client a scelta per creare il database, quindi esegui lo statement SQL seguente per creare la tabella dei log:\nCREATE TABLE Log ( Timestamp TEXT, Loglevel TEXT, Logger TEXT, Callsite TEXT, Message TEXT ) Configura NLog per scrivere sul database:\n\u003c?xml version=\"1.0\" encoding=\"utf-8\" ?\u003e ",
   "wordCount" : "340",
   "inLanguage": "en",
   "datePublished": "2014-05-06T00:00:00Z",
@@ -255,7 +262,10 @@ NLog è una libreria di logging leggera e gratuita che supporta l&rsquo;ecosiste
 
 </div>
   </header> 
-  <div class="post-content"><p>Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all&rsquo;uso di <strong>NLog</strong> e <strong>SQLite</strong>, su piattaforma .NET e con poche configurazioni.</p>
+  <div class="post-content"><p align="center"><img src="http://localhost:1313/images/nlogsqlite_love-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="http://localhost:1313/images/nlogsqlite_nlog-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="http://localhost:1313/images/nlogsqlite_sqlite-1.png" loading="lazy" alt=""></p>
+<p>Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all&rsquo;uso di <strong>NLog</strong> e <strong>SQLite</strong>, su piattaforma .NET e con poche configurazioni.</p>
 <h2 id="nlog">NLog<a hidden class="anchor" aria-hidden="true" href="#nlog">#</a></h2>
 <p><a href="http://nlog-project.org/">NLog</a> è una libreria di logging leggera e gratuita che supporta l&rsquo;ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un&rsquo;opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.</p>
 <p><strong>Installazione</strong></p>

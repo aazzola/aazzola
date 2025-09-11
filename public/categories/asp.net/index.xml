@@ -13,7 +13,9 @@
       <link>http://localhost:1313/it/aspnet-vnext-mac-os-omnisharp-kulture/</link>
       <pubDate>Sat, 20 Dec 2014 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/it/aspnet-vnext-mac-os-omnisharp-kulture/</guid>
-      <description>&lt;p&gt;L&amp;rsquo;articolo descrive &lt;strong&gt;come eseguire ASP.NET vNext&lt;/strong&gt; con sistema operativo &lt;em&gt;Mac OS X&lt;/em&gt;. La procedura richiede alcuni passaggi e un po’ di pazienza. Fortunatamente OS X include già il prerequisito &lt;em&gt;Ruby&lt;/em&gt;: versione 2.0 su Mavericks/Yosemite, 1.8.7 su Mountain Lion, Lion e Snow Leopard.&lt;/p&gt;
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/aspnet_sublime_pkgmng_kulture-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/aspnet_sublime_pkgmng_omnisharp-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+L&#39;articolo descrive **come eseguire ASP.NET vNext** con sistema operativo *Mac OS X*. La procedura richiede alcuni passaggi e un po’ di pazienza. Fortunatamente OS X include già il prerequisito *Ruby*: versione 2.0 su Mavericks/Yosemite, 1.8.7 su Mountain Lion, Lion e Snow Leopard.
 &lt;h2 id=&#34;sublime-text&#34;&gt;Sublime Text&lt;/h2&gt;
 &lt;p&gt;Un &lt;em&gt;text editor avanzato&lt;/em&gt; molto diffuso per Mac OS X è &lt;strong&gt;&lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}&lt;/strong&gt;. Personalmente lo uso anche in Windows per sviluppare soluzioni &lt;a href=&#34;https://andreaazzola.com/category/salesforcecom&#34;&gt;Salesforce.com&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;} o per prendere note e redigere articoli in HTML. Altri editor supportati all’epoca della scrittura erano:&lt;/p&gt;</description>
     </item>

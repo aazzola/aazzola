@@ -7,6 +7,10 @@ categories: ["Programmazione", ".NET", "Logging"]
 tags: ["NLog", "SQLite", "logging", "configurazione", "C#"]
 ---
 
+<p align="center"><img src="/images/nlogsqlite_love-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/nlogsqlite_nlog-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/nlogsqlite_sqlite-1.png" loading="lazy" alt=""></p>
+
 Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all'uso di **NLog** e **SQLite**, su piattaforma .NET e con poche configurazioni.
 
 ## NLog

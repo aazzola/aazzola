@@ -7,6 +7,7 @@ categories: ["Finance", "Financial Independence", "Investimenti", "Fintech"]
 tags: ["robo-advisor", "moneyfarm", "fintech", "investimenti", "consulenza finanziaria"]
 ---
 
+<p align="center"><img src="/images/resource?id=02bd0078-9f37-47d2-af8d-16998080b639-2.jpg" loading="lazy" alt=""></p>
 I **robo-advisor** sono software capaci di fornire consulenze d'investimento operando mediante algoritmi di ribilanciamento. Possono limitarsi alla consulenza, lasciando all'investitore l'onere e la libertà di gestire il portafoglio, oppure possono appoggiarsi a conti bancari fino ad automatizzare l'intera gestione. Garantiscono la diversificazione del capitale, possono essere alimentati con depositi occasionali e con *piani di accumulo (PAC)*.
 
 ## La mia esperienza

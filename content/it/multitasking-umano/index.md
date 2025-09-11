@@ -7,6 +7,7 @@ categories: ["Produttività", "Sviluppo Personale", "Decision Fatigue"]
 tags: ["multitasking", "task switching", "produttività", "flow", "decision fatigue"]
 ---
 
+<p align="center"><img src="/images/resource?id=5822d560-d3ed-48e8-88b4-5d510acff456-2.jpg" loading="lazy" alt=""></p>
 ## Il Multitasking
 
 Il [multitasking](https://it.wikipedia.org/wiki/Multitasking){:target="_blank" rel="noopener"} è la capacità di eseguire più attività contemporaneamente. Il concetto nasce nell’industria dei computer; PC, telefoni e tablet ne sono già capaci, arrivando persino ad anticipare bisogni e attività con l’[anticipatory computing](https://en.wikipedia.org/wiki/Anticipation_(artificial_intelligence)){:target="_blank" rel="noopener"}.

@@ -7,6 +7,8 @@ categories: ["Programming", "ASP.NET", "MacOS"]
 tags: ["ASP.NET vNext", "Kulture", "OmniSharp", "Homebrew", "Sublime Text"]
 ---
 
+<p align="center"><img src="/images/aspnet_sublime_pkgmng_kulture-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/aspnet_sublime_pkgmng_omnisharp-1.png" loading="lazy" alt=""></p>
 L'articolo descrive **come eseguire ASP.NET vNext** con sistema operativo *Mac OS X*. La procedura richiede alcuni passaggi e un po’ di pazienza. Fortunatamente OS X include già il prerequisito *Ruby*: versione 2.0 su Mavericks/Yosemite, 1.8.7 su Mountain Lion, Lion e Snow Leopard.
 
 ## Sublime Text

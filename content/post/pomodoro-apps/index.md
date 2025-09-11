@@ -7,6 +7,10 @@ categories: ["Productivity", "Time Management"]
 tags: ["pomodoro", "apps", "windows", "mac", "timers"]
 ---
 
+<p align="center"><img src="/images/pomodoro_pomodairo-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/pomodoro_pomodairo-collapsed-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/pomodoro_focusbooster-1.png" loading="lazy" alt=""></p>
+
 The **Pomodoro Technique** is a simple productivity method:
 
 1. **Work 25 minutes** on a well‑defined activity, no distractions

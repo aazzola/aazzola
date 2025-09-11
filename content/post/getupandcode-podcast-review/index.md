@@ -6,6 +6,7 @@ date: 2015-01-17T00:00:00
 categories: ["Fitness", "Personal Development"]
 ---
 
+<p align="center"><img src="/images/resource?id=35a0565d-8f32-43a3-8334-fa0dc64144f1-2.jpg" loading="lazy" alt=""></p>
 *I remember one time that I was under a pretty heavy barbell doing chest presses. I was listening to the podcast and the host made a very good joke, I lost my temper, I almost dropped the weight on myself and bursted out laughing in the middle of a otherwise very silent but also very populated gym. Luckily, I kept a bit of self control and saved possibly a few ribs. So be advised, and **listen responsibly ;)**.*
 
 The discovery happened because I wanted to employ my daily commute to work to deepen my fitness knowledge amongst other things, confrontation is something that does not finds much space at the gym, people get there to workout and not much to talk. Scrolling through the *iTunes podcast directory*, health section, I found the **Get Up and Code** podcast and got intrigued. The description stated *fitness for developers* so I checked it out, hoping for a nicely tailored approach that might help me leverage some technical skills.

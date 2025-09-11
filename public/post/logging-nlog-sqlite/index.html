@@ -7,7 +7,10 @@
 <meta name="robots" content="index, follow">
 <title>Logging with NLog and SQLite | Andrea Azzola</title>
 <meta name="keywords" content="NLog, SQLite, C#, Logging, NuGet">
-<meta name="description" content="This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.
+<meta name="description" content="
+
+
+This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.
 NLog
 NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). nlog-project.org
 Install (NuGet Package Manager Console)
@@ -115,7 +118,8 @@ function enableGA(){
       </script><meta property="og:url" content="http://localhost:1313/post/logging-nlog-sqlite/">
   <meta property="og:site_name" content="Andrea Azzola">
   <meta property="og:title" content="Logging with NLog and SQLite">
-  <meta property="og:description" content="This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.
+  <meta property="og:description" content="
+This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.
 NLog NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). nlog-project.org
 Install (NuGet Package Manager Console)
 PM&gt; Install-Package NLog SQLite SQLite is a simple embedded database engine. No separate server daemon is required; the database is a single file (e.g., .db3).">
@@ -131,7 +135,10 @@ PM&gt; Install-Package NLog SQLite SQLite is a simple embedded database engine. 
     <meta property="article:tag" content="NuGet">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Logging with NLog and SQLite">
-<meta name="twitter:description" content="This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.
+<meta name="twitter:description" content="
+
+
+This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.
 NLog
 NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). nlog-project.org
 Install (NuGet Package Manager Console)
@@ -166,11 +173,11 @@ SQLite is a simple embedded database engine. No separate server daemon is requir
   "@type": "BlogPosting",
   "headline": "Logging with NLog and SQLite",
   "name": "Logging with NLog and SQLite",
-  "description": "This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.\nNLog NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). nlog-project.org\nInstall (NuGet Package Manager Console)\nPM\u0026gt; Install-Package NLog SQLite SQLite is a simple embedded database engine. No separate server daemon is required; the database is a single file (e.g., .db3).\n",
+  "description": "\nThis article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.\nNLog NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). nlog-project.org\nInstall (NuGet Package Manager Console)\nPM\u0026gt; Install-Package NLog SQLite SQLite is a simple embedded database engine. No separate server daemon is required; the database is a single file (e.g., .db3).\n",
   "keywords": [
     "NLog", "SQLite", "C#", "Logging", "NuGet"
   ],
-  "articleBody": "This article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.\nNLog NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). nlog-project.org\nInstall (NuGet Package Manager Console)\nPM\u003e Install-Package NLog SQLite SQLite is a simple embedded database engine. No separate server daemon is required; the database is a single file (e.g., .db3).\nInstall (NuGet Package Manager Console)\nPM\u003e Install-Package System.Data.SQLite NLog configuration file Keeping NLog configuration in a separate file is recommended so a misconfiguration affects only logging and not the whole app.\nInstall config scaffold\nPM\u003e Install-Package NLog.Config Get them to work together Create the SQLite database (e.g., with DB Browser for SQLite) and the Log table: CREATE TABLE Log ( Timestamp TEXT, Loglevel TEXT, Logger TEXT, Callsite TEXT, Message TEXT ); Point NLog to SQLite by adding a database target in NLog.config: \u003c?xml version=\"1.0\" encoding=\"utf-8\"?\u003e ",
+  "articleBody": "\nThis article explains how to achieve a portable and elegant logging solution with NLog and SQLite on the .NET platform with a few configurations.\nNLog NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). nlog-project.org\nInstall (NuGet Package Manager Console)\nPM\u003e Install-Package NLog SQLite SQLite is a simple embedded database engine. No separate server daemon is required; the database is a single file (e.g., .db3).\nInstall (NuGet Package Manager Console)\nPM\u003e Install-Package System.Data.SQLite NLog configuration file Keeping NLog configuration in a separate file is recommended so a misconfiguration affects only logging and not the whole app.\nInstall config scaffold\nPM\u003e Install-Package NLog.Config Get them to work together Create the SQLite database (e.g., with DB Browser for SQLite) and the Log table: CREATE TABLE Log ( Timestamp TEXT, Loglevel TEXT, Logger TEXT, Callsite TEXT, Message TEXT ); Point NLog to SQLite by adding a database target in NLog.config: \u003c?xml version=\"1.0\" encoding=\"utf-8\"?\u003e ",
   "wordCount" : "246",
   "inLanguage": "en",
   "datePublished": "2014-05-06T00:00:00Z",
@@ -265,7 +272,10 @@ SQLite is a simple embedded database engine. No separate server daemon is requir
 
 </div>
   </header> 
-  <div class="post-content"><p>This article explains how to achieve a portable and elegant <em>logging</em> solution with <strong>NLog</strong> and <strong>SQLite</strong> on the .NET platform with a few configurations.</p>
+  <div class="post-content"><p align="center"><img src="http://localhost:1313/images/nlogsqlite_love-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="http://localhost:1313/images/nlogsqlite_nlog-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="http://localhost:1313/images/nlogsqlite_sqlite-1.png" loading="lazy" alt=""></p>
+<p>This article explains how to achieve a portable and elegant <em>logging</em> solution with <strong>NLog</strong> and <strong>SQLite</strong> on the .NET platform with a few configurations.</p>
 <h2 id="nlog">NLog<a hidden class="anchor" aria-hidden="true" href="#nlog">#</a></h2>
 <p>NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). <a href="https://nlog-project.org/" target="_blank" rel="noopener">nlog-project.org</a></p>
 <p><strong>Install (NuGet Package Manager Console)</strong></p>

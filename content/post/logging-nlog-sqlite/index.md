@@ -7,6 +7,10 @@ categories: ["Programming", ".NET", "Logging"]
 tags: ["NLog", "SQLite", "C#", "Logging", "NuGet"]
 ---
 
+<p align="center"><img src="/images/nlogsqlite_love-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/nlogsqlite_nlog-1.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/nlogsqlite_sqlite-1.png" loading="lazy" alt=""></p>
+
 This article explains how to achieve a portable and elegant *logging* solution with **NLog** and **SQLite** on the .NET platform with a few configurations.
 
 ## NLog

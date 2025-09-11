@@ -13,7 +13,9 @@
       <link>http://localhost:1313/it/aspnet-vnext-mac-os-omnisharp-kulture/</link>
       <pubDate>Sat, 20 Dec 2014 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/it/aspnet-vnext-mac-os-omnisharp-kulture/</guid>
-      <description>&lt;p&gt;L&amp;rsquo;articolo descrive &lt;strong&gt;come eseguire ASP.NET vNext&lt;/strong&gt; con sistema operativo &lt;em&gt;Mac OS X&lt;/em&gt;. La procedura richiede alcuni passaggi e un po’ di pazienza. Fortunatamente OS X include già il prerequisito &lt;em&gt;Ruby&lt;/em&gt;: versione 2.0 su Mavericks/Yosemite, 1.8.7 su Mountain Lion, Lion e Snow Leopard.&lt;/p&gt;
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/aspnet_sublime_pkgmng_kulture-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/aspnet_sublime_pkgmng_omnisharp-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+L&#39;articolo descrive **come eseguire ASP.NET vNext** con sistema operativo *Mac OS X*. La procedura richiede alcuni passaggi e un po’ di pazienza. Fortunatamente OS X include già il prerequisito *Ruby*: versione 2.0 su Mavericks/Yosemite, 1.8.7 su Mountain Lion, Lion e Snow Leopard.
 &lt;h2 id=&#34;sublime-text&#34;&gt;Sublime Text&lt;/h2&gt;
 &lt;p&gt;Un &lt;em&gt;text editor avanzato&lt;/em&gt; molto diffuso per Mac OS X è &lt;strong&gt;&lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}&lt;/strong&gt;. Personalmente lo uso anche in Windows per sviluppare soluzioni &lt;a href=&#34;https://andreaazzola.com/category/salesforcecom&#34;&gt;Salesforce.com&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;} o per prendere note e redigere articoli in HTML. Altri editor supportati all’epoca della scrittura erano:&lt;/p&gt;</description>
     </item>
@@ -22,7 +24,10 @@
       <link>http://localhost:1313/post/logging-nlog-sqlite/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/logging-nlog-sqlite/</guid>
-      <description>&lt;p&gt;This article explains how to achieve a portable and elegant &lt;em&gt;logging&lt;/em&gt; solution with &lt;strong&gt;NLog&lt;/strong&gt; and &lt;strong&gt;SQLite&lt;/strong&gt; on the .NET platform with a few configurations.&lt;/p&gt;
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nlogsqlite_love-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nlogsqlite_nlog-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nlogsqlite_sqlite-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This article explains how to achieve a portable and elegant &lt;em&gt;logging&lt;/em&gt; solution with &lt;strong&gt;NLog&lt;/strong&gt; and &lt;strong&gt;SQLite&lt;/strong&gt; on the .NET platform with a few configurations.&lt;/p&gt;
 &lt;h2 id=&#34;nlog&#34;&gt;NLog&lt;/h2&gt;
 &lt;p&gt;NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). &lt;a href=&#34;https://nlog-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nlog-project.org&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Install (NuGet Package Manager Console)&lt;/strong&gt;&lt;/p&gt;
@@ -35,7 +40,8 @@
       <link>http://localhost:1313/post/mavensmate-unable-github-windows/</link>
       <pubDate>Sun, 06 Apr 2014 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/mavensmate-unable-github-windows/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://mavensmate.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MavensMate&lt;/a&gt; was a popular community plugin for the &lt;strong&gt;Force.com&lt;/strong&gt; platform, built on the &lt;a href=&#34;http://www.sublimetext.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sublime Text&lt;/a&gt; IDE (created and maintained by &lt;a href=&#34;http://www.joe-ferraro.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joe Ferraro&lt;/a&gt;) as a free alternative to the official Force.com IDE.&lt;/p&gt;
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/resource?id=91ae0ec9-5a5f-4046-882e-0724d7875675-2.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;a href=&#34;http://mavensmate.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MavensMate&lt;/a&gt; was a popular community plugin for the **Force.com** platform, built on the &lt;a href=&#34;http://www.sublimetext.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sublime Text&lt;/a&gt; IDE (created and maintained by &lt;a href=&#34;http://www.joe-ferraro.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joe Ferraro&lt;/a&gt;) as a free alternative to the official Force.com IDE.
 &lt;p&gt;Under certain conditions on Windows 7/8 (often proxy/firewall configurations), installation could fail with an error similar to:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Installation of Sublime Text plugin failed. This is likely due to the installer being unable to reach GitHub. If you are behind a firewall or using a proxy, you should configure git accordingly (google: git config --global https.proxy) and ensure your HTTPS/HTTPS_PROXY environment variable(s) are set properly. Otherwise, please log an issue on the MavensMate GitHub project.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There is an existing GitHub &lt;a href=&#34;https://github.com/joeferraro/MavensMate/issues/113&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;issue&lt;/a&gt; with a workaround suggested by Joe Ferraro. The steps that worked for me were:&lt;/p&gt;</description>

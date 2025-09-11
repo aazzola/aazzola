@@ -7,6 +7,7 @@ categories: ["Programming", "Salesforce", "Windows"]
 tags: ["MavensMate", "Sublime Text", "Git", "Proxy", "Firewall"]
 ---
 
+<p align="center"><img src="/images/resource?id=91ae0ec9-5a5f-4046-882e-0724d7875675-2.png" loading="lazy" alt=""></p>
 <a href="http://mavensmate.com/" target="_blank" rel="noopener">MavensMate</a> was a popular community plugin for the **Force.com** platform, built on the <a href="http://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text</a> IDE (created and maintained by <a href="http://www.joe-ferraro.com/" target="_blank" rel="noopener">Joe Ferraro</a>) as a free alternative to the official Force.com IDE.
 
 Under certain conditions on Windows 7/8 (often proxy/firewall configurations), installation could fail with an error similar to:

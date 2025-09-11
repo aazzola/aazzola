@@ -6,6 +6,7 @@ date: 2016-09-06T00:00:00
 categories: ["Nutrition", "Fitness", "Diet"]
 ---
 
+<p align="center"><img src="/images/resource?id=f6761147-7bbc-46c7-8570-63d69130785d-2.jpg" loading="lazy" alt=""></p>
 I've always found it difficult to lose weight slowly. I'm a hearty eater and sometimes see food as a reward at the end of a stressful day. Once I start, self‑control can be hard—but, paradoxically, strict abstention is much easier. I'm not obese thanks to regular sport, yet—with the “beach‑body readiness” pretext—I decided to shed a few extra kilos.
 
 ## The Intermittent Fasting Diet
