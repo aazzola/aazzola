@@ -11,7 +11,7 @@ defaultContentLanguage = "en"
 [params]
   env = "production"
   author = "Andrea Azzola"
-  description = "Tips and techniques for lifestyle design"
+  description = "Work smarter, ride further, live free"
   ShowReadingTime = true
   ShowShareButtons = true
   defaultTheme = "auto"
@@ -93,7 +93,7 @@ appleTouchIcon = "/apple-touch-icon.png"
 [params.profileMode]
 enabled = true
 title = "Hi! I'm Andrea"
-subtitle = "I read, listen to music (used to make it), I'm a home cook, and into fitness and diet. I work as a manager in an IT company, designing and managing Salesforce enterprise systems. You can get in touch with me through the contact form or my social accounts."
+subtitle = "Product Manager. Motorbike adventurer. FIRE enthusiast. Writing about work, freedom and the ride in between."
 imageURL = "/images/AndreaAzzola_Website200x200.png"
 imageTitle = "Andrea Azzola"
 imageWidth = 160
