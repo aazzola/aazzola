@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>.NET on Andrea Azzola</title>
-    <link>http://localhost:1313/categories/.net/</link>
+    <link>https://andreaazzola.com/categories/.net/</link>
     <description>Recent content in .NET on Andrea Azzola</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/.net/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://andreaazzola.com/categories/.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Logging con NLog e SQLite</title>
-      <link>http://localhost:1313/it/logging-nlog-sqlite/</link>
+      <link>https://andreaazzola.com/it/logging-nlog-sqlite/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/it/logging-nlog-sqlite/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nlogsqlite_love-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nlogsqlite_nlog-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nlogsqlite_sqlite-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <guid>https://andreaazzola.com/it/logging-nlog-sqlite/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://andreaazzola.com/images/nlogsqlite_love-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://andreaazzola.com/images/nlogsqlite_nlog-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://andreaazzola.com/images/nlogsqlite_sqlite-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Questo articolo spiega come ottenere una soluzione di logging portabile ed elegante grazie all&amp;rsquo;uso di &lt;strong&gt;NLog&lt;/strong&gt; e &lt;strong&gt;SQLite&lt;/strong&gt;, su piattaforma .NET e con poche configurazioni.&lt;/p&gt;
 &lt;h2 id=&#34;nlog&#34;&gt;NLog&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://nlog-project.org/&#34;&gt;NLog&lt;/a&gt; è una libreria di logging leggera e gratuita che supporta l&amp;rsquo;ecosistema .NET (Silverlight, Windows Phone, ecc.). Costituisce un&amp;rsquo;opzione eccellente per un ampio range di scenari: dalle semplici utilities quotidiane a servizi critici di produzione. Consente di avere multipli target, siano essi file, database, console, rete o email.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Logging with NLog and SQLite</title>
-      <link>http://localhost:1313/post/logging-nlog-sqlite/</link>
+      <link>https://andreaazzola.com/post/logging-nlog-sqlite/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/logging-nlog-sqlite/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nlogsqlite_love-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nlogsqlite_nlog-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nlogsqlite_sqlite-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <guid>https://andreaazzola.com/post/logging-nlog-sqlite/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://andreaazzola.com/images/nlogsqlite_love-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://andreaazzola.com/images/nlogsqlite_nlog-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://andreaazzola.com/images/nlogsqlite_sqlite-1.png&#34; loading=&#34;lazy&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This article explains how to achieve a portable and elegant &lt;em&gt;logging&lt;/em&gt; solution with &lt;strong&gt;NLog&lt;/strong&gt; and &lt;strong&gt;SQLite&lt;/strong&gt; on the .NET platform with a few configurations.&lt;/p&gt;
 &lt;h2 id=&#34;nlog&#34;&gt;NLog&lt;/h2&gt;
 &lt;p&gt;NLog is a free, lightweight logging library for .NET. It supports many targets (files, databases, console, network, email, and more). &lt;a href=&#34;https://nlog-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nlog-project.org&lt;/a&gt;&lt;/p&gt;
@@ -38,9 +38,9 @@
     </item>
     <item>
       <title>Import Web Service References in .NET</title>
-      <link>http://localhost:1313/post/web-service-reference-vs/</link>
+      <link>https://andreaazzola.com/post/web-service-reference-vs/</link>
       <pubDate>Wed, 09 Jun 2010 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/web-service-reference-vs/</guid>
+      <guid>https://andreaazzola.com/post/web-service-reference-vs/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Note (2025):&lt;/strong&gt; This post refers to .NET Framework 2.0 era tools such as &lt;strong&gt;wsdl.exe&lt;/strong&gt;. Modern .NET projects generally use &lt;code&gt;Connected Services&lt;/code&gt; in Visual Studio or &lt;code&gt;dotnet svcutil&lt;/code&gt;. The example is preserved for historical reference.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;You may need to consume &lt;a href=&#34;https://en.wikipedia.org/wiki/Web_service&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Web services&lt;/a&gt; from client applications. &lt;a href=&#34;https://visualstudio.microsoft.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual Studio&lt;/a&gt; provides tools for generating proxy classes, which in some cases may be insufficient. In those cases, the &lt;code&gt;wsdl.exe&lt;/code&gt; tool is an alternative.&lt;/p&gt;
@@ -49,9 +49,9 @@
     </item>
     <item>
       <title>Consuming .NET Webservices Using PHP and NuSoap</title>
-      <link>http://localhost:1313/post/consuming-net-web-services-using-php-nusoap/</link>
+      <link>https://andreaazzola.com/post/consuming-net-web-services-using-php-nusoap/</link>
       <pubDate>Tue, 23 Oct 2007 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/consuming-net-web-services-using-php-nusoap/</guid>
+      <guid>https://andreaazzola.com/post/consuming-net-web-services-using-php-nusoap/</guid>
       <description>&lt;p&gt;In my scenario a .NET webservice offers particular encrypting capabilities. I need to consume the webservice with PHP by sending my plain string to get an encrypted one in return. The .NET webservice is working properly. I found the &lt;a href=&#34;http://sourceforge.net/projects/nusoap/&#34;&gt;NuSoap&lt;/a&gt; library, and adopted it.&lt;/p&gt;
 &lt;p&gt;Here the inclusion:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;require_once&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;lib/nusoap.php&amp;#39;&lt;/span&gt;);
