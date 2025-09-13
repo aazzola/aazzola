@@ -2,437 +2,437 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Andrea Azzola</title>
-    <link>https://andreaazzola.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Andrea Azzola</description>
-    <generator>Hugo -- 0.148.2</generator>
+    <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://andreaazzola.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Extreme Saving</title>
-      <link>https://andreaazzola.com/categories/extreme-saving/</link>
+      <link>http://localhost:1313/categories/extreme-saving/</link>
       <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/extreme-saving/</guid>
+      <guid>http://localhost:1313/categories/extreme-saving/</guid>
       <description></description>
     </item>
     <item>
       <title>Grooming</title>
-      <link>https://andreaazzola.com/categories/grooming/</link>
+      <link>http://localhost:1313/categories/grooming/</link>
       <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/grooming/</guid>
+      <guid>http://localhost:1313/categories/grooming/</guid>
       <description></description>
     </item>
     <item>
       <title>Lifestyle</title>
-      <link>https://andreaazzola.com/categories/lifestyle/</link>
+      <link>http://localhost:1313/categories/lifestyle/</link>
       <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/lifestyle/</guid>
+      <guid>http://localhost:1313/categories/lifestyle/</guid>
       <description></description>
     </item>
     <item>
       <title>Books</title>
-      <link>https://andreaazzola.com/categories/books/</link>
+      <link>http://localhost:1313/categories/books/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/books/</guid>
+      <guid>http://localhost:1313/categories/books/</guid>
       <description></description>
     </item>
     <item>
       <title>Entrepreneurship</title>
-      <link>https://andreaazzola.com/categories/entrepreneurship/</link>
+      <link>http://localhost:1313/categories/entrepreneurship/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/entrepreneurship/</guid>
+      <guid>http://localhost:1313/categories/entrepreneurship/</guid>
       <description></description>
     </item>
     <item>
       <title>Goal Setting</title>
-      <link>https://andreaazzola.com/categories/goal-setting/</link>
+      <link>http://localhost:1313/categories/goal-setting/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/goal-setting/</guid>
+      <guid>http://localhost:1313/categories/goal-setting/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal Development</title>
-      <link>https://andreaazzola.com/categories/personal-development/</link>
+      <link>http://localhost:1313/categories/personal-development/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/personal-development/</guid>
+      <guid>http://localhost:1313/categories/personal-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Decluttering</title>
-      <link>https://andreaazzola.com/categories/decluttering/</link>
+      <link>http://localhost:1313/categories/decluttering/</link>
       <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/decluttering/</guid>
+      <guid>http://localhost:1313/categories/decluttering/</guid>
       <description></description>
     </item>
     <item>
       <title>Finance</title>
-      <link>https://andreaazzola.com/categories/finance/</link>
+      <link>http://localhost:1313/categories/finance/</link>
       <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/finance/</guid>
+      <guid>http://localhost:1313/categories/finance/</guid>
       <description></description>
     </item>
     <item>
       <title>Financial Independence</title>
-      <link>https://andreaazzola.com/categories/financial-independence/</link>
+      <link>http://localhost:1313/categories/financial-independence/</link>
       <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/financial-independence/</guid>
+      <guid>http://localhost:1313/categories/financial-independence/</guid>
       <description></description>
     </item>
     <item>
       <title>Finanza</title>
-      <link>https://andreaazzola.com/categories/finanza/</link>
+      <link>http://localhost:1313/categories/finanza/</link>
       <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/finanza/</guid>
+      <guid>http://localhost:1313/categories/finanza/</guid>
       <description></description>
     </item>
     <item>
       <title>Indipendenza Finanziaria</title>
-      <link>https://andreaazzola.com/categories/indipendenza-finanziaria/</link>
+      <link>http://localhost:1313/categories/indipendenza-finanziaria/</link>
       <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/indipendenza-finanziaria/</guid>
+      <guid>http://localhost:1313/categories/indipendenza-finanziaria/</guid>
       <description></description>
     </item>
     <item>
       <title>Risparmio Estremo</title>
-      <link>https://andreaazzola.com/categories/risparmio-estremo/</link>
+      <link>http://localhost:1313/categories/risparmio-estremo/</link>
       <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/risparmio-estremo/</guid>
+      <guid>http://localhost:1313/categories/risparmio-estremo/</guid>
       <description></description>
     </item>
     <item>
       <title>Fintech</title>
-      <link>https://andreaazzola.com/categories/fintech/</link>
+      <link>http://localhost:1313/categories/fintech/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/fintech/</guid>
+      <guid>http://localhost:1313/categories/fintech/</guid>
       <description></description>
     </item>
     <item>
       <title>Investimenti</title>
-      <link>https://andreaazzola.com/categories/investimenti/</link>
+      <link>http://localhost:1313/categories/investimenti/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/investimenti/</guid>
+      <guid>http://localhost:1313/categories/investimenti/</guid>
       <description></description>
     </item>
     <item>
       <title>Diet</title>
-      <link>https://andreaazzola.com/categories/diet/</link>
+      <link>http://localhost:1313/categories/diet/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/diet/</guid>
+      <guid>http://localhost:1313/categories/diet/</guid>
       <description></description>
     </item>
     <item>
       <title>Fitness</title>
-      <link>https://andreaazzola.com/categories/fitness/</link>
+      <link>http://localhost:1313/categories/fitness/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/fitness/</guid>
+      <guid>http://localhost:1313/categories/fitness/</guid>
       <description></description>
     </item>
     <item>
       <title>Meal Prep</title>
-      <link>https://andreaazzola.com/categories/meal-prep/</link>
+      <link>http://localhost:1313/categories/meal-prep/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/meal-prep/</guid>
+      <guid>http://localhost:1313/categories/meal-prep/</guid>
       <description></description>
     </item>
     <item>
       <title>Nutrition</title>
-      <link>https://andreaazzola.com/categories/nutrition/</link>
+      <link>http://localhost:1313/categories/nutrition/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/nutrition/</guid>
+      <guid>http://localhost:1313/categories/nutrition/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-      <link>https://andreaazzola.com/categories/productivity/</link>
+      <link>http://localhost:1313/categories/productivity/</link>
       <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/productivity/</guid>
+      <guid>http://localhost:1313/categories/productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Dieta</title>
-      <link>https://andreaazzola.com/categories/dieta/</link>
+      <link>http://localhost:1313/categories/dieta/</link>
       <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/dieta/</guid>
+      <guid>http://localhost:1313/categories/dieta/</guid>
       <description></description>
     </item>
     <item>
       <title>Nutrizione</title>
-      <link>https://andreaazzola.com/categories/nutrizione/</link>
+      <link>http://localhost:1313/categories/nutrizione/</link>
       <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/nutrizione/</guid>
+      <guid>http://localhost:1313/categories/nutrizione/</guid>
       <description></description>
     </item>
     <item>
       <title>Geo Arbitrage</title>
-      <link>https://andreaazzola.com/categories/geo-arbitrage/</link>
+      <link>http://localhost:1313/categories/geo-arbitrage/</link>
       <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/geo-arbitrage/</guid>
+      <guid>http://localhost:1313/categories/geo-arbitrage/</guid>
       <description></description>
     </item>
     <item>
       <title>Goalodicy</title>
-      <link>https://andreaazzola.com/categories/goalodicy/</link>
+      <link>http://localhost:1313/categories/goalodicy/</link>
       <pubDate>Sat, 14 May 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/goalodicy/</guid>
+      <guid>http://localhost:1313/categories/goalodicy/</guid>
       <description></description>
     </item>
     <item>
       <title>Psicologia</title>
-      <link>https://andreaazzola.com/categories/psicologia/</link>
+      <link>http://localhost:1313/categories/psicologia/</link>
       <pubDate>Sat, 14 May 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/psicologia/</guid>
+      <guid>http://localhost:1313/categories/psicologia/</guid>
       <description></description>
     </item>
     <item>
       <title>Sviluppo Personale</title>
-      <link>https://andreaazzola.com/categories/sviluppo-personale/</link>
+      <link>http://localhost:1313/categories/sviluppo-personale/</link>
       <pubDate>Sat, 14 May 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/sviluppo-personale/</guid>
+      <guid>http://localhost:1313/categories/sviluppo-personale/</guid>
       <description></description>
     </item>
     <item>
       <title>Decision Fatigue</title>
-      <link>https://andreaazzola.com/categories/decision-fatigue/</link>
+      <link>http://localhost:1313/categories/decision-fatigue/</link>
       <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/decision-fatigue/</guid>
+      <guid>http://localhost:1313/categories/decision-fatigue/</guid>
       <description></description>
     </item>
     <item>
       <title>Produttività</title>
-      <link>https://andreaazzola.com/categories/produttivit%C3%A0/</link>
+      <link>http://localhost:1313/categories/produttivit%C3%A0/</link>
       <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/produttivit%C3%A0/</guid>
+      <guid>http://localhost:1313/categories/produttivit%C3%A0/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal Branding</title>
-      <link>https://andreaazzola.com/categories/personal-branding/</link>
+      <link>http://localhost:1313/categories/personal-branding/</link>
       <pubDate>Fri, 26 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/personal-branding/</guid>
+      <guid>http://localhost:1313/categories/personal-branding/</guid>
       <description></description>
     </item>
     <item>
       <title>ASP.NET</title>
-      <link>https://andreaazzola.com/categories/asp.net/</link>
+      <link>http://localhost:1313/categories/asp.net/</link>
       <pubDate>Sat, 20 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/asp.net/</guid>
+      <guid>http://localhost:1313/categories/asp.net/</guid>
       <description></description>
     </item>
     <item>
       <title>MacOS</title>
-      <link>https://andreaazzola.com/categories/macos/</link>
+      <link>http://localhost:1313/categories/macos/</link>
       <pubDate>Sat, 20 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/macos/</guid>
+      <guid>http://localhost:1313/categories/macos/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>https://andreaazzola.com/categories/programming/</link>
+      <link>http://localhost:1313/categories/programming/</link>
       <pubDate>Sat, 20 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/programming/</guid>
+      <guid>http://localhost:1313/categories/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Ergonomic</title>
-      <link>https://andreaazzola.com/categories/ergonomic/</link>
+      <link>http://localhost:1313/categories/ergonomic/</link>
       <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/ergonomic/</guid>
+      <guid>http://localhost:1313/categories/ergonomic/</guid>
       <description></description>
     </item>
     <item>
       <title>Gears</title>
-      <link>https://andreaazzola.com/categories/gears/</link>
+      <link>http://localhost:1313/categories/gears/</link>
       <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/gears/</guid>
+      <guid>http://localhost:1313/categories/gears/</guid>
       <description></description>
     </item>
     <item>
       <title>Carriera</title>
-      <link>https://andreaazzola.com/categories/carriera/</link>
+      <link>http://localhost:1313/categories/carriera/</link>
       <pubDate>Sat, 07 Jun 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/carriera/</guid>
+      <guid>http://localhost:1313/categories/carriera/</guid>
       <description></description>
     </item>
     <item>
       <title>.NET</title>
-      <link>https://andreaazzola.com/categories/.net/</link>
+      <link>http://localhost:1313/categories/.net/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/.net/</guid>
+      <guid>http://localhost:1313/categories/.net/</guid>
       <description></description>
     </item>
     <item>
       <title>Logging</title>
-      <link>https://andreaazzola.com/categories/logging/</link>
+      <link>http://localhost:1313/categories/logging/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/logging/</guid>
+      <guid>http://localhost:1313/categories/logging/</guid>
       <description></description>
     </item>
     <item>
       <title>Programmazione</title>
-      <link>https://andreaazzola.com/categories/programmazione/</link>
+      <link>http://localhost:1313/categories/programmazione/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/programmazione/</guid>
+      <guid>http://localhost:1313/categories/programmazione/</guid>
       <description></description>
     </item>
     <item>
       <title>Salesforce</title>
-      <link>https://andreaazzola.com/categories/salesforce/</link>
+      <link>http://localhost:1313/categories/salesforce/</link>
       <pubDate>Sun, 06 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/salesforce/</guid>
+      <guid>http://localhost:1313/categories/salesforce/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>https://andreaazzola.com/categories/windows/</link>
+      <link>http://localhost:1313/categories/windows/</link>
       <pubDate>Sun, 06 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/windows/</guid>
+      <guid>http://localhost:1313/categories/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>C#</title>
-      <link>https://andreaazzola.com/categories/c%23/</link>
+      <link>http://localhost:1313/categories/c%23/</link>
       <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/c%23/</guid>
+      <guid>http://localhost:1313/categories/c%23/</guid>
       <description></description>
     </item>
     <item>
       <title>Email</title>
-      <link>https://andreaazzola.com/categories/email/</link>
+      <link>http://localhost:1313/categories/email/</link>
       <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/email/</guid>
+      <guid>http://localhost:1313/categories/email/</guid>
       <description></description>
     </item>
     <item>
       <title>Time Management</title>
-      <link>https://andreaazzola.com/categories/time-management/</link>
+      <link>http://localhost:1313/categories/time-management/</link>
       <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/time-management/</guid>
+      <guid>http://localhost:1313/categories/time-management/</guid>
       <description></description>
     </item>
     <item>
       <title>JavaScript</title>
-      <link>https://andreaazzola.com/categories/javascript/</link>
+      <link>http://localhost:1313/categories/javascript/</link>
       <pubDate>Thu, 14 Nov 2013 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/javascript/</guid>
+      <guid>http://localhost:1313/categories/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure</title>
-      <link>https://andreaazzola.com/categories/azure/</link>
+      <link>http://localhost:1313/categories/azure/</link>
       <pubDate>Tue, 12 Nov 2013 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/azure/</guid>
+      <guid>http://localhost:1313/categories/azure/</guid>
       <description></description>
     </item>
     <item>
       <title>Backup</title>
-      <link>https://andreaazzola.com/categories/backup/</link>
+      <link>http://localhost:1313/categories/backup/</link>
       <pubDate>Thu, 17 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/backup/</guid>
+      <guid>http://localhost:1313/categories/backup/</guid>
       <description></description>
     </item>
     <item>
       <title>Version Control</title>
-      <link>https://andreaazzola.com/categories/version-control/</link>
+      <link>http://localhost:1313/categories/version-control/</link>
       <pubDate>Thu, 17 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/version-control/</guid>
+      <guid>http://localhost:1313/categories/version-control/</guid>
       <description></description>
     </item>
     <item>
       <title>Database</title>
-      <link>https://andreaazzola.com/categories/database/</link>
+      <link>http://localhost:1313/categories/database/</link>
       <pubDate>Wed, 16 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/database/</guid>
+      <guid>http://localhost:1313/categories/database/</guid>
       <description></description>
     </item>
     <item>
       <title>SQL Server</title>
-      <link>https://andreaazzola.com/categories/sql-server/</link>
+      <link>http://localhost:1313/categories/sql-server/</link>
       <pubDate>Wed, 16 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/sql-server/</guid>
+      <guid>http://localhost:1313/categories/sql-server/</guid>
       <description></description>
     </item>
     <item>
       <title>Debugging</title>
-      <link>https://andreaazzola.com/categories/debugging/</link>
+      <link>http://localhost:1313/categories/debugging/</link>
       <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/debugging/</guid>
+      <guid>http://localhost:1313/categories/debugging/</guid>
       <description></description>
     </item>
     <item>
       <title>Music</title>
-      <link>https://andreaazzola.com/categories/music/</link>
+      <link>http://localhost:1313/categories/music/</link>
       <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/music/</guid>
+      <guid>http://localhost:1313/categories/music/</guid>
       <description></description>
     </item>
     <item>
       <title>Remix</title>
-      <link>https://andreaazzola.com/categories/remix/</link>
+      <link>http://localhost:1313/categories/remix/</link>
       <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/remix/</guid>
+      <guid>http://localhost:1313/categories/remix/</guid>
       <description></description>
     </item>
     <item>
       <title>Telerik</title>
-      <link>https://andreaazzola.com/categories/telerik/</link>
+      <link>http://localhost:1313/categories/telerik/</link>
       <pubDate>Fri, 22 Oct 2010 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/telerik/</guid>
+      <guid>http://localhost:1313/categories/telerik/</guid>
       <description></description>
     </item>
     <item>
       <title>SEO</title>
-      <link>https://andreaazzola.com/categories/seo/</link>
+      <link>http://localhost:1313/categories/seo/</link>
       <pubDate>Wed, 20 Oct 2010 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/seo/</guid>
+      <guid>http://localhost:1313/categories/seo/</guid>
       <description></description>
     </item>
     <item>
       <title>DJ Sets</title>
-      <link>https://andreaazzola.com/categories/dj-sets/</link>
+      <link>http://localhost:1313/categories/dj-sets/</link>
       <pubDate>Sat, 04 Sep 2010 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/dj-sets/</guid>
+      <guid>http://localhost:1313/categories/dj-sets/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Services</title>
-      <link>https://andreaazzola.com/categories/web-services/</link>
+      <link>http://localhost:1313/categories/web-services/</link>
       <pubDate>Wed, 09 Jun 2010 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/web-services/</guid>
+      <guid>http://localhost:1313/categories/web-services/</guid>
       <description></description>
     </item>
     <item>
       <title>PHP</title>
-      <link>https://andreaazzola.com/categories/php/</link>
+      <link>http://localhost:1313/categories/php/</link>
       <pubDate>Thu, 27 May 2010 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/php/</guid>
+      <guid>http://localhost:1313/categories/php/</guid>
       <description></description>
     </item>
     <item>
       <title>Web</title>
-      <link>https://andreaazzola.com/categories/web/</link>
+      <link>http://localhost:1313/categories/web/</link>
       <pubDate>Thu, 27 May 2010 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/web/</guid>
+      <guid>http://localhost:1313/categories/web/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Development</title>
-      <link>https://andreaazzola.com/categories/web-development/</link>
+      <link>http://localhost:1313/categories/web-development/</link>
       <pubDate>Tue, 07 Jul 2009 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/web-development/</guid>
+      <guid>http://localhost:1313/categories/web-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Dynamic Data</title>
-      <link>https://andreaazzola.com/categories/dynamic-data/</link>
+      <link>http://localhost:1313/categories/dynamic-data/</link>
       <pubDate>Sun, 02 Nov 2008 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/dynamic-data/</guid>
+      <guid>http://localhost:1313/categories/dynamic-data/</guid>
       <description></description>
     </item>
     <item>
       <title>AJAX</title>
-      <link>https://andreaazzola.com/categories/ajax/</link>
+      <link>http://localhost:1313/categories/ajax/</link>
       <pubDate>Tue, 25 Sep 2007 00:00:00 +0000</pubDate>
-      <guid>https://andreaazzola.com/categories/ajax/</guid>
+      <guid>http://localhost:1313/categories/ajax/</guid>
       <description></description>
     </item>
   </channel>
