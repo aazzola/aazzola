@@ -7,7 +7,7 @@ categories: ["Personal Development", "Personal Branding"]
 tags: ["luck", "surface area", "doing", "telling", "personal branding"]
 ---
 
-<p align="center"><img src="/images/resource?id=1094fb00-cc60-4b2d-a427-44fee83372e7-2.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-1094fb00-cc60-4b2d-a427-44fee83372e7.jpg" loading="lazy" alt=""></p>
 **Luck Surface Area** principle, credited to Jason Roberts, states that increments of **luck** in a certain field of interest can be achieved by **doing** and **telling** about it.
 
 ## The Formula

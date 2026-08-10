@@ -7,7 +7,7 @@ categories: ["Indipendenza Finanziaria", "Risparmio Estremo", "Finanza", "Declut
 tags: ["downsizing", "casa", "risparmio", "mutuo", "finanza personale"]
 ---
 
-<p align="center"><img src="/images/resource?id=6c2b1aa3-75e7-4e8f-94b5-11c32d12a835-2.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-6c2b1aa3-75e7-4e8f-94b5-11c32d12a835.jpg" loading="lazy" alt=""></p>
 L'auto di lusso, l'ingombrante attrezzatura da sci, la stanza degli ospiti, l'agghindatissimo bagno di cortesia, il secondo televisore... Sono solo alcuni dei modi con cui è possibile dimostrare il proprio successo, l'appartenenza a un ceto sociale "migliore". Collezionare migliaia di oggetti che perdono irrimediabilmente valore con il tempo, possedere spazi che richiedono giornate di manutenzione: *un benessere spesso illusorio*.
 
 Il **downsizing** si applica dove le famiglie posseggano una casa al di sopra delle proprie necessità. Non è raro oggigiorno che, data l'occasione, le famiglie tendano a passare a case più ampie: una liquidazione sostanziosa, un'eredità improvvisa. Nella maggioranza dei casi "ampliarsi" è emozionalmente appagante, ma razionalmente poco conveniente e poco giustificabile.

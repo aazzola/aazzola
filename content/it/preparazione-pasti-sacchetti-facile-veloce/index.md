@@ -7,9 +7,9 @@ categories: ["Meal Prep", "Nutrition", "Fitness", "Diet", "Productivity"]
 tags: ["meal prep", "sacchetti", "conservazione alimenti", "risparmio", "dieta"]
 ---
 
-<p align="center"><img src="/images/resource?id=8f00cdb9-af64-4013-8d6a-8ceba633ddac-2.jpg" loading="lazy" alt=""></p>
-<p align="center"><img src="/images/resource?id=d2b396d2-fe28-4d7a-b35a-4267de1ff83b-2.jpg" loading="lazy" alt=""></p>
-<p align="center"><img src="/images/resource?id=d39084a3-1ab1-4174-adab-ecdfabe2a46e-2.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-8f00cdb9-af64-4013-8d6a-8ceba633ddac.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-d2b396d2-fe28-4d7a-b35a-4267de1ff83b.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-d39084a3-1ab1-4174-adab-ecdfabe2a46e.jpg" loading="lazy" alt=""></p>
 
 Vi sono diverse ragioni per cui la preparazione dei pasti in anticipo può essere estremamente conveniente:
 

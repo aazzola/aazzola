@@ -7,7 +7,7 @@ categories: ["Productivity", "Personal Development"]
 tags: ["morning routine", "willpower", "habits", "sleep", "decision fatigue"]
 ---
 
-<p align="center"><img src="/images/resource?id=23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d-2.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d.jpg" loading="lazy" alt=""></p>
 Waking up early can be a simple and effective productivity technique. In fact, it’s one of the best approaches in my arsenal—here’s why.
 
 ## Draw from Willpower

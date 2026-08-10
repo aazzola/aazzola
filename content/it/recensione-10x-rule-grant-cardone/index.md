@@ -7,7 +7,7 @@ categories: ["Books", "Entrepreneurship", "Goal Setting", "Personal Development"
 tags: ["10X Rule", "Grant Cardone", "produttività", "business", "motivazione"]
 ---
 
-<p align="center"><img src="/images/resource?id=1d35b384-f05a-4132-8404-2c1ec239e21b-2.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-1d35b384-f05a-4132-8404-2c1ec239e21b.png" loading="lazy" alt=""></p>
 Tra i bestseller della categoria *self help* su Audible.com, **The 10X Rule** è un libro che tratta di produttività contestualizzata al mondo business. Sottolinea l'importanza di non porre limiti ai propri obiettivi e di dedicare *un impegno dieci volte maggiore* per raggiungerli, ponendo il successo come un traguardo imprescindibile: *"If you're not first, you're last"*.
 
 L'autore del libro è Grant Cardone, un imprenditore americano dal patrimonio stimato di 500 milioni di dollari. Inizia la carriera come venditore d'auto, diventa CEO della Freedom Motorsports Group Inc. (Los Angeles) e partecipa a una serie televisiva per National Geographic, *Turnaround King*, dove aiuta piccole attività a rimettersi in piedi. Autore di circa dieci libri, oggi dirige le società *Cardone Acquisitions*, *Cardone Enterprises* e *The Cardone Group*. Forbes lo ha indicato come uno dei marketing influencer più promettenti per il 2017.

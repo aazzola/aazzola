@@ -7,7 +7,7 @@ categories: ["Produttività", "Sviluppo Personale", "Decision Fatigue"]
 tags: ["svegliarsi presto", "abitudini", "produttività", "energia mentale"]
 ---
 
-<p align="center"><img src="/images/resource?id=23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d-2.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-23a6c1cd-c342-49b2-8e4e-d0d52ec66f4d.jpg" loading="lazy" alt=""></p>
 Il semplice svegliarsi presto può essere una tecnica di produttività molto semplice ed efficace. È uno dei migliori approcci che ho scelto di includere nel mio arsenale e quindi ecco la mia esperienza.
 
 ## Attingere alla Forza di Volontà

@@ -6,7 +6,7 @@ date: 2016-12-04T00:00:00
 categories: ["Books", "Entrepreneurship", "Goal Setting", "Personal Development"]
 ---
 
-<p align="center"><img src="/images/resource?id=1d35b384-f05a-4132-8404-2c1ec239e21b-2.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-1d35b384-f05a-4132-8404-2c1ec239e21b.png" loading="lazy" alt=""></p>
 Among the bestsellers in the self‑help category on Audible, **The 10X Rule** is a book about productivity in the business world. It underlines the importance of not limiting goals and of *taking 10× higher levels of action* to achieve them, placing success as essential: *“if you're not first, you're last.”*
 
 The author is **Grant Cardone**, an American entrepreneur. He began his career as a car salesman, later became CEO of Freedom Motorsports Group Inc., and worked on a National Geographic TV series called *Turnaround King*, helping small businesses get back on their feet. Author of several books, he now directs *Cardone Acquisitions*, *Cardone Enterprises* and *The Cardone Group*; he has been listed by Forbes among notable marketing influencers.

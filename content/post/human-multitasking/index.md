@@ -7,7 +7,7 @@ categories: ["Productivity", "Personal Development", "Decision Fatigue"]
 tags: ["multitasking", "task switching", "focus", "productivity"]
 ---
 
-<p align="center"><img src="/images/resource?id=5822d560-d3ed-48e8-88b4-5d510acff456-2.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-5822d560-d3ed-48e8-88b4-5d510acff456.jpg" loading="lazy" alt=""></p>
 Multitasking means the capability of executing multiple tasks concurrently. The *multitasking* concept find its origins in the computer industry. Nowadays consumer computers, phones, tablets are perfectly capable of running multiple logics in the same time window, they've become so good at this that some company are already focusing toward the next big step, [anticipatory computing](https://en.wikipedia.org/wiki/Anticipation_(artificial_intelligence)) (eg: Google Now). Assisted *multitasking* brings huge benefits in terms of productivity, some computations can be anticipated and so them results, which is a huge win for everyone. But other than devices, can, our brain, multitask? The answer is apparently, *no*.
 
 ## Subconscious mind

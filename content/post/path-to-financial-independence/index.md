@@ -7,7 +7,7 @@ categories: ["Financial Independence", "Personal Development"]
 tags: ["financial independence", "frugality", "extreme saving", "geo-arbitrage", "passive income"]
 ---
 
-<p align="center"><img src="/images/resource?id=eef7a2b1-8ab8-48f9-b490-395cb0240b7d-2.png" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-eef7a2b1-8ab8-48f9-b490-395cb0240b7d.png" loading="lazy" alt=""></p>
 The term *financial independence* indicates a state of finances in which an individual can fulfill primary needs without participating in employment. It is usually achieved when the difference between *recurring revenue*—corporate dividends, product sales, real‑estate rentals, etc.—and *living expenses* covers the basic quota for personal sustenance.
 
 The path to *financial independence* is usually undertaken by people with a strong desire for freedom, or by people with significant capital looking for smart ways to manage it. This goal is rarely achieved by luck—like a lottery win—but rather by a strong and disciplined management of personal finances, with a pinch of entrepreneurial skill.

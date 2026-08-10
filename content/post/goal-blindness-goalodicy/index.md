@@ -6,7 +6,7 @@ date: 2016-05-14T00:00:00
 categories: ["Goal Setting", "Personal Development", "Goalodicy"]
 ---
 
-<p align="center"><img src="/images/resource?id=2d1f1445-5bfa-4c22-9c69-7ab3cfb54d6f-2.jpg" loading="lazy" alt=""></p>
+<p align="center"><img src="/images/resource-2d1f1445-5bfa-4c22-9c69-7ab3cfb54d6f.jpg" loading="lazy" alt=""></p>
 ## The Goalodicy
 
 The *goalodicy* is the obsession in pursuing a goal, a compulsion such that the individual often ignores its own context. The term, coined by [D. Christopher Kayes](http://business.gwu.edu/profiles/d-christopher-kayes/) of the University of Washington, is a merge of the English words *goal* and *theodicy*, which etymology suggests a similarity to "divine justice" in Greek. Another common term for goalodicy is *goal-blindness*.

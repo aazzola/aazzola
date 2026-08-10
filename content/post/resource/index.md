@@ -7,7 +7,7 @@ build:
   render: never
   list: never
 cascade:
-build:
+  build:
     render: never
     list: never
 ---
