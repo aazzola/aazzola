@@ -73,3 +73,7 @@ Poi sposta i file Markdown in `content/` del progetto Hugo e aggiungi il *front 
 - **.vscode/tasks.json** include comandi rapidi per *serve* e *build*.
 - Consigliate estensioni: *Markdown All in One*, *YAML*, *GitLens*, *Hugo Language and Syntax Support*.
 
+
+## Local template overrides
+
+The site overrides three PaperMod templates in `layouts/`: `baseof.html`, `rss.xml`, and `_partials/templates/opengraph.html`. They are copies of PaperMod commit `d3768854d00ad003b0a8dbdba254ce9224377a01` with only Hugo's deprecated language methods changed to `Direction` and `Locale`. `layouts/404.html` is site-specific and uses `hugo.Data.redirects`. When updating the PaperMod submodule, compare these overrides with the new upstream templates and reapply any upstream fixes before deploying.

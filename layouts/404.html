@@ -4,7 +4,7 @@
 </head><body>
 <script>
 (function(){
-  var map = {{ site.Data.redirects | jsonify }};
+  var map = {{ hugo.Data.redirects | jsonify }};
   function go(x){ if(map && map[x]){ location.replace(map[x]); return true } return false }
   var p = location.pathname.replace(/\/{2,}/g,'/'); if(!p.startsWith('/')) p='/'+p;
   if(go(p)) return;
