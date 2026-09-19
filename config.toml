@@ -11,7 +11,7 @@ defaultContentLanguage = "en"
   analyticsMeasurementID = "G-C3P9XZGVE9"
   env = "production"
   author = "Andrea Azzola"
-  description = "Work smarter, ride further, live free"
+  description = "Andrea Azzola — enterprise technology, product decisions and delivery, grounded in software development and architecture."
   ShowReadingTime = true
   ShowShareButtons = true
   defaultTheme = "auto"
@@ -75,6 +75,10 @@ appleTouchIcon = "/apple-touch-icon.png"
 
 [menu]
   [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
     name = "Archive"
     url = "/archive/"
     weight = 25
@@ -96,21 +100,21 @@ appleTouchIcon = "/apple-touch-icon.png"
 
 [params.profileMode]
 enabled = true
-title = "Hi! I'm Andrea"
-subtitle = "Product Manager. Motorbike adventurer. FIRE enthusiast. Writing about work, freedom and the ride in between."
+title = "Enterprise technology, from direction to delivery."
+subtitle = "I’m Andrea Azzola, an IT manager at Engineering. I help teams make technology decisions and turn them into software they can deliver, support and evolve. My experience spans Salesforce products, enterprise delivery and the systems teams use to manage their work. I bring a background in software development and architecture to decisions about what to build, how to organize the work and what it will take to operate the result."
 imageURL = "/images/AndreaAzzola_Website200x200.png"
 imageTitle = "Andrea Azzola"
 imageWidth = 160
 imageHeight = 160
 
 [[params.profileMode.buttons]]
+name = "About my work"
+url = "/about/"
+
+[[params.profileMode.buttons]]
 name = "Articles"
 url = "/post/"
 
 [[params.profileMode.buttons]]
-name = "Reads"
-url = "/books/"
-
-[[params.profileMode.buttons]]
-name = "Contact"
-url = "/contact/"
+name = "Let’s connect on LinkedIn"
+url = "https://www.linkedin.com/in/andreaazzola/"
