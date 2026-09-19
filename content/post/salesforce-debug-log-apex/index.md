@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Dealing with Salesforce Maximum Debug Log Size"
 type: post
 draft: false

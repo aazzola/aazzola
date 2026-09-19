@@ -1,4 +1,7 @@
 ---
+translationURL: "/it/aspnet-vnext-mac-os-omnisharp-kulture/"
+translationLanguage: it
+archiveKind: technical
 title: "How to run ASP.NET vNext on Mac OS with Kulture and OmniSharp"
 type: post
 draft: false
@@ -13,7 +16,7 @@ The article will describe **how to run ASP.NET vNext** on **Mac OS X**. The proc
 
 ## Sublime Text
 
-One very popular IDE or *advanced text editor* for Mac OS X is **[Sublime Text](http://www.sublimetext.com/)**. I use it on both OS X and Windows, for developing [Salesforce.com](http://andreaazzola.com/category/salesforcecom) applications, to take notes or authoring this very article in pure HTML, and I'm very happy with it. Other supported IDEs—at the moment of writing—are:
+One very popular IDE or *advanced text editor* for Mac OS X is **[Sublime Text](http://www.sublimetext.com/)**. I use it on both OS X and Windows, for developing [Salesforce.com](/categories/salesforce/) applications, to take notes or authoring this very article in pure HTML, and I'm very happy with it. Other supported IDEs—at the moment of writing—are:
 
 - Atom - <https://atom.io/>
 - Emacs - <http://www.gnu.org/software/emacs/>

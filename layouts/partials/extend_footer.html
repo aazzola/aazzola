@@ -1,0 +1,10 @@
+{{ with site.Params.analyticsMeasurementID }}
+<section id="analytics-consent" class="cookie-panel" aria-label="Analytics preferences" data-measurement-id="{{ . }}" hidden>
+  <strong>Optional analytics</strong>
+  <p>Allow Google Analytics to help understand how this site is used? Analytics stays off unless you accept. You can change your choice using Cookie settings. <a href="{{ "/privacy/" | absURL }}">Privacy policy</a></p>
+  <button type="button" data-choice="deny">Decline analytics</button>
+  <button type="button" data-choice="allow">Accept analytics</button>
+</section>
+{{ $script := resources.Get "js/consent.js" | minify | fingerprint }}
+<script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+{{ end }}

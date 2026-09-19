@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/dieta-digiuno-intermittente/"
+translationLanguage: it
 title: "Intermittent Fasting: Diet and Benefits"
 type: post
 draft: false

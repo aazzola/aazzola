@@ -1,4 +1,5 @@
 ---
+archiveKind: music
 title: "June 2010 - MaGmA Radio Show"
 type: post
 draft: false

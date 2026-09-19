@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/intermittent-fasting-diet-benefits/"
+translationLanguage: en
 title: "Dieta del Digiuno Intermittente"
 type: post
 draft: false

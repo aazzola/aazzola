@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/goalodicy-obiettivo-distruttivo/"
+translationLanguage: it
 title: "The Goalodicy Trap"
 type: post
 draft: false

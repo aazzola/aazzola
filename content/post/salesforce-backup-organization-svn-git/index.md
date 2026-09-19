@@ -1,4 +1,6 @@
 ---
+archiveKind: technical
+archiveScope: "This historical example retrieves a limited set of metadata. It does not back up record data or demonstrate a complete organization restore."
 title: "Automate SVN/Git Backups of Entire Salesforce.com Organizations"
 type: post
 draft: false

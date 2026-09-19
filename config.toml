@@ -3,12 +3,12 @@ canonifyURLs = true
 relativeURLs = false
 locale = "en-us"
 title = "Andrea Azzola"
-googleAnalytics = "G-C3P9XZGVE9"
 theme = "PaperMod" # install below
 pagerSize = 10
 defaultContentLanguage = "en"
 
 [params]
+  analyticsMeasurementID = "G-C3P9XZGVE9"
   env = "production"
   author = "Andrea Azzola"
   description = "Work smarter, ride further, live free"
@@ -74,6 +74,10 @@ appleTouchIcon = "/apple-touch-icon.png"
   tag = "tags"
 
 [menu]
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
+    weight = 25
   [[menu.main]]
     name = "Articles"
     url = "/post/"

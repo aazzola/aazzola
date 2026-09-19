@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/meal-prep-pouches-quick-easy/"
+translationLanguage: en
 title: "Preparazione di Pasti in Sacchetti Facile e Veloce"
 type: post
 draft: false
@@ -23,14 +27,14 @@ In particolare, questo articolo descrive un metodo di conservazione pratico e se
 
 Rispetto ai classici contenitori in plastica, i sacchetti offrono due vantaggi principali: *lo spazio occupato* e la *scarsa quantità d'aria incamerata* (meno aria = meno batteri). Minore è lo spazio occupato, maggiore sarà la quantità che potremo conservare e più a lungo potremo disporre di pasti pronti.
 
-Un cibo facilmente deperibile va imbustato e congelato poco dopo la cottura. Sono disponibili anche [macchine sottovuoto](../../out/macchine-sottovuoto-alimenti.html){:target="_blank" rel="noopener"}, sebbene talvolta poco pratiche per i costi e i tempi di recupero.
+Un cibo facilmente deperibile va imbustato e congelato poco dopo la cottura. Sono disponibili anche macchine sottovuoto, sebbene talvolta poco pratiche per i costi e i tempi di recupero.
 
 ## Come Funziona
 
 Occorrono:
 
-- una [macchina sigilla sacchetti](../../out/sigilla-sacchetti-200mm-professionale.html){:target="_blank" rel="noopener"}
-- alcuni [rotoli di poliuretano](../../out/flaem-nuova-aco1066-alimenti-trasparente.html){:target="_blank" rel="noopener"}
+- una macchina sigilla sacchetti
+- alcuni rotoli di poliuretano
 
 La sigillatrice funziona collegandola alla corrente e regolando l'intensità (1–10). Con rotoli standard si usa 5, con rotoli più spessi circa 8. Bastano un paio di prove per trovare l'impostazione giusta.
 

@@ -1,0 +1,21 @@
+{{ with .Params.translationURL }}
+<nav class="translation-link" aria-label="Language"><a href="{{ . | absURL }}" lang="{{ $.Params.translationLanguage }}" hreflang="{{ $.Params.translationLanguage }}">{{ if eq $.Params.translationLanguage "it" }}Leggi in italiano{{ else }}Read in English{{ end }}</a></nav>
+{{ end }}
+{{ with .Params.archiveKind }}
+<aside class="archive-context">
+{{ if eq $.Params.contentLanguage "it" }}
+<strong>Archivio tecnico · {{ $.Date.Format "2006" }}</strong>
+<p>Questa nota descrive strumenti e versioni del periodo di pubblicazione. È conservata come riferimento storico; il codice e le istruzioni non sono stati nuovamente verificati.</p>
+<a href="{{ "/archive/" | absURL }}">Esplora l’archivio</a>
+{{ else if eq . "music" }}
+<strong>Music archive · {{ $.Date.Format "2006" }}</strong>
+<p>This post belongs to my earlier music projects as Icaro. Original dates and credits are preserved; release announcements and booking references describe that period.</p>
+<a href="{{ "/archive/#music" | absURL }}">Explore the music archive</a>
+{{ else }}
+<strong>Technical archive · {{ $.Date.Format "2006" }}</strong>
+<p>This note describes tools and versions from its original publication period. It is preserved as a historical reference; the code and instructions have not been re-tested.</p>
+<a href="{{ "/archive/#technical" | absURL }}">Explore the technical archive</a>
+{{ end }}
+{{ with $.Params.archiveScope }}<p>{{ . }}</p>{{ end }}
+</aside>
+{{ end }}

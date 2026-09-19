@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/recensione-10x-rule-grant-cardone/"
+translationLanguage: it
 title: "Book Review: The 10X Rule by Grant Cardone"
 type: post
 draft: false

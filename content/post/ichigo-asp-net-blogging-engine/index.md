@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Ichigo, an ASP.NET Blogging Engine"
 type: post
 draft: false

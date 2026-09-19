@@ -1,4 +1,9 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/logging-nlog-sqlite/"
+translationLanguage: en
+archiveKind: technical
 title: "Logging con NLog e SQLite"
 type: post
 draft: false
@@ -98,6 +103,6 @@ PM> Install-Package NLog.Config
 
 ## Conclusione
 
-Puoi trovare il codice sorgente e un progetto di esempio qui: [https://github.com/aazzola/nlog-sqlite/](https://github.com/aazzola/nlog-sqlite/){:target="_blank"}
+Puoi trovare il codice sorgente e un progetto di esempio qui: [https://github.com/aazzola/nlog-sqlite/](https://github.com/aazzola/nlog-sqlite/)
 
 > **Nota (2025):** Per le versioni più recenti dei pacchetti e di Visual Studio (dalla 2013 Update 3 in avanti), è necessario aggiungere `commandType="Text"` nel tag `target`, altrimenti si ottiene un errore *method not supported*.

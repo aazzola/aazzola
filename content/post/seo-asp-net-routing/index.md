@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Improve ASP.NET SEO by using System.Web.Routing"
 type: post
 draft: false

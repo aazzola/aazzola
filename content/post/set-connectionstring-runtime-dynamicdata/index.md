@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Set the ConnectionString at Runtime with DynamicData"
 type: post
 draft: false

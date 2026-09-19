@@ -1,4 +1,9 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/post-data-js/"
+translationLanguage: en
+archiveKind: technical
 title: "Submit di un Form tramite POST JavaScript"
 type: post
 draft: false
@@ -7,7 +12,7 @@ categories: ["Programmazione", "JavaScript", "Web Development"]
 tags: ["form", "submit", "post", "get", "jquery"]
 ---
 
-Secondo le specifiche [HTML 4.0](http://www.w3.org/TR/html401/){:target="_blank" rel="noopener"}:
+Secondo le specifiche [HTML 4.0](http://www.w3.org/TR/html401/):
 
 - Se il metodo è **GET**, lo user agent prende il valore dell'azione, vi concatena un `?` e il data set del form, mediante il content-type *application/x-www-form-urlencoded*. In questo caso i dati del form sono vincolati a codici ASCII.
 - Se il metodo è **POST**, lo user agent effettua un submit HTTP POST utilizzando il valore dell’*action* e un messaggio creato in accordo con il content type specificato nell'attributo *enctype*.
@@ -62,7 +67,7 @@ Nella sezione `<body>` della pagina HTML:
     onclick="post(myDictionary, 'destination.html', 'get');" />
 ```
 
-La funzione `post` accetta un [dizionario](https://it.wikipedia.org/wiki/Array_associativo){:target="_blank" rel="noopener"}, una destinazione URL, e opzionalmente il metodo (POST o GET, case-insensitive).
+La funzione `post` accetta un [dizionario](https://it.wikipedia.org/wiki/Array_associativo), una destinazione URL, e opzionalmente il metodo (POST o GET, case-insensitive).
 
 ## Alternativa con jQuery.post()
 
@@ -90,4 +95,4 @@ $.ajax({
 $.post("test.php", { 1stKey: "1stValue", 2ndKey: "2ndValue" });
 ```
 
-Ulteriori dettagli su [`jQuery.post()`](http://api.jquery.com/jquery.post/){:target="_blank" rel="noopener"}.
+Ulteriori dettagli su [`jQuery.post()`](http://api.jquery.com/jquery.post/).

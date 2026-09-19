@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/risparmio-rasatura-tradizionale/"
+translationLanguage: it
 title: "Save Money with Traditional Wet Shaving"
 type: post
 draft: false

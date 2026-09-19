@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Search Email Inbox with C#"
 type: post
 draft: false

@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/saving-traditional-wet-shaving/"
+translationLanguage: en
 title: "Risparmiare con la Rasatura Tradizionale"
 type: post
 draft: false

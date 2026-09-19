@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Turn Sentences into Slugs with JavaScript"
 type: post
 draft: false

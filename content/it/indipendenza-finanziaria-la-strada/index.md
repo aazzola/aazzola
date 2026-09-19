@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/path-to-financial-independence/"
+translationLanguage: en
 title: "La Strada per l'Indipendenza Finanziaria"
 type: post
 draft: false

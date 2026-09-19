@@ -1,4 +1,5 @@
 ---
+archiveKind: music
 title: "New Remix Out! Magic Emi by Havisi"
 type: post
 draft: false
@@ -10,7 +11,7 @@ I'm happy to announce that **Magic Emi by Havisi** is now available on Beatport,
 
 - **Title:** *Magic Emi*  
 - **Artist:** *Havisi*  
-- **Remixes:** [Nanni](http://soundcloud.com/nanni-1){target="_blank"}, [Simone Barbieri Viale](http://www.myspace.com/soundsimo){target="_blank"}, [Icaro](http://icaro.dj){target="_blank"}  
+- **Remixes:** [Nanni](http://soundcloud.com/nanni-1), [Simone Barbieri Viale](http://www.myspace.com/soundsimo), [Icaro](http://icaro.dj)
 - **Released by:** *Mile End Records*  
 - **Release/catalogue number:** MILE170  
 - **Release date:** Feb 21, 2012

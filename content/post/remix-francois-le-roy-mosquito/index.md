@@ -1,4 +1,5 @@
 ---
+archiveKind: music
 title: "New Remix Out! Mosquito by Francois Le Roy"
 type: post
 draft: false

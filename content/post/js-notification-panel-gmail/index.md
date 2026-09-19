@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "JavaScript Auto-collapsing Notification Panel"
 type: post
 draft: false
@@ -11,9 +12,9 @@ tags: ["JavaScript", "UI", "Notification"]
 
 In almost all web applications comes the moment when it becomes necessary to show some notifications to the user. A common practice in the past, even when elegance was unimportant and web pages didn't show much dynamic behavior, was the use of the method `alert()` from JavaScript.
 
-Nowadays, interacting with the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model){target="_blank" rel="noopener"} is widespread, so you can write functions in a more elegant, advanced, and enjoyable way for the user.
+Nowadays, interacting with the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) is widespread, so you can write functions in a more elegant, advanced, and enjoyable way for the user.
 
-This behavior was made famous by [Gmail](https://en.wikipedia.org/wiki/Gmail){target="_blank" rel="noopener"}. It's nothing exceptional and can be managed with a few simple lines of code:
+This behavior was made famous by [Gmail](https://en.wikipedia.org/wiki/Gmail). It's nothing exceptional and can be managed with a few simple lines of code:
 
 ```html
 <div id="notification">
@@ -30,4 +31,4 @@ function closeDiv() {
 <input type="button" value="Hide" onclick="window.setTimeout(closeDiv, 5000);" />
 ```
 
-You can use CSS to make your DIV appear like a popup. Additionally, using a library like [jQuery](https://jquery.com){target="_blank" rel="noopener"} you can easily introduce more advanced text effects.
+You can use CSS to make your DIV appear like a popup. Additionally, using a library like [jQuery](https://jquery.com) you can easily introduce more advanced text effects.

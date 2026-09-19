@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/luck-surface-area/"
+translationLanguage: it
 title: "The Luck Surface Area Principle"
 type: post
 draft: false

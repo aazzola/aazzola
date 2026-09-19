@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/preparazione-pasti-sacchetti-facile-veloce/"
+translationLanguage: it
 title: "Quick and Easy Meal Prep Pouches"
 type: post
 draft: false

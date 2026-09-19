@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Issues With AJAX and a Custom HttpModule"
 type: post
 draft: false

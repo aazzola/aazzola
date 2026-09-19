@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Handle Multiple Columns as One with Dynamic Data"
 type: post
 draft: false

@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Clean Up Stored Procedures Cache with SQL Server"
 type: post
 draft: false

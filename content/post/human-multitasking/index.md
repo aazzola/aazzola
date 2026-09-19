@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/multitasking-umano/"
+translationLanguage: it
 title: "Humans and Multitasking"
 type: post
 draft: false

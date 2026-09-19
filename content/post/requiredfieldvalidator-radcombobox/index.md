@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Simulating a RequiredFieldValidator with RadComboBox"
 type: post
 draft: false

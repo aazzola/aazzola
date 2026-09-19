@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "How to Log HTTP Requests with PHP"
 type: post
 draft: false

@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Import Web Service References in .NET"
 type: post
 draft: false
@@ -35,4 +36,4 @@ A complete list of options is available in the [official MSDN documentation](htt
 
 ## Related articles
 
-- [Testing a Web service with a proxy class](http://articles.techrepublic.com.com/5100-10878_11-5755966.html){:target="_blank" rel="noopener"}
+- [Testing a Web service with a proxy class](http://articles.techrepublic.com.com/5100-10878_11-5755966.html)

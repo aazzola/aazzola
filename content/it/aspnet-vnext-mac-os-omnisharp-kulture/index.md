@@ -1,4 +1,9 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/aspnet-vnext-mac-os-omnisharp-kulture/"
+translationLanguage: en
+archiveKind: technical
 title: "Eseguire ASP.NET vNext su Mac OS con Kulture e Omnisharp"
 type: post
 draft: false
@@ -13,16 +18,16 @@ L'articolo descrive **come eseguire ASP.NET vNext** con sistema operativo *Mac O
 
 ## Sublime Text
 
-Un *text editor avanzato* molto diffuso per Mac OS X è **[Sublime Text](http://www.sublimetext.com/){:target="_blank"}**. Personalmente lo uso anche in Windows per sviluppare soluzioni [Salesforce.com](https://andreaazzola.com/category/salesforcecom){:target="_blank"} o per prendere note e redigere articoli in HTML. Altri editor supportati all’epoca della scrittura erano:
+Un *text editor avanzato* molto diffuso per Mac OS X è **[Sublime Text](http://www.sublimetext.com/)**. Personalmente lo uso anche in Windows per sviluppare soluzioni [Salesforce.com](/categories/salesforce/) o per prendere note e redigere articoli in HTML. Altri editor supportati all’epoca della scrittura erano:
 
-- [Atom](https://atom.io/){:target="_blank"}
-- [Emacs](http://www.gnu.org/software/emacs/){:target="_blank"}
-- [Brackets](https://brackets.io/){:target="_blank"}
-- [Vim](http://www.vim.org/){:target="_blank"}
+- [Atom](https://atom.io/)
+- [Emacs](http://www.gnu.org/software/emacs/)
+- [Brackets](https://brackets.io/)
+- [Vim](http://www.vim.org/)
 
 ## Homebrew
 
-[Homebrew](https://brew.sh/){:target="_blank"} è un *package manager* open source per Mac OS X. Per funzionare necessita di *git* e *ruby*. Per verificarne l'installazione aprire il terminale e lanciare `brew doctor`. Se l’esito è `command not found`, significa che brew non è installato. Si può provvedere con il comando:
+[Homebrew](https://brew.sh/) è un *package manager* open source per Mac OS X. Per funzionare necessita di *git* e *ruby*. Per verificarne l'installazione aprire il terminale e lanciare `brew doctor`. Se l’esito è `command not found`, significa che brew non è installato. Si può provvedere con il comando:
 
 ```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -41,7 +46,7 @@ Questo installerà anche l'ultima versione del **K Runtime Environment (KRE)**.
 
 ## OmniSharp e Kulture
 
-Un prerequisito è l’[installazione del Package Control](https://sublime.wbond.net/installation){:target="_blank"}. Una volta attivo, installare i due pacchetti:
+Un prerequisito è l’[installazione del Package Control](https://sublime.wbond.net/installation). Una volta attivo, installare i due pacchetti:
 
 - **Kulture**, che abilita il sistema di *build* ASP.NET vNext in Sublime Text. Da Sublime: `CTRL+SHIFT+P` → `Install Package` → cercare `Kulture` → Invio.
 - **OmniSharp**, piattaforma che abilita lo sviluppo *C# cross‑platform* negli IDE. Offre funzionalità come *auto-complete*, evidenziazione di errori semantici/sintattici, *build/rebuild/clean* della soluzione.
@@ -52,7 +57,7 @@ OmniSharp supporta Mac OS X, Linux e Windows.
 
 Per verificare il successo dell'operazione:
 
-1. Clonare il repo [Home](https://github.com/aspnet/Home){:target="_blank"}:  
+1. Clonare il repo [Home](https://github.com/aspnet/Home):
    ```bash
    git clone https://github.com/aspnet/Home
    ```
@@ -63,7 +68,7 @@ Per verificare il successo dell'operazione:
 
 ## Riferimenti
 
-- [OmniSharp – sito ufficiale](http://www.omnisharp.net/){:target="_blank"}
-- [Getting Started on ASP.NET (GitHub)](https://github.com/aspnet/home#getting-started){:target="_blank"}
+- [OmniSharp – sito ufficiale](http://www.omnisharp.net/)
+- [Getting Started on ASP.NET (GitHub)](https://github.com/aspnet/home#getting-started)
 
 > **Nota (2025):** Questa guida si riferisce a strumenti ora obsoleti (ASP.NET vNext e KVM). Le informazioni hanno valore storico.

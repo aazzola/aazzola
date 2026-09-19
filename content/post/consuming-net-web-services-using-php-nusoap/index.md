@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Consuming .NET Webservices Using PHP and NuSoap"
 type: post
 draft: false

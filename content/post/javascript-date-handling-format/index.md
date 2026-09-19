@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Manage and format Dates with JavaScript"
 type: post
 draft: false

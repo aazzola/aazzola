@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="post-single">
+<header class="post-header"><h1 class="post-title">{{ .Title }}</h1></header>
+<div class="post-content md-content">{{ .Content }}
+{{ range slice (dict "kind" "music" "title" "Music and creative projects") (dict "kind" "technical" "title" "Technical notes") }}
+<h2 id="{{ .kind }}">{{ .title }}</h2>
+<ul>
+{{ range (where (where site.RegularPages "Section" "post") "Params.archiveKind" .kind).ByDate.Reverse }}
+<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <small>({{ .Date.Format "2006" }})</small>{{ with .Params.translationURL }} · <a href="{{ . }}" lang="it">Italiano</a>{{ end }}</li>
+{{ end }}
+</ul>
+{{ end }}
+</div></article>
+{{ end }}

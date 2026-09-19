@@ -76,4 +76,46 @@ Poi sposta i file Markdown in `content/` del progetto Hugo e aggiungi il *front 
 
 ## Local template overrides
 
-The site overrides three PaperMod templates in `layouts/`: `baseof.html`, `rss.xml`, and `_partials/templates/opengraph.html`. They are copies of PaperMod commit `d3768854d00ad003b0a8dbdba254ce9224377a01` with only Hugo's deprecated language methods changed to `Direction` and `Locale`. `layouts/404.html` is site-specific and uses `hugo.Data.redirects`. When updating the PaperMod submodule, compare these overrides with the new upstream templates and reapply any upstream fixes before deploying.
+Overrides track PaperMod commit `d3768854d00ad003b0a8dbdba254ce9224377a01`.
+Compare them with upstream before changing the submodule:
+
+- `layouts/baseof.html`: Hugo `Direction` and per-page `contentLanguage`.
+- `layouts/rss.xml`: Hugo `Locale`.
+- `layouts/_partials/head.html`: reciprocal language alternatives for existing EN/IT URLs.
+- `layouts/_partials/templates/opengraph.html`: Hugo `Locale` (per-page locale supported).
+- `layouts/_partials/templates/schema_json.html`: per-page content language.
+- `layouts/single.html`: historical context and translation navigation before the article body.
+- `layouts/list.html`: music moved from Articles/home lists to the archive; historical labels on list entries.
+- Existing custom footer plus `extend_footer.html`: analytics preferences and local consent controller.
+- `layouts/404.html`: legacy redirect map as an object, with a real fallback page.
+
+## Editorial conventions
+
+`archiveKind: technical` identifies historical technical notes; `archiveKind: music`
+identifies earlier music projects. Neither changes the original URL, publication date,
+indexability or taxonomy membership. `/archive/` lists the English source articles and
+links to available Italian versions. Technical notes also remain in Articles; music
+remains accessible through Archive, taxonomies and the existing RSS feeds. There is no
+bulk `noindex` policy. Optional `archiveScope` clarifies a particular note's limitations.
+
+Italian articles retain `/it/` URLs using `contentLanguage: it`, `locale: it-IT`,
+`translationURL` and `translationLanguage`. Set reciprocal translation fields on the
+English article too. This is a compatibility layer, not a Hugo multilingual migration.
+
+## Analytics
+
+Only `params.analyticsMeasurementID` configures analytics. Do not set Hugo's top-level
+`googleAnalytics` or `services.googleAnalytics.ID`: those would bypass the consent
+controller. The local script loads Google only after acceptance, stores the choice for
+180 days, and provides withdrawal through Cookie settings. Withdrawal disables the
+property, clears accessible first-party GA cookies and reloads to remove its runtime.
+If browser storage is unavailable, consent is not retained across pages. Historical
+third-party media embeds are outside the scope of this analytics control.
+
+## Verification for the editorial pass (2026-09-19)
+
+Hugo Extended 0.166.0 production build: 655 pages, 7 paginator pages, 102 static files,
+265 aliases. Browser checks cover the consent lifecycle (requests intercepted so no
+production telemetry is sent), cookie cleanup, unavailable storage, 32 language pages,
+35 archive entries, contact, mobile layout and known/unknown legacy paths.
+Professional biography, case studies and opinion changes remain separate editorial work.

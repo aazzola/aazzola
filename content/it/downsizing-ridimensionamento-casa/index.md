@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/downsizing-home-and-earn-time-money/"
+translationLanguage: en
 title: "Ridimensionare la Casa per Guadagnare Tempo e Denaro"
 type: post
 draft: false

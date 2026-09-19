@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Future Count with Apex Code"
 type: post
 draft: false

@@ -15,6 +15,7 @@
     {{- end }}
 
     <span><a href="{{ "/privacy/" | absLangURL }}">Privacy Policy</a></span>
+    {{ with site.Params.analyticsMeasurementID }} · <button type="button" class="cookie-settings" data-cookie-settings>Cookie settings</button>{{ end }}
     {{- print " · " -}}
     <span>
         Powered by

@@ -1,4 +1,5 @@
 ---
+archiveKind: music
 title: "February 2010 - MaGmA Radio Show"
 type: post
 draft: false

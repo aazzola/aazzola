@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/geo-arbitrage/"
+translationLanguage: it
 title: "A Lever Called Geo-Arbitrage"
 type: post
 draft: false

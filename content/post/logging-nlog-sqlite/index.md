@@ -1,4 +1,7 @@
 ---
+translationURL: "/it/logging-nlog-sqlite/"
+translationLanguage: it
+archiveKind: technical
 title: "Logging with NLog and SQLite"
 type: post
 draft: false

@@ -1,17 +1,18 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Redirecting…</title>
+<title>Page not found — Andrea Azzola</title>
 </head><body>
+<main><h1>Page not found</h1><p>This address may have changed. Browse <a href="/post/">Articles</a>, explore the <a href="/archive/">Archive</a>, or visit the <a href="/">home page</a>.</p></main>
 <script>
 (function(){
-  var map = {{ hugo.Data.redirects | jsonify }};
+  var map = {{ hugo.Data.redirects }};
   function go(x){ if(map && map[x]){ location.replace(map[x]); return true } return false }
   var p = location.pathname.replace(/\/{2,}/g,'/'); if(!p.startsWith('/')) p='/'+p;
   if(go(p)) return;
   if(go(p.replace(/index\.html$/,''))) return;
   if(p.endsWith('/')) { if(go(p.slice(0,-1))) return; } else { if(go(p+'/')) return; }
   if(go(p.toLowerCase())) return;
-  location.href = '/';
+  // Unknown paths keep a useful 404 instead of redirecting to unrelated content.
 })();
 </script>
 </body></html>

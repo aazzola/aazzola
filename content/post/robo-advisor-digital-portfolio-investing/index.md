@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/robo-advisor-consulenza-per-investire/"
+translationLanguage: it
 title: "Robo-advisors, When Investing Advice Becomes Digital and Efficient"
 type: post
 draft: false
@@ -32,6 +34,6 @@ But robo-advisors, compared to traditional consultancy, are not able to satisfy 
 
 ## Best robo-advisors of 2016
 
-I've been with **Moneyfarm** for about 2 years now and I consider myself satisfied. In particular, the portfolio handled market instability quite well. It is possible to sign up through <a href="../out/moneyfarm/index.html" target="_blank" rel="nofollow noopener" title="Subscribe to Moneyfarm">this link</a>; by choosing *Why Moneyfarm > Yields* there’s also the opportunity to check the trend of the investment profiles available over the years.
+I've been with **Moneyfarm** for about 2 years now and I consider myself satisfied. In particular, the portfolio handled market instability quite well. The sign-up link included in the original article is no longer available.
 
 > **Note (2025):** This article was written in 2016. Some details (e.g., fees, platforms, providers) may have changed significantly. Please verify with updated sources before relying on specifics.

@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Allow the Upload of Large Files with ASP.NET"
 type: post
 draft: false

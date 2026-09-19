@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/downsizing-ridimensionamento-casa/"
+translationLanguage: it
 title: "Downsizing your Home to Earn Back Time and Money"
 type: post
 draft: false

@@ -1,4 +1,7 @@
 ---
+translationURL: "/it/javascript-submit-post-form-data/"
+translationLanguage: it
+archiveKind: technical
 title: "POST data with JavaScript"
 type: post
 draft: false

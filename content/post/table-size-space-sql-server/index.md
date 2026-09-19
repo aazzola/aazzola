@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Get Size of Tables with SQL Server"
 type: post
 draft: false

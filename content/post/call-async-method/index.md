@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Call async methods with C#"
 type: post
 draft: false

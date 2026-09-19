@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/what-is-geo-arbitrage/"
+translationLanguage: en
 title: "La Leva Chiamata Geo-Arbitrage"
 type: post
 draft: false

@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/review-10x-rule-grant-cardone/"
+translationLanguage: en
 title: "Recensione: The 10X Rule, di Grant Cardone"
 type: post
 draft: false
@@ -33,4 +37,4 @@ Alcuni concetti chiave presi da questa lettura:
 - acquisire clienti è più importante che soddisfarli
 - accettare impegni e opportunità, pensare alle conseguenze dopo
 
-👉 [Tutte le edizioni *The 10X Rule* su Amazon.com](https://amzn.to/2NnPD60){:target="_blank" rel="nofollow"}
+👉 [Tutte le edizioni *The 10X Rule* su Amazon.com](https://amzn.to/2NnPD60)

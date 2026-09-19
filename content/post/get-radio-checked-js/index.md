@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Get and Set Radio Controls Checked Value with JavaScript"
 type: post
 draft: false

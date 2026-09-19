@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/goal-blindness-goalodicy/"
+translationLanguage: en
 title: "Goalodicy: l'Obiettivo Distruttivo"
 type: post
 draft: false

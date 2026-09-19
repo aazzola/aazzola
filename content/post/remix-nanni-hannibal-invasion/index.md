@@ -1,4 +1,5 @@
 ---
+archiveKind: music
 title: "Remix: Nanni – Hannibal Invasion"
 type: post
 draft: false

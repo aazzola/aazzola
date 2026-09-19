@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/robo-advisor-digital-portfolio-investing/"
+translationLanguage: en
 title: "Robo-advisors, la Consulenza Automatica ed Efficiente"
 type: post
 draft: false
@@ -34,8 +38,8 @@ Tuttavia i robo-advisor non riescono a soddisfare esigenze altamente personalizz
 
 Il panorama dei robo-advisor in Italia è ancora in pieno sviluppo. Alcuni player consolidati:
 
-- [**Moneyfarm**](../../out/moneyfarm/index.html){:target="_blank" rel="nofollow"} – startup cagliaritana attiva dal 2011/12, poggia su Banca Sella S.p.A., è diventata una delle maggiori a livello europeo
-- [**AO Tutor by AdviceOnly**](https://www.adviseonly.com/tutor){:target="_blank" rel="nofollow"} – lanciata nel 2011 da Virtual B S.p.A, focalizzata sull’advisory
-- [**Yellow Advice by CheBanca!**](https://yellowadvice.chebanca.it/){:target="_blank"} – lanciata nel 2016 e supportata dal gruppo Mediobanca, richiede un investimento minimo di 20.000 €
+- **Moneyfarm** – startup cagliaritana attiva dal 2011/12, poggia su Banca Sella S.p.A., è diventata una delle maggiori a livello europeo
+- [**AO Tutor by AdviceOnly**](https://www.adviseonly.com/tutor) – lanciata nel 2011 da Virtual B S.p.A, focalizzata sull’advisory
+- [**Yellow Advice by CheBanca!**](https://yellowadvice.chebanca.it/) – lanciata nel 2016 e supportata dal gruppo Mediobanca, richiede un investimento minimo di 20.000 €
 
-Sono con Moneyfarm da circa 2 anni e mi ritengo soddisfatto: il portafoglio ha retto bene i momenti di incertezza del mercato. È possibile iscriversi tramite [questo link](../../out/moneyfarm/index.html){:target="_blank" rel="nofollow"}, e nella sezione *Perché Moneyfarm > Rendimenti* si può consultare l’andamento dei profili d’investimento.
+Sono con Moneyfarm da circa 2 anni e mi ritengo soddisfatto: il portafoglio ha retto bene i momenti di incertezza del mercato. Il collegamento di iscrizione presente nella versione originale non è più disponibile.

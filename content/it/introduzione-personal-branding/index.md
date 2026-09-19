@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/personal-branding-introduction/"
+translationLanguage: en
 title: "Introduzione al Personal Branding"
 type: post
 draft: false

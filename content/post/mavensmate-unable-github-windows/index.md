@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "MavensMate unable to reach GitHub on Windows"
 type: post
 draft: false

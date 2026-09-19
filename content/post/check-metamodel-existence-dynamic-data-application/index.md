@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Check the MetaModel Existence while Running a Dynamic Data Application"
 type: post
 draft: false
@@ -25,4 +26,3 @@ Chiave aggiunta: 'MyAppDataContext']
 ```
 
 Meaning: *The item is already present. Key in dictionary 'MyAppDataContext', Key added 'MyAppDataContext'.*
-```

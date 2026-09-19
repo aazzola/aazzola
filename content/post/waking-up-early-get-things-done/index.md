@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/svegliarsi-presto-mattina-come-perche/"
+translationLanguage: it
 title: "Waking Up Early And Getting Things Done"
 type: post
 draft: false

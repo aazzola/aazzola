@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/waking-up-early-get-things-done/"
+translationLanguage: en
 title: "Svegliarsi Presto la Mattina, Come e Perché"
 type: post
 draft: false

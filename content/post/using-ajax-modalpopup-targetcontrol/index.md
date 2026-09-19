@@ -1,4 +1,5 @@
 ---
+archiveKind: technical
 title: "Using an ajax:ModalPopup Without a TargetControl"
 type: post
 draft: false

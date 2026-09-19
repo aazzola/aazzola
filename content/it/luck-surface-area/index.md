@@ -1,4 +1,8 @@
 ---
+contentLanguage: it
+locale: it-IT
+translationURL: "/post/luck-surface-area/"
+translationLanguage: en
 title: "Il Principio della Luck Surface Area"
 type: post
 draft: false
@@ -32,4 +36,4 @@ Roberts sottolinea che l’efficacia del parlare è legata a rivolgersi al giust
 
 Molti principi di sviluppo personale descrivono dinamiche quotidiane semplici ma fondamentali, a cui spesso non poniamo abbastanza attenzione.
 
-È molto citata, ad esempio, la [1% rule](https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)){:target="_blank" rel="noopener"}, secondo cui solo l'1% delle persone online *crea* contenuti, un altro 9% *contribuisce* e il resto osserva. È una correlazione che giustifica, in parte, la fama di cui godono blogger, youtuber e influencer.
+È molto citata, ad esempio, la [1% rule](https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)), secondo cui solo l'1% delle persone online *crea* contenuti, un altro 9% *contribuisce* e il resto osserva. È una correlazione che giustifica, in parte, la fama di cui godono blogger, youtuber e influencer.

@@ -1,4 +1,6 @@
 ---
+translationURL: "/it/introduzione-personal-branding/"
+translationLanguage: it
 title: "Personal Branding, a Brief Introduction"
 type: post
 draft: false
@@ -28,7 +30,7 @@ We can decide to *leverage* this perception, to various degrees, or we can decid
 
 Advertising is the soul of commerce. Sure, but it can be expensive, invasive, and overwhelming too. Some of us are developing anti‑bodies to advertising.
 
-You might have heard the phrase *SEO is dead*—while not entirely true, Google's algorithm [Hummingbird](https://en.wikipedia.org/wiki/Google_Hummingbird){target="_blank" rel="noopener"} tends to *care less about keywords* and much more about the surrounding <a href="https://www.youtube.com/watch?v=xQmQeKU25zg&list=TLe6b5U3IbZbxyiAAWxi52RUtRXUBaxm-S#t=280" target="_blank" rel="noopener">*network of trust*</a>. Google's business after all is to provide users with more effective answers and increase its own conversion rate.
+You might have heard the phrase *SEO is dead*—while not entirely true, Google's algorithm [Hummingbird](https://en.wikipedia.org/wiki/Google_Hummingbird) tends to *care less about keywords* and much more about the surrounding <a href="https://www.youtube.com/watch?v=xQmQeKU25zg&list=TLe6b5U3IbZbxyiAAWxi52RUtRXUBaxm-S#t=280" target="_blank" rel="noopener">*network of trust*</a>. Google's business after all is to provide users with more effective answers and increase its own conversion rate.
 
 Put that into perspective and we may conclude that *content is king*. You can go to every single contact on your list, ring the bell, hope to make a sale, and hope they don’t mark you as "spam." Or you can have them come to you because of the *network of trust* you've built with **true value** over time. That's **the brand working for you**.
 

@@ -1,4 +1,5 @@
 ---
+archiveKind: music
 title: "November 2009 - MaGmA Radio Show"
 type: post
 draft: false

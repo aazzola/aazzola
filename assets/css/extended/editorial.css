@@ -1,0 +1,10 @@
+.archive-context { margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: 8px; background: var(--code-bg); font-size: .9rem; }
+.archive-context p { margin: .6rem 0; }
+.archive-context a, .translation-link a { text-decoration: underline; }
+.translation-link { margin: 1rem 0; }
+.cookie-panel { position: fixed; bottom: 1rem; left: 1rem; right: 1rem; max-width:  40rem; z-index: 1000; padding: 1.2rem; background: var(--theme); color: var(--primary); border: 2px solid var(--secondary); border-radius: 8px; box-shadow: 0 4px 20px #0003; }
+.cookie-panel[hidden] { display: none; }
+.cookie-panel p { margin: .5rem 0 1rem; }
+.cookie-panel button { border: 1px solid var(--primary); padding: .5rem 1rem; margin: .25rem; border-radius: 4px; cursor: pointer; }
+.cookie-panel a, .cookie-settings { text-decoration: underline; }
+.cookie-settings { cursor: pointer; }
