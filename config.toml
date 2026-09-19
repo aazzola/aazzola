@@ -1,7 +1,7 @@
 baseURL = "https://andreaazzola.com/"
 canonifyURLs = true
 relativeURLs = false
-languageCode = "en-us"
+locale = "en-us"
 title = "Andrea Azzola"
 googleAnalytics = "G-C3P9XZGVE9"
 theme = "PaperMod" # install below
