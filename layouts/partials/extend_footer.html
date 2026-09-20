@@ -1,3 +1,6 @@
+{{/* Pages can opt out of analytics entirely with `analytics: false` in front matter;
+     no consent panel is rendered and no script is loaded there. */}}
+{{ if and site.Params.analyticsMeasurementID (ne .Params.analytics false) }}
 {{ with site.Params.analyticsMeasurementID }}
 <section id="analytics-consent" class="cookie-panel" aria-label="Analytics preferences" data-measurement-id="{{ . }}" hidden>
   <strong>Optional analytics</strong>
@@ -7,4 +10,5 @@
 </section>
 {{ $script := resources.Get "js/consent.js" | minify | fingerprint }}
 <script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+{{ end }}
 {{ end }}
