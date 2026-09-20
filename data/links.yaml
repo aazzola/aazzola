@@ -1,0 +1,27 @@
+# The /links page: the curated landing for people arriving from Instagram (or any
+# bio field). Edit this file, not the template. Order is display order; keep it
+# to about six — beyond that it stops reading as curated. Every outbound link is
+# tagged utm_source=links by the template so analytics can tell bio traffic apart.
+header:
+  name: Andrea Azzola
+  tagline: Enterprise technology, from direction to delivery.
+  image: /images/AndreaAzzola_Website200x200.png
+links:
+  - title: About me
+    note: Who I am and what I work on
+    url: /about/
+  - title: Writing
+    note: Articles on enterprise technology and delivery
+    url: /post/
+  - title: LinkedIn
+    note: The professional way to reach me
+    url: https://www.linkedin.com/in/andreaazzola/
+  - title: Reads
+    note: Books I keep coming back to
+    url: /books/
+  - title: Music
+    note: Icaro, on SoundCloud
+    url: https://soundcloud.com/icaromusic
+  - title: Contact
+    note: Projects, advice, or a friendly hello
+    url: /contact/
