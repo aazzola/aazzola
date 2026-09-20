@@ -1,27 +1,37 @@
 # The /links page: the curated landing for people arriving from Instagram (or any
 # bio field). Edit this file, not the template. Order is display order; keep it
-# to about six — beyond that it stops reading as curated. Every outbound link is
-# tagged utm_source=links by the template so analytics can tell bio traffic apart.
+# to about six. Every outbound link is tagged utm_source=links by the template.
+#
+# `featured: latest-post` renders the newest non-archive article automatically
+# (title, summary, date, reading time). `now` is the one human line under the
+# tagline: short, specific, updated when it changes; leave an item empty to hide it.
 header:
   name: Andrea Azzola
   tagline: Enterprise technology, from direction to delivery.
   image: /images/AndreaAzzola_Website200x200.png
+now:
+  building: a homelab that briefs me every morning
+  reading: ""
+  listening: ""
+featured: latest-post
 links:
   - title: About me
     note: Who I am and what I work on
     url: /about/
-  - title: Writing
-    note: Articles on enterprise technology and delivery
-    url: /post/
+    icon: user
   - title: LinkedIn
     note: The professional way to reach me
     url: https://www.linkedin.com/in/andreaazzola/
+    icon: linkedin
   - title: Reads
     note: Books I keep coming back to
     url: /books/
+    icon: book
   - title: Music
     note: Icaro, on SoundCloud
     url: https://soundcloud.com/icaromusic
+    icon: music
   - title: Contact
     note: Projects, advice, or a friendly hello
     url: /contact/
+    icon: mail
